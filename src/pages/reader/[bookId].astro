@@ -1,0 +1,16 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BookReader from '../../components/reader/BookReader';
+
+export async function getStaticPaths() {
+  // This will be populated when we have actual books
+  // For now, return empty array for development
+  return [];
+}
+
+const { bookId } = Astro.params;
+---
+
+<Layout title="Reading">
+  <BookReader bookId={bookId} client:load />
+</Layout>

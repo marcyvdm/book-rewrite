@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "deny": [
+      "**/.env*",
+      "**/node_modules/**",
+      "**/*.log",
+      "**/dist/**",
+      "**/build/**",
+      "**/.git/**",
+      "**/pdf-processor/**",
+      "**/*.pdf"
+    ]
+  }
+}

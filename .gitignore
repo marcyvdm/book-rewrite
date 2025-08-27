@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+venv/
+
+# Build outputs
+dist/
+build/
+
+# Processing artifacts
+extracted-content/
+processing/*/
+processed-books/*.json
+
+# Development files
+*.log
+.DS_Store
+.env*
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Source PDFs (large files)
+*.pdf
+
+# Development notes
+notes.txt
+TODO.md
+
+# System files
+Thumbs.db
