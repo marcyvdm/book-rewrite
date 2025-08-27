@@ -1,0 +1,15 @@
+{
+  "source_book": "extracted-content/unknown-title-extracted.json",
+  "extraction_date": "2025-08-26T20:31:34.403064",
+  "total_chapters_found": 6,
+  "valid_chapters_extracted": 1,
+  "chapters": [
+    {
+      "index": 1,
+      "title": "The Three Building Blocks of Game Feel",
+      "page_start": 21,
+      "word_count": 137,
+      "filename": "ch_01_The_Three_Building_Blocks_of_Game_Feel.txt"
+    }
+  ]
+}

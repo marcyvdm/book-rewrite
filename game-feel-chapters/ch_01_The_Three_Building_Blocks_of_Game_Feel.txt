@@ -1,0 +1,17 @@
+# The Three Building Blocks of Game Feel
+
+Game feel, as experienced by players, is built from three parts: real-time control,
+simulated space and polish.
+
+## Real-Time Control
+
+Real-time control is a specific form of interactivity. Like all interactivity, it includes
+at least two participants—in this case the computer and the user—who come
+together to form a closed loop, as illustrated in  Figure 1.1 , the concept couldn’t be
+simpler.
+The user has some intent, which is expressed to the computer in the form of the
+user’s input. The computer reconciles this input with its own internal model and
+outputs the results. The user then perceives the changes, thinks about how they
+compare to the original intent, and formulates a new action, which is expressed to
+the computer through another input.
+F I G U R E

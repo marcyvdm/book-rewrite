@@ -1,0 +1,27 @@
+{
+  "extraction_metadata": {
+    "source_book": "extracted-content/unknown-title-extracted.json",
+    "extraction_date": "2025-08-26 21:31:14",
+    "total_extraction_time": 0.04021716117858887,
+    "processing_speed_words_per_second": 3132.990900090703
+  },
+  "statistics": {
+    "chapters_found": 6,
+    "valid_chapters_extracted": 1,
+    "total_words_extracted": 126,
+    "skipped_reasons": {
+      "too_short": 0,
+      "invalid_title": 4,
+      "duplicate": 1
+    }
+  },
+  "chapters": [
+    {
+      "filename": "ch_01_The_Three_Building_Blocks_of_Game_Feel.txt",
+      "title": "The Three Building Blocks of Game Feel",
+      "verified_word_count": 124,
+      "gaming_terms_found": 3,
+      "quality_score": 4.24
+    }
+  ]
+}

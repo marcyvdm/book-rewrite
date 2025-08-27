@@ -20,14 +20,6 @@ export default function LibraryView() {
 
   useEffect(() => {
     loadAllBooks();
-    
-    // Load Game Feel book for demo
-    import('../../utils/loadProcessedBook').then(module => {
-      module.loadGameFeelBook().then(() => {
-        // Reload books after adding Game Feel
-        loadAllBooks();
-      }).catch(console.error);
-    }).catch(console.error);
   }, [loadAllBooks]);
 
   // Filter books based on search and category

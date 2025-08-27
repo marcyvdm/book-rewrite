@@ -12,7 +12,8 @@
       "Bash(source:*)",
       "Bash(grep:*)",
       "Bash(npm run dev:*)",
-      "WebFetch(domain:docs.anthropic.com)"
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(python:*)"
     ],
     "deny": []
   }
