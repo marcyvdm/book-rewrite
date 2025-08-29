@@ -1,0 +1,20 @@
+{
+  "id": "img_p050_01",
+  "page": 50,
+  "description": "Image 1 on page 50",
+  "caption": null,
+  "position": {
+    "x": 0,
+    "y": 0,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 1182,
+    "height": 966
+  },
+  "format": "png",
+  "size_bytes": 16373,
+  "chapter": "2. Game Feel and Human Perception",
+  "chapter_page_range": "35-60"
+}

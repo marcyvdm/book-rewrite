@@ -1,0 +1,20 @@
+{
+  "id": "img_p303_01",
+  "page": 303,
+  "description": "Image 1 on page 303",
+  "caption": null,
+  "position": {
+    "x": 0,
+    "y": 0,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 433,
+    "height": 496
+  },
+  "format": "png",
+  "size_bytes": 65516,
+  "chapter": "12. Asteroids",
+  "chapter_page_range": "187-376"
+}

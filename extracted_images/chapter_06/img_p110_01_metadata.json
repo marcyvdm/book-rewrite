@@ -1,0 +1,20 @@
+{
+  "id": "img_p110_01",
+  "page": 110,
+  "description": "Image 1 on page 110",
+  "caption": null,
+  "position": {
+    "x": 0,
+    "y": 0,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 827,
+    "height": 835
+  },
+  "format": "png",
+  "size_bytes": 12837,
+  "chapter": "6. Input Metrics",
+  "chapter_page_range": "101-118"
+}

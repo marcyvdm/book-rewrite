@@ -91,6 +91,31 @@ export interface ImageData {
   relevanceScore: number; // 1-10, how relevant to surrounding content
   preservationNotes: string;
   improvementSuggestions: string[];
+  
+  // Enhanced positioning data
+  pageNumber: number;
+  boundingBox: { x: number; y: number; width: number; height: number };
+  textPosition: 'inline' | 'above' | 'below' | 'side' | 'float' | 'isolated'; // How positioned relative to text
+  paragraphBeforeId?: string; // ID of paragraph immediately before
+  paragraphAfterId?: string; // ID of paragraph immediately after  
+  columnPosition: 'left' | 'right' | 'center' | 'span'; // Column positioning
+  flowContext: {
+    wrappingStyle: 'none' | 'left' | 'right' | 'both';
+    textDensityAround: number; // 0.0-1.0
+    createsColumnBreak: boolean;
+  };
+  referenceMentions: Array<{
+    text: string; // "See Figure 1", "chart above", etc.
+    type: 'explicit_reference' | 'implicit_reference';
+    paragraphId: string;
+    positionInText: number;
+    referenceNumber?: string;
+  }>;
+  spatialRelationships: {
+    paragraphsAbove: number;
+    paragraphsBelow: number;
+    paragraphsAlongside: number;
+  };
 }
 
 export interface ParagraphMapping {

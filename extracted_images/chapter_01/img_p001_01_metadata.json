@@ -1,0 +1,20 @@
+{
+  "id": "img_p001_01",
+  "page": 1,
+  "description": "Image 1 on page 1",
+  "caption": null,
+  "position": {
+    "x": 0,
+    "y": 0,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 989,
+    "height": 1349
+  },
+  "format": "png",
+  "size_bytes": 517381,
+  "chapter": "1. Defining Game Feel",
+  "chapter_page_range": "1-34"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "img_p064_01",
+  "page": 64,
+  "description": "Image 1 on page 64",
+  "caption": null,
+  "position": {
+    "x": 0,
+    "y": 0,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 1063,
+    "height": 459
+  },
+  "format": "png",
+  "size_bytes": 7183,
+  "chapter": "3. The Game Feel Model of Interactivity",
+  "chapter_page_range": "61-68"
+}

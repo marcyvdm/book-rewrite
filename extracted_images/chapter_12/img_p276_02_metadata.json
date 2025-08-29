@@ -1,0 +1,20 @@
+{
+  "id": "img_p276_02",
+  "page": 276,
+  "description": "Image 2 on page 276",
+  "caption": null,
+  "position": {
+    "x": 0,
+    "y": 100,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 1329,
+    "height": 702
+  },
+  "format": "png",
+  "size_bytes": 12808,
+  "chapter": "12. Asteroids",
+  "chapter_page_range": "187-376"
+}

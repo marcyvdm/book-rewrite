@@ -1,0 +1,20 @@
+{
+  "id": "img_p124_02",
+  "page": 124,
+  "description": "Image 2 on page 124",
+  "caption": null,
+  "position": {
+    "x": 0,
+    "y": 100,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 511,
+    "height": 357
+  },
+  "format": "png",
+  "size_bytes": 28514,
+  "chapter": "7. Response Metrics",
+  "chapter_page_range": "119-138"
+}

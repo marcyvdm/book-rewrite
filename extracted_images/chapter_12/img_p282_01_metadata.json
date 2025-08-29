@@ -1,0 +1,20 @@
+{
+  "id": "img_p282_01",
+  "page": 282,
+  "description": "Image 1 on page 282",
+  "caption": "the steering possible in the slide state, the various forms it can take and the feel",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 473,
+    "height": 251
+  },
+  "format": "png",
+  "size_bytes": 34010,
+  "chapter": "12. Asteroids",
+  "chapter_page_range": "187-376"
+}

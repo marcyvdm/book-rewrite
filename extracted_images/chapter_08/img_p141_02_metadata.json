@@ -1,0 +1,20 @@
+{
+  "id": "img_p141_02",
+  "page": 141,
+  "description": "Image 2 on page 141",
+  "caption": null,
+  "position": {
+    "x": 0,
+    "y": 100,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 532,
+    "height": 213
+  },
+  "format": "png",
+  "size_bytes": 21866,
+  "chapter": "8. Context Metrics",
+  "chapter_page_range": "139-150"
+}

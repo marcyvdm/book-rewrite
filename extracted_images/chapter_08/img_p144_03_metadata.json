@@ -1,0 +1,20 @@
+{
+  "id": "img_p144_03",
+  "page": 144,
+  "description": "Image 3 on page 144",
+  "caption": null,
+  "position": {
+    "x": 0,
+    "y": 200,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 559,
+    "height": 315
+  },
+  "format": "png",
+  "size_bytes": 27506,
+  "chapter": "8. Context Metrics",
+  "chapter_page_range": "139-150"
+}

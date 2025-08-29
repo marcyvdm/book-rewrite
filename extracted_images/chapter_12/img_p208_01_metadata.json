@@ -1,0 +1,20 @@
+{
+  "id": "img_p208_01",
+  "page": 208,
+  "description": "Image 1 on page 208",
+  "caption": "The incoming Boolean signals modulate parameters in the game in the following",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 750,
+    "height": 344
+  },
+  "format": "png",
+  "size_bytes": 37492,
+  "chapter": "12. Asteroids",
+  "chapter_page_range": "187-376"
+}

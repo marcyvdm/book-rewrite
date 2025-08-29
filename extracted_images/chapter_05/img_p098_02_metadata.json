@@ -1,0 +1,20 @@
+{
+  "id": "img_p098_02",
+  "page": 98,
+  "description": "Image 2 on page 98",
+  "caption": null,
+  "position": {
+    "x": 0,
+    "y": 100,
+    "width": 100,
+    "height": 100
+  },
+  "actual_size": {
+    "width": 473,
+    "height": 533
+  },
+  "format": "png",
+  "size_bytes": 48857,
+  "chapter": "5. Beyond Intuition: Metrics for Game Feel",
+  "chapter_page_range": "81-100"
+}
