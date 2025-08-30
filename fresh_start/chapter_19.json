@@ -1,0 +1,254 @@
+{
+  "chapter_title": "Games I Want to Make",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "In his book Chris Crawford on Game Design, Chris Crawford provides a section entitled “Games I’d Like to Make.” I found that to be the most interesting and inspiring part of the entire book, because it shows the principles he espouses throughout the book in action. Here is this problem of creativity, he says, here is an approach to solving it and here are some of my stabs at applying this approach. As I’ve been writing this book, examining game feel, a number of ideas for games have occurred to me. I’d like to share them, for better or worse, in the hope that someone someday may make them or that they may give rise to an interesting idea. One of them, Tune, I’ve already built a prototype of, and you can find it at http://www.steveswink.com/tune/."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1,000 Marios"
+    },
+    {
+      "type": "paragraph",
+      "text": "In examining games with respect to the number of avatars that the player controls, something occurred to me: why so few? Why does the player control only one object at a time? I began brainstorming examples of games that controlled more than the usual two or three avatars and, interestingly, didn’t come up with much. I’m talking about direct control, correction cycle control, real physical game feel kind of control. I realize that there are plenty of real-time strategy games where the player controls lots of little units indirectly. I’m talking about control at the responsive, kinesthetic level."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you look for games where the player controls more than the staple character or a camera there just isn’t much out there. A few obscure mini-games, perhaps, and some awesome but abridged indie experiments like Kyle Gabler’s The Swarm and Student Showcase finalist Empyreal Nocturne. Nothing large in scope or budget, though. Perhaps complexity is the reason: Fusion Frenzy for the Xbox featured a mini-game where the player controlled a character with one thumbstick and a bomb with the other but it was gallingly, frustratingly difficult. I think this is because"
+    },
+    {
+      "type": "paragraph",
+      "text": "the designers of that mini-game were asking the wrong questions, though. They seemed to be asking, “How many different ways can we have the players attack one another?” The idea of controlling a bomb and a character separately was just one experiment among many and if it was hard to control, so be it. We’re not hanging the whole thing on this one control scheme. Players will choose the games they like and ignore the rest anyway. On to the next idea!"
+    },
+    {
+      "type": "paragraph",
+      "text": "I think a better question is: what would controlling 1,000 Marios simultaneously feel like? And what kind of game could you make from that? Notice that this is more bottom-up than top-down. Instead of trying to impose the constraints of a mini-game from the top down—short duration, multiple players, about killing one another and so on—we’re simply asking what it would feel like to control all these little guys at the same time. If you had direct, kinesthetic, good feeling control more than 10, 100 or even 1,000 little Mario-like characters in a typical platforming level, what would that feel like? I bet it would feel like controlling a fluid. A liquid made of plumbers, if you will."
+    },
+    {
+      "type": "paragraph",
+      "text": "It’s worth prototyping, I think, to find out what kind of gameplay would emerge. Only actually making it and playing with it will yield that result, but I suspect there could be a lot of interesting and very different challenges there. Getting all of the characters to the end of the level unscathed seems like an obvious one. Or what if it were a puzzle game where the objective was to kill all the little Marios? Pits would fill in with Mario corpses, pipes would become clogged and enemies would be overwhelmed. “How can I dispose of all these Marios?!” the player would ask. Seems worth exploring, no?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition, it’s interesting to me that control over objects in a game always seems to be either on or off. It’s a forgone conclusion that what the player controls can’t change, or that if it does change, it must be a one-for-one swap. What if it changed fluidly and organically, or if it could tolerate half tones? For example, what if in the 1,000 Mario prototype there was also a cursor avatar, driven by the mouse. As a visualization, it would be a circle, extending outward from the center of the cursor. Things at the very center would be controlled 100 per cent by the player. As the Marios were farther from the center, the amount of influence exerted by the player’s controls would fall off (Figure 18.1)."
+    },
+    {
+      "type": "paragraph",
+      "text": "And why stop here? What would it be like to control 100 Asteroids ships, or 1,000 cars in Gran Turismo simultaneously? Or what if you controlled 100 Marios and 100 Asteroids ships at the same time? Breaking free of the notion of one-avatar control seems to yield a wealth of possibilities."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a couple games that challenge the notion of one-avatar control in their own fascinating ways, check out Farbs’ ROM CHECK FAIL (Figure 18.2) and Gamelab’s Arcadia. In ROM CHECK FAIL, the avatar is constantly transforming, becoming a new, recognizable avatar from a classic game every so often. One moment you might be Link from The Legend of Zelda and the next you might be the ship from Defender or the avatar from Space Invaders. The context and rules change as well, with enemies and environments from various games randomly juxtaposed. I love"
+    },
+    {
+      "type": "image",
+      "src": "332a.png",
+      "caption": "FIGURE 18.1 Controlling a thousand Marios would feel weird, possibly awesome."
+    },
+    {
+      "type": "image",
+      "src": "332b.png",
+      "caption": "FIGURE18.2 ROM CHECK FAIL by Farbs."
+    },
+    {
+      "type": "image",
+      "src": "333.png",
+      "caption": "FIGURE 18.3 Arcadia by Gamelab."
+    },
+    {
+      "type": "paragraph",
+      "text": "how this game constantly changes the meaning of relationships between the movement of the avatar, the spatial context and the rules that govern it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Arcadia (Figure 18.3) tasks the player with controlling four super simple games (such as a platformer and a driving game) at once using a mouse cursor. The meaning of the avatar changes as the cursor moves into each quadrant, seamlessly changing what the input is mapped to. By moving between each game, the player can effectively—if spastically—control four separate little avatars with one input."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window on the World"
+    },
+    {
+      "type": "paragraph",
+      "text": "Originally espoused by one of my students, Orion Burcham, this is a wonderful idea about the potential for interplay between the tactile world of a game and the real, physical world around us. It works like this: you take a handheld device, such as a Nintendo DS or Sony PSP, and attach to it a device with highly sensitive accelerometers that recognize subtle changes in both position and rotation. On the screen appears a first-person view of a game world. As you move the handheld device around, the view on the screen changes at the same rate, making it appear as though it’s a view, a portal into another world. (You can see his proof-of-concept video at http://www.youtube.com/watch?v=scmpg8AfOzE.)"
+    },
+    {
+      "type": "paragraph",
+      "text": "To play the game, the player would have to stand up, hold the device aloft and walk around. Walking forward would move the avatar in the game world forward at the same rate, and rotating the thing would rotate the avatar. The key is in a"
+    },
+    {
+      "type": "paragraph",
+      "text": "one-to-one relationship between the physical movement of the handheld and the apparent movement of the in-game avatar, which ultimately boils down to a (nontrivial) technological problem."
+    },
+    {
+      "type": "paragraph",
+      "text": "I’m reminded of a piece I saw at The San Francisco Museum of Modern Art many years ago by video artist Janet Cardiff. You traded your credit card for a handheld video camera with a built-in digital screen and were then ushered over to a particular bench and told to sit down, put on your headphones, press play on the video camera and be careful. The cryptic addendum to the instructions read “follow the motion of the camera.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "After pressing play, a video appeared on the screen, roughly from the perspective of the bench. By holding the camera up, you could match the onscreen image to your current surroundings in the museum. And then, it started to move, up from the bench, across the foyer and up the stairs to the second level of the museum. I need hardly say that one felt compelled to follow, to keep the view on the screen aligned with reality. The experience was unlike anything I’d ever felt before. Very quickly, I lost track of who was real and who was in the video. Many times I almost ran into a real person in front of me, and sidestepped to avoid a person who was only in the video. The video led a winding trail up and out into the stairwell. The blurring between my reality and that of the video was so striking that I can still recall the exact path of the video nine years later. It was awesome and unlike anything I’ve experienced before or since."
+    },
+    {
+      "type": "paragraph",
+      "text": "I think the potential for the Window on the World concept is similar. Such an interface could serve to make the ordinary extraordinary. If the line were blurred between real-world tactile experience and virtual tactile experience, the result could be quite compelling indeed. Virtual creatures and items could be hidden behind bus stops and mailboxes. You might find a power-up embedded in your couch and have to move the couch to reach it. This, I should think, would be awesome."
+    },
+    {
+      "type": "paragraph",
+      "text": "Games like Eye of Judgment for the Playstation 3 and the surprisingly (or not—heh) popular Eyetoy are beginning to explore the potential for inserting the virtual into the real. This has a great potential for creating a new frontier of game feel."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Spatial Relationships and Intimacy"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another interesting question that comes to mind when looking at all the different ways game feel is applied in the realm of game design is: why is it always about skill, challenge and mastery? I think we have, as an industry, a pernicious mental lock that prevents us from going to some interesting places. We have the ability to create a simulated sense of physical, tactile interaction, right? Haven’t we just spent an entire book talking about all the different ways we can and do sell the impression that our virtual things are interacting at the kinesthetic level of everyday life? So how come it’s always shooting accuracy, steering precision or other kinds of skilled manipulation? Why don’t we try to represent the tactile sensation of dipping your hand into a bag of beans or caressing someone’s neck?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Probably it’s because we need to grow up. In so doing, we might just unlock a vast new realm of game feel, one that corresponds to the breadth of human tactile experience instead of the tiny slice we address now."
+    },
+    {
+      "type": "paragraph",
+      "text": "For whatever reason, and the reasons are many and well lamented, our little industry is completely puerile when it comes to sex. We have big-bosomed vixens, babes with guns and cutie-pie anime girls: fantasies for teenage boys. To claim otherwise is intellectual dishonesty. Anyhow, what’s pertinent to our design challenge is the fact that the sex we have in the games we have now isn’t sexy."
+    },
+    {
+      "type": "paragraph",
+      "text": "For me, sexuality is much more about intimacy and sensuality. Pornography in the traditional sense—ramming it home, as it were—is pretty horrifying. Though (as my girlfriend points out) being “ravaged” has a certain fantasy appeal, one wouldn’t want to make a game where the focus was, ah, thrusty."
+    },
+    {
+      "type": "paragraph",
+      "text": "So, putting aside the possibility of the game being about actual intercourse, and limiting ourselves to a single player experience (the role of virtual chat rooms with avatars who engage in animated sex being well covered), we’re left making a game about intimacy. What, then, are the mechanics of personal intimacy?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Proximity is a necessity, to be sure. It’s interesting, though, that it is possible to be intimate without actual physical contact. The simple act of moving into another’s personal space immediately heightens physical intimacy. As long the person is not a stranger or unwelcome, simply being close can be intimate."
+    },
+    {
+      "type": "paragraph",
+      "text": "For instance, there is a game in which a couple may try to see how close they can get to each other without actually touching. Another game involves running hands along the contours of a person’s body without touching him or her. These techniques often heighten sexual arousal. When a person enters someone else’s personal space for the purpose of being intimate, it is physical intimacy, regardless of the lack of actual physical contact.¹"
+    },
+    {
+      "type": "footnote",
+      "text": "¹http://europecasinoguide.com/index.php?option=com_datingguide&page=Physical_intimacy.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "Recently, I went to see “The Departed,” which I enjoyed. There is a sex scene in the film which struck me as very sensual, very sexy and which included only some kissing and mild undressing. In fact, the scene caused a friend of mine to, involuntarily, shout out “Holy guacamole!” in the middle of the theater, to general hilarity. The moment at which the scene pivots from uncertainty to extreme sexiness is a moment of physical intimacy without any touching. Vera Farmiga’s character is sitting on her kitchen counter and Leonardo DiCaprio is face to face with her. Great moment. This is not to say that touching should be omitted from consideration, I’m merely pointing out that the proximity of two people seems to be a prerequisite to intimacy."
+    },
+    {
+      "type": "paragraph",
+      "text": "So that’s a possible direction, some kind of interpersonal simulator, where you play as a guy or girl trying to become intimate with another person by making advances in the right order or with the right finesse, with interesting control mechanics related to eye contact, body position and language, proximity and picking up on subtle cues. Sounds pretty boring, though, and similar to the territory Façade and others are aiming for. Also—and this may constitute a significant heresy—I think"
+    },
+    {
+      "type": "paragraph",
+      "text": "trying to translate film or literature into interactive form is, as an approach, entirely too complicated. The scene’s success depends almost entirely on context: the attachment to those characters built across an hour of excellent film and the details of this particular encounter (it’s raining and Leo was apparently without a jacket, Vera’s moving out of her apartment so the lighting is diffuse and so on …) Even when approached with powerful intelligence and determination—that kind of procedural context generation being dutifully attacked by the Interactive Storytelling Battalion who are bivouacked in what seems to be a relatively strong position—I think our goal of making a sensual game could be much, much simpler."
+    },
+    {
+      "type": "paragraph",
+      "text": "In fact, my solution to the problem of designing a game about intimacy hinges on simple touch. Before I go there, though, I think it’s also important to note that smell (candles or incense), sight (candles or low lighting) and sound (Barry White or whatever) are also traditionally integral to “setting the mood” for intimacy and sensual enjoyment. We’re not going to get smell, but we can certainly hit sight and sound. I think a great treatment would be something like Peter Miller’s “Eros Ex Math” series. The goal would be to leverage the brain’s imaginative capacities, offloading a goodly helping of sexy interpretation to the player’s mind. So, we’ve got our look. For sound, simple breathing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now to answer the heroic question posed of Harvey Smith by David Jaffee—that’s all well and good… but how do we make a game of it?"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The Touch"
+    },
+    {
+      "type": "paragraph",
+      "text": "One mechanic of sensual pleasure which I’ve always found fascinating is touch. Specifically, extremely light fingertip-to-skin touching. I find, without getting too ribald, that touching a woman’s skin as lightly as possible while varying the speed and pattern of the contact of each fingertip (so that there is no discernable pattern) is extremely effective in providing sensual pleasure. As it turns out, there’s an interesting scientific explanation having to do with the way the somatosensory system interprets input over time—if it’s in a straight line the neurons are able to predict and anticipate the stimulus and are prepared for it. If there’s no pattern, it’s much more exciting and stimulating. This is why it’s difficult, if not impossible, to tickle yourself."
+    },
+    {
+      "type": "paragraph",
+      "text": "The game is very simple, requiring the player to touch the undulating Miller forms as lightly as possible without breaking contact, without stopping and without a discernable pattern. Shallow breathing in the background quickens in pace to indicate system state, getting faster as you succeed, with an advancing round structure for pacing (complete one round, move on to the next). As an area is touched, it lights up, a gradient glow expanding from the point of contact. Touching the same area over and over again yields diminishing returns, with variations in surface and movement speed providing additional difficulty."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two control implementations that come to mind, one of which requires some non-standard input device configurations. The non-standard configuration"
+    },
+    {
+      "type": "paragraph",
+      "text": "would be wearing the P5 Glove (degree of finger curl to indicate the strength of the touch) while moving the mouse with the same hand (to indicate position)."
+    },
+    {
+      "type": "paragraph",
+      "text": "I’d simulate the skin as a series of spring hulls, each with slightly more stiffness than the last, to create a sort of layer cake effect, and then test to see whether and where each layer was depressed, touching the layer below as a gauge of pressure."
+    },
+    {
+      "type": "paragraph",
+      "text": "A keyboard and mouse version of this would separate the touching pressure from the pattern of movement. The touch pressure would be a separate, smaller picture-in-picture window where the player would use the mouse to keep the appropriate (light) pressure on the skin, which would scroll right to left to increase difficulty. Meanwhile, the player would have to press keyboard buttons with the other hand to indicate the area to be stimulated. An interesting idea I have here is that of a keyboard “mashing” scheme, where instead of four buttons indicating directions to steer in, the whole left side of the keyboard is active, from the ~ key in the upper left to the B key in the lower right. Any key within this range is a valid press, but to succeed you must press keys out of vertical or horizontal order and, again, hitting the same area while it’s still illuminated produces diminishing returns."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Invisible Avatars"
+    },
+    {
+      "type": "paragraph",
+      "text": "In separating polish effects from simulated interactions, an interesting question occurred to me. Would it be possible to create an impression of physicality using only polish effects? Could you create a game with good feel that featured an invisible avatar. I pondered this for a while, and did up a couple small tests. I found it felt best if the camera still tracked on the avatar and so gave a sense that it was running into things, represented by the view stopping. At the Experimental Gameplay Sessions at the Game Developer’s Conference this year, I was delighted to see that a gent named Matthew Korba was thinking along the same lines. He created a game called Wrath of Transparentor about an invisible monster rampaging through various environments. So, yes, it is possible to create feel without simulation, and yes, it can feel good. This seems like a bit of a “no duh” given the great feel of certain first-person shooters (where the avatar is never seen) but I’d love to see this idea explored further."
+    },
+    {
+      "type": "paragraph",
+      "text": "What about a game where a complete simulation was running but the only visualization was the polish effects, the interactions between objects? I’m picturing a world that’s completely white, but that enables players to paint on surfaces whenever their avatar comes into contact with them. The game would be about building an image of the world by exploring it tactilely."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tune"
+    },
+    {
+      "type": "paragraph",
+      "text": "My favorite part of creating a game is tuning a mechanic’s feel. I think that’s just about the best thing in the world, apart from scoring a wicked breakaway goal and"
+    },
+    {
+      "type": "image",
+      "src": "338.png",
+      "caption": "FIGURE 18.4 Tune—a game about game tuning."
+    },
+    {
+      "type": "paragraph",
+      "text": "eating my weight in naan bread. So I thought, hey, would it be possible to make a game about game tuning? Would it be possible to give the experience of tuning a mechanic to feel just right to other people, people who don’t care to program their own game?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tune (Figure 18.4) is a game about game design, about tuning game mechanics. Besides controlling the game in the typical way, the player must constantly change the balance of parameters against one another. Depending on the current goal, different tunings of the mechanic will be more or less effective. The successful players will be constantly experimenting with the various parameters, looking for the tuning that best equips them to complete the current goal. Each goal brings a new challenge, and may require a different tuning."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tune began life as an assignment for my gameplay and game design students at the Art Institute of Phoenix. One of the goals of my class is to give students a taste of game design in a very real, practical way. This means, among other things, taking a series of abstract numbers and balancing them against each other—tuning them—to achieve a specific, fun feel. In lieu of having students actually program a game (the major at AIPX is “Game Art and Design,” but the focus is primarily on art), I created a simple physics-based jumping mechanic and exposed a few of the most relevant parameters as simple text entry fields (Figure 18.5). I then told the students simply, “Here is a mechanic; make it fun,” and turned them loose."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try it out yourself: http://www.steveswink.com/Jumper/Info_Jumper_03.htm."
+    },
+    {
+      "type": "image",
+      "src": "339.png",
+      "caption": "FIGURE 18.5 The original Jumper Mechanic Tuning assignment from my class at the Art Institute of Phoenix."
+    },
+    {
+      "type": "paragraph",
+      "text": "The result was surprisingly fun. The assignment quickly became a favorite; I created more mechanics to tune and expanded on the idea. As I did, it occurred to me that I could provide the same kind of structure and experience—me standing behind the student saying, “Here is a mechanic, make it fun”—within the game system. This was the genesis of Tune."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "All of these ideas are, of course, incomplete. If one of them strikes your fancy, please make it. Ideas are a multiplier of execution; they have no inherent value unless you make something of them. I’d love to see a game where you play as a shadow, or a game about echolocation, or a game about maintaining eye contact. Comparatively little has been done with the amazing medium of game feel and its malleable active perception. Let’s change that, eh?"
+    }
+  ]
+}

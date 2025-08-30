@@ -1,0 +1,322 @@
+{
+  "chapter_title": "Mechanics of Game Feel",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "To wrap up our section on defining game feel, let’s apply all the ideas from Chapters 1, 2 and 3 to some specific games. To do this, we’ll return to our three-part definition of game feel: real-time control, simulated space and polish. The overall question to be answered is where a game fits on the diagram (Figure 4.1)."
+    },
+    {
+      "type": "paragraph",
+      "text": "This breaks down, once again, into three questions:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Does it have real-time control?",
+        "Does it have simulated space?",
+        "Does it have polish?"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "88.png",
+      "caption": "FIGURE 4.1 Types of game feel: we want to put every game somewhere on the diagram."
+    },
+    {
+      "type": "paragraph",
+      "text": "From our model, we have measurable thresholds for real-time control to test against:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "10 frames per second. The images are displayed at a rate faster than one cycle of the human perceptual processor, which will be 50 to 200ms. Therefore, images displayed at a rate at or above a rate of 10 frames per second will appear fused into motion, and 20 frames per second or higher is necessary for a smooth motion. In the case of a game, this is not a series of linear frames played back in sequence but a series of states generated in response to input.",
+        "Response time of 100ms or less. The game’s response to input happens within one perceptual cycle (50 to 200ms) of the player’s action, fusing into a sense of causality and instantaneous response.",
+        "A continuous feedback loop. The game provides a continuous, unbroken flow of input and instant response, enabling ongoing correction cycles to occur."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But these metrics are difficult to apply to an entire game’s interactivity all at once. To answer the question of real-time control more easily, it’s useful to break down a game’s interactions into individual mechanics. Then we can check each mechanic against the various thresholds from our model."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Mechanics: Game Feel Atoms"
+    },
+    {
+      "type": "paragraph",
+      "text": "For our purposes, a “game mechanic” is one complete loop of interaction, such as a single mouse twitch, button press or foot stomp that can be traced through the game’s programmed response and back to the player over and over again. Another way to think about mechanics is as verbs. What are the player’s abilities in the game? What can the player do? By this definition, examples of individual mechanics include:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pressing the A-button to jump in Super Mario Brothers",
+        "Steering Mario left and right using the D-Pad in Super Mario Brothers",
+        "Strumming a note in Guitar Hero",
+        "Using the mouse to steer left and right in flow",
+        "Boosting forward by clicking the mouse in flow",
+        "Drag-selecting a group of units in Starcraft",
+        "Clicking to send a group of selected units to a new location",
+        "Pressing a button at the right moment to advance to the next sequence in Dragon’s Lair",
+        "Clicking on a button to select the next technology to research in Civilization 4"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In a typical game, many different mechanics are active at the same time and often overlap and combine. Running and jumping in Super Mario Brothers are separate"
+    },
+    {
+      "type": "paragraph",
+      "text": "mechanics by our definition. But they combine to become a whole greater than the sum of their parts."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mechanics can also change over the course of a game. For example, gaining a skill point in Tony Hawk’s Underground makes your skater move forward faster. Mechanics can also come and go over the course of a game. In Half-Life, the player finds new weapons gradually, but then loses them at the halfway point of the game. Super Metroid gives the player a bunch of mechanics up front, then takes them away a short time later, forcing the player to start from scratch."
+    },
+    {
+      "type": "paragraph",
+      "text": "The question is whether or not each individual mechanic meets the criteria of real-time control and whether the system as a whole sustains real-time control."
+    },
+    {
+      "type": "paragraph",
+      "text": "Knowing whether a game has real-time control is most of the challenge. From there, it’s just a matter of asking whether the game has literal simulated space, if the player perceives that space actively, and if the polish effects are used to emphasize physical interactions in that space."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Applying the Criteria"
+    },
+    {
+      "type": "paragraph",
+      "text": "To put our definition to the final test, we’ll apply it to four games: Street Fighter II, Prince of Persia, Guitar Hero and Kirby: Canvas Curse. Each game is on the fringes of our definition in its own way."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Street Fighter II"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are three primary types of mechanics in Street Fighter II: walking, attacking and jumping. The walking mechanic responds within 100ms when the joystick is moved left or right, and it allows a sustained correction cycle. Input is constantly accepted, the game responds within 100ms, and there is no lockout period. As soon as I perceive the result of my last action, I can adjust it with a new input. The movement mechanic has real-time control."
+    },
+    {
+      "type": "paragraph",
+      "text": "The “attack” mechanics—when the player presses one of the six attack buttons—have interrupted continuity. Pressing a button plays back an animation, which changes the shape of the avatar. The response time when the button is pressed is instantaneous, but then the player is locked out of further input until the animation is complete. For the “light” attacks, the duration is very short and will not interrupt the correction cycle of the walking mechanic. The heavy attacks can take almost one second to complete, however, disrupting the continuity of control. Either way, pressing a button to trigger an animation is not a continuous correction cycle. The attack mechanics do not have real-time control."
+    },
+    {
+      "type": "paragraph",
+      "text": "The jump mechanic adds upward force to the player when the joystick is pressed up. Once the jump has started, the player cannot alter the trajectory of the jump. This temporarily takes control away from the player, breaking the correction cycle of the movement mechanic. After leaving the ground, however, the player can still trigger attacks. This mitigates the fact that the player’s correction cycle is temporarily"
+    },
+    {
+      "type": "image",
+      "src": "91.png",
+      "caption": "FIGURE 4.2 Street Fighter II has game feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "broken, as does the fact that the player gets to choose when to start the jump. The player feels they have real-time control over everything. The whole system, combining the movement, jumping and attack mechanics, has real-time control."
+    },
+    {
+      "type": "paragraph",
+      "text": "Street Fighter II also has simulated space. The characters collide with the ground, the edge of the screen and with each other. These interactions are perceived actively by the player, through the correction cycle of the movement mechanic."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, the polish effects in Street Fighter II—the sounds, particle effects and animations—emphasize the interactions between objects in the game world."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Prince of Persia"
+    },
+    {
+      "type": "paragraph",
+      "text": "The original Prince of Persia (see Figure 4.3) is an interesting edge case because of the disconnect between animation and control. The character moves fluidly, but the feel of control is stilted and uneven. A casual observer might assume that because the movement of the character is smooth and even, that the control must also be. This is not the case."
+    },
+    {
+      "type": "paragraph",
+      "text": "The individual mechanics in Prince of Persia are:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Run",
+        "Jump vertically",
+        "Jump horizontally"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "92.png",
+      "caption": "FIGURE 4.3 In Prince of Persia, animation reigns supreme."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Change direction",
+        "Lower (down a ledge)",
+        "Draw sword",
+        "Sheathe sword",
+        "Shuffle",
+        "Parry",
+        "Thrust",
+        "Crouch",
+        "Crouch-hop",
+        "Walk",
+        "Grab ledge",
+        "Crouch-slide"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Prince of Persia consists entirely of mechanics like the attack mechanic in Street Fighter II. The player presses a single button, and a single animation is played back. The response time is less than 100ms, but further input is locked out until the animation is over, which often breaks continuity. Examining individual movement mechanics by this criteria, we can see which ones have real-time control and which don’t. For example, going from Stand to Run (Figure 4.4) fails one of our threshold tests:"
+    },
+    {
+      "type": "paragraph",
+      "text": "It takes almost 900ms for the prince to go from standing still to a full speed run. In between, new input from the player is meaningless. There is a branch point of sorts; having reached the end of the “standing to run” animation, if the directional"
+    },
+    {
+      "type": "image",
+      "src": "93.png",
+      "caption": "FIGURE 4.4 Sixteen frames at 30 fps = 0.53 seconds to complete the animation.\nFIGURE 4.5 The hopping animation takes only 150 ms to complete, so it feels almost real time."
+    },
+    {
+      "type": "paragraph",
+      "text": "button is still held down, the prince goes into his full speed run cycle. If the button is not held down, the “run to standing” animation is played back, taking another few hundred milliseconds. This is not an unbroken correction cycle, so this particular mechanic by itself does not have real-time control."
+    },
+    {
+      "type": "paragraph",
+      "text": "Only the crouching mechanic, comprised of the fewest number frames, has real-time control. Because the user is locked out for a very short amount of time, the action not only feels instantaneous in response, but it feels as though it’s ready to accept new input as soon as the player is ready to offer it. It’s no wonder, then, that this is the mechanic of choice to use when precision timing is necessary. When navigating through a room full of gnashing blades, you want to use the crouch-hop mechanic (Figure 4.5). It feels like the most precise and responsive expression of your input and enables the smallest increments of movement spatially."
+    },
+    {
+      "type": "paragraph",
+      "text": "Out of all the mechanics of Prince of Persia, only one passes our threshold tests for real-time control. But the animation is fluid and appealing and covers up the lack of control to some degree. The player rarely has a sustained correction cycle and so rarely experiences true game feel. The fact that there are interactive branch points in the animations helps to some degree. In this case, unpredictability actually works in the game’s favor. I don’t know exactly when the jump is going to take place, so I instinctively just hold the up button when I’m close to where I want to jump. This makes me feel as though the system is listening to my input more often than it is."
+    },
+    {
+      "type": "image",
+      "src": "94.png",
+      "caption": "FIGURE 4.6 Prince of Persia has game feel, but it’s pretty stilted."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is simulated space in Prince of Persia; animations can be interrupted when the character walks far enough off a ledge, and he can bump into walls. The player experiences these directly and actively, by pushing the character into them. The only polish effects that emphasize these interactions are the animations, which have a good sense of weight and presence against the floor."
+    },
+    {
+      "type": "paragraph",
+      "text": "So Prince of Persia has game feel, but just barely. The player is able to cobble together a correction cycle by imagining control when there is none and by using the mechanics with the lowest number of frames whenever possible."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Guitar Hero"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ahh, Guitar Hero. What a lovely game. It’s rare to see technology infused with such a sneer, such sense of unabashed glee. In the Game Developer post mortem of the game, producers Greg LoPiccolo and Daniel Sussman name the one litmus test for every feature and piece of content in the game: “Does it rock?” The results of this simple vision speak for themselves. But does Guitar Hero have game feel as we’ve defined it? Again, let’s examine the individual mechanics and the system as a whole."
+    },
+    {
+      "type": "paragraph",
+      "text": "In Guitar Hero, there are five things you can do (mechanics):"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Strum",
+        "Whammy",
+        "Hammer On",
+        "Hammer Off",
+        "Tilt"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The strum is the game’s core mechanic (Figure 4.7). Colored notes scroll down from the top of the screen. You hold down one or more corresponding buttons on the neck of the plastic guitar and pull the strum trigger up or down. If you strum the right combination of notes at the right time (when the note’s position is close enough to crossing the line) the game records the note as hit. More notes hit means a better score, and the game tracks streaks of hit notes. Miss too many notes and you fail the song."
+    },
+    {
+      "type": "paragraph",
+      "text": "Impression of motion, check. The notes seem to move down the screen, from top to bottom, and individual frames are fused into an impression of moving objects. Instantaneous response, check. The response time to input is within one perceptual processor cycle (less than 100ms) so the response from the system seems instantaneous with a strum. But there is no continuity. Instead of locking the player out as in Prince of Persia, it cuts the player off. The whole loop of input and response happens in less than 100ms, but once it’s done it’s done. There is no continuous flow of input and response, no correction cycle."
+    },
+    {
+      "type": "image",
+      "src": "95.png",
+      "caption": "FIGURE 4.7 The “strum” mechanic in Guitar Hero."
+    },
+    {
+      "type": "paragraph",
+      "text": "The whammy bar mechanic, however, allows a constant stream of both input and response. The response feels instantaneous and continuity is maintained. The whammy mechanic has the potential to be an ongoing correction cycle. But there"
+    },
+    {
+      "type": "image",
+      "src": "96.png",
+      "caption": "FIGURE 4.8 Bending the waveforms with the whammy mechanic is real-time control, but it lacks spatial simulation.\nFIGURE 4.9 Guitar Hero has polish and (occasional) real-time control, but no simulated space."
+    },
+    {
+      "type": "paragraph",
+      "text": "is no simulated space. The waveform ripples and notes bend as the whammy bar is manipulated, but the size of the ripples has no meaning. Bending notes with the whammy mechanic does not enable the player to actively perceive a simulated space because there is no simulated space around it to interact with (Figure 4.8)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Guitar Hero is a relatively simple game. Strumming to hit notes in increasingly difficult patterns that are synched to songs is the vast majority of the game. Even considered as a whole system, however, it does not have the property we’ve defined as game feel. The notes may fly fast and furious, and you can wail on the whammy and tilt to use your star power, but there is no unbroken flow of action, perception and contemplation. There is the impression of motion, instantaneous response, but there no sustained correction cycle and no spatial simulation (Figure 4.9)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Kirby: Canvas Curse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kirby: Canvas Curse (Figure 4.10) takes a very simple idea and executes on it brilliantly, enabling the player to indirectly control Kirby’s movement by drawing. In Canvas Curse, you play as Kirby and as a disembodied paintbrush at the same time. There are three mechanics:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Drawing (paintbrush)",
+        "Tapping (on the avatar)",
+        "Holding (enemies)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Using the paintbrush mechanic, you draw lines on the screen, represented by flowing rainbows. If Kirby comes into contact with these lines he will follow their path in the direction they were drawn (see Figure 4.11)."
+    },
+    {
+      "type": "paragraph",
+      "text": "From the moment the player starts drawing the line, they’re running a correction cycle to get the line drawn in the shape and direction they want. The response is instantaneous, but this is not real-time control per our definition. In this case, the DS stylus and screen are functioning the same way a piece of paper and pencil do."
+    },
+    {
+      "type": "image",
+      "src": "97.png",
+      "caption": "FIGURE 4.10 The layout of Canvas Curse."
+    },
+    {
+      "type": "image",
+      "src": "98.png",
+      "caption": "FIGURE 4.11 As you draw the rainbow trail, Kirby will follow its path if he makes contact with any part of the trail.\nFIGURE 4.12 Canvas Curse has polish and simulated space, but no sustained real-time control."
+    },
+    {
+      "type": "paragraph",
+      "text": "The player is correcting the movement of his or her own hand in space rather than a virtual object in virtual space."
+    },
+    {
+      "type": "paragraph",
+      "text": "The other main mechanic is tapping. The player can tap Kirby directly with the stylus. This results in a state change and a speed boost. The spinning animation is accompanied by a burst of speed in the direction Kirby is currently facing. The response is instantaneous, but, as with Guitar Hero, the input is not sustained."
+    },
+    {
+      "type": "paragraph",
+      "text": "One tap equals one input. To express a new input, the player has to lift the stylus off the screen and tap again. This is not an ongoing correction cycle."
+    },
+    {
+      "type": "paragraph",
+      "text": "The ambiguity of Canvas Curse is in its simulation. Kirby moves around a simulated space, colliding with walls, enemies and other objects. Those interactions are emphasized with polish effects like sounds and particles. This is where things become fuzzy; Kirby interacts with simulated space in just the way it should to fall inside our definition of game feel. The world of Canvas is its own unique physical world. But the player does not experience the simulated space directly, perceiving it actively via Kirby’s “body” in virtual space. Instead, the player guides Kirby indirectly, observing the results of his interactions and building a model of the game world from those interactions. Kirby: Canvas Curse falls outside the definition of game feel (Figure 4.12)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Breaking down game feel into its component mechanics on a game-by-game basis enables us to better understand which games have game feel and which don’t, and why. Our definition is now complete: even games that are on the edge can be classified according to real-time control, simulated space and polish. Games that have these three properties have game feel. Games that don’t fall outside the scope of this book."
+    }
+  ]
+}

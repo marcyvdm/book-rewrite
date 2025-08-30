@@ -1,0 +1,378 @@
+{
+  "chapter_title": "Asteroids",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Chapters 12 through 16 feature in-depth examples that will provide recipes for the game feel of the games they describe. To develop these examples, we’ll apply the classifications we built in Chapters 6 through 11, breaking down well-known existing games into input, response, context, polish, metaphor and rules. The idea underlying these breakdowns is not simply to clone these games, though that’s certainly possible using this information. The idea is to better understand the hundreds of tiny implementation decisions that gave these games the feel they have. In many cases, these decisions seem counterintuitive—artificially changing gravity at the highest point of a jump, for example. All these little decisions and relationships together, though, are what make these games feel good."
+    },
+    {
+      "type": "paragraph",
+      "text": "The creators of these games did not follow a particular methodology. They noticed something that bothered them about the feel and tried different implementations until it felt better. Coming at it from a more structured place, we can look not only at the decisions they made inside their specific games, but make generalizations about why this worked the way it did and how it can be applied to all games. That’s the idea, anyway. We want to understand the principles underlying these decisions outside of the context of specific games."
+    },
+    {
+      "type": "paragraph",
+      "text": "With that in mind, we’re not interested in specific implementations in specific languages; you could achieve the same feel coding in Actionscript, C++ or Python. It really doesn’t matter. Also, throughout these chapters I will reference specific examples. I highly recommend you go to http://www.game-feel.com and download the examples, experiencing the difference in feel at various points throughout the example. These things are better felt than described. For each demo, the idea was to expose the important parameters, enabling you to feel differences in game tuning without having to program anything. I recommend going to http://www.game-feel.com/examples/ and downloading each applet so you can follow along. These things are best felt."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the start of every example section, I’ve provided a URL to a naked version of the system, with every parameter tuned to zero. Consider these an exercise in tuning. The pieces are all there; if you want a challenge, I suggest trying to recreate the feel of each game from this all-zero tuning."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Feel of Asteroids"
+    },
+    {
+      "type": "paragraph",
+      "text": "Asteroids redefined the meaning of “video game.” It was the iPod of its time, as synonymous with video games as Apple’s ubiquitous product is with digital music now. When the game was released in 1979, it sold more than 70,000 units, obliterating all previous sales records, including those set by Space Invaders the previous year. Space Invaders, itself a game so popular that it caused a national coin shortage in Japan, was left in the dust. Why was this? Why did Asteroids dominate? How could it handily overtake a game so overwhelmingly popular? The answer hinges on the game’s unique feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "Asteroids was, in essence, a rebalancing of the formula set down by the progenitor of all good-feeling games, Steve Russell’s Spacewar!. As such, it featured programmatically simulated inertia and discrete tracking of velocity, acceleration and position of the ship. Pressing the thrust button added force into the simulation, accelerating the ship forward in whatever direction it was currently facing. Turning the ship was a much simpler affair, overwriting the ship’s orientation to rotate it left or right."
+    },
+    {
+      "type": "paragraph",
+      "text": "The combination of this detailed simulation for position and the simple, direct rotation gave Asteroids both crisp precision and a flowing expressivity. It was as though the ship was always on the verge of being out of control, but it never actually was. The player’s job was to steer and tame it. This feel was not novel. There had been numerous attempts to bring the Spacewar! feel to arcades, including Cinematronic’s Space Wars and Atari’s own Computer Space. The insight of Lyle Rains and Ed Logg in designing Asteroids was to find just the right combination of rules and spatial context for the tuning of the ship’s movement. The spinning asteroids provided just the right context, dominating the screen space in a difficult but not oppressive way. They were just the right shape, size and speed for the motion of the ship, providing close shave after close shave and round after round of fluid, expressive excitement. The rules were simple, encouraged a very clear and particular set of skills and rewarded continued play."
+    },
+    {
+      "type": "paragraph",
+      "text": "By comparison, the feel of Space Invaders (Figure 12.1) was stiff and rigid. Its motion was limited to a small region at the bottom of the screen. Its left-right steering changed only the ship’s position, and did so rather slowly. It is an enjoyable game but in terms of feel, it does not compare to the rich flowing motion of the ship in Asteroids."
+    },
+    {
+      "type": "paragraph",
+      "text": "William Hunter, curator of the excellent video game history Web site thedoteaters.com writes, “I was never much of a Space Invaders fan. … But Asteroids, with its cool ship inertia and frighteningly close shaves between the rocks, is simply a masterpiece of design and programming. While the games that had inspired Asteroids, such as Spacewar! and Computer Space, had pioneered the concept of inertia in video games, the feeling of actual physics being played out in Logg’s creation is another big draw of the game.”¹"
+    },
+    {
+      "type": "footnote",
+      "text": "¹http://www.thedoteaters.com/p2_stage2.php"
+    },
+    {
+      "type": "image",
+      "src": "208.png",
+      "caption": "FIGURE 12.1 Compare the movement of the ships in Asteroids and Space Invaders."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are still games being made today that emulate the feel of Asteroids, such as Shred Nebula and Geometry Wars. The feel of Space Invaders, however, is all but gone from modern mechanic design."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Input"
+    },
+    {
+      "type": "paragraph",
+      "text": "Asteroids’ input space consists of five standard buttons (Figure 12.2). The buttons are far apart, making control a two-handed affair, though all five buttons can be pressed simultaneously. Though the possibility exists, there are no chorded moves in Asteroids."
+    },
+    {
+      "type": "paragraph",
+      "text": "Physically, the Asteroids cabinet is big and bulky, made out of wood. The surface in which the buttons are embedded is nice and smooth, made out of molded plastic; it feels good. The buttons themselves are big and springy and make a satisfying noise as they click down. When pressed, they become almost completely flush with the surface of the cabinet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each button has two states and sends the usual Boolean signals of ON, OFF and HELD."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Response"
+    },
+    {
+      "type": "paragraph",
+      "text": "The incoming Boolean signals modulate parameters in the game in the following ways:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Rotate Left/Right buttons rotate the ship along its axis clockwise and counterclockwise (Figure 12.3)."
+    },
+    {
+      "type": "image",
+      "src": "209.png",
+      "caption": "FIGURE 12.2 Five two-state buttons are the inputs for Asteroids.\nFIGURE 12.3 Attack, delay, sustain and release for the rotation in Asteroids. There is a very slight attack value."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Thrust button adds force along the local forward direction of the ship, limited by a maximum value. This progression is highly floaty, taking around three seconds to reach sustain and even longer to release (Figure 12.4)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Fire button launches a bullet along the local forward direction of the ship, limited by a timed delay. The bullet inherits the velocity of the ship. Only four bullets can be on screen at one time."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Hyper Space button sets the ship’s position to a new, random value."
+    },
+    {
+      "type": "image",
+      "src": "210.png",
+      "caption": "FIGURE 12.4 The ADSR envelope for thrust in Asteroids."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Simulation"
+    },
+    {
+      "type": "paragraph",
+      "text": "To create the feel of Asteroids, the ingredients are one ship avatar, two varieties of flying saucers, screen wrap and a healthy sprinkling of asteroids. Since the asteroids and alien spacecraft exist mostly to provide spatial context for the motion of the ship, we’ll hold off discussing their behaviors and motion for now and instead focus on the ship."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open example CH12-1 and try to recreate the feel of Asteroids. The necessary parameters are there, just zeroed out."
+    },
+    {
+      "type": "paragraph",
+      "text": "The ship avatar in Asteroids has two basic motions, accelerate and rotate (Figure 12.5). The rotational motion is crisp and precise while the acceleration is loose and sloppy. In both cases, the motion’s frame of reference is the ship itself, a “local” motion."
+    },
+    {
+      "type": "paragraph",
+      "text": "The most important relationship to the specific feel of Asteroids is the decoupling of rotation from thrust. This is achieved by storing separate velocity values for the ship and for the thrust that gets added to it. If these values are not separated and the thrust velocity overwrites the ship velocity directly, the feel is more like a squirrely remote-controlled car than a smooth, flowing spacecraft."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let’s build the feel up from the beginning. First, we need a ship that rotates. The rotation of the ship in Asteroids is simple. If one of the two rotate buttons is held down, the game adds a small value to the ship’s orientation in the corresponding direction, clockwise or counterclockwise. There’s no simulation in the code, no acceleration to speed up or dampening to slow down. If the button is held down, the ship rotates. If not, it doesn’t. However, there is a very slight Attack value applied to the input signals as they come in (Figure 12.6)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The ship does not go directly to full speed rotation from a standstill. There’s a short ramp-up in speed, an Attack, over about a third of a second. It’s subtle, but"
+    },
+    {
+      "type": "image",
+      "src": "211.png",
+      "caption": "FIGURE 12.5 Dimensions of movement for the ship in Asteroids.\nFIGURE 12.6 The attack takes only a quarter of a second, but its absence is noticeable."
+    },
+    {
+      "type": "paragraph",
+      "text": "without it, the rotation feels stiff and robotic. An interesting thing to note is that, perceptually, it’s just as though the ship had a very slight inertia that had to be overcome. From the player’s point of view, it seems as though the ship took that third of a second to ramp up to full rotation speed."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "To experience this subtle difference, open example CH12-2 and click on the “Raw Input” checkbox."
+    },
+    {
+      "type": "image",
+      "src": "212.png",
+      "caption": "FIGURE 12.7 The different values that drive the thruster movement of Asteroids changing over time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Next we want the ship to move forward in response to the Thrust button. This motion will be relative to the current heading of the ship, which causes the left and right rotation to control the direction of the ship. If the forward acceleration were relative to the camera or to some other object in the world, the ship would be stuck moving in one direction, which would not be much like Asteroids at all. Now, if we set the position of the ship the same way we’re setting the rotation, by overwriting it directly depending on whether or not the button is held down, the feel is stiff and inorganic. It’s crisp, precise and responsive, but moves so differently from any object encountered in everyday life that the motion feels jarring and unsatisfying."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "To experience this, click on the “Mode: Set Position” checkbox in example CH12-2."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is clearly not what we want. The first big thing that’s missing is static inertia. In Asteroids, the ship speeds up gradually to its maximum and continues moving at that speed indefinitely until another force acts on it. To get this sense of inertia, we’ll separate position from velocity and have the Thrust button modulate acceleration instead of modifying position directly. In each frame, the acceleration value is added to the velocity value, which then updates the position value based on how far the ship has moved (Figure 12.7)."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "To experience this, click on the “Mode: Translate” checkbox in example CH12-1."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is the feel of a frenetic racecar gripping the road with perfect sideways friction. It carves circles, without any hint of the desired Asteroids floatiness. The motion is interesting, even aesthetically pleasing, but it feels totally different from Asteroids because the rotation and thrust are now inextricably interconnected."
+    },
+    {
+      "type": "image",
+      "src": "213.png",
+      "caption": "FIGURE 12.8 The most important relationship to the feel of Asteroids is the ship velocity to the thrust velocity."
+    },
+    {
+      "type": "paragraph",
+      "text": "Turning changes heading instantly, every frame, while the lack of dampening causes the ship to go on forever without hope of slowing down. To arrive at the feel of Asteroids, the thrust vector must be separate from the ship’s velocity. When the thrust button is pressed, instead of setting the modified ship velocity directly, a new vector is created using the ship’s heading as its direction and the thrust speed as its magnitude. This is the thrust vector and when the thrust button is held, this vector is added to the ship’s current velocity (Figure 12.8)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Great success! This change, between adding and overwriting velocity vectors, makes all the difference. We now have a simulation that can be tuned to the precise feel of Asteroids."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "To experience this, click on the “Mode: Asteroids” checkbox in example CH12-2."
+    },
+    {
+      "type": "paragraph",
+      "text": "The final things to note are the limit on velocity, the screen wrapping effect and the very low dampening force."
+    },
+    {
+      "type": "paragraph",
+      "text": "An arbitrary maximum is applied to the ship’s velocity vector. This value may change the feel slightly if it is set very high or very low, but primarily it serves as a catchall to prevent the ship from having runaway speed. If you’re interested in changing this limit to see the difference, it’s the “Max Velocity” parameter."
+    },
+    {
+      "type": "paragraph",
+      "text": "The screen wrap effect is achieved by detecting whenever the ship’s position is greater than the size of the screen, then setting its position to the opposite side of the screen. For simplicity, this is done for the X and Y edges of the screen separately. The screen wrapping, like the Max Velocity parameter, is mostly a pragmatic measure. Without screen wrap in place, the motion of the ship avatar carries it off screen in a matter of seconds."
+    },
+    {
+      "type": "image",
+      "src": "214.png",
+      "caption": "FIGURE 12.9 The relationships that create the feel of Asteroids."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, there’s very little dampening on the motion of the ship. Once accelerated, it will keep going at speed for more than four seconds before coming to rest. This low friction produces a “spacey” feel. Though we Earthbound schlubs have never experienced frictionless motion, when we see it in a game it reads as space-like because of our exposure to news footage of astronauts and science fiction films such as “Apollo 13” and “2001: A Space Odyssey.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "The final set of variables we’re tweaking are these (their relationships are shown in Figure 12.9):"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Ship Rotation—How quickly the Y-axis orientation is changed clockwise or counterclockwise per frame",
+        "Ship Position—The position of the ship in absolute space, expressed as an X position and a Y position",
+        "Ship Velocity—The current direction and speed of the ship in absolute space",
+        "Thrust Speed—The current thrust value",
+        "Thrust Acceleration—The amount the thrust value will increase over time as the thrust button is held",
+        "Thrust Velocity—A vector representing the force that gets added to the ship velocity when the thrust button is held. It gets its direction from the ship’s current heading (which can be different from Ship Velocity) and its speed from the current Thrust Speed value",
+        "Max Thrust Speed—Limits Thrust Speed to a hardcoded maximum value. Speed can not be greater than this amount"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To summarize the simulation of Asteroids, when the game receives the signal for “thrust button held down,” a force is applied along the ship’s forward-facing axis. As the button is held, that force is increased according to the acceleration value,"
+    },
+    {
+      "type": "paragraph",
+      "text": "to a predetermined maximum. Whatever direction the ship happens to be facing, the thrust is applied in that direction as an additive vector.² It doesn’t simply overwrite the previous velocity vector of the ship, but rather gets added to it. This is crucial because it decouples the rotation of the ship from its thrust. This separation of thrust from rotation is the most important part of the feel of Asteroids. It enables the ship to rotate freely regardless of its current velocity. It gives the impression of frictionless motion as well as creates a slightly manic feeling of being constantly out of control. It’s only when the thrust button is held that the orientation of the ship affects its velocity, and even then it’s additive. The end result is highly floaty: when the player changes direction by rotating, it will take almost three seconds before the velocity of the ship is in line with its heading. In the case of the context and rules of Asteroids, this floatiness is both desirable and awesome."
+    },
+    {
+      "type": "footnote",
+      "text": "²A vector is a combination of speed and direction. For example, driving 40mph to the west would be a vector, where 40 mph is just a speed and west is just a direction."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Context"
+    },
+    {
+      "type": "paragraph",
+      "text": "The only thing that really needs to be said about the asteroids in Asteroids is that they provide just the right spatial context for the ship’s movement. The larger asteroids dominate a large amount of the screen, but they move very slowly and are easy to predict. Smaller asteroids take up less screen space but are much more difficult to dodge because they move much more quickly. In all cases, the ship moves faster than the asteroids themselves but because its motion is so wild and squirrely and because the constraint of screen wrapping applies equally to both the asteroids and the ship, every asteroid on the playfield feels unsettling. For me, it feels like being an experienced ice skater at a crowded public rink. When I go to a public skate, I can skate much more quickly than just about everyone on the ice because I played hockey as a kid. But I can’t predict when people are going to fall or turn or if they’re suddenly going to cut across me to head to the cocoa machine. As a result, I limit my speed and try to give everybody a wide berth. Even though I can stop and turn quickly, I don’t have enough control to stop myself from running over or into someone’s mom if she biffs it in front of me. Playing Asteroids feels a bit like an extremely crowded kids’ night at the local rink. Except for the shooting and the subdividing asteroids, of course."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of functionality, the asteroids are imparted with a random velocity at the beginning of the game. When shot, they break down into medium-sized asteroids and have an additional force applied to them in a random direction. They inherit the velocity of the larger asteroid that spawned them, though, so the likelihood of their speed going up rather than down is very high. The same thing happens when they split into the smallest asteroids. There’s no particular insight here; the asteroids, as they get broken down, further clutter the field and become more difficult"
+    },
+    {
+      "type": "paragraph",
+      "text": "to maneuver around. The ship moves very quickly and turns rapidly, but the turning never seems quick enough to truly react and get out of the way of an asteroid unless you’ve planned ahead."
+    },
+    {
+      "type": "paragraph",
+      "text": "The flying saucers are much more difficult to deal with than the asteroids, but they provide fundamentally the same function. They move in unpredictable patterns, going mostly horizontally but randomly moving up and down. And, of course, they shoot back. The closer you are to them, the more likely you are to be shot, so dealing with them feels a bit like poking a hornet’s nest with a long stick."
+    },
+    {
+      "type": "paragraph",
+      "text": "Generally speaking, the feel of Asteroids is as much defined by the things to be avoided as it is by the motion of the ship itself. The constant, inescapable danger of the asteroids is compounded by the wily flying saucers, and the screen wrap means that you can never escape. These dangers give meaning to the quick, slippery motions of the ship, defining every subtle twist and turn and making it feel almost more out of control than in control."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Polish"
+    },
+    {
+      "type": "paragraph",
+      "text": "Without a lot of processing power to spend, it would be perfectly reasonable for Asteroids to lack for polish effects of any kind. Instead, the Atari engineers rose to the challenge magnificently, with a masterful cohesion across visual and sound effects. Specifically, there is an excellent, consistent relationship between the visual size of objects and the sounds they make. For example, when a large asteroid is shot, it makes a deep, booming sound. A medium asteroid’s explosion sound is higher pitched, and smaller asteroids are higher still. Similarly, the large flying saucer makes a lower pitched noise than the small one. Being the smallest objects in play, bullets make the highest pitched sound of all. Of all the sound effects, the thruster firing is the lowest and most rumbling, conveying the sense that it is a comparatively powerful device."
+    },
+    {
+      "type": "paragraph",
+      "text": "Other subtle but effective polish effects include a spray of particles when an asteroid is destroyed, the ship disintegrating into its component parts when destroyed, and the subtle but effective flashing of the vector line to indicate rocket flame. Because of the limited processing power, each individual effect is drop-dead simple. They harmonize so well, though, that the net effect is a powerful sense of the physical properties of the ship, flying saucers and asteroids. This is a great example of how cohesive, self-consistent effects can be more effective than gaudy, splashy ones that are applied willy-nilly."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Metaphor"
+    },
+    {
+      "type": "paragraph",
+      "text": "As a metaphorical representation, Asteroids is very simple. There appears to be a space ship, but it’s more Flash Gordon than NASA. The asteroids and flying saucers reinforce this science fiction theme. The treatment is highly iconic. It’s not"
+    },
+    {
+      "type": "paragraph",
+      "text": "approaching any sort of realism but it’s also not venturing into the realm of the abstract. Each item—the ship, the rocket flames, the bullets, the asteroids—is iconic. They clearly are meant to represent a particular idea. Because the treatment applied to these objects is simple and consistent, there are few expectations being set up for the player. The theme is outer space, so the frictionless feel of the ship is certainly not clashing with the metaphorical representation, but neither is it inextricably linked with it. A car-like physics such as the one we experienced earlier might not seem so jarring because the visualization is so simple."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "The main rules affecting the feel of Asteroids are those related to collision and destruction of the ship. At the start of the game, the player is arbitrarily given three lives. Running into anything—bullet, asteroid or saucer—destroys the player instantly and removes one of those lives. This serves to make the ship seem exceedingly fragile and to make extra lives seem like the most valuable commodity in the game. This sense of value also hooks into the points system: because you gain an extra life for every 10,000 points you score, destroying asteroids feels gratifying and worthwhile. A large asteroid is worth 20 points, a medium is worth 50 and a small is 100 points. This creates a nice value scale for the destruction of asteroids and provides constant incentive to destroy them."
+    },
+    {
+      "type": "paragraph",
+      "text": "What’s really set up, though, is an awesome risk-reward relationship with the tiny flying saucers. Flying saucers are simultaneously the most dangerous and difficult to kill objects and the most valuable. For a large saucer, you get 200 points. For the small, extremely difficult to hit saucer, you get 1,000. So there’s a lovely risk/reward tradeoff that happens, because you get so many more points for destroying this tiny flying saucer than for blasting another set of mundane asteroids. When you see one come across, even though it is shooting back at you and is an unpredictable, tiny target, you focus on it and steer toward it because there’s the promise of a huge number of points, which moves you that much closer to getting an extra life."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course if you lose a life in the process of trying to shoot this damn thing, the point is moot. So there’s this circumspect little calculation that happens in your brain about risk and reward. Is it worth it, is it not? How many lives do I have? Do I have a lot? Do I need the points? How close am I to getting extra life? And so on. This sense of value, risk and reward affects feel by driving the player closer to the tiny saucer. In so doing, they learn a whole new set of skills and experience just how out of control the ship is relative to the saucer’s quick, precise motions and shots."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Asteroids was groundbreaking and hugely popular, in large measure because of its unique feel. Applying our taxonomy of game feel, it’s easy to see why."
+    },
+    {
+      "type": "paragraph",
+      "text": "The input device was satisfying, though it only used Boolean on-off buttons, and it mapped well to how things moved in the game action. It also required both hands and five fingers, ensuring the player was challenged (but not too much) and engaged."
+    },
+    {
+      "type": "paragraph",
+      "text": "The response mapping was clear, simple and easy to follow."
+    },
+    {
+      "type": "paragraph",
+      "text": "But a lot of the “secret sauce” of Asteroids was in the simulation. Thrust is separated from rotation, creating the most important part of the feel of Asteroids. It creates the loose feel that is so crucial to the feel of the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of context, the asteroids in Asteroids provide just the right spatial background for the ship’s movement. The constant, inescapable danger of the asteroids is compounded by the wily flying saucers, and the screen wrap means that you can never escape. These dangers give meaning to the quick, slippery motions of the ship, defining every subtle twist and turn and making it feel almost more out of control than in control."
+    },
+    {
+      "type": "paragraph",
+      "text": "Adding to the overall feel, just the right amount of polish was used in Asteroids—not overdone, not underdone. Visual and sound effects are simple, but cohesive and self-consistent, making the most of the processing power available at the time."
+    },
+    {
+      "type": "paragraph",
+      "text": "The metaphor—outer space—is simple and iconic, setting up easy to exceed expectations of how “real” spaceships ought to behave in the mind of the player."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, the rules in Asteroids are exceptionally well done, challenging the player to increase his or her skills in anticipation of greater rewards."
+    },
+    {
+      "type": "paragraph",
+      "text": "Overall, all of these elements were balanced beautifully to create a simple but wildly popular game. The man who conceived Asteroids, Lyle Rains, and the creative visionary who programmed and designed the game, Ed Logg, did everything right. It’s no wonder Asteroids was such a hit in the United States and became Atari’s best selling game of all time."
+    }
+  ]
+}

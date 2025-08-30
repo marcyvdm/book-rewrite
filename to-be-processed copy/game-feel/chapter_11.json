@@ -1,0 +1,175 @@
+{
+  "chapter_title": "Metaphor Metrics",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "As a component of a game feel system, metaphor has two aspects, representation and treatment."
+    },
+    {
+      "type": "paragraph",
+      "text": "Representation is the idea of the thing, or what it appears to be. Is it a car, a gelatinous cube of meat or a plucky spike-haired hero in a neo-steampunk tropical wasteland? Is it a MacLaren F1 or is it Fatty from Run Fatty Run? Metaphor unifies the idea of the avatar, the idea of the world, and the idea of all the objects in the world. If you replace all the art, music and sound in a game with purely abstract shapes and colors, what you have removed is the representation. Imagine the game Diablo with graphics by Jackson Pollack and sound by Steve Reich. The fundamental functionality of the game is still intact, but the metaphorical representation is gone. While dribbles of paint and electronic pulses do not really represent anything, barbarians, buildings and cows give each object in the game some hook on which players can hang their conceptual hats."
+    },
+    {
+      "type": "paragraph",
+      "text": "Treatment is the cohesive whole formed by visual art, visual effects, sound effects, tactile effects and music. If you take away all the art, music and sound from a game but leave the core systems untouched, what you have removed is the treatment. Imagine the game Diablo with every object—avatars, townsfolk, creatures, environment—replaced by flat gray boxes. The fundamental functionality of the game is still intact, but both treatment and representation are gone. One could argue that flat gray boxes are a treatment of sorts, but you get the point."
+    },
+    {
+      "type": "paragraph",
+      "text": "We can measure the impact of metaphor on game feel in two ways. First, we want to identify the what. What does this thing appear to be? What is each object representing to the player at the conceptual level? Again, this will be something like a car, a train or a tall humanoid cat. Next, how will the player expect the thing to act? In other words, based on the metaphorical representation, what are the expected behaviors, effects, animations, motions, interactions and sounds?"
+    },
+    {
+      "type": "paragraph",
+      "text": "We’re also going to examine the role of treatment. Treatment dictates to a powerful degree how accurate a player will expect the nature and motion of an object to be relative to its representation. A player can rightly expect something that appears visually to be a photorealistic human to move and act as a person would. If that person is a stick figure, however, the expectations set are much different (and much easier to fulfill)."
+    },
+    {
+      "type": "paragraph",
+      "text": "To generalize, the primary effect of metaphor on game feel is to prime a player with preconceptions about how given object should behave. The representation conveys an idea about what the thing is, and the treatment indicates its level of sophistication. The more response, context and polish seem to match the metaphor presented, the more cohesive, self-consistent and good-feeling the game will be."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that we’re not making any judgments about what “matching” the metaphor means. It certainly doesn’t mean that emulating reality is the way to go. There is a phenomenon similar to Masahiro Mori’s Uncanny Valley at work with respect to how well the metaphorical representation of an object in a game matches the feel of that game. If a sound, animation or effect is close to matching the expectations set by the representation and treatment, but falls just short, it can be much more distracting than if it were completely abstract."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, in Doom 3, the treatment was intended to be realistic. But many objects in the world, when touched or shot, would spin and fly around in a wild, unrealistic way. If the treatment was more iconic, like a graphic novel, or if the metaphor was more abstract, with floating shapes instead of zombies, this would not have created dissonance for the player. As it is, because the treatment and metaphor in Doom 3 were intended to be realistic and serious, the fact that every zombie had the exact same pattern of dangling became distracting. Even the gunshot sound effects in the game Doom 3 did not seem to live up to the standard set by the realistic visual representation. The shots sounded like cap guns. If instead the shots were an abstract pulse or laser sound, they might have been easier to accept. Even something completely absurd like kittens meowing could have fit better, if the goal was to be absurd. There is a sweet spot where a game’s metaphor can correspond perfectly to response, polish and context."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Case Studies: Mario Kart Wii and Project Gotham 3"
+    },
+    {
+      "type": "paragraph",
+      "text": "To set the stage for understanding how this all comes together as a practical metric, it’s useful to compare and contrast, in some detail, how metaphor is used in two very different games of the same genre. Let’s dive in and look at Mario Kart Wii and Project Gotham 3."
+    },
+    {
+      "type": "paragraph",
+      "text": "Visually, both games start with cars in a racetrack environment lined up for the beginning of a race. Mario Kart is 3D and cartoony, and all the visuals are iconic and round. The environment is stylized, smooth, colorful and inviting. The graphics have some link to the real world, but they’re highly symbolic. A tree is identified as a tree, but it’s not a very specific tree, just a generalized idea of a tree. In contrast, the treatment in Project Gotham 3 is about as far from Mario Kart as it is possible to get while still representing the idea of cars at a racetrack. Project Gotham 3 strives for total photorealism. If the designers could achieve their ideal representation of forms in Project Gotham 3, it would"
+    },
+    {
+      "type": "paragraph",
+      "text": "be like playing a movie. You could drive cars around a track, and you would drive past stuff that looked just like the stuff you would drive past in real life. The car you were driving and all the cars around you would look like moving photographs."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of sound, there is much less environmental background in Mario Kart. Project Gotham has the revving of many, many engines, probably recorded from the real-life cars they are meant to represent. Project Gotham also has cheering spectators and all sorts of authentic noises. Depending on the starting point on the track, city or country, you also hear the appropriate background sounds. So Project Gotham strives for great realism in its soundscape as well. Mario Kart Wii represents many of the same things, but the sounds are similar to the visuals in that they are symbolic representations. The karts make these little rumbling noises in place of strictly realistic engine sounds. Even so, the sounds in Mario Kart are not quite in line with the stylized appearance of the karts. It’s entirely possible that the sounds could be made much more fantastic and still achieve unity with the visual metaphor."
+    },
+    {
+      "type": "paragraph",
+      "text": "In both games, when the starting countdown happens, you hear dink-dink-dink DING. The series of noises are actually quite similar. In Project Gotham, it’s most likely an actual recording whereas Mario Kart has more of a lo-fi feel. The countdown proceeds, and they’re off!"
+    },
+    {
+      "type": "paragraph",
+      "text": "As they start moving around the track, the environments are very different. In Mario Kart, the player encounters bizarre things like being fired out of a cannon or sucked down a warp pipe. In Project Gotham, cars are speeding around a realistic track that twists and turns in very real-world ways. And the motion mapping in Project Gotham is also more realistic than Mario Kart, which is more cartoony. In Project Gotham, driving the car is intentionally similar to driving a real car at high speeds. You shift and brake and drift the back end to bring the car around curves at the highest speed possible while not losing control and crashing. In Mario Kart Wii, if you don’t press the Power Slide button as you come round a corner, you won’t be able to carve the turn without running into something. Pressing the Power Slide button changes the friction properties of the car, increasing the floatiness of the car and enabling it to slide sideways. You can also improve the slide by wiggling the thumbstick and changing the color of the sparks. If you build up the sparks to the gold spark level by holding down your thumb, when you release you get a speed boost coming out of the turn. Clearly, the driving feels nothing like driving a real car. Driving Mario Kart Wii is a simulation of cartoon physics where Project Gotham takes a much more literal approach to driving physics."
+    },
+    {
+      "type": "paragraph",
+      "text": "In both games, the visuals and sound effects that happen in response to the motion are consistent with the style of each game. Smoke particle effects coming from the tires in Project Gotham are restrained and light, much like they would be in real life. Tire screeching noises are recordings of real cars."
+    },
+    {
+      "type": "paragraph",
+      "text": "In Mario Kart, there are a huge number of particles flying everywhere, and the puffs of smoke and sounds they make are all very exaggerated."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now let’s look at how well the metaphors in each game are executed to create good game feel. In terms of the interaction of objects and the game, this starts to get into context, in the sense that when objects interact, the way they behave has a huge impact on the way the game feels."
+    },
+    {
+      "type": "paragraph",
+      "text": "In Project Gotham, when the cars collide they just bounce off each other, which is not what you would expect based on the realistic visuals and sound. You would expect that if two cars that looked real, moved real and sounded real ran into each other, there would be a massive crash like you see on the NASCAR replays. Bits of car would go flying everywhere, things would catch on fire, one of the cars would spin out and all the others would swerve to avoid it or not—mayhem would ensue, and all the drivers would be under the yellow flag until the emergency vehicles cleaned things up. Oh, the humanity. In Project Gotham, the interactions are coded almost like a waterslide. It’s like a bunch of big, round, smooth plastic objects falling down a waterslide and bumping off one another. Similarly, if a car runs into something in the environment, it comes to a gentle halt or else glances off and keeps going as though the walls were peanut oil. The cars just keep slip-sliding along, which is not at all what happens if a real car runs into a real wall, lamppost or chain-link fence. This is an unfortunate mismatch between metaphor and the feel conveyed by the response, context and the various polish elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tellingly, the interaction between the cars in Mario Kart Wii is similar to that in Project Gotham. One car runs into another, you get a little sound, and the cars glance off one another with the same sort of waterslide feel. Objects never get hung up on each other. In the case of Mario Kart Wii, however, there’s no dissonance. The karts’ treatment is cartooned, which means the player’s expectations are different. No one expects them to behave like real cars. The main difference between the relative feel of cars in Mario Kart Wii and Project Gotham is that in Mario Kart, some karts read as larger, heavier objects which can knock smaller karts around when they run into them. In this respect, the interaction between objects in Mario Kart Wii is actually more sophisticated than Project Gotham 3, in which the cars seem to have a uniform mass."
+    },
+    {
+      "type": "paragraph",
+      "text": "Overall, the two games are similar in just about every aspect except for their representation. But there is a huge difference in the dissonance or harmony of the various aspects of the games. In Mario Kart Wii, all the different aspects, from the cartoony representation to the abstract sounds to the motion that’s produced to the way the karts interact, all those things seem to harmonize very well. Whereas Project Gotham 3 has harmony across visuals and sound, the glaring omission of commensurately detailed car interaction disrupts the unity of the game’s feel significantly. This was actually due to an unfortunate legal hang rather than a bad design choice, but the result is"
+    },
+    {
+      "type": "paragraph",
+      "text": "illustrative nonetheless. The result is that the cars in Project Gotham 3 simply do not meet expectations for how they should interact, creating significant dissonance in the photorealistic metaphor of the game. Mario Kart Wii does a much better job of harmonizing with its metaphor."
+    },
+    {
+      "type": "paragraph",
+      "text": "And this is what we are interested in measuring: the overall effect that metaphor has on the feel of an object with respect to the way it sets up expectations in the player about how objects should sound, how they should look, how they should behave, and how they should interact with one another. In this way, all pieces of a game’s feel are affected by the metaphor that you choose and apply."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Real, Iconic and Abstract"
+    },
+    {
+      "type": "paragraph",
+      "text": "Up to this point, we’ve made oblique references to the term realism. Let’s nail that sucker down so we can get a better grip on how treatment modifies game feel. The way we’ve used realism thus far is as a measure of how similar something looks to a photograph or film. On the other end of that spectrum is cartoony. This is, I think, how most people apply the term realism, especially to graphics in games."
+    },
+    {
+      "type": "paragraph",
+      "text": "A slightly different approach is that used by Scott McCloud in Understanding Comics. He adds a third axis and changes “cartoony” to the much more descriptive “iconic” (see Figure 10.1). Although Scott’s concept is summarized below, please consider reading his original explanation in “Understanding Comics,” which is very well done."
+    },
+    {
+      "type": "paragraph",
+      "text": "On Scott’s diagram, all visual representation exists somewhere in a triangle. At the far left point of the triangle is reality. At the far right is iconic. He defines the"
+    },
+    {
+      "type": "image",
+      "src": "194.png",
+      "caption": "FIGURE 10.1 Realistic, iconic and abstract: three types of representation."
+    },
+    {
+      "type": "image",
+      "src": "195.png",
+      "caption": "FIGURE 10.2 Some well-known games placed on the triangular diagram."
+    },
+    {
+      "type": "paragraph",
+      "text": "written word as the ultimate abstraction, the point of visual representation that is furthest from reality while still effectively conveying meaning. Between reality and pure meaning, there are various shades of iconic. That is, visuals which are abstracted from reality, but which still convey meaning. With the third axis, he separates iconic abstraction from what he calls “non-iconic” abstraction, which is probably what most of us think of as abstraction. Shapes, colors and lines; things which exist for their own sake and have no inherent meaning, which don’t represent anything. This scale, while originally designed to apply to comics and other visual art can, with a little fudging, be applied to the representation of objects in a video game (Figure 10.2)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gears of War fits somewhere between Project Gotham and Mario Kart Wii. There are some iconic elements, in the sense that the characters are large and bulky (not something you’d see in the real world of everyday experience), but the texture and lighting attempts to be hyper-realistic, in the way that the movie Alien attempts to visualize a world in which things are more sticky, more wet and more rim lit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Call of Duty IV is even more realistic, trying to emulate photo-like visuals in a more staid way than Gears of War. There’s not much stylization in the proportion of the characters, though there is a grainy, filmed look to the game that could be considered stylization. On the iconic side, Legend of Zelda: Wind Waker is highly iconic but represents a complete game experience in a world with its own self-referent, entirely consistent rules. If we move to the top of the triangle, toward the purely visually abstract, we have games like Everyday Shooter, in which the objects are geometric and musical abstractions with no apparent metaphor."
+    },
+    {
+      "type": "paragraph",
+      "text": "From a metrics point of view, what we’re interested in are the implications for how elements of game should behave if the game is more or less realistic, iconic or"
+    },
+    {
+      "type": "paragraph",
+      "text": "abstract, with respect to game’s overarching metaphor. For example, returning to Project Gotham 3, we located that game far over to the left of the diagram toward realism, and we can infer that everything in the game should behave as closely as possible to how things behave in the physical world as we perceive it. Everyday Shooter is very abstract, presenting us with a bizarre world where we’re not really sure how things are going to react, which has the effect of setting expectations wide open. It would be hard to make objects in Everyday Shooter behave in a way that seemed wrong, but it leverages no expectations either. In an iconic game like Sly Cooper, which is far over to the right, we expect cartoon physics and are not disturbed if two things jiggle like Jello-o when they collide, as long as volume is maintained per the principles of animation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Metaphor sets up expectations about the way things should look, move, sound, behave and interact. This is how metaphor affects game feel. When everything is in harmony, and all the player’s expectations are met, it’s a win for the designer and the player. When things aren’t in harmony, it causes dissonance and frustration, and the player disengages from the game. If the visuals write a check that the game’s physics can’t cash, the player loses his or her belief in the self-consistent fidelity of the world."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can measure the impact of metaphor on game feel by looking at response, context and polish, and by comparing them to the expectations set up by the metaphor applied to all the objects. This is a soft metric. Players will perceive things as they expect to perceive them, not necessarily as they really are. We want to know what perceptual expectations are being set up by metaphor and treatment."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you’ve ever been to a wine tasting, it’s easy to experience this phenomena in real life. If you put out eight bottles of wine and hide the labels, you’ll get a very different result than if the tasters can see the labels. People expect famous, pricey wines to taste better—and results of a tasting will reveal that they do! The Chateau Mouton Rothschild will always rank higher than the Stags Leap Cabernet. But taste the wines blind, and you can get some very different results, as in the famous 1976 wine tasting in Paris, where California wines soundly whupped some of the top French chateaux in a blind tasting by famous French judges."
+    },
+    {
+      "type": "paragraph",
+      "text": "So be careful what expectations you set up and how. Ask the following questions:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "What do the objects in the game represent?",
+        "Where does the treatment rest on the triangle diagram? How realistic, iconic or purely abstract is it?",
+        "How well does the representation and treatment of objects in a game coincide with the way those objects behave? Based on the metaphorical representation, what are the expected behaviors, effects, animations, motions, interactions and sounds of the game?",
+        "Does the metaphor set expectations that are in line with game feel for each element of the game? If not, either the metaphor or the game elements probably need to be adjusted."
+      ]
+    }
+  ]
+}

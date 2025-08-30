@@ -1,0 +1,464 @@
+{
+  "chapter_title": "Response Metrics",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "When I say response, I mean the game’s response to player input. The output, in other words. There are many different ways an input signal, once received, can be processed before returning to the player in the form of feedback, but the process has three essential steps:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Input signal comes in",
+        "Input signal is interpreted and filtered",
+        "Input signal modulates some parameter in the game"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To measure the response of a particular game to input, we begin by looking at how each signal from the input device is mapped to a change in the game. What parameter does it modulate, and how does it change that parameter over time? And what are the relationships between those parameters?"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are many different ways an input signal can modulate a parameter in a game. While an input device is a physical object constructed out of plastic and springs, an avatar in a game has no such constraints. An input can be mapped to a change in the position of an avatar, as it is in Megaman. Inputs can also be mapped to rotation, as they are in Asteroids and Gran Turismo, where a forward thrust is steered via angular rotation. Or rotation and positional changes can be mapped to the same input, as they are in Jak and Daxter, Super Mario 64 and Geometry Wars, where pressing a direction with the thumbstick rotates and moves simultaneously. An input can also be mapped to the creation of a new entity, as when Megaman fires his weapon and “spawns” a bullet or when Guile throws a sonic boom in Street Fighter II. In this case, an entirely new entity is spawned by an input, often from the position of another avatar. This entity often has its own properties of movement and its own velocity."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another possible response to input is the playback of a linear animation, as in the games Soul Calibur, Samurai Showdown 4 and Street Fighter II. You press a button and a “move” happens. A move consists primarily of animation, created by a professional animator, and some game-relevant spatial movement. It occurs at the position in space and time of your choosing, but once triggered, the animation plays back as a linear sequence of frames, as it would if it were an animation playing"
+    },
+    {
+      "type": "paragraph",
+      "text": "back on a television. The duration of the animation may be short, but it’s interesting to note that what’s been mapped is still the linear playback of an animation to a particular input. This can be taken to ridiculous extreme, as it is in the original Prince of Persia, where the game can only be controlled via the playback of linear animations. Your input serves only to change which animation is playing at a given time, and you’re tasked with managing the movement of the character in that stiff, robotic way."
+    },
+    {
+      "type": "paragraph",
+      "text": "Still another thing that input can be mapped to is a change in one or more parameters in a simulation. For example, in Mario Kart DS, there’s a simulation running every frame which computes the game’s internal model of the karts—their relationships to one another, their weight, their mass, their velocity, their rotational force and of course, their friction values—how the forces that are acting on the kart are reconciled with the friction value of the surface they’re currently in contact with and how that affects their motion. You can map an input not only to moving the kart forward and rotating it, but to the friction value itself, altering the resulting motion of the entire system. When you enter the “powerslide” state by pressing the R-button, what you’re really doing is changing the friction value. It’s decreased, enabling you to corner better by carving less (sliding sideways instead of gripping the road, in other words)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Generalizing the possibilities, an input signal might:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Set a new position for an object each frame.",
+        "Set a new orientation for an object each frame.",
+        "Add a force or torque to a simulated object, causing it to rotate or move.",
+        "Modify a simulation variable, changing gravity or the friction of a car’s tires.",
+        "Play back an animation from start to finish, like a single move in a fighting game.",
+        "Change the speed at which a looping animation plays back."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The process of hooking up input signals to specific parameters and determining how they will modulate those parameters over time is known as mapping. For real-time control, however, there is a specific subset of mapping required: mapping to motion."
+    },
+    {
+      "type": "paragraph",
+      "text": "If there is real-time control, the input signals will be mapped, directly or indirectly, to the motion of an avatar. The movement of that avatar can, for the most part, be measured using criteria similar to the ones we used to measure input."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Type of motion: Linear vs. rotation. Does the avatar move linearly or rotate?",
+        "Dimensions of motion: In what dimensions, X, Y or Z, does the avatar move or rotate?",
+        "Absolute or relative motion: What frame of reference does the motion use? Is the motion relative to the avatar, as in Asteroids or the camera as in Mario 64, or some other point in the world?"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "140.png",
+      "caption": "FIGURE 7.1 The Mario Avatar moves in two dimensions, X and Y."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Position versus rate/magnitude: Does the input modify a position, a rate or a magnitude? A mouse cursor is usually mapped to changes in position. Pushing the thumbstick to the left in Halo changes the rate at which the avatar turns (halfway causes a slow turn, while fully pressed turns very quickly).",
+        "Direct or indirect control: Does the input modify the avatar directly or does it add forces to a simulation or cause another object to move or rotate? For example, in Zuma, movement of the mouse cursor determines which direction the frog will face.",
+        "Integrated or separate dimensions: Does the input change one parameter in the game or many? For example, Geometry Wars maps both thrust and rotation of the ship to the left thumbstick. Jak and Daxter does this as well, changing both speed and rotation with one thumbstick."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The point of taking stock of the avatar’s movement in this way is to hone in on exactly which parameter each input is mapped to. We can look at the Sonic avatar and say he moves along in the XY plane. Or we can look at the movement of Crash Bandicoot and say, he moves in an XZ plane, but he can also jump or fall in the Y plane, as well as rotate in the Y-axis to change his direction. Kratos from God of War moves in a similar way. Knowing which dimensions an avatar moves in, we can identify which inputs control movement in which dimensions, and whether that movement is linear or rotational. For example, Mario’s horizontal movement is controlled by the left and right directional pad buttons, while his vertical movement is controlled by the A-button."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Attack, Decay, Sustain and Release"
+    },
+    {
+      "type": "paragraph",
+      "text": "Regardless what parameter an input is mapped to—position, rotation, animation playback and so on—the modulation of a parameter over time will have some kind"
+    },
+    {
+      "type": "image",
+      "src": "141.png",
+      "caption": "FIGURE 7.2 An ADSR envelope; modulating a parameter over time in four phases.\nFIGURE 7.3 The ADSR envelope for a guitar’s volume when a string is plucked."
+    },
+    {
+      "type": "paragraph",
+      "text": "of curve. One way to describe this curve is as an ADSR envelope. ADSR stands for attack, decay, sustain and release. An ADSR envelope describes the modulation of a parameter over time, in four distinct phases (Figure 7.2)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Such envelopes are used to describe the modulation of the sound of musical instruments. For example, when you play a note on a guitar, the resulting sound can be described in terms of attack, decay, sustain and response. The note is loudest just as the string is plucked, but it takes some time to go from silent to loud. This is the attack. From the loudest volume, the sound then drops down again before reaching a stasis point. This is the decay. The point at which the volume stabilizes is the beginning of the sustain part of the envelope. This lasts until the sound begins to fall off again, eventually returning to silence. This final period is the release. Graphed over time, it looks like Figure 7.3."
+    },
+    {
+      "type": "paragraph",
+      "text": "Contrast this with a pipe organ. The note starts at a constant volume, continues to play at that same volume and falls silent almost instantly when the button is released (Figure 7.4)."
+    },
+    {
+      "type": "paragraph",
+      "text": "ADSR envelopes are often used to modulate the output of digital instruments to make them sound like their physical, real-world counterparts. They are also a good way to think about the modulation of parameters in a game relative to specific input. For example, look at the “left” input in Super Mario Brothers (Figure 7.5)."
+    },
+    {
+      "type": "image",
+      "src": "142.png",
+      "caption": "FIGURE 7.4 The envelope for a pipe organ is much more rigid.\nFIGURE 7.5 The ADSR envelope representing Mario’s horizontal movement."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this case the vertical axis of the envelope is movement. There is an attack phase as Mario ramps up to his maximum speed, no decay, a sustain as long as the button is held and a long release when the button is released. The result is that Mario speeds up gradually over time (Figure 7.6)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now compare Mario’s left motion to Donkey Kong’s, shown in Figure 7.7. When Jumpman (the pre-Mario character from Donkey Kong) moves, he has no attack and no release. The moment the joystick is activated, he moves at a constant speed in the appropriate direction (Figure 7.8)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once we know what parameter in a game is mapped to what input, we can measure the modulation of that parameter over time relative to the input signals coming in as an ADSR envelope. Assuming that the parameter being modulated feeds into the real-time motion of an avatar, we can make generalizations about how players are likely to experience the sensation of control based on this envelope."
+    },
+    {
+      "type": "image",
+      "src": "143.png",
+      "caption": "FIGURE 7.6 Mario speeds up gradually from a standstill.\nFIGURE 7.7 The ADSR envelope representing Jumpman’s horizontal movement.\nFIGURE 7.8 Jumpman moves at a constant speed in the direction indicated by the input device."
+    },
+    {
+      "type": "paragraph",
+      "text": "A longer attack phase results in a floaty or loose feel. This is not necessarily a bad thing; the thruster mechanic in Asteroids has a long attack, and players generally seem to enjoy that feel. When a long attack phase begins to cause trouble, however, is when there seems to be no immediate response to input (Figure 7.9)."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is problematic because it starts to erode the impression of instantaneous response. There may be some small change happening immediately, but if the player can’t perceive it, the game feels unresponsive. An envelope like the one in Figure 7.10, which has a rapid initial attack but a long attack phase in general, will have both instantaneous-feeling response and a loose, organic feel. On the other end of the spectrum, a short attack phase will tend to feel tight and responsive (Figure 7.11)."
+    },
+    {
+      "type": "image",
+      "src": "144.png",
+      "caption": "FIGURE 7.9 This feels unresponsive if the thing being controlled takes more than 100 ms to move (or if the player perceives it this way).\nFIGURE 7.10 Even though the attack phase is very long (more than a second) there is an obvious initial response.\nFIGURE 7.11 A short attack phase feels tight and responsive."
+    },
+    {
+      "type": "image",
+      "src": "145.png",
+      "caption": "FIGURE 7.12 A short attack phase with a flat progression from on to off creates a twitchy feel."
+    },
+    {
+      "type": "heading",
+      "level": "4",
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can experience the difference in example CH07-1. Press the “1” key for an unresponsive, the “2” key for a responsive but loose feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "Even with tight, responsive controls, the attack phase usually has some nonlinear curving to it. In other words, the attack phase is a curve, not a straight line. This keeps the flowing, organic feel while enhancing the perception of instantaneous response. On the other hand, when the attack phase is short and when there is a more linear progression from off to on, most players describe the feel as twitchy (Figure 7.12). This too can be desirable depending on the intended effect. If the attack is totally linear and very short, the controls can feel stiff."
+    },
+    {
+      "type": "paragraph",
+      "text": "What’s interesting is that these sensations—floaty, twitchy, tight, loose, unresponsive—all exist on the same continuum. They’re just slightly different envelopes, slightly different modulations of motion over time. That motion could be direct or indirect, a force or a rotation; regardless, changes in attack will alter the feel of control."
+    },
+    {
+      "type": "paragraph",
+      "text": "Attack and release are often mirrored, as in the horizontal running of Super Mario Brothers. After you release the button, it takes Mario the same amount of time to slow back down to zero as it does to speed up from a standstill to his maximum speed. The soft release maintains the loose feel after the button is released. Having no release, as in Donkey Kong, feels more abrupt."
+    },
+    {
+      "type": "paragraph",
+      "text": "When decay is present in game control, it’s usually by accident. Sometimes a game designer will inadvertently make the speed of movement faster just after a change in input than during the eventual sustain period. This means that to maintain maximum speed, constant button pressing is necessary. This is almost never desirable for the simple, practical reason that it fatigues the player’s hands."
+    },
+    {
+      "type": "image",
+      "src": "146.png",
+      "caption": "FIGURE 7.13 The decay phase in Counter-Strike became an exploit."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, in some of the earlier beta versions of Counter-Strike, it was possible for those in the know to “skate” by angling slightly sideways and pressing forward and sideways rapidly. When moving at a particular angle and switching between going sideways and forward, there was a decay phase—the attack took the maximum speed above the level of sustain (Figure 7.13)."
+    },
+    {
+      "type": "paragraph",
+      "text": "This gave experienced players a huge advantage because they could move one and a half times more quickly. This was an exploit to be removed because it gave an overwhelming advantage to veteran players and enabled the player to move faster than intended."
+    },
+    {
+      "type": "paragraph",
+      "text": "The level of sustain can be thought of as a limit, such as the maximum speed of a car or character."
+    },
+    {
+      "type": "heading",
+      "level": "3",
+      "text": "Simulation"
+    },
+    {
+      "type": "paragraph",
+      "text": "So where do these envelopes come from? For any game, it’s relatively easy to track what parameter a particular input mapped to and how it modulates that parameter over time. But it is often difficult to discern exactly what sort of system gave rise to that modulation. Most often, envelopes are defined by relationships between variables in a simulation."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a simple example, consider a cube that moves left and right. Both directions of movement have an ADSR envelope that looks like Figure 7.14."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "To experience this, open example CH07-1. Move the cube left and right using the A and D keys. Enter new values by clicking on a parameter (such as “Max Speed”), typing in numbers and pressing enter to see how the envelope changes."
+    },
+    {
+      "type": "image",
+      "src": "147.png",
+      "caption": "FIGURE 7.14 The cube has smooth, organic movement."
+    },
+    {
+      "type": "paragraph",
+      "text": "Currently, an acceleration value is added to the cube’s velocity each frame, creating a smooth quarter-second attack phase. This speeds the cube up gradually, giving it a loose, organic feel. Mirroring this, a drag value is also applied in each frame, causing the cube to slow back to rest again when the button is released. Without this drag value, the cube would keep going indefinitely (switch “Drag” to zero to experience this). The Max Speed variable determines the level of sustain, the constant movement value the cube reaches after completing the attack phase."
+    },
+    {
+      "type": "paragraph",
+      "text": "This simple test demonstrates how simulations give rise to the different modulations of parameters, and how changes in that simulation modify the sensations of control. It gets a lot more complex than this (as we’ll see in Chapters 12–17) but simulations like this are the building blocks for sensations of control. How the simulation is built determines the sensations of control possible. A particular tuning can change the feel of control drastically, but the construction of the simulation—which parameters are available to tune in the first place—determines what tunings are possible."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, consider the feel of the left-right movement in Ghosts and Goblins, Donkey Kong and the original Metroid. In all three of these games, horizontal movement has very little attack or release (Figure 7.15)."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the systems that create this kind of envelope, pushing the joystick or pressing the button directly overwrites the position of an avatar. Every frame in which the game detects the button as held, it adds some amount to the current position of the avatar in the appropriate direction and places the avatar in that new position. In the same way, the release value brings the player to a halt instantly when the button is released. The result is a system that feels stiff but responsive. It feels crisp and is good for dealing with challenges that require precise positioning and accurate jumping. This same kind of feel applies to other mechanics with little or no attack"
+    },
+    {
+      "type": "image",
+      "src": "148.png",
+      "caption": "FIGURE 7.15 A responsive, but stiff, feel.\nFIGURE 7.16 A loose, fluid feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "and release, such as the movement of a mouse cursor in response to mouse movement. Sometimes players categorize this feel as twitchy."
+    },
+    {
+      "type": "paragraph",
+      "text": "Compare this to the “thruster” mechanic in Asteroids. Pressing the thruster button has a long attack (Figure 7.16). In this case, it’s because Asteroids keeps track of a separate velocity value for the ship. Instead of the position of the ship being set directly each frame, the ship keeps its own value for velocity and updates its own position based on that value. Pressing the thruster button adds to the velocity value in the direction the ship’s currently facing. The result is that the ship speeds up gradually, a curved and gentle attack. It’s a different kind of simulation and a different kind of feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "The other way to define an envelope is by filtering input before it is plugged into the changes in the game system, as happens when rotating the Asteroids ship left and right. The envelope looks like Figure 7.17."
+    },
+    {
+      "type": "paragraph",
+      "text": "While the left button is held, the ship’s orientation is changed by a certain amount each frame. There’s a slight attack value, which is achieved by changing"
+    },
+    {
+      "type": "image",
+      "src": "149.png",
+      "caption": "FIGURE 7.17 A slight softness in the attack."
+    },
+    {
+      "type": "paragraph",
+      "text": "the input slightly as it comes in. At the first millisecond the button is pressed, the amount by which the ship’s orientation changes is less than it is a few milliseconds later. The value gets increased over time. In this way, the feel is responsive but slightly soft. The player can tap the button lightly to make small adjustments or hold it down to turn full speed. The rotation is just a filtering of the input signal over time. This is another way to modulate an envelope: just change the input signals as they come in."
+    },
+    {
+      "type": "heading",
+      "level": "3",
+      "text": "State Changes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another interesting, measurable feature of simulation is state changes. States are artificially constructed changes in circumstance that modify the meaning of incoming signals. In Super Mario Brothers, for example, there are ostensibly three controls: left, right and jump. In Figure 7.18, we see different states that overlap and interact in different ways."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mario has a “ground” state and an “air” state. As far as the simulation is concerned, Mario’s potential for movement—his physical properties—change when he’s on the ground or in the air. When in contact with the ground, the left and right buttons map to certain additive force. When Mario is not in contact with the ground, the strength of his left and right movement is greatly reduced, creating a different state. This is a very simple example of increasing sensitivity through state switching. Left and right movement means something different when Mario is in the air, meaning that one input is actually mapped to two separate actions that change depending on the state of the character. What’s interesting is that this creates additional sensitivity in the system: there is greater expressivity when inputs are mapped to different responses across states which are altered and maintained by the simulation itself. You’re getting two sets of responses mapped to one input, essentially."
+    },
+    {
+      "type": "image",
+      "src": "150.png",
+      "caption": "FIGURE 7.18 Overlapping states provide additional expressivity."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is used to great effect in the Tony Hawk games where there are as many as six separate states, each of which assigns a different value to each button on the controller. Every button means something different in each state. A relatively small number of inputs becomes an interface to a huge number of moves. The game has artificially created different physical states for the avatar to exist in. If these state changes are clear to the player, they can correspond to a huge number of possible responses. The same principle is applied to fighting games, where being in the ducking, blocking or jumping states changes the meaning of each input."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examining the type and robustness of the simulation a game is running can yield useful fodder for comparison. Without getting too crazy deep into the mathematical intricacies of a given physics system, we can see that while Super Mario’s vertical movement uses a simple simulation, the jumping in Metroid is a predetermined set of positions. This lends Metroid a crisper, more precise feel. It’s also useful to catalog whether or not the avatars have different states they can exist in. If the avatars do have multiple states, how many states do they have and how do the different states cause different input signals to be interpreted by the simulation and responded to?"
+    },
+    {
+      "type": "heading",
+      "level": "3",
+      "text": "Filtering"
+    },
+    {
+      "type": "paragraph",
+      "text": "Input signals come in from the input device in various forms, such as Booleans and changing float values. It is possible to map “raw” input either directly to a response or to a force or other modification of a simulation. This rarely happens, because to directly map raw signals is to forego the opportunity to tweak game feel. Most often, an input signal is received raw and passes through a layer of code where it"
+    },
+    {
+      "type": "image",
+      "src": "151.png",
+      "caption": "FIGURE 7.19 Turning changes as the thumbstick is pulled farther from center."
+    },
+    {
+      "type": "paragraph",
+      "text": "is filtered in some way, into a different value range. Even if it’s just multiplied by 2 or 3 in order to create a greater force value to pass along to a simulation, most input signals are modified before being mapped to a response. Almost all input is transposed in this way; this is a large part of what “tuning” means as it is applied to mechanic design."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, the movement of a mouse-controlled cursor on any computer has a control-display ratio. The change in position of the mouse on the desk is mapped very closely to the movement of the cursor on the screen, but there is still a ratio between physical movement and virtual movement. If the cursor moves 2 inches on screen for every 1 inch the mouse slides across the desk, the control-display ratio is 1:2. In this case, the filtering of input is a simple multiplication. Inputs can also be divided, added to, multiplied by themselves and so on."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is also possible to have complex, non linear transformations applied to input signals as they come in. This is especially true when the signals represent a range, as with a thumbstick on a controller (which returns two float values, each in a range from -1.00 to 1.00). This is employed in the driving mechanics Grand Theft Auto 4 and other games featuring a driving metaphor. Instead of a constant car steering ratio (1 degree of steering wheel turn = 2 degrees of car turn) the amount of turning changes across the input space. The steering ratio increases the farther the thumbstick is pulled in a direction (Figure 7.19)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Pulling the stick about halfway to the right of center still yields a fairly small turn. This mitigates “twitchiness” that is present in some harder-core driving games like Vanishing Point or, to some extent, Grand Turismo. By making it much more difficult to oversteer, the mechanism is much more forgiving and creates a nice range between small avoidance adjustments and hairpin turns."
+    },
+    {
+      "type": "paragraph",
+      "text": "At this layer, there is the possibility not only for modifying input signals before passing them on, but for creating entirely new signals by further interpretation of the incoming signals. Think of the famous Konami code, which looks for a particular sequence of button presses over time. The game’s code examines the input"
+    },
+    {
+      "type": "paragraph",
+      "text": "signals it receives for specific, predetermined patterns and responds differently when it sees them. When a game is sensitive to patterns of inputs over time like this, the input space becomes larger. Moves in fighting games are fundamentally the same kind of interpretation. The Haduken in Street Fighter II or “Dark Metamorphosis” in Castlevania: Symphony of the Night each require a certain sequence of inputs over time to trigger. Ditto the gestures used in many games controlled by the Wiimote."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fundamentally, what’s happening is that an additional process is running in the layer between input and response. The signal comes in and a piece of code checks to see if it recognizes the signal as the first part of a pattern. If it does, it moves ahead and waits to see if the next part of the pattern is going to follow. Usually this is time-based, enabling only a short window of time for the next input to occur before resetting the sequence. Essentially, it’s building additional sensitivity into the inputs coming through. After all, a sequence of inputs is not inherent in the signals coming from the inputs themselves. It’s not a response per se, just the game listening for additional patterns among the input signals it’s receiving. Once a pattern is identified, a special type of signal is generated by this interpretation layer and is passed along to the simulation, where the response is carried out. This response can be an animation, the unlocking of additional lives or the addition of a particular force into the game’s simulation. The same thing happens in most current Wii games; it just happens to be a much more complex and sophisticated pattern-seeking algorithm because it has to make mathematical sense of all the crazy data that flows when you spew accelerometer and pointer data from a free-floating controller. Whether it’s a Haduken or a Wiimote sword slash, however, I would categorize any time a game listens for a pattern of inputs across time as a “gesture.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another way in which it’s possible to create additional sensitivity through interpretation is spatially, either across game space or input space. For example, while pressing the A-button may have one meaning and pressing the B-button may have a different meaning, pressing both simultaneously yields a third response. This is similar to a gesture, but instead of looking to correlate a sequence of inputs across time, it looks for combinations of input signals happening at the same time. In other words, it assigns a different meaning to a combination of inputs than it does to each of those inputs individually. This is commonly called “chording” and is used to great effect in games like Tony Hawk’s Underground, where every combination of a button and a direction maps to a different trick. Remarkably, chording is present even in early games such as Super Mario Brothers, where holding down the B-button modifies the meaning of pressing left or right (by adding more force)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The other type of spatial transposition happens across game space and is more commonly known as context sensitivity. For example, in Resident Evil 4, the position of the character in the game world can alter the meaning of a particular input. Standing by a window or a ladder changes the meaning of the A-button in a direct, one-for-one kind of way. It’s not necessary for context sensitivity to be this rigid, however, as proved by the game Strange Attractors. Strange Attractors has only one input, which activates a series of gravity wells placed around the level. The gravity from a well will affect the ship relative to its distance from that well (following"
+    },
+    {
+      "type": "paragraph",
+      "text": "the inverse square law, I assume) meaning that Strange Attractors features a fluid, ever-changing sort of context sensitivity. The meaning of pressing the button is constantly changing as the ship moves around the game space, closer to some wells, farther from others."
+    },
+    {
+      "type": "paragraph",
+      "text": "Drawing a generalization from all of this, transposition is either spatial or time-based. Spatial transposition can mean turning a linear curve into an exponential one, or it can mean augmenting sensitivity by recognizing groups of input signals from different inputs as unique, and passing along corresponding (new) signals. Time-based transposition assigns different meaning to input signals across time, forming gestures which themselves create new and different signals. This offers us another way to compare one game to another: the types of transposition the input signals undergo and the resulting values that get passed along."
+    },
+    {
+      "type": "heading",
+      "level": "2",
+      "text": "Relationships"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examining individual mappings and envelopes takes us most of the way to understanding how a game’s feel is built. The final piece of the puzzle is the relationships between parameters in a system. This is where much of the tuning of game feel happens. For example, in the game Sonic the Hedgehog, there is a parameter for gravity. Gravity is the foil of jumping; the two work in concert to produce the feel of jumping in Sonic. In the same way, to create the feel of “carving” in a driving game requires friction. Without friction, the car’s turning seems floaty, as if it’s driving on ice. With sideways friction applied to the tires, they seem to carve and dig in, as a real car would. Individual mechanics—mappings of one input to one response—work in concert to produce an overall feeling of control."
+    },
+    {
+      "type": "paragraph",
+      "text": "The whole process looks something like Figure 7.20. As shown across the top, input enters the system when the player manipulates an input device. From the physical manipulations of various inputs, the input device generates and sends to the game corresponding signals. A raw input signal can be mapped directly to response, as with a mouse cursor, or it can feed directly into a simulation. Alternately, some kind of filtering happens, where the input signal coming in is altered in some way before being passed along to simulation and/or response. The simulation layer represents the game’s internal model of reality, the one which the player interacts with via input. Finally comes the game’s actual response to the signals it received, whether transpose, raw or from a simulation."
+    },
+    {
+      "type": "paragraph",
+      "text": "To summarize, to measure response we want to know what inputs are hooked up to what parameters in the game. To do this, we want to know how many different things the player controls, how many avatars there are. We can then examine each avatar in the game relative to its type and dimensions of motion, the frame of reference for that motion, and whether the motion is direct or indirect. Knowing this, we can identify how each input stream modulates the parameter over time and can quantify this as an ADSR envelope. From this point, we can attempt to extrapolate the system that gave rise to this particular envelope. This could be a filtering"
+    },
+    {
+      "type": "image",
+      "src": "154.png",
+      "caption": "FIGURE 7.20 From input to response."
+    },
+    {
+      "type": "paragraph",
+      "text": "of input signals directly, a change in a simulation or both. Ultimately, we want to understand what variables are being tweaked, the relationships between those variables and how they become the envelopes we’ve identified."
+    },
+    {
+      "type": "heading",
+      "level": "3",
+      "text": "Input and Response Sensitivity"
+    },
+    {
+      "type": "paragraph",
+      "text": "Out of the games discussed earlier, Donkey Kong is particularly interesting because it maps a relatively high-sensitivity input device (the joystick, which can return float values from -1.00 to 1.00 along its horizontal axis) to a very low-sensitivity response. Compare this to Super Mario Brothers, which has a very low-sensitivity input device but has a very sensitive response."
+    },
+    {
+      "type": "paragraph",
+      "text": "If we record the positions of these characters over time and include jumping as well, it’s obvious just how much more expressive Mario’s loose movement is (Figure 7.21)."
+    },
+    {
+      "type": "paragraph",
+      "text": "From this comparison, it’s apparent that Super Mario Brothers has a more expressive mechanic than Donkey Kong. The combination of input and response produces a fairly accurate picture of the overall “virtual sensitivity” of the system (Figure 7.22). This is a soft metric, of course, but useful for comparing the expressivity of two different games."
+    },
+    {
+      "type": "image",
+      "src": "155.png",
+      "caption": "FIGURE 7.21 The position of Mario and Jumpman over time: Mario is much more expressive.\nFIGURE 7.22 Different games on a rough scale of input and response sensitivity."
+    },
+    {
+      "type": "heading",
+      "level": "4",
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "To experience this first hand, check out example CH07-2. There are four options for control that can be accessed by pressing keyboard keys 1-4."
+    },
+    {
+      "type": "paragraph",
+      "text": "To begin, press “1” and use the W, A, S and D keys to move the cube around. These controls have low input sensitivity and low response sensitivity. The input sensitivity is low because there are only four buttons, each of which only has two states, on or off. The reaction sensitivity is low because the game’s reaction for each button has only two states, moving at full speed or not moving at all. This is not a very good virtual sensation, very stiff with very little fluidity or appeal. In some instances—the original Legend of Zelda, for example—this grid-like rigidity is desirable because it creates a more"
+    },
+    {
+      "type": "paragraph",
+      "text": "contemplative, less visceral feel. As in Pacman, all rotation and superfluous directions of movement have been stripped away for simplicity. The result, however, is not a very compelling virtual sensation when removed from its context."
+    },
+    {
+      "type": "paragraph",
+      "text": "Press “2” to experience low input sensitivity and high response sensitivity. This time, the cube moves organically, loosely and smoothly. The simulation is adding forces rather than overwriting position directly. This is a much better feel, no? The lines of motion are flowing, curved and organic."
+    },
+    {
+      "type": "paragraph",
+      "text": "Press “3” to experience high input sensitivity and low response sensitivity. With this combination, you have very high sensitivity with the input device, the mouse, but almost zero reaction from the game. The cube has become essentially a very large cursor. This is a natural mapping; the position of the mouse on the screen matches the position of the mouse sitting on the desk, so it’s very easy to feel oriented and get a sense of mastery and control. Bit boring, isn’t it? Because the mapping is so internalized from years of computer use, there’s nothing to learn, no motion translation to master. The motion is quick and snappy and leaves the cube with no feeling of mass, weight or presence."
+    },
+    {
+      "type": "paragraph",
+      "text": "Press “4” to experience high input sensitivity and high response sensitivity. There’s a very interesting motion here, one that requires a bit of mastery. It feels nice to whip the block around again and again to hit the red dot and to experiment with trying to slow the block down again and reverse direction or to make little figure eight patterns. Even a game with high input sensitivity and low reaction sensitivity (a first-person shooter that ties mouse movement directly to looking around a 3D space, for example), smoothes that snappy, jerky input with a little bit of reaction from the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a simple demonstration of some of the different ways input and response can be combined to create different sensations of control. This rough measurement can be applied to any game."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Our final metrics are as follows:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Hard",
+        "How many objects the player controls",
+        "The dimensions, type and frame of reference for the movement of each avatar",
+        "The ADSR envelope representing each modulation of a game parameter by an input over time"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Soft",
+        "The overall sensitivity of the system as a function of its input and response sensitivity"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Understanding the simulation and input filtering that give rise to particular sensations of control is craft knowledge. If you want to build real-time control that feels a certain way, it’s useful to know how simulations give rise to what sensations. For measuring the sensation of control across games, however, measuring the output, the envelope, is sufficient. For measurement, as for the player, the underlying simulation is mostly irrelevant. What is relevant is the output, the sensation of control and the overall sensitivity of the controls."
+    }
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "chapter_title": "Input Metrics",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The pianos (think input devices) of Ludwig Van Beethoven’s day were flimsy, cheap things. In the course of his exuberant performances, he often broke 10 to 15 piano strings, sometimes damaging the piano beyond repair. It was not just his playing that destroyed pianos, but the music itself: it was not written for the pianos of his day. Part of Beethoven’s genius was his ability to look beyond the physical limitations of the piano and define a space of a greater virtuosity and musical expressivity than the one actually presented by the piano itself. When he looked at a rickety Viennese piano, he saw the robust grand pianos of today."
+    },
+    {
+      "type": "paragraph",
+      "text": "What Beethoven was able to see clearly—and exceed—were the physical and mental limitations imposed upon him. He understood that a tool or instrument inherently shapes and influences the activities that can be carried out employing it, both physically and mentally. Consider a screwdriver. A screwdriver is used to fasten things together. But it is a very specific kind of fastening, and the nature of that fastening is implied by the screwdriver itself. For one, it must employ a screw that matches the head of the screwdriver being used. If it’s a Phillips head screwdriver, it needs a Phillips head screw, and the grooves in the screw head must be machined to a size comparable to the head of the screwdriver. A large Phillips head screwdriver cannot be used to screw in a tiny screw. A screwdriver, like all tools, contains within it a specific subset of possible uses, a possibility space for its use. As a tool, it defines what it can do, and, more importantly, what people will expect to do with it. If you buy a sports car, you’re likely to get speeding tickets. If you have a hammer, everything looks like a nail."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is an interesting notion and one which we rarely apply to the input devices used to control video games. Just how much does the design of a particular input device affect the feel of a virtual object controlled with it, and to what degree is game feel defined by the input device itself? In other words, to what degree is the possibility space of a virtual object defined by the physical object used to control it?"
+    },
+    {
+      "type": "paragraph",
+      "text": "To answer this question, we need to be able to measure the input space represented by a particular input device. Next, we need to be able to compare the input space of one input device to another in a meaningful way. Finally, we need to examine"
+    },
+    {
+      "type": "paragraph",
+      "text": "how the feel of a particular game is affected by the physical construction of the input used to control it. To do this, we’ll examine input at three levels:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The micro level, examining each individual input that makes up the input device",
+        "The macro level, examining the possibility space of the input device as a whole, its layout and construction and the types of actions it implies",
+        "The tactile level, examining how the construction of the input device affects of input virtual feel of game objects controlled with it."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Micro Level: Individual Inputs"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first easily measurable thing about an input device is the number of separate, individual inputs it contains. My Xbox 360 controller, for example, has 15 separate inputs on it (Figure 6.1). This includes a couple thumbsticks; a directional pad; two “trigger” buttons; two “shoulder” buttons; four standard buttons; and some flimsy, seldom-used buttons for select, start, wireless resync and other miscellany. Culling out the inputs that are rarely used for game control, this leaves 4 usable inputs."
+    },
+    {
+      "type": "image",
+      "src": "121.png",
+      "caption": "FIGURE 6.1 The Xbox 360 controller has 15 input options."
+    },
+    {
+      "type": "list",
+      "items": [
+        "X-, Y-, A- and B-buttons (standard buttons)",
+        "Right and left “shoulder” buttons",
+        "Right and left “trigger” buttons",
+        "Directional pad",
+        "Left thumbstick",
+        "Right thumbstick"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The common element every input possesses is the potential for motion. A button can be pressed down, a thumbstick pulled away from center and a mouse slid across a flat surface. In each of these cases, the input sends a specific type of signal to the computer. It is interpreted, responded to and fed back via the output devices (screen, speakers and so on). This potential for real-time manipulation and signal-sending is the fundamental property of an input. If you can’t move it in some way and have it send a corresponding signal to a computer, it’s not an input. The key to correlating seemingly unrelated types of input, then, is in this motion."
+    },
+    {
+      "type": "paragraph",
+      "text": "The first way to classify an input is as either discrete or continuous. That is, does it send signals continuously (joystick, mouse, steering wheel) or does it send individual, momentary signals (keyboard key, mouse button, controller button)?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Inputs that enable continuous input can also be categorized¹ like this:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Type of Motion: linear vs. rotation. A mouse measures movement linearly (in two dimensions) while a steering wheel measures rotation.",
+        "Type of Sensitivity: position vs. force. A mouse measures changes in position, while a joystick measures how much force is being applied against spring resistance.",
+        "Dimensions of Motion: A mouse measures linear movement in two dimensions, as does a thumbstick. A trigger button measures linear movement in one dimension. A Wiimote measures rotational movement in three dimensions.",
+        "Direct vs. Indirect Input: A mouse is indirect—you move the mouse on the desk and the cursor moves on the screen. The touch screen on the DS enables players to directly tap on or touch the thing they want to interact with.",
+        "Boundaries on Motion: The thumbstick on an Xbox 360 controller has a round casing enclosing it, while a mouse has no physical boundaries on its motion. The way that the motion of an input is bounded can change what it feels like to use it. For example, the slotted casing around the Nintendo 64’s thumbstick feels different from the smooth round casing of the Playstation 2’s.",
+        "Sensitivity: Roughly, how many different states can the input exist in. A standard button is very low sensitivity; it has only two states (ON or OFF). A mouse"
+      ]
+    },
+    {
+      "type": "footnote",
+      "text": "¹This is adapted from Robert J.K. Jacob’s excellent 1996 paper “The Future of Input Devices.” Available online at: http://www.cs.tufts.edu/~jacob/papers/sdcr.pdf"
+    },
+    {
+      "type": "image",
+      "src": "123.png",
+      "caption": "FIGURE 6.2 Use three fingers to visualize axes of movement for input devices."
+    },
+    {
+      "type": "paragraph",
+      "text": "is highly sensitive by comparison; it has no physical boundaries making each tiny motion another possible state. Though inputs can be mapped to in-game motions that make them more or less sensitive, individual inputs have an inherent sensitivity."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Signals Sent: What is the format of the signals each input sends to the game, and how do they change over time?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "One way to visualize these properties for a particular input device is to hold out your hand as shown in Figure 6.2. This will also be useful for comparing movement of an input device to movement of the object being controlled, which can indicate whether a mapping is natural (in the Donald Norman sense)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine that lines extend outward from your index finger, middle finger and thumb, as in Figure 6.2. Now imagine each finger as an axis. If you move your hand along any of these axes, you’re moving it linearly in a single dimension, X, Y or Z. If you rotate your hand around a particular finger you’re rotating in X, Y or Z. Mouse movement is unbounded, so if you slide your hand around the plane described by the X- and Z-axes (index and middle fingers) this is a good way to visualize the unbounded movement of the mouse (Figure 6.3)."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Playstation 2 thumbstick has the same kind of motion, but it has a boundary, so we can think about being able to move in that plane, but only so far in a particular direction (Figure 6.4)."
+    },
+    {
+      "type": "image",
+      "src": "124a.png",
+      "caption": "FIGURE 6.3 The “axis hand” moving like a mouse."
+    },
+    {
+      "type": "image",
+      "src": "124b.png",
+      "caption": "FIGURE6.4 The “axis hand” moving like a thumbstick."
+    },
+    {
+      "type": "paragraph",
+      "text": "Every button has two boundaries—fully pressed and fully released—between which it moves. Whether it’s a trigger button with a handful of states between the extremes of ON and OFF or a mouse button with only two states, there is a limit on movement. The same goes for thumbsticks and arcade joysticks with their circular plastic housings. (In contrast, Wiimotes and computer mice are two general-use input devices that have no built-in boundaries on their motion.) Boundaries are important to take note of because they reduce the overall sensitivity of the input to a particular range. Sometimes—as in the case of a thumbstick—the boundary can play an important role in defining the types of controlled in-game motions that are best suited to the input (Figure 6.5)."
+    },
+    {
+      "type": "image",
+      "src": "125.png",
+      "caption": "FIGURE 6.5 The boundary of the Xbox thumbstick is important for the feel of Geometry Wars: Retro Evolved."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now think about how many possible states there are between the boundaries as you move your hand around. For a thumbstick, it’s a lot. For a mouse, even more. For a “trigger” button, it’s more than 1, but less than with a thumbstick or mouse. This is a rough measure of the sensitivity of the input device."
+    },
+    {
+      "type": "paragraph",
+      "text": "The amount of sensitivity an input possesses is a soft metric. It is possible to calculate the actual, physical number of states an input can reside in—two for a standard button, something like 1,920,000 for a mouse on a 1,600 × 1,200 desktop—but that comparison doesn’t accurately portray the sensation of using these inputs. It’s more like the difference between an Etch A Sketch™ and a paintbrush. You can paint a picture with either, but the paintbrush offers a lot more versatility. The idea is that different inputs have different amounts of sensitivity inherent in their design. A standard button has the absolute minimum amount of sensitivity. It’s either fully on or fully off. The dial on a classic Breakout paddle has a bit more; its one-axis rotation has a great deal of sensitivity in a limited way. More sensitive than either of those is an arcade joystick, which moves freely in X and Z, but which"
+    },
+    {
+      "type": "paragraph",
+      "text": "is bounded on all sides by a circular plastic housing. Figure 6.6 shows a (rough) scale for input sensitivity."
+    },
+    {
+      "type": "paragraph",
+      "text": "More or less sensitivity in an input can be desirable depending on the intended feel, and how that feel is intended to fit in with the design as a whole. It’s like the color blue—whether or not it’s appropriate to use it depends on the context and the desired result."
+    },
+    {
+      "type": "paragraph",
+      "text": "The final thing to measure about an input is the types of signals it sends. This is the data you will be mapping to some response in your game, so it’s important to keep track of the raw form in which it arrives in the computer. This is a hard metric—an input signal always ends up in a simple, numeric format a computer can easily understand—but it also supports our understanding of the soft metric sensitivity of the input device. A single button sends a binary signal, “up” or “down.” Measure this over time and you get signals for “up,” “pressed,” “down,” and “released.” A mouse sends a pair of values, one for each axis, that get updated every frame. So a mouse might send 60 different pairs of values in a second, like Table 6.1."
+    },
+    {
+      "type": "paragraph",
+      "text": "The signals sent by the mouse are more complex than those sent by the button. Figure 6.7 shows the types of signals sent by various input devices."
+    },
+    {
+      "type": "image",
+      "src": "126.png",
+      "caption": "FIGURE 6.6 Sensitivity of input devices."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Frame",
+          "Signal Sent"
+        ],
+        "rows": [
+          [
+            "1",
+            "(0.52, 0.11)"
+          ],
+          [
+            "2",
+            "(0.51, 0.21)"
+          ],
+          [
+            "3",
+            "(0.50, 0.34)"
+          ],
+          [
+            "4",
+            "(0.31, 0.42)"
+          ],
+          [
+            "5",
+            "(-0.1, 0.61)"
+          ]
+        ]
+      },
+      "caption": "TABLE 6.1"
+    },
+    {
+      "type": "image",
+      "src": "127.png",
+      "caption": "FIGURE 6.7 Signals sent by various inputs."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Input Measurement Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Measuring all these properties for each input is useful for understanding game feel because it is an immutable part of the interface to a particular game. Every game played on the Nintendo Entertainment System was designed to respond to that particular configuration of eight simple, two-state buttons. If we understand just how simple those buttons are in functionality, it becomes all the more remarkable that expressive mechanics like the swinging in Bionic Commando or the slippery movement of Super Mario Brothers were created. More importantly, if we look at the number, type and sensitivity of inputs used to create a mechanic, we can begin to get much closer to a meaningful comparison between the feel of games created with different input devices. Comparing the feel of Halo to the feel of Contra becomes a"
+    },
+    {
+      "type": "paragraph",
+      "text": "lot more viable if you understand that Xbox thumbsticks are inherently much more sensitive than the directional pad and two buttons of the NES controller."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Standard Button"
+    },
+    {
+      "type": "paragraph",
+      "text": "The standard two-state button (Figure 6.8) is the most basic type of input in general use today. The button moves only in one axis, the Y-axis, and the motion is linear. A spring beneath the button pushes it upward constantly. A plastic housing or catch stops it at a certain point, which represents the fully released state. When the player presses the button, he or she overcomes the force of the spring and the button slides downward, in the Y-axis, into the controller. It’s stopped at a certain point and then sits in the fully depressed or OFF state. There are no states in between these hard plastic boundaries for Y-axis movement. The button, then, has only two states: ON or OFF. These characteristics also describes the essential functionality of a keyboard key, a mouse button or any other simple two-state button such as the “shoulder” buttons on a typical modern controller, though these are larger and can be depressed only a tiny amount. These buttons are remarkable for their lack of sensitivity. There’s very little that can be expressed by a standard button alone. The feedback from the button is discrete rather than continuous, meaning that the signals it sends happen at one particular moment in time. The signals are binary; the button is either on or off at any given time. As brilliant one-button games like Ominous Development’s Strange Attractors prove, however, it’s possible to map a single button to a complex, nuanced, sensitive response from the game, but the button by itself is very limited as an input. It is not really possible to create functional input device with fewer states, with less expressive potential than a single two-state button."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Y-axis movement of a standard button has hard boundaries at the fully released state (where the spring’s pushing force is stopped by a plastic catch) and at the fully pressed state (where the player’s pressing force is stopped by a plastic catch)."
+    },
+    {
+      "type": "image",
+      "src": "128.png",
+      "caption": "FIGURE 6.8 A standard two-state button. It has two states, moves only in the Y-axis and is by itself a very low-sensitivity input."
+    },
+    {
+      "type": "image",
+      "src": "129.png",
+      "caption": "FIGURE 6.9 The motion of a trigger button."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Trigger Button"
+    },
+    {
+      "type": "paragraph",
+      "text": "Like the standard button, the “trigger” button (Figure 6.9) typically found on modern controllers moves in only one axis. In this case, I’d call it the X-axis, as it’s usually on the front of the controller and is usually operated by the index finger. Again, though, this is all relative to the controller’s position in space."
+    },
+    {
+      "type": "paragraph",
+      "text": "Trigger buttons are unlike standard buttons because they recognize many states between their boundaries. Between the fully pressed and fully released states, there is a zone of sensitivity inside which it’s possible to have many different positions of the trigger. Fiddling around with my Xbox 360 controller, I estimate that there are four or five discrete states including fully on and fully off. Like a standard button, the trigger is spring-loaded and defaults to a fully extended released state. The major difference is in the button’s range of motion. By carefully depressing the spring a certain amount, the player can keep the button a quarter, half or three-quarters of the way depressed without pushing it fully to one extreme or the other. This X-axis movement has hard boundaries at the fully released state (where the spring pushing force is stopped by a plastic catch) and at the fully pressed state (where the player’s pressing force is stopped by a plastic catch)."
+    },
+    {
+      "type": "paragraph",
+      "text": "A trigger button typically returns a float value, a number between 0.00 and 1.00. For example, across three frames it might return 0.63, 0.81 and 0.97 as it is pulled from off to on."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Paddle"
+    },
+    {
+      "type": "paragraph",
+      "text": "Though they’re not in common use anymore, it’s interesting to note that the paddle controllers sold with many of the first home consoles used a hard-boundary,"
+    },
+    {
+      "type": "image",
+      "src": "130.png",
+      "caption": "FIGURE 6.10 An old school paddle controller: bounded rotational control in one dimension."
+    },
+    {
+      "type": "paragraph",
+      "text": "one-axis rotation. There was one spinner input on the front of the controller (Figure 6.10). It was gripped between the thumb and forefinger and could be rotated left or right a certain amount before it reached a defined hard boundary point and the plastic would catch and stop it. Through a combination of factors, this input type fell out of vogue, but it was quite a sensitive input, with hundreds of possible states between fully left rotation and fully right."
+    },
+    {
+      "type": "paragraph",
+      "text": "A paddle controller returns a float value, in a range from -1.00 to 1.00. When the paddle knob is centered, it’s at 0.00. As it is rotated left of center, it goes negative (something like -0.26) and as it is rotated right it goes positive (something like 0.41)."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Thumbstick"
+    },
+    {
+      "type": "paragraph",
+      "text": "A typical thumbstick is movable in two axes simultaneously, left-right and up-down (Figure 6.11). It’s spring loaded in both directions, though, so it will always seek back to its straight-standing centered position. In most cases, the housing containing the thumbstick provides the hard boundary against which it stops when pushed fully in any direction, and it is usually smooth and round. With a thumbstick, it’s no longer meaningful to track the total number of possible states. When using a thumbstick to control something in a game, there is no notion of discrete states, but a fluid, smooth sense of highly accurate positioning."
+    },
+    {
+      "type": "paragraph",
+      "text": "The thumbstick is often used as a direct or semi-direct stand in for the intended in-game motion. Rolling the stick across the edge of its round casing creates a carving turn for a ship in Geometry Wars, a quick heel-turn for Mario or a quick Jab in Fight Night. With a thumbstick, one can be said to “feather” or “flick” a"
+    },
+    {
+      "type": "image",
+      "src": "131.png",
+      "caption": "FIGURE 6.11 A thumbstick controller offers fluid, accurate means of controlling game action."
+    },
+    {
+      "type": "paragraph",
+      "text": "control; these are properties of highly sensitive input, one which vastly more sensitive than a standard or trigger button. From its centered position, the thumbstick can only be displaced until it comes into contact with the circular housing, which constrains its movement."
+    },
+    {
+      "type": "paragraph",
+      "text": "The thumbstick can be displaced from its centered position left to right and up to down, which creates a perceptually infinite number of possible states for the player."
+    },
+    {
+      "type": "paragraph",
+      "text": "The thumbstick returns two constantly changing float values at the same time, one for each axis of motion. Left to right motion (in the X-axis) returns one float value between -1.00 and 1.00, while up and down motion (in the Z-axis) returns another. The format of the signal could be: (-0.16, 0.93)."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Mouse"
+    },
+    {
+      "type": "paragraph",
+      "text": "A mouse—and here I’m talking about the input which detects positional movement, not the clickable buttons—is similar to thumbstick in that it enables movement in two axes. In the case of the mouse, however, there are no in-built boundaries (Figure 6.12). There’s a sort of a soft boundary in the sense that you need a small section of flat surface to rest the mouse on, and that potentially can lead to the mouse falling off a table or running into something. In practice, the boundary most often exists in software rather than hardware. The edge of the screen stops the cursor before the edge of the table."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because there is no explicit boundary, the potential for different states is even higher than with a thumbstick. All position is relative, and there is no spring pushing the mouse back into a neutral position. These factors combine to make the mouse the most sensitive input device in common use today."
+    },
+    {
+      "type": "image",
+      "src": "132.png",
+      "caption": "FIGURE 6.12 A mouse has tens of thousands of states and almost no boundaries."
+    },
+    {
+      "type": "paragraph",
+      "text": "The boundaries for a mouse’s movement are in software, stopping the cursor (the meaning of further mouse movement) at the four edges of the screen (top, bottom, left and right). Technically, there’s also a boundary at the edge of whatever surface you’re mousing on, but this boundary is almost never reached due to the typical ratio of physical mouse movement to computer space movement. You get a lot of screen movement for a little mouse movement, so you don’t run your mouse off the table very often."
+    },
+    {
+      "type": "paragraph",
+      "text": "The mouse is a highly sensitive input device. On my 1,200 × 1,600 pixel desktop, the mouse cursor can potentially rest on any one of 1.9-something million pixels. In practice, a user can’t be expected to accurately hit targets smaller than a certain size (checkbox on a dialog), but the sensitivity is there."
+    },
+    {
+      "type": "paragraph",
+      "text": "Like the thumbstick, the mouse returns two separate float values in the form (0.18, -0.28). But in the mouse’s case, what’s being returned is a displacement. How far the mouse has moved in both the X and Z directions since the last frame, in other words. This is often mapped directly into screen space movement (as in the movement of a cursor) but the movement is not absolute. If it were, you would not be able to pick up the mouse, move it and put it back down to continuously move the cursor in one direction."
+    },
+    {
+      "type": "paragraph",
+      "text": "Table 6.2 compares all these input devices."
+    },
+    {
+      "type": "table",
+      "caption": "TABLE 6.2 Input Metrics",
+      "data": {
+        "headers": [
+          "",
+          "Standard Button",
+          "Trigger Button",
+          "Paddle",
+          "Thumbstick",
+          "Mouse"
+        ],
+        "rows": [
+          {
+            "header": "Type of Motion",
+            "cells": [
+              "The button moves in only one axis, the vertical or Y-axis.",
+              "Linear. The button moves along one axis linearly.",
+              "Rotation. The paddle’s motion is rotational around one axis.",
+              "Linear. The thumbstick moves linearly along the X- and Z-axes.",
+              "Linear. The mouse moves linearly along the X- and Z-axes."
+            ]
+          },
+          {
+            "header": "Dimensions of Motion",
+            "cells": [
+              "",
+              "The button moves in only one axis, the forward or X-axis.",
+              "Y-axis rotation only.",
+              "The thumbstick moves in the X and Z dimensions.",
+              "The button moves in the X and Z dimensions."
+            ]
+          },
+          {
+            "header": "Direct or Indirect Input",
+            "cells": [
+              "",
+              "Indirect; you press the trigger in your hand and something changes in the game. You don’t directly touch the screen with the trigger.",
+              "Indirect; you don’t directly touch the screen with the trigger.",
+              "Indirect input.",
+              "Indirect input."
+            ]
+          },
+          {
+            "header": "Boundaries on Motion",
+            "cells": [
+              "Two hard boundaries, fully pressed or fully released.",
+              "Two hard boundaries, fully pressed or fully released.",
+              "Two hard boundaries, full left rotation or full right rotation.",
+              "One boundary, typically round (but can also be square or grooved, which changes the feel of using the joystick).",
+              "Four soft boundaries."
+            ]
+          },
+          {
+            "header": "Sensitivity",
+            "cells": [
+              "The button has only two states, on or off. There are no states between the hard on/off boundaries.",
+              "Four to five possible states between on and off.",
+              "Hundreds of possible states between the two extremes of rotation.",
+              "Thousands of possible states between up/down, left/right movement, and all the positions in between fully released and pressed against the housing.",
+              "Millions."
+            ]
+          },
+          {
+            "header": "Type of Sensitivity",
+            "cells": [
+              "",
+              "Force. The button is sensitive to how far its spring-loaded mechanism has been displaced from its normal position.",
+              "Force (torque in this case). The paddle knows how far it’s rotated to the left or right of center by spring resistance.",
+              "Force. The thumbstick is sensitive to how far its spring-loaded mechanism has been displaced from its normal position.",
+              "Position. The mouse is sensitive to changes in position; when it’s dragged left, right, up or down, this changes the signals it sends."
+            ]
+          },
+          {
+            "header": "Signals",
+            "cells": [
+              "Binary; “up,” “pressed,” “down” or “released.”",
+              "Float value between 0.00 and 1.00.",
+              "Float value between -1.00 and 1.00.",
+              "Two float values, each between -1.00 and 1.00. One for the left/right axis, one for the up/down axis.",
+              "Float value between -1.00 and 1.00"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Macro Level: The Input Device as a Whole"
+    },
+    {
+      "type": "paragraph",
+      "text": "That takes care of the micro level of individual inputs. Now let’s recompose the inputs into a complete input device and look at how inputs combine to create an expressive potential greater than the sum of their parts. To keep things simple, let’s return to the NES controller, as shown in Figure 6.13."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examining each input, we must concede that this is very low-sensitivity input device. There are six buttons for use in active gameplay, and each of them is a standard two-state button. More than that, certain buttons are mutually exclusive by design. You can’t press up and down on the D-pad at the same time, nor can you press right and left simultaneously. But this controller has more sensitivity than its individual inputs would at first indicate. Even with six buttons and the limitations imposed by the D-pad, the possible combinations of buttons look something like Figure 6.14."
+    },
+    {
+      "type": "paragraph",
+      "text": "In order to truly come to terms with the input space of an input device as a whole, you have to consider it at both the macro and micro levels. How much sensitivity does each input have, and how do the layout and design of the controller reduce and/or increase sensitivity? In the case of the NES controller, the sensitivity is reduced by the mutually exclusive D-pad buttons and increased by the combined possibilities of the buttons, laid out as they are for use with both thumbs."
+    },
+    {
+      "type": "image",
+      "src": "135a.png",
+      "caption": "FIGURE 6.13 The whole input device is greater than the sum of the parts because inputs can be combined and overlap."
+    },
+    {
+      "type": "image",
+      "src": "135b.png",
+      "caption": "FIGURE6.14 Simple buttons combine to form a larger, more sensitive input space."
+    },
+    {
+      "type": "paragraph",
+      "text": "Again, this isn’t a hard metric. We can measure the total number of inputs and all the permutations of combining them as specific numbers, but that’s not especially useful. We’re interested in getting a rough idea of how the inherent sensitivity of an input device compares to the sensitivity of another device. It suffices to know that NES controller is much less sensitive than a computer mouse; from that point it is possible to make design decisions relative to our intended feel and to compare the feel of two games controlled with input devices of varying sensitivity."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tactile Level: The Importance of Physical Design"
+    },
+    {
+      "type": "paragraph",
+      "text": "It’s also useful to understand how the input feels physically. This is an overlooked aspect of game feel: the tactile feel of the input device. Games played with a good-feeling controller feel better. For example, the Xbox 360 controller feels good to hold; it’s solid, has the proper weight and is pleasingly smooth to the touch. By contrast, the first-run Playstation 3 controllers were lamented as being light and “cheap [feeling], like one of those third-party knockoffs.”²"
+    },
+    {
+      "type": "footnote",
+      "text": "²By “Zeus” from http://forums.maxconsole.net/archive/index.php/t-19989.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "This difference in tactile feel of the input device has surprising implications for the feel of a given game. When I prototype something—platformer, racing game, whatever—it will feel noticeably better if I hook up the inputs to my wired Xbox 360 controller instead of using simple keyboard inputs. Of course, this is a very soft metric. It’s tempting to simply say “de gustibus non est disputandum” (there’s no accounting for taste) and leave it at that, but there are some noticeable, measurable qualities of various inputs that can be observed and taken into account."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Weight"
+    },
+    {
+      "type": "paragraph",
+      "text": "The weight of a controller is an important quality for an input device. A heavier, more solid-feeling controller is perceived as being of higher quality. For a game’s feel, this can go a long way toward making actions feel weighty, powerful or satisfying. Of course, it’s also possible to push too far into the heavy direction, as the original Xbox controller seemed to, but in general input devices seem to trend toward being too light, flimsy and cheap-feeling. This significantly affects the feel of control of a virtual object."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Materials"
+    },
+    {
+      "type": "paragraph",
+      "text": "The material used to construct the device has an impact on the way the user feels about the controller and, therefore, the game. The white plastic that houses my Xbox 360 controller has a smooth, pleasingly porous feel. It’s almost like skin. My Wiimote and Playstation controllers feel like plastic. It’s a subtle difference and measuring its impact on game feel is extremely difficult. All I can say is that"
+    },
+    {
+      "type": "paragraph",
+      "text": "I prefer holding my Xbox controller. The Dell mouse I’m using currently has a similar porousness but is much coarser, making it less pleasurable to handle than my Xbox controller. This has a mostly subconscious effect on my interaction with these objects, and on how I perceive virtual objects controlled with them."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Button Quality"
+    },
+    {
+      "type": "paragraph",
+      "text": "By “button quality,” I mean the feel of the spring resistance. Particular buttons on input devices are often described the same way the feel of a game is described: tight or loose, quick-responding or sluggish. This feel is contingent on the quality, construction and type of springs that drive the motion of the input, whether they’re on a button or a joystick."
+    },
+    {
+      "type": "paragraph",
+      "text": "As James Goddard of Crunchtime Games says, “There is a huge difference in how input devices—even similar ones—can have on the feel of a game. Most people can tell the difference in the feel of control when a game is cross-platform but most do not know what exactly is causing it. Even a majority of developers really are not trained to know. The usual argument is that a specific platform’s controller is ‘just better.’ Assuming a game engine is truly ported equally across the platforms and button layout is close to the same, what people are perceiving as better is the actual mechanical differences in the sticks/buttons tension and mechanical ‘travel’ distance. This sensitivity can come down to millimeters.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "The design of controllers has a lot to do with industrial design and product design. Controllers are consumer products after all, as are game consoles, computers, mice, keyboards and handhelds. Every piece of hardware upon which game feel is built is a consumer product. The physical design of hardware can change the feel of control over virtual objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "To summarize, we can categorize an input device according to individual inputs, the input space of the device as a whole, and tactile feel resulting from the materials and physical construction of the device itself."
+    },
+    {
+      "type": "paragraph",
+      "text": "Individual inputs can be measured according to their dimensions and types of movement, whether they track position or force, whether they directly or indirectly change things on the screen, the boundaries on their motion, and the signals they send to the computer (hard metrics). They can also be measured according to their sensitivity (soft metric)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The input space of the device as a whole can be measured by looking at how many different inputs there are on the device, and the ways in which they can be combined (hard metrics)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The tactile feel of the device can be measured by the feel of each input (the resistance to movement, springiness, etc.) and the feel of the input device as a whole (heavy and solid versus light and flimsy, physical properties of the materials). Both of these are soft metrics, affecting the feel of games in a mostly subconscious way."
+    }
+  ]
+}

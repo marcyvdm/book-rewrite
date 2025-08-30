@@ -1,7 +1,0 @@
-analyzers
-core
-engines
-models
-processors
-scripts
-utils

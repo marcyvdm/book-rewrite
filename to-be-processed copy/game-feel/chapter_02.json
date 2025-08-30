@@ -1,0 +1,897 @@
+{
+  "chapter_title": "Defining Game Feel",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "There is no standard definition of game feel. As players and game designers, we have some beginnings of common language, but we have never collectively defined game feel above what’s necessary for discussing a specific game. We can talk about the feel of a game as being “floaty” or “responsive” or “loose,” and these descriptions may even have meaning across games, as in “We need to make our game feel more responsive, like Asteroids.” But if I ask 10 working game designers what game feel is—as I did in preparation for writing this book—I get 10 different answers. And here’s the thing: each of these answers is correct. Each answer describes a different facet, a different area, which is crucial to game feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "To many designers, game feel is about intuitive controls. A good-feeling game is one that lets players do what they want when they want, without having to think too much about it. Good game feel is about making a game easy to learn but difficult to master. The enjoyment is in the learning, in the perfect balance between player skill and the challenge presented. Feelings of mastery bring their own intrinsic rewards."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another camp focuses on physical interactions with virtual objects. It’s all about timing, about making players really feel the impact, about the number of frames each move takes, or about how polished the interactions are."
+    },
+    {
+      "type": "paragraph",
+      "text": "Other designers insist that game feel is all about making the players feel as though they’re really there, as though they’re in the game. All their efforts go into creating a feel that seems more “realistic” to players, which somehow increases this sense of immersion, a term that is also loosely defined."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, to some designers, game feel is all about appeal. It’s all about layering on effect after careful effect, polishing every interaction—no matter how trivial—until interacting with the game has a foundation of aesthetic pleasure."
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem is unity. How do these experiences become a cohesive whole? They all tell us something about game feel, but they do not help us define it. St. Augustine’s comment about defining time comes to mind: “What then is time? If no one asks me, I know what it is. If I wish to explain it to him who asks, I do not know.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "Game feel is the same way. Without close examination, we know what it is. Try to define it and the explanation quickly unravels into best practices and personal experiences."
+    },
+    {
+      "type": "paragraph",
+      "text": "This book is about how to make good-feeling games. But first we need to be clear about what game feel is. We need to separate medium from content. We need a definition that enables us to separate the conditions that are necessary for game feel from the judgments that make a game feel a certain way."
+    },
+    {
+      "type": "paragraph",
+      "text": "What is the underlying phenomenon, apart from our own experiences and the craft knowledge of building games? What are the building blocks? Just what is game feel?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Three Building Blocks of Game Feel"
+    },
+    {
+      "type": "paragraph",
+      "text": "Game feel, as experienced by players, is built from three parts: real-time control, simulated space and polish."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Real-Time Control"
+    },
+    {
+      "type": "paragraph",
+      "text": "Real-time control is a specific form of interactivity. Like all interactivity, it includes at least two participants—in this case the computer and the user—who come together to form a closed loop, as illustrated in Figure 1.1, the concept couldn’t be simpler."
+    },
+    {
+      "type": "paragraph",
+      "text": "The user has some intent, which is expressed to the computer in the form of the user’s input. The computer reconciles this input with its own internal model and outputs the results. The user then perceives the changes, thinks about how they compare to the original intent, and formulates a new action, which is expressed to the computer through another input."
+    },
+    {
+      "type": "image",
+      "src": "21.png",
+      "caption": "FIGURE 1.1 Interactivity involves the exchange of information and action between at least two participants."
+    },
+    {
+      "type": "paragraph",
+      "text": "In his book, Chris Crawford on Game Design, game designer Chris Crawford likens this process to a conversation, a “cyclic process in which two active agents alternately (and metaphorically) listen, think and speak.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "The conversation in Figure 1.2 begins when one participant, Bob, speaks. The other participant, Bill, listens to what was said, thinks about it, formulates a response and speaks in return. Now it’s Bob’s turn to listen, think and speak, and so on. In Crawford’s model, a computer replaces one of the participants, “listening” to the player’s input via the input device, thinking by processing that input and changing system state and “speaking” via the screen and speakers (Figure 1.3)."
+    },
+    {
+      "type": "image",
+      "src": "22.png",
+      "caption": "FIGURE 1.2 Interactivity as a conversation."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, the metaphor of a conversation between human and computer doesn’t fit all situations. Real-time control is not like a conversation. It’s more like driving a car. If a driver wants to turn left, it’s more action than thought. He turns the wheel in the corresponding direction, using what he sees, hears and feels to make small corrections until the turn is complete. The process is nearly instantaneous. The “conversation” takes place in minute increments, below the level of consciousness, in an uninterrupted flow of command. The result of input feels as though it is"
+    },
+    {
+      "type": "image",
+      "src": "23.png",
+      "caption": "FIGURE 1.3 The conversation between human and computer."
+    },
+    {
+      "type": "paragraph",
+      "text": "perceived in the same moment it’s expressed. This is the basis of game feel: precise, continuous control over a moving avatar."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a starting point for our definition of game feel:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Real-time control of virtual objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem with this definition is context. Imagine a ball suspended in a field of blank whiteness. How would you be able to tell if it were moving? Without the backdrop of space to move through, there can be no motion. More importantly, there can be no physical interaction between objects. For the sense of interacting physically with the game world, there needs to be some kind of simulated space."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you’re near a computer, open game feel example CH01-1 to experience the necessity of context. This is a first-person shooter game. Use the WASD keys to move around and the mouse to aim. Can you feel the motion? No? Now press the “1” key. With a simulated space, there is feel."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Simulated Space"
+    },
+    {
+      "type": "paragraph",
+      "text": "Simulated space refers to simulated physical interactions in virtual space, perceived actively by the player. This means collision detection and response between a real-time controlled avatar and objects in a game world. It also means level design—the construction and spacing of objects relative to the speed of the avatar’s movements. These interactions give meaning to the motion of an avatar by providing objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "to move around and between, to bump into, and to use as a frame of reference for the impression of speed. This gives us the tactile, physical sense of interacting with virtual environments the same way we interact with our everyday physical spaces. Using the avatar as a channel for expression and perception, we experience game worlds at the tactile, physical level of the world around us."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open example CH01-2 to experience the difference. Move around and feel the sensation of control. Now press the “1” key to enable collisions. Feel how different that is?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The other necessary component for simulated space is that it must be actively perceived. Perception happens on a scale of passive to active. The interaction of objects you see on TV and in films is passively perceived. Exploring a simulated space using real-time control is active perception. Game feel is active perception."
+    },
+    {
+      "type": "paragraph",
+      "text": "The key question is “How does the player interact with the space?” Some games have detailed collision/response systems and level design, but the player does not experience them directly. Starcraft is an example of a game like this, as we’ll see in a moment. In other games, space is an abstraction. Games with grids, tiles and hexagonal movement use space abstractly. This is not a simulation of space in the literal sense, which is the sense we’re after. Game feel as we’re defining it means active perception of literal space."
+    },
+    {
+      "type": "paragraph",
+      "text": "If we add the concept of context to our definition, it becomes:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Real-time control of virtual objects in simulated space."
+    },
+    {
+      "type": "paragraph",
+      "text": "This definition is close, but with it we are ignoring the impact of animations, sounds, particles and camera shake. Without these “polish” effects, much of the feel of a game is missing. There are objects interacting with only simulated responses giving clues about whether they’re heavy, light, soft, sticky, metallic, rubber and so on. Polish sells interaction by providing these clues."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Polish"
+    },
+    {
+      "type": "paragraph",
+      "text": "Polish refers to any effect that artificially enhances interaction without changing the underlying simulation. This could mean dust particles at a character’s feet as it slides, a crashing sound when two cars collide, a “camera shake” to emphasize a weighty impact, or a keyframed animation that makes a character seem to squash and stretch as it moves. Polish effects add appeal and emphasize the physical nature of interactions, helping designers sell those objects to the player as real. This is separate from interactions such as collisions, which feed back into the underlying"
+    },
+    {
+      "type": "image",
+      "src": "25.png",
+      "caption": "FIGURE 1.4 Street Fighter II without animation: just weird fighting boxes."
+    },
+    {
+      "type": "paragraph",
+      "text": "simulation. For example, if you take away the animations from Street Fighter II, you end up with something like Figure 1.4."
+    },
+    {
+      "type": "paragraph",
+      "text": "If all polish were removed, the essential functionality of the game would be unaltered, but the player would find the experience less perceptually convincing and therefore less appealing. This is because—for players—simulation and polish are indistinguishable. Feel can be just as strongly influenced by polish effects as by a collision system. For example, a simple squash and stretch animation layered on top of a moving avatar can radically change the feel of a game, as the creators of the popular student game De Blob discovered. A post from Joost Van Dongen reported that “When the ball bounces or moves very fast, it slightly deforms, and while rolling it slightly sags. On screenshots this is quite a subtle effect, but when seen in action, it really looks fun. An interesting detail is that it changes the feel of the gameplay entirely. Without the squash-shader, the game feels like playing with a ball made of stone. Then with no changes to the physics at all, the squash-shader makes it feel much more like a ball of paint. Nice to see how the player can be deceived about gameplay using graphics only”¹ (see Figure 1.5)."
+    },
+    {
+      "type": "footnote",
+      "text": "¹http://www.gamedev.net/community/forums/topic.asp?topic_id=401276"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assembling these three elements—real-time control, simulated space and polish—into a single experience, we arrive at a basic, workable definition of game feel:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Real-time control of virtual objects in a simulated space, with interactions emphasized by polish."
+    },
+    {
+      "type": "paragraph",
+      "text": "The player controls the avatar, the avatar interacts with the game environment and polish effects emphasize those interactions and provide additional appeal."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "The question that naturally follows is “Does game X have game feel?” With our basic definition, we can classify most games this way. For example, Sonic the Hedgehog has game feel while Civilization 4 does not. Sonic has real-time control while Civ 4 is turn based, placing it outside our definition. But to say that Civ 4 has"
+    },
+    {
+      "type": "paragraph",
+      "text": "no feel whatsoever seems wrong. It has polish effects—animations, sounds and particles—and these alter the feel of interacting with the game, especially when things are clicked and when armies clash."
+    },
+    {
+      "type": "paragraph",
+      "text": "What this indicates is that there are different types of game feel (Figure 1.6)."
+    },
+    {
+      "type": "image",
+      "src": "26.png",
+      "caption": "FIGURE 1.5 Squash and Stretch in De Blob."
+    },
+    {
+      "type": "image",
+      "src": "27.png",
+      "caption": "FIGURE 1.6 The intersection of the building blocks creates a wide range of levels of game feel."
+    },
+    {
+      "type": "list",
+      "items": [
+        "In the center, where all three intersect, is true game feel. Games like Half-Life, Sonic the Hedgehog and Super Mario 64 reside here. These games have all the components of game feel as we’ve defined it. This type of game feel is the topic of this book.",
+        "This is raw game feel. Even without polish effects, the simulation of collisions gives the experience of physical interaction between objects. But much of the appeal and sense of physical interaction is lost. Games are almost never released without polish effects, but you can play example CH01-3 to get a sense of what this feels like (press the “2” key once you’ve opened the game).",
+        "This is pure aesthetic sensation of control. There is polished real-time control, but no substance to the interactions. This feels weird. With sounds and particles but no simulated interaction, it’s like seeing behind the curtain. There’s a dissonance for the player. The particle effects and sounds convey some impression of a physical reality, but there’s a mismatch between the motion of the object and the polish clues. Without simulation, it’s difficult to create a sensation of physical interaction. There are rarely games that have this combination of real-time control and polish, but which exclude spatial simulation. (To experience this, press the “3” key in example CH01-3.)",
+        "This is physical simulation used for vicarious sensation and to drive gameplay. Games like Peggle, Globulos and Armadillo Run use simulation this way. In these games, there’s a detailed physical simulation driving interactions between objects but the resulting sensations are perceived passively because the player has no real-time control. In the same way, polish effects like sounds and particles may serve to emphasize the interactions between objects or make them more appealing, but these sensations are perceived passively, as they would be in a film or cartoon. (Press the “4” key to experience this in example CH01-3.)",
+        "This is naked real-time control, without polish or simulated space. Again, I can’t think of an example of a game that uses only real-time control without any kind of polish or simulation effects. (To experience this you can press the “5” key in example CH01-3. It’s interesting to noodle around, but the motion doesn’t have a lot of meaning or appeal without simulation and polish.)",
+        "This is naked spatial simulation. The best example of this I’m aware of is the freeware game Bridge Builder. There is a physical simulation driving the motion of the objects, but is perceived passively.",
+        "Finally, there is naked polish. Games like Civilization 4 and Bejeweled use polish effects this way, without real-time control or spatial simulation.² In these games, polish effects sell the nature of the interactions, giving objects a weight, presence, volume and so on, but these perceptions are indirect."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Now let’s apply. Where does, say, Starcraft sit on the diagram?"
+    },
+    {
+      "type": "paragraph",
+      "text": "At first glance, Starcraft appears to have real-time control. You can click at any time to specify new orders for your units. While moving units, you can update their destination as quickly as you can spam clicks onto the screen. But control over the units is not an uninterrupted flow from player to game. Each click is a momentary impulse of control that ends as quickly as it starts. You set the destination but don’t guide the journey. This is not quite real-time control in the sense we’re after."
+    },
+    {
+      "type": "paragraph",
+      "text": "There also appears to be a simulated space Starcraft. Units can run into cliffs, structures and rocks. But precisely those things that would lend a physical, tactile sensation—steering around objects, aiming and choosing when to fire—are handled by the computer. This is a simulated space with collisions and interactions, but perceived indirectly by the player."
+    },
+    {
+      "type": "paragraph",
+      "text": "The one thing Starcraft has in abundance is polish. The units have detailed animations, sounds and particles that sell their interaction with the game world and each other. The feel of Starcraft comes from these polish effects, and it is solid. Zerglings scamper, Marines trudge and everything explodes spectacularly when destroyed. This puts Starcraft on the Venn diagram in 4, the intersection of spatial simulation and polish."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is not true game feel. The control of units is not real time, and the player cannot interact with the simulated space directly. Because it has only one of the three criteria, Starcraft falls outside our definition for game feel. Okay, okay. Breathe. Be calm."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before you get your Zerglings in a bunch, remember that definition is not value judgment. We’re defining the medium of game feel, not saying anything about good or bad game feel or about whether a game is good or bad generally. The animations, sounds and particle effects in Starcraft are excellent, and as a game it’s unrivaled in terms of balance and system design."
+    },
+    {
+      "type": "paragraph",
+      "text": "For the purposes of this book, “game feel” means true game feel, the point at the center of our diagram. That is, games that includes real-time control, spatial simulation and polish. This book is about creating good-feeling games of that particular type. The other kinds of feel are important, but we have to draw the line somewhere."
+    },
+    {
+      "type": "paragraph",
+      "text": "But what about a game like Diablo? This is where our definition gets a little murky. Does Diablo have real-time control or not? It seems real time, but the interface is lots of clicking. What’s the threshold for real-time control? And what about simulated space? The character in Diablo walks around and bumps into things, but is this actively perceived by the player? Does it feel like navigating an everyday"
+    },
+    {
+      "type": "footnote",
+      "text": "²Actually, both of these games make use of a mouse cursor, which is a form of real-time control. In these cases, though, the cursor is intended to be a transparent interface to the interesting choices in the game. The usage is more like using Web page than playing Cursor Attack."
+    },
+    {
+      "type": "paragraph",
+      "text": "physical space? We’ll delve deeper into real-time control and simulated space in Chapter 2 to answer these questions."
+    },
+    {
+      "type": "paragraph",
+      "text": "So what can we do with this definition and the three building blocks of game feel? To answer that question, let’s now shift focus back to content, to expression and to the experience of game feel itself. Specifically, let’s go through some of the different experiences of game feel and examine how game designers can craft them using real-time control, simulated space and polish."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Experiences of Game Feel"
+    },
+    {
+      "type": "paragraph",
+      "text": "Game feel is comprised of many different experiences. For example, the simple pleasure of control, feelings of mastery and clumsiness, and the tactile sensation of interacting with virtual objects might all happen within a few seconds of picking up the controller. What we call game feel is the sum of all these experiences blended together, coming to the surface at different times. To understand game feel we need to understand the different experiences that comprise it; what they are, how they are crafted and how they interrelate."
+    },
+    {
+      "type": "paragraph",
+      "text": "The five most common experiences of game feel are:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The aesthetic sensation of control",
+        "The pleasure of learning, practicing and mastering a skill",
+        "Extension of the senses",
+        "Extension of identity",
+        "Interaction with a unique physical reality within the game"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The Aesthetic Sensation of Control"
+    },
+    {
+      "type": "paragraph",
+      "text": "When I was young, playing Frogger and Rastan on my dad’s Commodore 64, game feel was a toy. It was the delightful sense of puppetry I got when I controlled something in a game. But it felt like the game was controlling me, too. I’d start leaning left and right in my chair, trying to move just a bit faster or more accurately. I’d pull my head a little to one side to try to see around something on the screen. Most of all, it just felt great to see something on a screen move and react to my button presses. I wasn’t coordinated enough to really engage with the challenge of the game, but there was a pure, aesthetic beauty to control. I loved this sensation and played with it for hours. This was the experience of game feel as an aesthetic sensation of control."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The Pleasure of Learning, Practicing and Mastering a Skill"
+    },
+    {
+      "type": "paragraph",
+      "text": "A few years later, when I played Super Mario Brothers for the first time, I was super-inept. I was playing with friends from down the block who were older and more coordinated and could afford their own Nintendo. My turn was short, blustering and red-faced."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, before I had to hand off the controller, I had the sense that even the smallest motion could produce a long chain of interesting events and feel intensely rewarding. Smash a block with your head and it jiggles and makes a silly little noise. Hit an attractive, flashing question block in the same way and a coin pops out, accompanied by a shower of sound and animation. All of this rich, low-level interaction served to cushion the fact that, at first, the game was very challenging for a nine-year-old. It was OK to suck because it was fun just to noodle around and bump into things."
+    },
+    {
+      "type": "paragraph",
+      "text": "There even seemed to be different skills, the same way you practice dribbling, kicking and heading in soccer. For example, I had to learn to time my jumps, holding down the button for the right amount time, and to feather my presses of the d-pad to control speed. Combining small, incremental improvements in these areas, I started to get better and better, reaching higher levels of the game. Three weeks later, when Bowser tumbled bug-eyed into the lava, I felt a powerful sense of accomplishment, like scoring the tie-breaking goal. I’d been playing soccer for two years, but this game gave me the same feeling of pride in just three weeks. In one neatly wrapped package, there were skills to master, rewards at every level and a hyper-accelerated ramp of increasing challenges upon which to test those skills. Even better, I didn’t have to stop practicing because I was tired or because it was dark outside. This was the experience of game feel as a skill."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Extension of the Senses"
+    },
+    {
+      "type": "paragraph",
+      "text": "I grew up a bit and learned how to drive a car. This learning was very similar to mastering the controls of a new game, but it seemed to take longer, to be less fun and to lack built-in milestones against which I could measure my progress. After a while, I began to develop a sense of how far the car extended around me in each direction. I could gauge how close I could drive to other cars and whether or not my car would fit into the parking space in front of Galactican.³ To do this, I relied on a weird sort of intuition about how far the car extended around me, which made the car feel like a large, clumsy appendage. This was also like playing a game in a funny way. When I drove the car, as when I played Bionic Commando, I had a sense that thing I was controlling was an extension of my body. This was the experience of game feel as an extension of the senses."
+    },
+    {
+      "type": "footnote",
+      "text": "³A now defunct but once totally sweet arcade in Cupertino, Calif. You got eight tokens on the dollar, all the games were two tokens or less to play, and they had four-player air hockey."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Extension of Identity"
+    },
+    {
+      "type": "paragraph",
+      "text": "After a memorable incident involving my parents’ Volvo I realized that this sensation could flow in both directions. Late for class, I leapt in the car, threw it in reverse and slammed the gas, turning as I did. Scraaaaaape! I cringed, flinched and swore viciously. I pulled my hands off the steering wheel as though it were scalding hot. I had just smeared the car’s side against a concrete pole. I still remember"
+    },
+    {
+      "type": "paragraph",
+      "text": "the feeling as the car ground to a halt. It was as though I’d stubbed my toe in a big, expensive, metal-rending way. Interestingly, I didn’t think “Oh, darn, the car in which I’m sitting has come into contact with a concrete pole.” I thought “Oh, crabapple, I hit a pole!” In that moment, when car hit pole, the car was part of my identity, both physically and conceptually. Then I thought of my parents’ reaction, and I was quickly snapped back to thinking of car and self as separate. One of us was in big trouble, and it wasn’t the Volvo."
+    },
+    {
+      "type": "paragraph",
+      "text": "Around this same time, I was playing Super Mario 64. It occurred to me after pole-ing the car that a similar process happened as I controlled Mario. My identity would subsume him when I was in the zone but the moment I hit a Goomba and was sent flying, I was suddenly pulled out, viewing him once again as a separate entity. This was the experience of game feel as an extension of identity."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Interaction with a Unique Physical Reality within the Game"
+    },
+    {
+      "type": "paragraph",
+      "text": "This also made me more aware of just how physical it felt to pilot Mario around. As Mario obligingly collided with things in his world, skidding to a halt with puffs of particle dust or a spray of yellow stars, it felt tactile and physical. These artifacts gave me a sense of the weight and mass of the things in Mario’s world, as did his interactions with them. Some things he could pick up and throw easily, like a small stone block. Some things, like Bowser,⁴ required considerably more heft. Sometimes, things would seem heavier or lighter than I imagined they ought to be. For example, the eponymous snowman’s head from the Snowman’s Lost His Head goal on Cool, Cool Mountain. The snowball is small, especially at first, and yet it pummels poor Mario out of the way every time. This too seemed to have an analogy in the real world: sometimes I would go to pick something up—a grocery bag, a piece of furniture that was rarely moved—and nearly pull my arm out of socket trying to heft the thing because it was much heavier than I had expected. This was the experience of game feel as a unique physical reality."
+    },
+    {
+      "type": "footnote",
+      "text": "⁴When temporarily immobilized and grabbed by the tail, of course."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The Experiences of Game Feel"
+    },
+    {
+      "type": "paragraph",
+      "text": "The aesthetic sensation of control is the starting experience of game feel. It is the pure, aesthetic pleasure of steering something around and feeling it respond to input. When players say a game is floaty, smooth or loose, this is the experience they’re describing. An analogy from everyday life might be the feel of different cars; a 2009 Porsche feels better to drive than a 1996 Ford Windstar."
+    },
+    {
+      "type": "paragraph",
+      "text": "Experiencing game feel as skill encompasses the process of learning. This includes the clumsiness of unfamiliar controls, the triumph of overcoming challenge, and the joy of mastery. Viewing game feel as a skill explains how and why players experience the controls of a game differently as their skill level increases, what “intuitive controls” means, and why some control schemes are easier to learn than others."
+    },
+    {
+      "type": "paragraph",
+      "text": "The everyday analogy is learning a new skill, whether it’s driving a car, juggling or slicing carrots."
+    },
+    {
+      "type": "paragraph",
+      "text": "Skillful control can also lead to the feeling of being in the zone, being one with the game and the loss of self-consciousness. If you’ve played a video game and lost track of time, you’ve experienced this sensation. You sit down to play a game for a few minutes and zone out only to emerge hours later, exhausted, elated and fulfilled. In everyday life, this happens all the time. You can zone out while driving on the freeway, folding socks or playing basketball."
+    },
+    {
+      "type": "paragraph",
+      "text": "When players say “It feels like I’m really there,” “It’s like I’m in the game” and “The world looks and feels realistic,” they’re experiencing game feel as an extension of the senses. The game world becomes real because the senses are directly overwritten by feedback from the game. Instead of seeing a screen, a room and a controller in their hands, they see Azeroth, the beach at Normandy or Donut Plains. This is because an avatar is a tool both for acting on the world and for perceiving it. There’s no real-life example of this experience because the experience is the senses extending into the game, into a virtual reality."
+    },
+    {
+      "type": "paragraph",
+      "text": "One result of this extension of the senses into the game world is the shifting of identity. Players will say “I am awesome!” during moments of skillful triumph and “Why did he do that!?” when they fail a moment later. With real-time control over an object, a player’s identity becomes fluid. It can inhabit the avatar. The real-world analogy is identity subsuming a car. You don’t say, “His automobile hit my automobile.” You say, “He hit me!”"
+    },
+    {
+      "type": "paragraph",
+      "text": "As the player’s senses are transposed into the game world, they can also perceive virtual things the way they perceive everyday things: through interaction. In perceiving things in a game this way, objects seem to take on detailed physical characteristics. Objects can be heavy, sticky, soft, sharp and so on. When a player observes enough of these interactions, a cohesive picture of a self-contained, unique physical universe begins to emerge as the various clues are assembled into a mental model. This is the experience of game feel as a unique physical reality, as a game world with its own designer-created laws of physics. Figure 1.7 shows the whole thing put together."
+    },
+    {
+      "type": "image",
+      "src": "32.png",
+      "caption": "FIGURE 1.7 How building blocks of game feel translate into experiences."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Creating Game Feel"
+    },
+    {
+      "type": "paragraph",
+      "text": "For the remainder of the chapter, let’s explore each of these different experiences in detail, with focus on how the game designer can shape and build them."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Game Feel as the Aesthetic Sensation of Control"
+    },
+    {
+      "type": "paragraph",
+      "text": "There can be a thoughtless joy to controlling something in a game. People experience this while riding a skateboard, surfing, ice skating or driving a car. It’s the kinetic pleasure of moving through space, creating flowing arcs of motion and feeling your body or the thing you’re controlling respond instantly to your impulses. Even without a specific goal in mind, there is this intrinsic pleasure to control. These sensations of control have some known aesthetic properties, as in the earlier example of the Porsche and Ford Windstar. The Porsche is smoother, handles better, has tighter cornering and so on. In a video game, the same aesthetic properties of control are in play. An avatar in motion can create flowing, organic curves as it moves and enable a player to feel the aimless joy of control. These sensations are what players mean when they say a game feels smooth, floaty or stiff. These sensations are a wonderful palette for game designers to draw on and use to engage players (Figure 1.8)."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a game designer sits down to create a game and has an idea for a particular feel in mind, the first task is mapping input signals to motion. The expressive potential is in the relationships. When a button gets pressed, is the response gradual or immediate? Does the avatar move forward relative to the screen or relative to"
+    },
+    {
+      "type": "image",
+      "src": "33.png",
+      "caption": "FIGURE 1.8 The aesthetic sensation of control."
+    },
+    {
+      "type": "paragraph",
+      "text": "itself? Or does it rotate rather than move? How fast does it move forward relative to its rotation? With the right relationships between input and response, controlling something in a game can achieve a kind of lyric beauty. The flip side is jarring, nauseating or otherwise aesthetically unappealing motion resulting from player input."
+    },
+    {
+      "type": "paragraph",
+      "text": "This mapping is a form of aesthetic expression. It defines how it will feel to control the avatar. As with most artistic endeavors, there’s no formula for the “right” feel. It’s up to the designer to make the hundreds of tiny judgments about the intricate relationships between input and response. We’ll explore this palette of mapping and how it translates to game feel in greater detail in Chapter 7. For now, note that these are aesthetic judgments, and the resulting feel is an expression of the designer’s sensibilities."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now imagine all the motions possible with one mapping. Every turn, twist, jump and run. The sum total of all motions possible with a mapping defines a possibility space for the player. This is not defining what a player will do; rather, it is defining what he or she can do. Every movement a player can ever accomplish with an avatar is defined by the designer’s choices about how to correlate input to response."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each of the potential motions has an aesthetic character that will be experienced by the player if he or she steers the avatar through that action. This aesthetic pleasure has its own intrinsic reward and will encourage a player to explore the possibility space by moving around in whatever way seems most aesthetically pleasing to them. The problem is, without some kind of focus, even great-feeling controls will quickly wear thin."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a game designer, the solution to this problem is to add some kind of challenge. With a goal, motions of control take on a new meaning. Now it’s possible to compare intent to outcome. It’s possible to succeed or fail. The aesthetic pleasure of control has become a skill."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Game Feel as Skill"
+    },
+    {
+      "type": "paragraph",
+      "text": "As I’m defining it here, a skill is a learned pattern of coordinated muscle movement intended to achieve a specific result. To measure skill is to measure the efficiency with which intent can be translated, via action, into results."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you’re playing soccer, your intent may be to dribble through all the other players on the soccer field and bend the winning goal past a floundering goalkeeper. In reality, this is one of many possible outcomes. It is much more likely that your skill will not be up to this level of challenge, and you will be stripped of the ball before you can get to the center line. But skills can be improved, and increasing levels of challenge can be mastered. If your goal is to dribble past one defender and make a deft pass to an open teammate, your odds of achieving that are relatively good. While this may not be the glowing level of pleasure you’d get from scoring the goal yourself, there are great feelings to be had from small, incremental victories. Even a particularly skillful kick or dribble while practicing in the backyard can feel wonderful because you know it can be later applied in the context of a soccer game. Soccer"
+    },
+    {
+      "type": "paragraph",
+      "text": "is a set of challenges so compelling that isolating and practicing the skills seems worthwhile even outside the context of the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is similar to the experience of playing Counter-Strike. I was so compelled by the challenges of the game, I would boot up the level “cs_italy” without other players and practice three skills: shooting a specific spot on a wall while moving side to side, quickly moving my aiming cursor from one spot to the next; and keeping the cursor on a single spot while I moved left, right, forward and back. I would sit in the level, alone, practicing these three skills for two to three hours before I would ever play the game online. It seemed worthwhile to push myself into different, higher levels of skill."
+    },
+    {
+      "type": "paragraph",
+      "text": "What this indicates is that game skills and real-world skills are essentially the same. They are learned patterns of coordinated muscle movements. The muscle movements are smaller, the skills are more focused and the motions are not constrained by physical reality, but the same process of learning and skill-building occurs. The primary difference is that a video game designer has control over both challenge and physics. In the real world, there are a fixed set of properties—gravity, friction, the physiology of the human body and so on. The designers of soccer, whoever they were, had to work around these fixed properties to create interesting, meaningful challenges. Their palette consisted of lines on the ground, the size of the net, the physical properties of the soccer ball and rules like “you can’t touch the ball with your hands.” Minh “Gooseman” Le, the designer of Counter-Strike, was able to craft everything. He not only created the rules and challenges of the game, but also defined how fast players could move, how high they could jump, how accurate their weapons would be and what the values for gravity and friction would be in the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tweaking how the player moves and the creation of challenges both alter game feel. Changing the global values for gravity, friction and speed of character movement defined the basic sensation of control. Adding rules and challenges then changed this sensation by defining a set of skills to be practiced and mastered. The question is, how? How is skillful control a different experience from just control?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The answer is that game feel and skill are related in three ways:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Challenge alters the sensation of control by focusing the player on different areas of the possibility space of motion, rewarding him or her for exploring it.",
+        "The feel of game changes depending on the skill of the player.",
+        "Players find controls to be intuitive when they can translate intent to outcome without ambiguity."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Challenge Alters the Sensation of Control"
+    },
+    {
+      "type": "paragraph",
+      "text": "From the point of view of a game designer, there is a problem even with the best sensations of control. Controlled motion is pleasurable, but that pleasure is fleeting. Even if the game feels great, aimlessly controlling something gets boring quickly (Figure 1.9)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Part of the problem is that if the aesthetic pleasure of control is the only encouragement, the player will experience just a small subset of the possible motions. If we"
+    },
+    {
+      "type": "paragraph",
+      "text": "again imagine every possible motion of a mapping as a possibility space, the area explored by a player will be limited, as in Figure 1.10."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, with a specific goal to pursue, control takes on new meaning. Aimless, pleasurable motion is replaced by focused, purposeful attempts to complete the challenges presented. This provides an incentive for players to find new areas of the possibility space, introducing them to sensations of control they would have missed otherwise. Challenge provides landmarks in the distance, encouraging the player to explore the aesthetic frontiers of the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, a first-time player of Super Mario World will not experience all the sensations of the flying mechanic. It takes a lot of practice to learn the timing of feathering the button at the right moment, sustaining Mario in his sine wave pattern of flight. And yet this is one of the most pleasurable sensations of control in the entire game. Having access to this sensation—even just being aware of it—makes the game more appealing and engaging (Figure 1.11)."
+    },
+    {
+      "type": "image",
+      "src": "36.png",
+      "caption": "FIGURE 1.9 Without focus, the joy of control can become boring.\nFIGURE 1.10 Players only experience as much of a game’s feel as the area of this space they feel inclined to explore."
+    },
+    {
+      "type": "image",
+      "src": "37.png",
+      "caption": "FIGURE 1.11 With challenges, there is a reason to explore more of the possible sensations of a particular mapping."
+    },
+    {
+      "type": "paragraph",
+      "text": "Challenges not only encourage exploration of all possible motions, but assign new meaning to them. This changes the feel of control. For example, think of a mouse cursor. This is a form of real-time control so engrained that we rarely notice ourselves exercising it. But against the backdrop of a different challenge, mouse control can take on a different feel, as in the Web game Cursor Attack. Cursor Attack requires the player to move the cursor in a very precise path as quickly as possible to reach a goal point. Normally, the goal of using a mouse is to navigate a Web page effectively and buy things like a good consumer, or to click, drag or otherwise manipulate the programs on your computer. In Cursor Attack there is an explicit goal (reach the end of the maze by touching the goal point) and an implicit goal (go as fast as you can.) The constraint is touching the wall of the maze, which causes an immediate game over. The result is a feeling of complete focus on the tiniest motions of the mouse. This feels very different from navigating a Web page. It makes the mouse cursor’s movement feel very twitchy and much less precise. The cursor’s size and its position in space suddenly become much more important. The skill requires a great deal of concentration, like threading a needle or trying to draw a perfect circle on a chalkboard. Just by changing two goals and one constraint, the feel of controlling a mouse cursor is new, fresh and interesting. Fortunately for game designers, real-time control lends itself to the creation of these kinds of challenges (Figure 1.12)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Challenges consist of two parts: goals and constraints. Goals affect feel by giving the player a way to measure his or her performance. With a goal, it’s possible to fail or succeed. It’s also possible to fail partially, and to do better or worse than the last attempt. This creates players’ nebulous perception of their own skill, their own ability to translate intent into reality. Depending on this perception, the feel of the game will fluctuate between clumsy and intuitive. In addition, the nature of the goal shapes the players’ focus. As in Cursor Attack, the feel of real-time control changes depending on how the player is tasked with applying it. Does the goal require the player to make extremely precise, specific motions like Cursor Attack, or is it more wide open like Banjo Kazooie? How fast do the characters move, how far apart are"
+    },
+    {
+      "type": "image",
+      "src": "38.png",
+      "caption": "FIGURE 1.12 Challenges give meaning to motion, enabling sensations of control to sustain engagement across a whole game."
+    },
+    {
+      "type": "paragraph",
+      "text": "the objects they’re being asked to move in reference to, and are they meant to avoid them, collect them or touch them lightly? This is much of the art of game design as it pertains to game feel: what the players are supposed to do is as important as the controls that enable them to do it."
+    },
+    {
+      "type": "paragraph",
+      "text": "A single goal can create multiple layers of intentions. For example, a high-level goal like “reach the top of the mountain” may require many steps to execute. But eventually it all trickles down to the level of real-time control. Reaching the top of the mountain means swinging to the next pole, and the next and so on (Figure 1.13)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Constraints affect game feel by explicitly limiting motion. Instead of emphasizing a motion, a constraint selectively removes some motions from the possibility space. For example, the sidelines on a football field eliminate some possible motions, rewarding players who can quickly change directions side to side and who are good at exploiting gaps in the opposing team’s defense. If there were no sidelines in football, a player could run endlessly in a direction to evade defenders and the essential skills would change. The same is true when we say that hitting an asteroid causes you to lose a life in Asteroids. By limiting motion, the player is again focused on particular motions, which changes the feel of control."
+    },
+    {
+      "type": "image",
+      "src": "39.png",
+      "caption": "FIGURE 1.13 A goal trickles down to become different layers of intent."
+    },
+    {
+      "type": "paragraph",
+      "text": "These two tools, constraints and goals, enable game designers to shape real-time control into a specific feel. Goals emphasize certain parts of the possible motion while constraints specifically eliminate others. The result is the feel as the game designer wanted it to be."
+    },
+    {
+      "type": "paragraph",
+      "text": "But what should the game designer’s desired feel be? This is up to the designer, of course, but I find this question often answers itself through experimentation. With a prototype of real-time control featuring an avatar moving around an exploratory space with lots of different shapes, sizes and types of objects to interact with, control organically evolves into skills and challenges. Can I get up to the top of that mountain? Can I fly between these buildings without hitting them? Can I jump across this gap? What I’m looking for in such a prototype are the best-feeling motions and interactions. In this way, the job of a game designer in crafting game feel is to explore the possibility space of a new mapping, emphasizing the good with goals and pruning the bad with constraints."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Game Feel Changes Depending on the Skill of the Player"
+    },
+    {
+      "type": "paragraph",
+      "text": "When picking up the controls of an unfamiliar game, a player will feel inept, clumsy and disoriented. To an expert player, the same game will feel smooth, crisp and responsive. The game’s controls will always be the same from an objective standpoint—the cold precision of programmed bits allows no other reality—but feel will change for the players depending on how well they can translate their intention into game reality. Each player will start at a slightly different skill level depending on past experience and natural aptitude, will learn at a different rate and will attain different heights of skill depending on how much her or she practices. This means"
+    },
+    {
+      "type": "paragraph",
+      "text": "that even for a single player, the feel of a game will change over time. This variability makes the feel of even a single game controversial. The argument goes like this:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Internet Denizen 1: “Whenever I think of what the perfect ‘feel’ for a game is, I think of Super Mario 64. Other than the camera, the controls were perfect.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "Internet Denizen 2: “God, I hated Mario 64, the controls were terrible!”"
+    },
+    {
+      "type": "paragraph",
+      "text": "Internet Denizen 1: “You don’t like the controls because you suck at it, n00b!”"
+    },
+    {
+      "type": "paragraph",
+      "text": "Because both parties are correct, this argument will never be resolved. For Denizen 2, who was unable or unwilling to master the controls of the game, the feel was clumsy and unresponsive. Denizen 1’s point of view is equally valid. For him, controlling Mario felt like extending himself into the game world, every movement becoming as accurate an expression of his intent as turning a steering wheel or swinging a baseball bat in real life. The point he’s making—that without reaching a certain level of skill a player cannot appreciate the feel of a game—is valid. This is true both for soft, emergent skills like rocket jumping in Quake and for deeply nested controls such as the blue sparks in Mario Kart DS. When you’re new, you don’t use all the moves. In this sense, skill is the price of admission for game feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "But there are also instances when players learn to play a game at a very high level and will still say it feels bad to control. For me, the arcade classic Pac-Man embodies this paradox. I enjoy the game, but from an aesthetic point of view, the feel of moving Pac-Man around the maze is stiff, rigid and unappealing. For the opposite reason, a friend of mine never enjoyed Asteroids. The looping grace of the ship is aesthetically pleasing to control, but the skills of avoiding asteroids and shooting alien spacecraft were too unappealing to be worth learning. This implies a relationship between these two different experiences of game feel: the base, aesthetic pleasure of control and the sensations of learning, practicing and mastering a skill. This relationship is cyclical, extends across the entire time a player plays a game and changes game feel constantly. The cycle looks something like Figure 1.14."
+    },
+    {
+      "type": "paragraph",
+      "text": "When players first pick up a game, they suck. Players know this and accept it—skill is the price of admission—and they trust in the game designer. “If I take the time to learn this and agree to suffer through some frustration,” the player says, “you agree to give me some great experiences later.” The feel at this point is clumsy, disorienting and bad. It takes a great deal of conscious effort to perform the most basic tasks in the game. The pure aesthetic pleasure of control can be used as a tonic here, soothing frustration until the first success, but every game starts this way for a new player. Every new player feels clumsy, disoriented and frustrated during the initial learning phase."
+    },
+    {
+      "type": "paragraph",
+      "text": "Over time, skills are mastered and get pushed down below the level of conscious processing. The player gradually improves relative to the challenges presented, and the feel gets better and better. Eventually, the player learns the skills well enough and breaks through, completing the current goal. Without the oppressive feeling of clumsiness, the aesthetic sensations of control come to the forefront, combining with the satisfaction of a challenge overcome to provide a reward for reaching this"
+    },
+    {
+      "type": "image",
+      "src": "41.png",
+      "caption": "FIGURE 1.14 The cycle of skill and game feel. As the player’s perceieved level of skill changes, so does the feel of control."
+    },
+    {
+      "type": "paragraph",
+      "text": "level of skill. Then the next challenge is introduced and the cycle starts again. The clumsy feel of being unskilled relative to the challenges provided once again overwhelms the aesthetic pleasure of control."
+    },
+    {
+      "type": "paragraph",
+      "text": "Objectively, skill always improves over time. Subjectively, players will feel that the controls are alternately clumsy and intuitive depending on how their skill relates to the challenges the game is currently throwing at them."
+    },
+    {
+      "type": "paragraph",
+      "text": "The best game designers create feel at different levels of skill. By knowing the skill of the player and what he or she is thinking about and focusing on, a clever designer can tune game feel differently at each level of skill. This insight into a player’s skill might come from knowing which level the player is currently on, from which items are currently in the player’s inventory or from extensive play testing in a multi-player game. For example, if a player is on level 12 and the progression of levels is linear, you can assume he or she has mastered the skills necessary to complete the first 11 levels. You know the skill that was learned last (what the player will be focused on), which skills are completely reflexive (those already mastered) and which skills have not yet been encountered. With this knowledge, it’s possible to shape the feel of a game across time. Guiding the player this way, a designer can leave breadcrumbs strewn across the possibility space of motion, emphasizing the best possible sensations of control while maintaining a balance of skill and challenge. When the player has achieved the highest level of mastery, the game will have fulfilled the designer’s goal for the best possible game feel."
+    },
+    {
+      "type": "image",
+      "src": "42.png",
+      "caption": "FIGURE 1.15 The flow state: when challenge and skill are balanced for maximum player engagement."
+    },
+    {
+      "type": "paragraph",
+      "text": "For this to work, however, players must never get so bored or frustrated that they stop playing. If this delicate balance between player skill and game challenge is perfectly maintained, players will enter the flow state."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flow theory says that when a challenge you undertake is very close in difficulty to your current level of ability, you will enter the flow state, which is characterized by a loss of self-consciousness, a distorted perception of time and a host of pleasurable sensations. Researcher Mihayli Csikszentmihalyi (pronounced “chicks-sent-me-high”) correlated these sensations with athletes, dancers and world-class chess players being “in the zone” and having things “just flow.” The gist is that when your ability matches really well to a particular challenge you can enter the flow state. If your skill is much greater than the challenge offered by a given activity, you’ll be bored. If your skill is far below the level of the challenge provided, you’ll be frustrated. (See Figure 1.15.) Or, as in the case of rock climbing and other dangerous activities, you’ll be anxious. Csikszentmihalyi says that “Games are the flow experience par excellence,” and for good reason. Video games especially have numerous advantages in creating and maintaining flow, such as providing clear goals; a limited stimulus field; and direct, immediate feedback.⁵"
+    },
+    {
+      "type": "paragraph",
+      "text": "From the perspective of game feel, flow is one of the ideal experiences. When players refer to being immersed in the game, part of what they’re experiencing is flow. As the original researchers of flow discovered, entering the flow state and staying there is one of the most rewarding experiences it is possible for people to have. From surgeons to painters to rock climbers, everyone who experienced flow regularly was happier, healthier, more relaxed and more energetic. And they knew it, loved it and sought out flow-producing activities because of it. In a video game or in real life, fueling this addiction requires taking on ever-greater challenges to match ever-increasing skills. As these higher levels of skill and challenge are reached, the"
+    },
+    {
+      "type": "footnote",
+      "text": "⁵For a detailed description of the flow state, how you can tell if someone is entering or exiting it, how it enriches people’s lives, and the conditions necessary to achieve it, reference Csikszentmihalyi’s original work on flow, Beyond Boredom and Anxiety."
+    },
+    {
+      "type": "paragraph",
+      "text": "sensations of control change. A professional Counter-Strike player, like a professional soccer player, feels the game differently."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Intuitive Controls"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unlike real life, players may begin to feel that the controls are not accurately translating their intentions into the game. This is another place where game skills are slightly different from real-world skills. In real life, if you try to kick a ball and completely whiff it, you’ve no one to blame but yourself. In a game, the blame can actually lie with the game designer."
+    },
+    {
+      "type": "paragraph",
+      "text": "What’s important is the player’s perception: is the inability to translate intent into desired reality because of his or her lack of skill or some problem with the game? Players often blame the controls when they don’t get the result they intended and sometimes this blame is justified. A game designer is unlikely to map an input to a random result, but there are many instances when unintentional control ambiguities disrupt the sensation of control by making the player feel as though the game is not accurately responding to their input."
+    },
+    {
+      "type": "paragraph",
+      "text": "When this happens, when the player feels the game is not accurately translating his or her intention into the game world, it’s one of the worst feelings possible. It’s game feel anathema. This sensation is the opposite of what players mean when they say “intuitive controls.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "Intuitive controls mean near-perfect translation of intent into game reality. Players will be able to translate their intent into reality with varied degrees of efficiency, based on their skill. If the thing you’re controlling does what you want and expect, accurately translating your impulses into the game, the controls are intuitive. Control over the avatar feels like an extension of your own body into the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is a distinction between challenge (which makes the game more difficult in the dimension of skill) and interference (which obfuscates intent arbitrarily). Put another way, as long as the result of an action is predictable, the goals clear and the feedback immediate, it will fall on the scale of challenge. If not, it’s interference, noise in the channel between the player’s intent and the game’s reality."
+    },
+    {
+      "type": "paragraph",
+      "text": "When constructing a game mechanic, designers seek the ever-elusive worthwhile skill. It’s intuitive and easily learned, but deep. It has a lyric, expressive quality, but you can hang a game’s worth of challenges on it and it never gets stale."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Game Feel as an Extension of the Senses"
+    },
+    {
+      "type": "paragraph",
+      "text": "To play a video game is often to focus intently on a screen, to the exclusion of all else. While this may cause consternation among parents, educators and career-minded politicians, what’s happening is not a trance, but a transposition of senses. The screen becomes the player’s surrogate visual sense. Instead of looking around and seeing a TV, a couch and their hands on a controller, players look through the screen into the game world. When players sit and stare, they are not catatonic."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rather, they’ve substituted their visual sense for one in the game world, extending it outward to a new place. They’re looking around, keenly aware of their surroundings in the game. This is because an avatar in a video game is a kind of tool; it provides both a potential for action and a channel for perception."
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider a hammer. When you hit a nail with hammer, you can see the nail head get lower and you can hear the pitch change with each strike, driving the nail downward. These are direct perceptions. But you can also feel the nail through the hammer. With each strike, you can feel the nail driving deeper, whether you’ve hit it square on, whether the nail is beginning to bend and so on. Tactile feedback is coming back to you through the hammer. The hammer has become an extension of the sense of touch."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now consider the avatar in Katamari Damacy. Controlling the Prince of all Cosmos is an extension of three senses: sight, hearing and touch. As a player, I have a goal: to build my Katamari to a certain size. The first step in this goal is to pick up some thumbtacks I can see off to the left of my current position. Once that intent is formed, I begin to take action, pressing forward on the thumbsticks to move the avatar in the direction I want to go. To know whether I’m turning the right amount, and when to stop turning and straighten out, I’ll use visual feedback from the screen. I’ll estimate the distance between avatar and thumbtacks. Each moment I’ll look at how much the Prince is turning relative to the pressure I’m exerting on the thumbsticks and make constant, tiny adjustments to maintain the proper course. This happens in a continuous cycle until I see that I’ve turned and hear the satisfying “collect” sound. If I run into something that’s too large for my Katamari, I see the Katamari stop, see pieces fly off it, hear a crashing sound, see the screen shake and feel the rumble motors in the controller go off."
+    },
+    {
+      "type": "paragraph",
+      "text": "In each case, a device overwrites one of my senses. The screen becomes vision, speakers hearing and rumble motors the sense of touch. The feedback from these devices enables me to experience things in a game as if they were objects in my immediate physical reality. I have the sense of moving around a physical space, touching and interacting with objects. The screen, speakers and controller have become an extension of my senses into the game world. The game world becomes real because the senses are directly overwritten by feedback from the game. By hooking into the various senses, a screen, a speaker or a joystick can make the virtual feel real."
+    },
+    {
+      "type": "paragraph",
+      "text": "When game designers create camera behavior, implement sound effects or trigger rumble motors, they’re not defining what players see, hear and feel. Rather, they are defining how players will be able to see, feel and hear in the game. The task is to overwrite real senses with virtual ones. In defining game feel, we must acknowledge this fact and embrace it. To experience game feel is to see through different eyes, hear through different ears and touch with a different body."
+    },
+    {
+      "type": "paragraph",
+      "text": "From the perspective of the game designer, the most important part is defining camera behavior. The camera is the player’s point of view, the point in the game’s world that represents his or her eyes, determining what view of the game world will be displayed on the screen. If the first task of a game designer creating a particular feel is"
+    },
+    {
+      "type": "paragraph",
+      "text": "mapping input signals to motion, and the second task is to create a space and objects to give that motion a frame of reference, the third task is defining the behavior of the camera. There are no games I’m aware of that use sound or controller rumble as a primary feedback for real-time control. It’s interesting to think about how real-time control could be achieved using mostly aural or tactile feedback, but most games are built using visual feedback only, with sounds and controller rumble added as polish effects. This is why creating the camera and its behavior is the third necessary component of a game feel prototype. Without any of these three—mapping, a basic-level layout and camera behavior—the feel of a game is not reliably testable. For a designer, these are the three foundations of game feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "The two important decisions to make about a camera are where it will be and how it will move relative to the avatar. The combination of where the camera is and how it moves defines the player’s impression of speed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because the camera is not just an object being controlled but is also an organ of player perception, its motion requires some special treatment. Usually, these problems handle themselves. If the camera’s movement is too jarring or disorienting, or if the player can’t see what they need to see to engage with the challenge of the game, the designer simply iterates until these problems are reduced or mitigated. The most common choices are: don’t move the camera more than you have to, move it smoothly when you do and give the player control when you can’t get a good result from programmed behavior. Otherwise, the camera causes interference between intent and result, making the controls less intuitive for the player. Worse than that, the motion of a camera can actually cause physical nausea. This is an interesting confirmation that feedback from the screen is truly overwriting visual perception. Motion sickness happens when the signals received by the inner ear don’t agree with the signals received by the eyes. For a player who’s sitting stationary in a room, playing a game on an unmoving screen to experience motion, visual perception must be extended into the game via the screen. It’s no wonder, then, that things like sudden drops in frame rate are so jarring and feel awful to the player. It’s as if you were walking to the grocery store and your vision suddenly started to stutter and break down. This is also how it’s possible for motion sickness to occur when a player is sitting stationary in a room playing a game on an unmoving screen. If the player’s eyes in the game are the camera, the flow of feedback from that sense needs to be smooth and uninterrupted."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Game Feel and Proprioception"
+    },
+    {
+      "type": "paragraph",
+      "text": "One sense that we might not consider part of game feel is kinesthesia. Kinesthesia is the sense that detects body position; weight; or movement of the muscles, tendons and joints. To get fancier, we can talk about “proprioception,” which is often used interchangeably with kinesthesia. Proprioception has the slightly more precise connotation of being a person’s subconscious awareness of the position of his or her own body in space. To understand what proprioception is, close your eyes, extend"
+    },
+    {
+      "type": "paragraph",
+      "text": "your arm directly out in front of you and touch the ring finger of your right hand with your left hand. The sense that enables you to figure out where your finger is in space is without using visual or aural feedback is the proprioceptive sense. When a police officer has you walk a straight line, this is the sense he or she is testing."
+    },
+    {
+      "type": "paragraph",
+      "text": "So how does game feel relate to proprioception? Proprioception comes from a complex and not especially well-understood bit of physiology that has to do with the movement of fluids in veins and the sensation of gravity pulling against tendons and muscles. Somehow this all gets assembled into a sense of the position of your own body in space. This is why most astronauts experience “space sickness” their first few days in zero gravity and sporadically thereafter. Even though they are highly resilient under extreme gravitational forces, as all astronauts must be, the body becomes disoriented by the lack of proprioceptive feedback. When gravity is taken away, the body loses its sense of “up” and reacts unpredictably, often in ways which involve a great deal of vomiting. In space. Gross."
+    },
+    {
+      "type": "paragraph",
+      "text": "When controlling something in a video game, there is no “real” proprioceptive sense; there can’t be. As much as you feel your character has become an extension of your body, you will never receive the same kind of proprioceptive, muscle-stretching feedback from pressing a button as you get from swinging a tennis racket."
+    },
+    {
+      "type": "paragraph",
+      "text": "So where does that leave us? It seems like proprioception is an important clue, because the feeling of controlling a game is clearly something more than visuals and sound alone would indicate. If we can’t actually experience the G-force of a hairpin turn when playing a game, how can we explain why it feels so similar? Why do we lean in our chairs? As an interesting example, consider the case of Ian Waterman.⁶ At the age of 19, a viral infection destroyed the nerves in his skin and muscles. He can still sense temperature, deep pressure and muscle fatigue, but his proprioceptive sense is entirely gone. He is able to piece together the location of his body in space only by observing it visually or through other subtle cues. If he’s standing in his kitchen and the power goes out, he crumples to the floor, helpless until the lights come back on. What’s fascinating is that, apparently, his movement now looks mostly normal. With supreme mental effort, he uses whatever clues his senses will give him (he can also use sound and temperature as feedback about the position of his body) to gauge the position of his body in space."
+    },
+    {
+      "type": "footnote",
+      "text": "⁶For more information, see http://www.apa.org/monitor/jun98/touch.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "On the surface, this seems in many ways to be similar to the experience of steering a virtual object around a virtual space. Based on limited feedback, we experience a kind of proprioception. We get a sense of the position, size and weight of a virtual object in virtual space. It would be a significant disservice to Mr. Waterman to end our assessment there, though. Even when manipulating something in purely invented, digital space, we have a significant advantage: we still use our sense of the position of our bodies to guide us. What a bunch of cheaters!"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you move a mouse, thumbstick or Wiimote, your proprioceptive sense is still active. Your thumbs, though their movements are small, are still giving you feedback about their position in space and about how much the buttons or thumbstick on the controller is pushing back on them. You have a sense of where your body is in space, even if your primary feedback is coming from virtual objects in virtual space. In this way, controlling something in a game is a kind of amplification of your sense of space because you get a huge amount of reactive mileage out of very little real-world motion. It’s like a megaphone for your thumbs. You’re now concerned with how your real-world motion affects virtual objects; the process of motion and feedback is transposed. When we’re controlling something in a game we’re using not a debilitated proprioceptive sense, but an amplified one."
+    },
+    {
+      "type": "paragraph",
+      "text": "Part of the experience of game feel, then, is amplified impression of proprioception generated from visual, aural and tactile feedback. It’s an impression created through illusory means, but is experienced as real by the senses. The sensation of game feel is more than the sum of its parts: visuals, sound, motion and effects combine to form another sensation altogether, one we might term “virtual proprioception.”"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Game Feel as an Extension of the Player’s Identity"
+    },
+    {
+      "type": "paragraph",
+      "text": "When perception extends into the game world, so does identity. It’s the same thing that happens when you drive a car. As you drive, you have a sense of the position of the car in space and how far it extends around you. This enables you to parallel park, drive in a lane next to other cars and pull into your garage without crashing. Your senses extend outward, encompassing the car and receiving feedback. As this happens, the car becomes part of you, an extension of both body and self. This is why people who’ve crashed say “You hit me!” rather than “His car hit me!” or “His car hit my car!”"
+    },
+    {
+      "type": "paragraph",
+      "text": "When an avatar in a game feels like an extension of your own body and senses, identity flows outward to encompass it in the same way. Game designer Jonathan Blow calls this “proxied embodiment”—identity extends to some kind of proxy, inhabiting it and making it part of one’s own body. “My guy” becomes “me.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "What’s interesting is just how capricious this transfer of identity can be. It can flow outward, encompassing something we’re controlling and a moment later be withdrawn. We can say “Yes, I am amazing!” as we effortlessly wipe out a room full of Marines in Half-Life and moments later scream “No, Gordon Freeman, you stupid sumbitch! That’s a bad Gordon Freeman!” as we accidentally fall off a cliff to grisly virtual death. For game designers, this flow of identity is great. It mitigates the frustration that comes from challenging the player. A little cursing at the avatar is always preferable to the player becoming bored or frustrated and putting the game down. It provides a nice release for the player, who avoids blame and maintains engagement, getting back to the pleasurable sensations of control more quickly."
+    },
+    {
+      "type": "paragraph",
+      "text": "The extending of identity also gives a player the sensation of direct physical contact. It’s a muted sensation—getting hit with a rocket in Quake is, one assumes, not the sensation of being hit with one in real life—but intimate nonetheless. When I’m bumped, jostled, flung or impaled, it feels bad because it’s as though it’s happening to me physically. It’s the same sensation I had hitting a pole in my parents’ Volvo; it’s not literally painful, but it feels like a personal injury. Likewise, when I’m grabbing, throwing, slashing or hitting, it feels good because I’m reaching into the game and affecting things directly with a part of my extended virtual body. This is where impression of physical interaction becomes really powerful. Through a combination of polish and simulation, the designer can have players feeling they’ve hit or been hit, shaping those interactions with great precision."
+    },
+    {
+      "type": "paragraph",
+      "text": "Extension of identity isn’t something you can design for directly. It grows naturally out of real-time control, and it can be disrupted by too much frustration, boredom or ambiguity between intent and outcome. It can also happen to greater or lesser degrees depending on the sensitivity of control. For example, I don’t feel particularly attached to each falling piece in Tetris. Our time together is fleeting, and I have a very low-sensitivity control over the block’s movement. The blocks themselves are not anthropomorphic, but this fact is less important than the expressivity of the controls. In Asteroids, which also has a very simplistic avatar, the transfer of identity is much more pronounced because there is more sensitivity inherent in the controls. It twirls and curves, narrowly missing asteroids. You really feel the extents of the ship, focusing on its size and position in space as you steer it around. Even Pong, which itself used only blocks as representation, had a greater potential for identity transfer. The sensitivity of the paddle controller was high enough to feel like an extension of the senses and the identity. This is taken to an extreme in a game such as Quake; there’s no barrier between identity and avatar. Tetris has a very low sensitivity of control, allowing only left-right movement and rotation in a grid. Quake maps a highly sensitive input device, the mouse, directly to rotation of the avatar. As long as it’s not too frustrating and doesn’t suffer from crippling control ambiguity, more sensitive controls will more readily accept a transfer of identity."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Game Feel as a Unique Physical Reality"
+    },
+    {
+      "type": "paragraph",
+      "text": "Now I’d like you to help me in a little experiment. First, picture in your mind what would happen if you were to throw this book across the room and into a wall. Got it? Now please throw this book across the room and into a wall. Come on, no one’s watching. Throw it."
+    },
+    {
+      "type": "paragraph",
+      "text": "I’ll assume you’ve thrown or not thrown according to your personal code of Book Ethics and have returned to reading. How did your expectations compare to the actual outcome of the book being thrown? Now noodle the book around in your hands, feel its weight and heft and thumb quickly through the pages, listening to the pleasing sound it makes. What do you notice? A paperback book, like this one,"
+    },
+    {
+      "type": "paragraph",
+      "text": "is heavy, floppy and will generally go where you throw it, landing in a heap as the pages fan out in the air. Based on your previous experiences with paperback books, this was probably what you assumed would happen when you threw it. But how did you know that would happen? If you see a strange book lying on your coffee table, how can you be sure this object you see and recognize as a book is truly an object made of sheaves of pulped, pressed wood bound together into a flimsy brick? The answer is action. You had to throw it to find out."
+    },
+    {
+      "type": "paragraph",
+      "text": "Based on your previous experiences with paperback books, you could make a reasonable guess about what would happen, but the only way to truly experience the physical properties of an object is to observe that object in motion. As an object interacts with other objects, including your hands, you quickly parse out its physical properties. In a game, this same process of physical perception happens. In this sense, the experience of game feel is a kind of faked Newtonian physics."
+    },
+    {
+      "type": "paragraph",
+      "text": "People are good at figuring out the physics of a virtual space because they’re subconsciously familiar with the way things work in the real world. As soon as we encounter a virtual space, we piece together whatever clues we have about the physical laws that govern it into a mental model. We can’t help it. It happens quickly and effectively and is based on what can be gleaned from the limited stimulus available: visuals, sounds, tactile feedback and motion. When all these harmonize, the fake physics are seamless; every tiny clue serves to support the same impression of physicality, from the simulated collisions through animations, sounds, screen shake and particle effects. Sometimes a piece of feedback will contradict the others, however, and this causes inconsistencies in the player’s mental model of the virtual space. Even in the games that do a fantastic job of conveying the solid physics of their world, such as Gears of War, there are usually inconsistencies to be found (the characters’ feet still clip through stairs, for example)."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a video game, you don’t sit in the thing you’re steering and manipulating. You can’t—the object you’re controlling has no physical form. Objects in a video game are a digital construct in virtual space. However successfully they attempt to mimic the real world, they can only ever convey an impression of physicality. Creating a good-feeling game is in one sense the process of building this impression. Using sound and motion, we give players an entire universe worth of physical laws to reconstruct in their heads, a mental model of the virtual space. This happens in the same way we map the physical space we experience every day. The thrown book makes noise, thuds when it hits the ground, flops in the air, takes a certain trajectory, falls in a certain way, takes a certain amount of heft to launch. But the impression, the generalization, comes from the combination of sound, touch and motion."
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider the two bowling balls in Figure 1.16. You’d expect that if they roll into one another, they will make a satisfying clacking noise and roll away slowly. If, on the other hand, one ball deforms, makes a dull thud like a beach ball being kicked, and is flung violently in the other direction at the moment of impact, what can you surmise about the ball that was punted? At this point, you must assume that one ball is a clever visual forgery of a bowling ball, a beach ball in a bowling ball’s"
+    },
+    {
+      "type": "image",
+      "src": "50.png",
+      "caption": "FIGURE 1.16 Bowling balls collide and behave normally.\nFIGURE 1.17 Bowling ball and Ping-Pong ball: who will win?"
+    },
+    {
+      "type": "paragraph",
+      "text": "clothing. Even though it looks like a bowling ball, the evidence offered by at least two other types of feedback, aural and motion, indicate overwhelmingly that it is not a true bowling ball."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now look at the balls in Figure 1.17. What would you expect if these two balls rolled into one another at speed? What if the Ping-Pong ball made a low, ominous humming noise and proceeded to split the bowling ball in half with its crushing power? What would you assume about its physical properties then? There would be no real-world analogy for what you’ve just perceived."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mentally you try to uncover the underlying physical reality. Clearly, even though it looks like a lightweight Ping-Pong ball, if it can destroy a bowling ball,"
+    },
+    {
+      "type": "paragraph",
+      "text": "it must be made of something solid and heavy. We strive to resolve the dissonance by abandoning the visual cue because motion and sound outweigh it, evidence-wise. Likewise, a bowling ball, even if we can’t hear the sound of it, still conveys heaviness by the way it moves and interacts with other objects. Even if visuals and sound are not congruent, motion will always trump them in creating the sense of impression."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is why things like interpenetrating objects or bizarre, unpredictable motion are disturbing to the player. For example, the visuals in id Software’s Doom 3 were exemplary. Each creature was rendered at a high, normal-mapped level of detail much greater than the games that preceded it, and it was the first major commercial game to use a true lighting model as part of gameplay. Corners could actually be dark, and the critters lurking there had to be illuminated with a flashlight. Unfortunately, these impressive visuals were belied by thin, tinny sounds (especially the shotgun and machine gun effects) and the implausible, jerky motion of the everyday objects scattered throughout the game. Some props would fly and spin like helicopters, taking on a life of their own, while others would not react or move at all. There seemed to be no logic to the motion or lack of motion, and it created a powerful dissonance between visuals and motion. The impression of physicality was shattered. As game designer Brian Moriarty puts it, “… One reference to anything outside the imaginary world you’ve created is enough to destroy that world.”⁷"
+    },
+    {
+      "type": "footnote",
+      "text": "⁷“Andrew Rollings and Ernest Adams on Game Design” (page 59)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Compare this to the more recent, great-feeling Gears of War. Gears of War had a great use of particle effects (especially sprays of dust as the characters slammed against walls), cinematic tricks such as lens distortion and screen shake, and extremely well-produced sound effects. This gave rise to a powerful and compelling impression of physicality. As independent game designer Derek Yu puts it, “… In Gears it’s like you’re this giant wrecking ball with a gun attached to it, which is pretty sweet.”"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "To answer the question of what game feel is, we started with a basic definition of game feel:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Real-time control of virtual objects in a simulated space, with interactions emphasized by polish."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using the three building blocks encompassed in this definition—real-time control of virtual objects, simulated space and polish effects—it’s possible to create great-feeling games."
+    },
+    {
+      "type": "paragraph",
+      "text": "We further defined great-feeling games as games that convey five different types of experience to the player:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The aesthetic sensation of control",
+        "The pleasure of learning, practicing and mastering a skill",
+        "Extension of the senses",
+        "Extension of identity",
+        "Interaction with a unique physical reality within the game"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Of these five experiences, no single experience encompasses game feel. Rather, game feel is all of these experiences simultaneously. During play, one experience might come to the forefront. The player might feel supremely frustrated, be enthralled for a few moments by a beautiful sensation of control or feel the gory satisfaction of gibbing an opponent with a well-timed rocket. These experiences are not mutually exclusive and, at any time, each is present to some degree."
+    },
+    {
+      "type": "paragraph",
+      "text": "These five experiences of game feel tell us a lot of interesting things about the way players experience game feel and the ways game designers utilize game feel. What they don’t tell us about are the processes—physiological and psychological—that give rise to these experiences. To understand what game feel is at these levels, let us now take a slight detour away from human experience and into human perception."
+    }
+  ]
+}

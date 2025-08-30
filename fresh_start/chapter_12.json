@@ -1,0 +1,214 @@
+{
+  "chapter_title": "Rules Metrics",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "For our purposes here, a “rule” is an arbitrary, designed relationship between parameters or objects in a game. Arbitrary because there is no higher order guiding the creation of such relationships and designed because it is a relationship intentionally created by a designer. A few examples of rules by this definition:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Collect 100 coins to get a star.",
+        "Collect 5 stars to open a door.",
+        "Orange triangles upgrade weapons.",
+        "Defeating Woodman gets you the Leaf Shield.",
+        "You can only hold two weapons at once.",
+        "It costs 5 hearts to throw Holy Water.",
+        "To score a capture, your team’s flag must be in your base.",
+        "It takes 3 hits to kill a Skelerang.",
+        "Experience points required to level up increase exponentially."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "It’s fascinating to pull individual rules out like this and hold them, naked and shivering, up to the lightbulb of logic. Notice that they make no sense outside of the context of the systems into which they were so carefully crafted. Inside their proper context, though, they lend a sense of purpose and intent to actions in a game. Collecting coins has meaning precisely because it restores health, increases score and earns stars."
+    },
+    {
+      "type": "paragraph",
+      "text": "So what do rules like this have to do with game feel?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Changes in rules can alter the feel of a game in subtle but measurable ways. Having an incentive to collect coins changes the nature of your interaction with them and therefore can change the way it feels to collect them, or even how it feels to steer around an environment. To see how this works, we’ll compare the way rules affect the feel of various games by dividing them up into high-, medium- and low-level rules, as set forth in Chapter 5:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "High-level rules consist of broad sets of goals that focus the player on a particular subset of motions, such as collecting coins. High-level rules can also take the form of health and damage systems."
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mid-level rules are rules for specific objects in the game world that give immediate meaning to an action, such as capturing the flag in a capture-the-flag multiplayer game.",
+        "Low-level rules further define the physical properties of individual objects, such as how much damage it takes an avatar to destroy an enemy."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The goal, as always, is to arrive at generalized intra-game measurements which enable us to compare the rules of one game to another with respect to how they change feel."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "High-Level Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "At the highest level, rules can serve to focus players on a certain subset of mechanics and, in so doing, change their perception of the game’s feel. The designer is directing the player to perform certain actions. From all the available action choices in a game, the designer wants the player to make certain choices and institutes a reward system to reinforce that behavior. Through rewards, the game designer is communicating with the player, pointing out that certain actions are more fun, more satisfying, than others. Developing this certain set of skills, the designer is saying, is most worth your time."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is similar to the effect the high-level construction of space has on a mechanic’s feel because it’s not overt; it’s a general feeling. A high-level relationship like this doesn’t slap you in the face and tell you to do something. Instead, it encourages you to play a certain way by leaving you a trail of breadcrumbs to follow. For example, collecting 100 coins in Super Mario 64 gives you a star, which in turn unlocks various star doors in the castle. Open enough star doors and you reach the boss level. Beat the boss level and you get access to more areas of the castle, the highest reward possible. There is a hierarchical reward structure involving coins, stars and areas of the castle. Essentially, the player is being rewarded for completing a challenge with access to new challenges, but the feeling is one of excitement and triumph. It’s a classic—if somewhat sneaky—convention. The point, though, is that the meaning of collecting a coin goes all the way up to getting access to a new area, the highest reward in the game. As a result, coins seem quite valuable."
+    },
+    {
+      "type": "paragraph",
+      "text": "This sense that coins are valuable has a measurable effect in terms of game feel. Skills like precise turning, movement and jumping are emphasized, as are highly difficult skills like flying and swimming. Everywhere in the game, there are coins. To collect them requires a great deal of precision, especially when moving at top speeds. The coin gives the player a point of reference against which to measure skill, and a driving purpose for running, jumping, swimming and flying. It’s like dribbling a soccer ball. Dribbling across an empty field may have some lowly kinesthetic appeal, but it’s not going to keep you practicing for hours. What keeps you practicing for hours is the sensation of dribbling a soccer ball around two defenders"
+    },
+    {
+      "type": "paragraph",
+      "text": "and kicking in the winning goal. (Or the potential for that sensation, at any rate.) The skills that the rules of a game successfully make important become important, worthwhile skills. The feel of the motion changes in proportion to the value created for it by high-level rules."
+    },
+    {
+      "type": "paragraph",
+      "text": "To get a clearer sense of just how powerful this effect can be, think about a time you played a game in which there were a great number of possible actions, but in which none of the actions seemed worthwhile. For me, a great example of this is Ratchet and Clank. In Ratchet and Clank, everything spews cogs, nuts and bolts. Everything. Lots of them. For me—and this is not true for everyone—playing Ratchet and Clank felt a little like vacuuming. There were so many of these little things that each individual one ceased to have meaning, making the action of having to chase down each individual cog and bolt feel like a tedious chore. Compounding matters was the unsophisticated relationship between collecting and buying. You collect a bunch of stuff and then take it to the gun vending machine. The tradeoff was too transparent. If you want a new weapon, spend a lot of time killing the same guys over and over again and vacuuming up detritus. Boo-urns."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now think about a very important object in a game, an object you greatly desired. Why did you want it? It clearly has no importance outside the game, but somehow, some way, it was given some amount of relative importance by the cunning construction of rules."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another interesting aspect of high-level rules is that they can make even a tedious action very fun or “addictive.” For example, in the various Zelda games, there is grass everywhere. Using a sword, you hack your way through the grass. Of itself, this action isn’t very satisfying, because the grass offers no resistance. But you keep doing it because there’s a rule, an arbitrary relationship between unrelated things, that says when you cut down grass, a certain percentage of the time certain items will spawn out of that grass. Those items in turn have their own meaning. For example, sometimes you get rupees, and if you collect enough rupees, you can go buy special armor, bombs or other things that, in their own particular way, have their own relationship to the world and enable you to interact with objects you couldn’t before, access new areas of the game and generally feel very rewarded. Cutting down grass might also give you arrows to refill your bow, because there is an arbitrary rule that you can run out of arrows. The rule could just as easily have been that you have infinite arrows, but then you would tend to use the bow all the time. Also, there are places where you need to fire an arrow in order to solve a puzzle, and cutting grass nearby will replenish your arrow supply if you are out. So in a certain sense, the feel of cutting down the grass is altered because the meaning of the reward for cutting down the grass changes. The meaning assigned to an action by a rule alters the feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "The same principle applies to even simpler mechanics. For example, in Diablo, there’s a rule that governs the drop rate of different items, from enemies to treasure chests. For every 100 or so enemies a player kills, one will drop an item that will upgrade the player’s ability to kill enemies. So the player continuously has"
+    },
+    {
+      "type": "paragraph",
+      "text": "an incentive to kill as many enemies as possible or click on treasure chests, even though the action itself is very tedious. The reward system compensates and changes the experience so that the player keeps coming back again and again."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Medium-Level Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "Medium-level rules can give immediate meaning to action. In a game that emphasizes game feel—steering around objects and navigating space—a great deal of stock is put into the spacing (the context) of objects. Not only do you have to tune the speed and movement of avatars, but also their speed and movement against spatial context. The number, nature and spacing of objects in the world is the other half of game tuning. The same fundamental thing applies when objects in the world are given immediate, temporary importance by virtue of a rule system."
+    },
+    {
+      "type": "paragraph",
+      "text": "Think of Quake. If you’re playing a game of Quake and your health is very low, when you see a health pack in the immediate vicinity, getting that becomes a very high priority. To avoid giving another player a point, you have to get that pack; therefore everything else has little meaning until you do. Given this rule, the objective of the game becomes getting your health back at the expense of everyone else. It’s a simple, arbitrary rule that changes the way the player approaches the space of a level."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now think about what happens when you’re playing a game and you suddenly become aware that you’re low on health. It could be a fighting game, such as Samurai Showdown 4, or a more staid affair such as The Legend of Zelda. Suddenly, every tiny motion seems a lot more important. You have a heightened awareness of every motion and are keenly attuned to the control, the feel, of the avatar. In this way, rules defining health and its meaning in a game can lend a sense of importance to an object in a spatial environment. This, in turn, can heavily affect the feel of that space."
+    },
+    {
+      "type": "paragraph",
+      "text": "The same thing applies to capturing a flag in Soldat. When you’re holding the flag, you are the focus of all action in the game and the meaning of all your actions changes. You suddenly feel the situation is much more urgent, and you are no longer interested in engaging enemy players and fighting them. You want to get away from them as quickly as possible and return to your base. Instead of feeling like you are swooping in and out of terrain, in control, you are looking for the nearest exit. The movement of the avatar feels slower than it did just moments before. Even before it’s grabbed, the flag object itself completely changes the way the players interpret the space and their movement through it. The locus of all action in the capture-the-flag level is the two flag areas. That’s where everyone wants—and has—to go in order to score. So the entire meaning of the level is changed by the placement of the flags. When they are placed in different areas, the feel of the level and the feel of moving around it changes."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the medium level of rules, immediate meaning can be conveyed to objects in the game world by arbitrary rules. This changes the feel of the mechanic in a"
+    },
+    {
+      "type": "paragraph",
+      "text": "manner similar to the placement of static, non-rules-affected objects in the world by providing a meaningful context against which to balance the avatar’s response to input. The added benefit is that collecting something that is valuable by virtue of the system’s rules feels better and more satisfying than, say, deftly avoiding a pillar in Star Fox. These kinds of rules provide positive reinforcement for spatial mastery."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Low-Level Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "At the lowest level, the level of kinesthetic interaction, rules can affect the feel of the game by changing the perceived properties of objects, especially as they interact with the avatar over time. For example, in Halo, there are little tiny guys with fins on their heads and the gigantic brutes. In general, you have to shoot an enemy a lot of times in Halo to reduce its health to zero (death). Again, this is just an arbitrary relationship. The amount of health something has relative to the amount of damage a weapon does can be defined in any way. When you shoot the little guys, you riddle them with bullets for a while, and they plop over and make a sad little noise. It takes a lot more hits to gun down a gigantic brute, which makes them feel larger and more massive, more imposing. Yet the mechanic is basically the same. The large number of shots it takes to penetrate their shields and finally kill them reinforces the perception of massive strength."
+    },
+    {
+      "type": "paragraph",
+      "text": "How much damage an object can sustain before being destroyed has a great effect on how the physical object is perceived. Shooting anything in Halo requires many shots, which make the game feel fairly massive, especially compared with a game like Dawn of Sorrow, where you can whack a skeleton once and bones go flying everywhere. It’s very satisfying, but has a completely different feel than Halo. Small enemies die easily; medium-sized enemies take more hits, and game bosses require dozens of hits. The amount of damage something can take provides feedback on the assumed physical properties of the object. Like a blind man’s cane, shooting things in the game world accomplishes a specific task—figuring out what things are most dangerous to you and which are impervious to your weapons so you don’t waste time and resources on them. At the lowest level, you can convey a sense of physicality at a very kinesthetic level with an arbitrary rule about health and damage."
+    },
+    {
+      "type": "paragraph",
+      "text": "The same essential principle applies in fighting games with heavier or lighter moves. Compare a fierce kick with a light punch in Street Fighter II. Through the arbitrary rule that’s applied, the fierce kick, which is a heavier, slow-moving attack, is made to do more damage. The sense that the fierce kick is heavy and weighty and really plows into enemies is emphasized by the rules. But it’s entirely arbitrary. From the point of view of the system and how it’s set up, there’s no reason why a light punch couldn’t do more damage than a fierce roundhouse kick. It feels right because it’s in line with the physical nature of those objects as perceived by the player."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Case Studies: Street Fighter II and Cave Story"
+    },
+    {
+      "type": "paragraph",
+      "text": "Now let’s take a look at how all three levels of rules combine to enhance game feel. Consider the difference between rules in Street Fighter II and the indie classic Cave Story."
+    },
+    {
+      "type": "paragraph",
+      "text": "In Street Fighter II, the high-level rules affect the feel of interaction through the round structure (Figure 11.1). In Street Fighter, the gameplay is organized around “best of three”—if you win two rounds, you win the entire match. And in order to win the match, you must win two rounds. This has the effect of placing higher stakes on a round in which you face elimination. In each match, there’s only one round—the first one—where this is not the case. After the first round has been played, one character will be facing elimination, which is a great way to raise the stakes and focus the player very intently on the individual motions and controls."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the medium level, the amount of damage it takes to kill someone is important. This has a huge effect on the feel. The characters in Street Fighter II take a relatively large amount of damage to destroy. Accordingly, the perception that the characters are solid and massive is increased, reinforcing the visual and aural effects. These are large, detailed, well-animated characters. If they were to be defeated in one hit, it would belie the perception conveyed by their animations, sounds and metaphorical representation."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the lowest level, there is different damage for different moves. Heavier moves do more damage and lighter rules do less damage."
+    },
+    {
+      "type": "paragraph",
+      "text": "In Cave Story, the high-level rules do a fantastic job of providing impetus for every action. Access to new areas and the surprisingly engaging periodic"
+    },
+    {
+      "type": "image",
+      "src": "203.png",
+      "caption": "FIGURE 11.1 The basic relationships in the system of Street Fighter II."
+    },
+    {
+      "type": "paragraph",
+      "text": "story snippets provide a delightful carrot, egging the player ever onward. In addition, the arbitrary relationship between what guns you choose and how you choose to upgrade profoundly affects the skills that you end up using and learning later in the game (Figure 11.2). Here’s how the rules work: at the start of Cave Story, you can only run and jump. As you progress, you can get a variety of weapons. Weapons include various beam weapons, a machine gun and a bubble gun, and they can be obtained from treasure chests or traded for at various locations in the game. There are nine different weapons, but the player is limited by the trading system to having only five at any time. Most weapons can be upgraded by collecting weapon energy dropped by enemies and will lose weapon energy if the player is hit. Non-weapon items in the game are plot-oriented, having no impact upon normal gameplay, although a few, such as the Booster (a type of jet pack) and the Life Pot, are useful."
+    },
+    {
+      "type": "paragraph",
+      "text": "Medium-level rules in Cave Story change the meaning of movement relative to various enemies, depending on health and weapon upgrade level. Being hit reduces both health and weapon energy. Health functions the same way it does in most games, increasing focus and attentiveness as it is lowered, and altering feel by altering behavior and meaning."
+    },
+    {
+      "type": "paragraph",
+      "text": "But the real genius of Cave Story’s rules lies in the weapon upgrade system and how it’s hooked into interaction with enemies. As weapon energy drops, it may become necessary to switch weapons quickly in order to finish off a particular creature, changing on the fly the relationships between weapon, damage, enemy health and weapon upgrade level. When fighting high health bosses, it becomes necessary to plan out which weapons to use in which order, assuming that the upgrade levels will be dropped. In preparation for a"
+    },
+    {
+      "type": "image",
+      "src": "204.png",
+      "caption": "FIGURE 11.2 The basic relationships in the system of Cave Story."
+    },
+    {
+      "type": "paragraph",
+      "text": "boss fight, players may find themselves doubling back to fight enemies over and over again, in an effort to power-up a seldom-used weapon. Just in case."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the low level, the amount of damage it takes to destroy something in Cave Story is extraordinarily well balanced. The health of a given creature relative to the amount of damage dealt by which weapons at which level of upgrade is meticulously well balanced. The result is that every object in the world seems to be truly made of the same stuff. The more hits something takes before it pops into puffs of dust and a shower of bouncing orange triangles, the more substantive it is. Rarely do the physics of a single game feel so cohesive based solely on the balance and implementation of rules."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "The arbitrary, designed relationship between parameters or objects in a game are the game’s rules. They are arbitrary because there is no higher order guiding the creation of such relationships. They are designed because it is a relationship intentionally created by a designer. We characterized three types of rules: high, medium and low level, and examined how they affect game feel at each level, and how the work together at different levels of the game to convey an overall impression of game feel independent of, but reinforced by, the other metrics of game feel:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Input—The physical construction of the device through which player intent is expressed to the system and how this changes game feel",
+        "Response—How the system processes, modulates and responds to player input in real time",
+        "Context—The effect of simulated space on game feel. How collision code and level design give meaning to real-time control",
+        "Polish—Effects that artificially enhance impression of a unique physical reality in the game",
+        "Metaphor—How the game’s representation and treatment change player expectations about the behavior, movement and interactions of game objects",
+        "Rules—How arbitrary relationships between abstracted variables in the game change player perception of game objects, define challenges and modify sensations of control"
+      ]
+    }
+  ]
+}

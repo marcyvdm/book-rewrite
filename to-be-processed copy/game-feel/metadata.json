@@ -1,0 +1,163 @@
+{
+  "title": "Game Feel",
+  "subtitle": "A Game Designer's Guide to Virtual Sensation",
+  "author": "Steve Swink",
+  "publisher": {
+    "name": "Morgan Kaufmann Publishers",
+    "imprint_of": "Elsevier"
+  },
+  "publication_year": 2009,
+  "isbn_13": "978-0-12-374328-2",
+  "dedication": "For people who struggle and make beautiful things",
+  "acknowledgments": [
+    "I would like to thank the following people.",
+    "Mom & Dad, for their unwavering support of everything I do, ever. It must be exhausting. Special thanks to Dad for taking on the role of second editor, donating hours and hours to proofreading, editing, writing first-pass chapter summaries and helping me wrangle ideas. I love you guys. Thank you so much for being who you are. It gives me a standard to aspire to.",
+    "Amy Wegner, for unflinching honesty in editing and for putting up with me throughout the months of craziness. Guess it’s my turn to do the laundry, bake cookies, do the dishes, take out the dog. Thank you for everything.",
+    "Beth Millett, for being a kickass editor and for being the other person who had to put up with my craziness.",
+    "Matthew Wegner, for help with the Raptor Safari, for many inspiring ideas about game feel, and for being the stable foundation of Flashbang. You make everyone around you better, smarter, faster and happier. We appreciate it, even if we don’t tell you so as much as we should.",
+    "Mick West, for inspiring me to think about game feel at a deeper level. It was his article “Pushing Buttons” for Game Developer magazine that convinced me this would be a subject worth writing an entire book about, and he has graciously offered me feedback and guidance when I asked for it. He is the true master of game feel. If you’re looking for someone to make your game feel better than anyone else can, ask him. I doubt he’ll say yes, but there it is.",
+    "Allan Blomquist, for building pixel-perfect clones of old games and helping me understand how they work. Without Allan, the book would be much shorter.",
+    "Derek Daniels, for the brilliant insights about the role of animation in game feel and the importance of hard metrics for game feel. I hope you write a book someday.",
+    "Shawn White, for helping me with technical details about platformer games. You truly are the Captain of Rats.",
+    "Matt Mechtley, for additional help with technical stuff and for the fantastic attitude. I hope you someday meet and woo fast women. It must be plural.",
+    "Adam Mechley, for proofreading and helping me to achieve syntactic perfection.",
+    "Kyle Gabler, for being brilliant and inspiring, and for helping me understand the importance of sound and its role in game feel. I hope I can someday be half as good a game designer as you are.",
+    "Ben Ruiz, for making me laugh and smile always. You provide a constant reminder why we do what we do.",
+    "Jon Blow, for inspiring everyone to make better games and for teaching me about proxied embodiment.",
+    "Kellee Santiago and Jenova Chen, for making beautiful things and for taking the time to talk to me about how.",
+    "Chaim Gingold, for making brilliant things and for taking the time to talk to me about how.",
+    "Katherine Isbister, for the encouragement and opportunity to write a book."
+  ],
+  "about_the_author": "Steve Swink is an independent game developer, author and lecturer currently based in Tempe, Arizona. As a game designer and partner at Flashbang Studios, he’s contributed to games such as Off-Road Velociraptor Safari, Splume, Jetpack Brontosaurus, and Minotaur China Shop. Before joining Flashbang, he toiled in the retail game mines at Neversoft and the now-defunct Tremor Entertainment. He also co-chairs the Independent Games Festival, is an IGDA Phoenix chapter coordinator, and teaches the game and level design classes at the Art Institute of Phoenix. He sometimes forgets the importance of sleeping every night, not just some.",
+  "table_of_contents": [
+    {
+      "type": "Part",
+      "title": "Front Matter",
+      "items": [
+        {
+          "title": "Acknowledgments",
+          "page": "ix"
+        },
+        {
+          "title": "About the Author",
+          "page": "xi"
+        },
+        {
+          "title": "Introduction",
+          "page": "xiii"
+        }
+      ]
+    },
+    {
+      "type": "Part",
+      "title": "Chapters",
+      "items": [
+        {
+          "chapter": 1,
+          "title": "Defining Game Feel",
+          "page": 1
+        },
+        {
+          "chapter": 2,
+          "title": "Game Feel and Human Perception",
+          "page": 35
+        },
+        {
+          "chapter": 3,
+          "title": "The Game Feel Model of Interactivity",
+          "page": 61
+        },
+        {
+          "chapter": 4,
+          "title": "Mechanics of Game Feel",
+          "page": 69
+        },
+        {
+          "chapter": 5,
+          "title": "Beyond Intuition: Metrics for Game Feel",
+          "page": 81
+        },
+        {
+          "chapter": 6,
+          "title": "Input Metrics",
+          "page": 101
+        },
+        {
+          "chapter": 7,
+          "title": "Response Metrics",
+          "page": 119
+        },
+        {
+          "chapter": 8,
+          "title": "Context Metrics",
+          "page": 139
+        },
+        {
+          "chapter": 9,
+          "title": "Polish Metrics",
+          "page": 151
+        },
+        {
+          "chapter": 10,
+          "title": "Metaphor Metrics",
+          "page": 171
+        },
+        {
+          "chapter": 11,
+          "title": "Rules Metrics",
+          "page": 179
+        },
+        {
+          "chapter": 12,
+          "title": "Asteroids",
+          "page": 187
+        },
+        {
+          "chapter": 13,
+          "title": "Super Mario Brothers",
+          "page": 201
+        },
+        {
+          "chapter": 14,
+          "title": "Bionic Commando",
+          "page": 229
+        },
+        {
+          "chapter": 15,
+          "title": "Super Mario 64",
+          "page": 247
+        },
+        {
+          "chapter": 16,
+          "title": "Raptor Safari",
+          "page": 277
+        },
+        {
+          "chapter": 17,
+          "title": "Principles of Game Feel",
+          "page": 297
+        },
+        {
+          "chapter": 18,
+          "title": "Games I Want to Make",
+          "page": 311
+        },
+        {
+          "chapter": 19,
+          "title": "The Future of Game Feel",
+          "page": 321
+        }
+      ]
+    },
+    {
+      "type": "Part",
+      "title": "Back Matter",
+      "items": [
+        {
+          "title": "Index",
+          "page": 345
+        }
+      ]
+    }
+  ]
+}

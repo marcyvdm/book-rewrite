@@ -1,0 +1,712 @@
+{
+  "chapter_title": "Super Mario 64",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "My first act as a newly licensed driver was to drive around town tracking down a Nintendo 64. The North American release of the Nintendo 64 system happened just after my sixteenth birthday, and the only thing I wanted more than a driver’s license was a copy of Super Mario 64. In my mind, the car was simply a way to quickly get from store to store, an expedient for tracking down the elusive console. I told my girlfriend at the time that, so sorry, we’ll have to do the movie thing another time. I have a date with an Italian plumber."
+    },
+    {
+      "type": "paragraph",
+      "text": "When I sat down with the game, I was transported back in time. I was sitting cross-legged and red-faced at my friend’s house down the block, playing Super Mario Brothers for the first time. Even as I struggled to come to terms with the skills needed to traverse this new and vibrant world, I felt that it was OK to suck because it was fun just to noodle around and bump into things. It was difficult and disorienting, as Super Mario Brothers had been when I was 9, but it was beyond doubt that the time spent learning would pay huge dividends. The world was physical, tactile and self-consistent. Learning to control Mario felt like learning to drive, something I’d just experienced. It was overwhelming and complex but also engendered with new, liberating possibility. Any amount of frustration seemed worth the effort. I couldn’t stop playing. Around every corner there were new kinds of tactile interactions and each one seemed to jibe with the others, building and reinforcing my impression that this world has its own physics. Here was a reality, whole and consistent, but with different laws governing it. Through the highly sensitive Mario tool, it was possible to interact with this world tactilely and physically, the way I interacted with my world. But it was so much more interesting because in this world I could jump and side somersault, spin and kick. I could fly. Every bit of skill I gained made the world seem that much larger, that much more robust."
+    },
+    {
+      "type": "paragraph",
+      "text": "Even today, the game still has the ability to capture me. I check the timing of a jump or look at how the character speeds up over time and find myself, five minutes later, trying to get just one more star so I can unlock the flying cap."
+    },
+    {
+      "type": "paragraph",
+      "text": "Picking apart the mechanics makes the cohesive nature of Mario 64’s world seem all the more remarkable. The physics are an illusion. Bizarre, improbable relationships are set up between variables, forces and the behaviors of objects. Gravity doubles when the character reaches the apex of his jump, for example, and if you duck"
+    },
+    {
+      "type": "paragraph",
+      "text": "while running above a certain speed, the character begins to slide. Yet these relationships are what define the feel of Mario 64; a litany of odd, seemingly arbitrary, interdependent relationships that improbably improve the feel of control and interaction. Giles Goddard wrote, “Mario’s movement is based on good physics, but you have bits on top that you plug in so you can do things you shouldn’t be able to do.”¹"
+    },
+    {
+      "type": "footnote",
+      "text": "¹http://www.miyamotoshrine.com/kong/features/mario64/"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What’s Important?"
+    },
+    {
+      "type": "paragraph",
+      "text": "What’s going on here? Why does Mario 64 feel the way it does? What are the clues, effects and relationships that define the feel of Mario 64?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The most important relationship is between the camera and the character. In Mario 64, the basic movement is camera-relative. The forces added by thumbstick input to drive the running and steering movements are applied with respect to the position and orientation of the camera. Unlike Tomb Raider, Resident Evil and other early forays into 3D freedom of movement, Mario’s movement always depends on the position and orientation of the camera. You can see this in action by simply holding down the N64 controller. When Mario reaches a point just under the camera, he begins freaking out, running in an endless circle. This is because downward movement always moves Mario toward the camera. When he reaches a point directly beneath it, he ends up running in circles."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another relationship is between the displacement of the analog stick and the speed of Mario’s movement. Mario 64 was the first game to nail rate-based 3D control with an analog stick. Displacing the thumbstick farther from center changes the speed at which Mario moves. It’s not acceleration, but a mapping directly to the rate at which he’ll move. Interestingly, because it will always take a certain amount of time to displace the thumbstick from center, there is a slight speeding up effect as the thumbstick goes from center to a direction."
+    },
+    {
+      "type": "paragraph",
+      "text": "Animation is another huge part of the feel of Mario 64. When Mario runs, his feet never slip. The animation seems to match perfectly to the speed at which he’s moving, grounding him, making him and every piece of ground beneath him seem more real, more vivid. In changing direction, Mario arcs slightly. When the thumbstick rapidly changes position, the character will not follow it one to one but will rather arc around to follow at a slight distance. As this happens, the Mario character leans slightly into the turn, as if shifting his weight to compensate. If the thumbstick goes from one direction to the direction roughly opposite it—left to right, for example—the character appears to plant his foot, slide slightly and reverse direction. The simulation is just doing its thing, unchanged, but this foot-plant animation sells the impression that Mario is a physical being, albeit a cartoony one, walking across a real environment. These animations are applied across every possible interaction, enhancing the feel of control and interaction between Mario and his environment."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another important relationship to the feel of Mario 64 is the one between the movement of the avatar and the spacing of objects in the world. The spacing of objects relative to jump distances and heights in Mario 64 is immaculately tuned. It’s clear that a set of guidelines for the basic spatial relationships between objects was set down and rigorously followed throughout the game. Objects are spaced and sized to match perfectly the height and distance of Mario’s jump. This is especially apparent using the wall kick mechanic, which requires the player to jump back and forth between two walls repeatedly. These relationships are perfectly tuned throughout the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "The levels in Mario 64 also tend to avoid places that will cause camera trouble by creating large, self-contained worlds that primarily feature tall, round structures. The camera can always look inward and is generally free of obstructions. This has the added benefits of focusing players on the important objects and areas, showing them their objectives ahead of time, and of providing a powerful sense of high-level space by enabling players to climb to the top of massive structures and look down, as if from the top of a mountain or tall building. The layouts of the levels play into the strengths of the mechanics, camera and free-roaming 3D perspective in the best possible way. When the environments become tight, closed-in caves, the camera is often switched to a fixed position “security cam” to compensate. These levels, while nice for contrast, often seem weak by comparison."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also related to the spacing of objects and how it feels to move between them, the design of challenges in the game emphasizes the best parts of the feel. I notice that there aren’t many goals that require precise stomping of things, especially moving things. Stomping a Goomba was a casualty of the transition to 3D for this reason; relative to how the character moves, it’s very difficult to precisely place a butt-stomp. Stuff like pounding the pole to release the Chain Whomp on Bomb-Omb Battlefield feels awkward and isn’t used much as a result. This effect is mitigated to some degree by placing a shadow beneath Mario wherever he goes, but it’s rare that the player is challenged to land on anything smaller than about five Marios in width. If it’s smaller than that, it’s just too difficult to ever be enjoyable."
+    },
+    {
+      "type": "paragraph",
+      "text": "The feel of Mario 64 is a conceptual, if not literal, translation of Super Mario Brothers into a new, 3D context. It still offers a relatively simple interface to a highly complex system of physical, tactile interactions. The input space is much more complex than the one that controlled the earlier 2D Mario games, but it accesses a set of loose-feeling, physically satisfying maneuvers of great depth and complexity."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once again we’ll examine the input device, the N64 controller, and the individual inputs on that device, as well as the types of signals those inputs send to the game. From there, we’ll look at what each modulates in the game and how this happens over time and space. Next, we’ll examine the relationships and interdependencies between those modulations and examine the simulation that gives rise to them in detail. The relationships between this simulated motion and the spatial context that gives it meaning are next, followed by a look at how polish effects sell the feel of physical, tactile interaction. We’ll also look at Mario 64 as a metaphorical representation and what expectations it sets up for the player about the interactions between Mario and his environment. To close, we’ll look at the ways in which rules profoundly"
+    },
+    {
+      "type": "paragraph",
+      "text": "affect the player’s perception of the value and physical properties of the various objects and enemies in the world, and how this changes feel by emphasizing certain interactions and mechanics."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Input"
+    },
+    {
+      "type": "paragraph",
+      "text": "The input for Super Mario 64 is the Nintendo 64 controller, which has 10 standard buttons, one directional pad and one thumbstick (Figure 15.1)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Despite its odd shape, the controller fits comfortably in the hands and feels good to hold. The plastic is smooth, and the standard buttons have a nice, spongy quality. They are functional, if not as crisp and lively as those used in modern controllers. The shoulder buttons and Z-button on the bottom of the controller are slightly poppier than those on the front of the controller, reaching their depressed state more quickly. The analog thumbstick, the first of its kind to be included in a mass produced highly successful controller, feels a little crusty by today’s standards, almost like there’s fine sandpaper in the base of it. It’s also longer and includes a much more powerful"
+    },
+    {
+      "type": "image",
+      "src": "269.png",
+      "caption": "FIGURE 15.1 The various inputs on the N64 controller."
+    },
+    {
+      "type": "paragraph",
+      "text": "spring than modern controllers’ thumbsticks. Compared to the thumbsticks in my Xbox 360 and Playstation 2 controllers, the spring seems to take roughly twice as much force to displace. Movements feel much more emphatic and the pushback of the stick against my thumb is much more noticeable. As a result, players receive more proprioceptive feedback (see Chapter 1) and can more accurately gauge movements between full on and full off. This is used to great effect in Mario 64, especially in the sections where Mario needs to tiptoe past sleeping enemies. It doesn’t feel as smooth as a modern thumbstick and it’s weirdly loose in its socket when at rest, but there is a stronger sense of its position in space. Finally, the housing of the thumbstick is not smooth. Instead, it has eight points or grooves, as seen in Figure 15.2."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is something Nintendo has done consistently with each of their thumbsticks, right up to the modern Wii nunchuck controller. This causes the thumbstick to come to rest in one of these eight cardinal directions when it’s pulled or pushed against the housing. There is some benefit in guiding the player to one of eight directions, but the cost is in feel. It feels weirdly jarring to roll the thumbstick in circles, and some sensitivity is lost in the space between the grooves. The clicking noise the thumbstick makes as the thumbstick is rolled across the grooves is pleasurable, but I prefer the tactile feel of a smooth circular housing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Applying our taxonomy for input devices, we see that there are 14 discrete buttons:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A",
+        "B",
+        "C-buttons",
+        "up, down, left, right",
+        "Directional Pad",
+        "up, left, down, right",
+        "Z",
+        "Shoulder L",
+        "Shoulder R",
+        "Start"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "270.png",
+      "caption": "FIGURE 15.2 The grooved thumbstick housing on the N64 controller provides a different sensation than a smooth housing (such as on a Playstation 2 controller)."
+    },
+    {
+      "type": "image",
+      "src": "271.png",
+      "caption": "FIGURE 15.3 The signals sent by the N64 thumbstick."
+    },
+    {
+      "type": "paragraph",
+      "text": "The one continuous input is the thumbstick. The motion of the thumbstick is linear rather than rotational, and it moves along the X- and Z-axes. The X- and Z-motion of the thumbstick is integrated; it moves in both axes at the same time. Being spring-loaded, the device measures force rather than position, and it is an indirect control input. You don’t touch where you want to indicate, like a touchscreen."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of signals, the buttons send the usual binary signals of “up,” “pressed,” “down” or “released.” The thumbstick sends a continuous stream of input based on its displacement from center in the form of two axis values, one for X and one for Z. These values will be a float between -1 and 1 (Figure 15.3)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Response"
+    },
+    {
+      "type": "paragraph",
+      "text": "Super Mario 64 has two avatars, Mario and Lakitu (the cameraman). Both can be directly controlled, though Lakitu defaults to being indirectly controlled when his movement is not being overridden by player input."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Mario avatar maps input signals to modulation in many of the same ways as its predecessors did, using basic button presses, multi-button chorded inputs, time-sensitive inputs and state-sensitive inputs to add forces to a simple simulation. It doesn’t have any mapping of button presses to modulation of simulation parameters, though. You can’t hold down B to run faster than you did in Super Mario Brothers. Basic jumping is almost identical, however, with an upward force being added over time to a maximum depending on how long the button is held. Like the original Super Mario Brothers, being in the air is a separate state in which the steering force is present but reduced. In Mario 64, this jump also “locks” Mario into facing a particular direction once he’s left the ground, and the steering changes slightly. Rather than arcing and turning when left and right are pressed, the steering forces are applied laterally (Figure 15.4)."
+    },
+    {
+      "type": "image",
+      "src": "272.png",
+      "caption": "FIGURE 15.4 The in-air steering force of Mario 64 becomes side to side rather than rotational (as it is on the ground)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Recipe and Simulation"
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition to the basic jump, there are various jumps of different trajectories triggered by different button combinations, by pressing buttons in sequence over time, or under particular circumstances such as being in contact with a wall (for a Wall Kick) or moving at a certain speed and having just landed (for a Triple Jump). In each case, the jumps can be steered in the air at the same reduced rate in directions relative to the way the player was facing when the initial jump happened. Let’s look under the hood, at the simulation driving these motions and at the ways in which input signals modulate the parameters of this simulation."
+    },
+    {
+      "type": "paragraph",
+      "text": "The simulation of driving the controllable motion in Mario 64 is constructed using a top-down approach. Each parameter that’s modulated by input is simulated very simply, with clearly defined, hard-coded relationships. Apart from the collision, there’s no general-purpose, applicable-everywhere code. It’s all about specific esoteric relationships between inputs, motion and time. Because these relationships are defined specifically and only in as much as they need to be, it’s possible to talk about motions and the simulation that drive them as one."
+    },
+    {
+      "type": "paragraph",
+      "text": "To build the feel of Mario 64, the first ingredients are a capsule and a flat plane (Figure 15.5)."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "To follow along, open example CH15-1."
+    },
+    {
+      "type": "image",
+      "src": "273.png",
+      "caption": "FIGURE 15.5 The starting point for Mario 64—a capsule and a plane."
+    },
+    {
+      "type": "paragraph",
+      "text": "The basis of the simulation is gravity and collision. The capsule should be pulled down each frame and, upon coming into contact with the ground, sit on top of it. Once in contact with the ground, the capsule behaves as though it has a great deal of friction. Standing still, it will not slip or slide around, and it will remain rooted to the spot. In motion, the result is the same, except when the incline of the ground underneath the capsule is greater than about 45 degrees. Running uphill when the incline is greater than a 45-degree angle relative to the horizontal will slow the capsule down, applying a force against the forward running force corresponding to the angle of the incline. As long as the resulting velocity keeps going forward, the capsule can still run up the hill, albeit slowly. At about a 60-degree angle, for example, the capsule still makes it up the hill. At some point—around 75 degrees of incline—the forward force will be insufficient to overcome the incline-added opposite force. When this happens, the capsule enters a new state, the slide. In the slide state, there is much less friction, and the capsule slides down the hill at a rate and direction corresponding to the angle of the incline. The steeper the incline, the faster the slide, and if the incline leans to one direction or another, the capsule will slide that way. It is possible to steer slightly left or right while in this sliding mode, a reduced-force version of the normal steering, which we will address presently. This sliding state will also be triggered if Mario steps onto a steep incline from the top and is moving in a downhill direction."
+    },
+    {
+      "type": "paragraph",
+      "text": "The result of all this is that there is a constantly reinforced impression of texture. The interactions between capsule and ground are subtle, and they sell the impression that there is a slip threshold for the bottom of Mario’s shoes, where he will lose his footing, break loose and slide and that despite his highly cartoony motions, there is a nuanced reality to the way his feet interact with the ground. He can slide"
+    },
+    {
+      "type": "paragraph",
+      "text": "down a hill he was able to climb up, just as may happen if you scale the steep side of a gravel-covered mountain while hiking. In addition, the relative incline of terrain becomes very important in terms of spatial context, creating a soft boundary for the edges of levels, and giving a more satisfying aspect to the climbing of high mountaintops and structures. You can’t just run up a steep incline, so being at the top of a treacherous mountain feels more like an accomplishment. There are also whole sections of the game devoted to the sliding and steering mechanics, such as the penguin race segments on the Cool, Cool Mountain level."
+    },
+    {
+      "type": "paragraph",
+      "text": "The sides of the capsule slide across objects with almost no friction whatsoever. As with most racing games and other games we’ve discussed, collisions with the side of the capsule are waterslide-like. Instead of being hung up or caught, the capsule flows over objects with grace and ease. As in other games, this has nothing to do with accurately modeling our physical reality and everything to do with how annoying it would be to constantly get hung up on every object you came into contact with."
+    },
+    {
+      "type": "paragraph",
+      "text": "The final result of the basic collision interactions is an object with a constantly changing feel of momentum and friction. The incline and sliding stuff is a delightfully cheap trick in this respect, reinforcing the tactile, physical relationship between Mario and the ground every time there is a variation in the incline of the terrain beneath him. This lends a subtlety and nuance to these interactions, and the level design exploits this feel masterfully by providing much variation in types and layouts of terrain."
+    },
+    {
+      "type": "paragraph",
+      "text": "As the capsule moves across the landscape, it is mostly unimpeded by objects it runs into. Unless it’s a head-on collision, the lack of side friction will enable it to slide past. This enables players to very often be “close enough,” without having to be exact in their steering. The impression is simply that the character goes where you want. The reality, as far as the simulation is concerned, is a lot of weird collisions with objects that are resolved by simply redirecting the player to flow along the edge of the object that was collided with. Again, the level design does a great job of playing into this by providing more flowing, angular, waterside-like passages than blocky, hard edged things that might stop the capsule in its tracks."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a final note on collision, it’s worth saying that there are many different ways to achieve this same result, none of which will be addressed here. There are many excellent books that address the technical details of implementing a collision system, such as Real Time Collision Detection by Christer Ericson (Morgan Kaufmann, ISBN 1558607323)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Running Speed and Direction"
+    },
+    {
+      "type": "paragraph",
+      "text": "The thumbstick creates a velocity, relative to the camera, from a combination of the X- and Y-axis data. This gives Mario a direction in which to run. Once he has this direction, he will run in this direction at a rate of speed corresponding to how a thumbstick is displaced (Figure 15.6)."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Units of Measurement"
+    },
+    {
+      "type": "paragraph",
+      "text": "As we’ve said, there’s no standard unit for measurement in a video game. For vertical measurements of height, I’m using Mario as a ruler. He’s a good point of reference because he’s always on screen, and his height is consistent to the distance we’re trying to measure regardless of camera position. We could also measure jump heights in castle bricks, trees, standard blocks or anything else, but using Mario makes the most sense."
+    },
+    {
+      "type": "image",
+      "src": "275.png",
+      "caption": "FIGURE 15.6 Spatial displacement of the thumbstick versus forward speed of Mario.\nFIGURE 15.7 The result of blending between current and desired direction each frame; Mario takes a short time to reach his new direction, causing a carving motion."
+    },
+    {
+      "type": "image",
+      "src": "276.png",
+      "caption": "FIGURE 15.8 If the direction change in a single frame is greater than about 90 degrees, the result is a foot plant, slide and direction reversal. Otherwise, Mario turns gradually.\nFIGURE 15.9 The Side Somersault jump. Note that force is only applied once (it doesn’t matter if the button is held down) and that velocity is set to zero at the jump’s apex."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the direction he’s headed in changes and he has a forward speed of zero, he simply snaps to that new direction with zero frames in between. If his speed is greater than zero, though, it will take him a short time to go from his current direction to a new direction (Figure 15.7). This is not a time-based relationship; the desired direction gets blended with the current direction every frame until they’re identical. This is what gives Mario a slightly smooth, carving motion when he changes direction. Without this, Mario’s movement feels stiff and robotic."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a rapid change in his direction is greater than a certain angle, however, he will enter a different state, stop for a few frames, plant his foot, then take off in the new direction, as shown in Figure 15.8."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you press the A-button during this time, the result is a special jump, the side somersault, which always produces the same upward force (it is not time sensitive). Figure 15.9 shows the arc of this side somersault."
+    },
+    {
+      "type": "image",
+      "src": "277.png",
+      "caption": "FIGURE 15.10 Mario’s basic jump."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Modulating Upward Velocity"
+    },
+    {
+      "type": "paragraph",
+      "text": "The basic jump in Mario 64, triggered by the A-button, functions almost exactly the way it did in earlier incarnations of Mario, adjusting the velocity based on how long the button is held. The binary signal from the A-button modulates upward velocity, causing the avatar to accelerate upward, countering the constant pull of gravity. The attack part of the envelope is affected by holding the button down for more or less time, up to a maximum. The initial upward force is always the same; releasing the button sets the upward velocity immediately to an artificially low level. This continues the upward trajectory (which continues to be affected by gravity) for a certain time, the delay. At the apex of the jump, when the code sees that the upward Y-speed is zero or less, a much higher gravity force is applied to pull the character quickly back down to the ground."
+    },
+    {
+      "type": "paragraph",
+      "text": "The end result of all these subtle modifications is that, as with the earlier Mario games, Mario’s jump is variable in height based on how long the “A-button held down”"
+    },
+    {
+      "type": "image",
+      "src": "278.png",
+      "caption": "FIGURE 15.11 The ADSR envelope of the Continuous Jump."
+    },
+    {
+      "type": "paragraph",
+      "text": "input signal is received. In addition, the jump always has the same shallow arc for its delay, has little if any sustain, and has a much higher gravity force pulling it downward during its release. The feel is an illusion of satisfying emphasis. Hold the button down longer and you get a higher jump. Tap or feather it to get a shallower, more sensitive hop. Even though the maximum jump will terminate its upward force at a certain point no matter what (the limit point at which the max jump height is defined), when you want the maximum you will find yourself holding the button down for almost the entire duration of the jump. Also, you press the button more emphatically when you want a higher jump. In terms of what happens in the game, how hard you press the button makes no difference, but because of the setup of upward thrust with a small window for opt out, you feel as though you’re emphasizing the desire for a higher jump and that the game is responding appropriately."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the character hits the ground after a jump, there is a short window in which pressing the button again will cause another, different jump. In the game’s manual, this is called the continuous jump. This jump is accompanied by a different, more vertically stretched character animation but functions identically to the normal jump, with the exception of the initial upward velocity. The initial jump force is much higher, causing the character to move more quickly upward and to have a higher potential height. This jump is still time sensitive, enabling the user to opt out by releasing the button, and also requiring that the button be held to achieve the maximum height (Figure 15.11)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Continuous Jump has the same modified gravity applied to it at its apex and opt out points, but because the initial force is higher, it takes longer to complete and affords both higher and longer jump trajectories."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Continuous Jump can be triggered regardless of how fast the character is moving in a direction. From the Continuous Jump, it’s possible to do the Triple Jump. To do the Triple Jump, the character must be moving greater than about half speed, just at the transition point where the walking and running animations switch."
+    },
+    {
+      "type": "image",
+      "src": "279.png",
+      "caption": "FIGURE 15.12 The ADSR envelope of the Triple Jump."
+    },
+    {
+      "type": "paragraph",
+      "text": "The principle is the same as with the Continuous Jump—press the button in a short window after landing—but it requires that the character be moving more than a certain speed. Slower than that and the third jump in the sequence will be another basic jump."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unlike the Continuous Jump, the Triple Jump (Figure 15.12) is not time sensitive, eschewing the opt-out control for a predictable trajectory, like the Long Jump or Side Somersault. It is the second highest jump after the Back Somersault and the second farthest horizontally after the Long Jump."
+    },
+    {
+      "type": "paragraph",
+      "text": "Once in the air state, the modulations mapped to each buttons’ signal change. Pressing B and Z take on different meanings. In each case, the response is another “move” consisting of a specific animation and a predetermined motion. The benefits of these special moves are very similar to those conveyed by the special jumps; because their result is a very predictable movement in space, they prune complexity and enable the player to get a more predictable result for their input."
+    },
+    {
+      "type": "paragraph",
+      "text": "When in the air state, the Z-button on input triggers the “ground pound” move, where the capsule loses all horizontal momentum, freezes in mid-air for a short time while playing an animation, then drops to the ground with greater gravity than even the normal increased gravity. This move feels particularly emphatic, including a screen shake, spray of yellow stars and concussion wave of dust particles on impact. The really interesting thing about it, from a control standpoint, is that it brings precision to the otherwise imprecise act of jumping. It halts all horizontal momentum, enabling the player to land on a very specific spot beneath him or her. The result is still somewhat sloppy—hitting small targets like the post that releases the Chain Whomp is difficult and fiddly—but it provides much more precision in landing than steering in the air offers."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the jump was triggered while the character was running at any speed less than his or her maximum, pressing B while in the air state triggers the Jump Kick move. It’s a move with limited utility. It’s useful for hitting enemies that are elevated slightly off the ground, such as the “Boo” enemies in the Big Boo’s Haunt level, and"
+    },
+    {
+      "type": "paragraph",
+      "text": "not much else. It’s remarkable for its animation effect—Mario’s foot gets disproportionately large to emphasize the impact of the kick."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the jump was triggered while the character was running at maximum speed, the resulting move is a Dive Attack. The Dive Attack has a long horizontal trajectory, similar to the Long Jump, but it is instead triggered in the air. It also counts as an attack, meaning that hitting an enemy in the resulting slide state will damage them instead of you. At the end of it, after landing on the ground, Mario enters the same slide state as is caused by the basic slide attack. The Dive Attack can be triggered from any jump except the Triple Jump and Long Jump, presumably to prevent the player from getting too far in one jump and circumventing too much of the challenge. From the simulation’s point of view, the Dive Attack halts all vertical Y-axis motion the moment the input is received, setting it immediately to zero. A horizontal force is then added in the direction the character is facing. Once the character comes back into contact with the ground, the state is set to slide instead of the default running state. This gives the controls an “aftertouch.” Using the Dive Attack can get you that last little bit of horizontal momentum you need, or it can convert to attack mode on the fly if you’re about to land dangerously close to an enemy. Because it goes back to the slide state, it feels a bit like a crash landing. It can take quite a while for the stand back up animation to play and return control to the player, furthering the impression that this is a bit of haphazard maneuver. It is possible to jump back out of this slide with a small hop, however, which can be triggered from this attack slide state by input from either the A- or B-button. This little hop seems a compromise, meant to mitigate the problem of seeming unresponsiveness caused by locking the player out of control for so long after the slide state."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is one other type of jump possible in Mario, the Wall Kick. The Wall Kick is by far the most complex move to pull off in Super Mario 64, requiring the following conditions be met:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Character moving at a certain speed horizontally",
+        "Character in the Air State",
+        "Character in contact with a wall within the last 20 ms",
+        "Thumbstick quickly pulled in the direction from the momentum that carried it into the wall (similar to the trigger for the Side Somersault)",
+        "A-button pressed"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This requires that the player run the character quickly toward a wall, jump into that wall with sufficient force and within about a fifth of a second, press the opposite direction on the thumbstick and tap the A-button quickly. Talk about your hand-cramping maneuvers! The mapping, however, is very natural. The player pulls the thumbstick immediately away from the wall in the direction he or she wants to go and press A to jump, the same function that is always mapped to the A-button. The window for completion is fairly wide, enabling the player a degree of leeway. For example, if the player hits the wall with great force, pressing the thumbstick in"
+    },
+    {
+      "type": "paragraph",
+      "text": "a direction roughly away from the wall and pressing A somewhere close to that motion will still cause the Wall Kick to occur. Even if the star particles and fall animation for a strong collision have started, the Wall Kick will take priority."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Switches to Ducking or Sliding States"
+    },
+    {
+      "type": "paragraph",
+      "text": "When the signal for “Z-button held” is received, it always corresponds to a state change. The switch happens as soon as the input for “button on” is received, though the animation of the character going from standing to ducking takes about a tenth of a second to complete."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the capsule has zero velocity, the character enters the normal ducking state. From here, the thumbstick motion enables crawling. Crawling functions similar to running, with extremely slow forward motion, more looseness between desired and actual direction, and no concept of foot plant or direction change. The feel is very plodding but it is precise, providing a great amount of spatial accuracy. This is emphasized by the level construction in areas with long, thin planks across large precipitous drops. The crawl enables slow but steady progress that is all but guaranteed to take the player safely across. To me, this always represented a risk/reward tradeoff. Impatient, I always opt for the risk of running full speed across the planks rather than having to crawl laboriously."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also noteworthy is the progression of behaviors when the player presses the jump button while in the crawling state. First, the character transitions directly from crawling to jumping. After landing, the character goes back into the running state and will continue running around as normal—Z-button still held—until the thumbstick input stops entirely, at which point the standing to ducking animation will play again, and the character will return to the ducking state. This is a nod to the fact that crawling is rarely used. The designer assumes that if the player jumps, he or she would always rather go back to running first. Crawling takes a back seat to all other motions, so doing so must be very deliberate on the part of the player."
+    },
+    {
+      "type": "paragraph",
+      "text": "Pressing the B-button in the normal ducking state triggers the Trip Attack, a rarely used stationary attack that will destroy some enemies within a very short radius. It’s almost never used."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, pressing the A-button in the normal ducking state triggers the Back Somersault special jump. The Back Somersault is the highest jump in Mario’s acrobatic repertoire, enabling him to accomplish very high jumps with very little horizontal motion. It’s useful when you want to move mostly vertically, onto a small shelf, outcropping or platform high above. The drawback of this jump is that its horizontal movement is backward relative to the direction Mario is facing. The player cannot use this jump to leap up and grab onto a ledge; to do this, the character must face toward the ledge."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the Z-button is pressed while the character is moving, the slide state is entered. We discussed the slide state earlier with respect to collision; now let’s examine"
+    },
+    {
+      "type": "image",
+      "src": "282.png",
+      "caption": "FIGURE 15.13 Running to duck-sliding."
+    },
+    {
+      "type": "paragraph",
+      "text": "the steering possible in the slide state, the various forms it can take and the feel of each."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are three way to enter the slide state: by intentionally pressing duck while moving at speed, by running up a hill that is too steep and sliding back down, and by running forward onto a steep incline."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the slide state is entered into intentionally, the result is the character animating into a crouching position, like Figure 15.13."
+    },
+    {
+      "type": "paragraph",
+      "text": "This happens when the character’s speed is greater than zero when the Z-button input is received. In the slide state, there is a high friction value applied to each frame, which will quickly slow the character to stop on flat ground. At very low speeds, the character will enter the slide state very briefly before quickly slowing to a halt and transitioning back into the crawling state. Running at full speed, the slide will last just longer than one second."
+    },
+    {
+      "type": "paragraph",
+      "text": "From this sliding state, the A-button input triggers the Long Jump, a jump which emphasizes horizontal speed rather than vertical height. It’s the opposite from the Back Somersault in that it’s all about traversing long distances horizontally, making huge flying leaps from platform to platform. Like the Back Somersault, the Long Jump is not time sensitive. It’s still steerable in the air, but initial jump force added is unaffected by how long the button is held. One height, one distance, and again, much of the level geometry plays into this predictability, giving the player a better chance of accurately judging and correctly completing particular jumps. The main difference between this jump and the other jumps is that it receives not only a vertical but a horizontal force at the time it’s triggered."
+    },
+    {
+      "type": "paragraph",
+      "text": "Pressing B from the sliding state triggers the Slide Tackle maneuver, which is rarely used. It adds a certain amount of horizontal force and sees the character bounce up and down twice before coming to rest. It is an attack move, though, so any enemies hit while the character is in this state will be damaged. This is the same attack slide state caused by the Dive Attack, so it’s also possible to cancel out of this slide with a small hop that can be triggered by either A- or B-button presses."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Triggering Attack Moves"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pressing the B-button triggers a simple punch attack. Accompanying this is a very small amount of forward movement, mostly for emphasis. Like the Jump Kick, Mario’s fist expands at the completion of his punch to emphasize the power of the move. Also like the kick, this move looks a bit odd under close examination; it seems as though Mario’s gaining volume in his fist rather than squashing and stretching properly."
+    },
+    {
+      "type": "paragraph",
+      "text": "Though it has limited utility in fighting enemies or getting around, this move is used more frequently than things like the Trip and Jump Kick because it is often required in boss fights. Pressing B when near something will make the character grab it or pick it up. While holding something, Mario moves much more slowly and has a weighed-down animation, giving the thing he’s holding a terrific sense of weight and presence."
+    },
+    {
+      "type": "paragraph",
+      "text": "Pressing the B-button three times in rapid succession causes first an additional punch and then a Jump Kick. Again, these are rarely used and so do not contribute significantly to the game’s feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the B-button is pressed when the character is moving at full speed in a particular direction, a Slide Attack is the result. The Slide Attack is the most basic form of the slide attack state that happens after a Dive Attack. The character gets a small amount of additional horizontal force but enters the slide state, quickly being slowed down by friction. This is an attack, so it will damage enemies that are hit while in this state. It is possible to cancel out of this state with the small hop, as with the Dive Attack and Slide Tackle."
+    },
+    {
+      "type": "paragraph",
+      "text": "The big picture is very much a top-down simulation in which each parameter is simulated only with the detail it needs to be. A bunch of special cases strung together with specially defined relationships. You can almost feel the designers plugging holes, saying things like “hmmm, well, it feels too cheap to climb up hills without resistance, so let’s make him slide back down. Oh, this sliding is kind of cool, what happens if we enable the player to steer it? Ah, okay, just grab the steering from the running state and plug it in with reduced values. Cool, okay, that feels good…”"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many times, it seems like the designers were simply asking “what if” questions and then answering them with mechanics. What if Mario could grab Bowser by the tail and swing him? What if you could ride a turtle shell around like a skateboard? I’ve glossed over many of these supporting mechanics, including flying, swimming and walking underwater with the Metal Cap. This is because I have limited space; I wanted to cover the basics. However, the impact of these supporting mechanics should not be underestimated. They add a great deal of texture and variety to the feel of Mario 64, which would lose much if they were removed. Especially important is the crossover sensations caused by the contrast between mechanics. Swimming seems floaty because it’s different from running. One of the most important parts of the feel of Mario 64, however, is the fact that each mechanic seems to maintain the same laws of physics. The controls for flying may have nothing to do with running"
+    },
+    {
+      "type": "paragraph",
+      "text": "around on the ground or swimming, but they feel as though they do. Flying feels as though it’s defying the same gravity that pulls you downward when completing a Long Jump. This is perhaps one of the most overlooked aspects of game feel: the crossover sensation. If there are multiple separate mechanics in play, do they seem beholden to the same laws of physics. Do they seem to be part of the same world?"
+    },
+    {
+      "type": "paragraph",
+      "text": "To summarize, the thumbstick provides the bulk of the moment to moment input, mapping as it does physical displacement to both direction and rate of the character. This relationship is camera-relative and therefore is an intuitive, natural mapping, though it also includes a slight looseness that gives Mario a certain amount of carving motion. Also, the relationship between terrain incline, friction and thumbstick-driven motion creates a great sense of interaction between character and ground, and is constantly updating the impression in the player’s mind via changes in incline and terrain. The rest of the inputs serve to put Mario in different states, such as ducking or jumping, but the relationships of importance are between how fast he moves forward, how much thrust gets applied in his Y-direction, and the resulting trajectories, which are precise but highly malleable, enabling in-air steering. The end result provides a huge number of moves which feed in predictable ways into a simple physics system. Each of these moves can be steered by thumbstick input after having been triggered, and many moves can be chained and combined, giving the user a great expressivity both in the choice of moves and in the way those moves play out. Combined with the layout of levels, this enables just the right amount of freedom for the player."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Lakitu the Cameraman"
+    },
+    {
+      "type": "paragraph",
+      "text": "The second avatar is “Lakitu,” also known as the camera. The camera is indirectly controlled most of the time. Even when directly controlled, the camera has two crucial relationships: between Mario’s position and its own and between Mario’s orientation and its own (Figure 15.14)."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is a circular area of influence between Mario and camera. From the camera’s position, a circular zone spreads outward for a certain distance. When Mario reaches the outside of this radius, the default behavior of the camera avatar is to follow Mario’s position at a slight remove."
+    },
+    {
+      "type": "paragraph",
+      "text": "If he’s running straight away from the camera, the camera will follow at the same speed, maintaining the distance relationship."
+    },
+    {
+      "type": "paragraph",
+      "text": "If he runs directly at the camera by holding down on the thumbstick, the camera will pull backward, away from the onrushing Mario (Figure 15.15). This pull back is limited to a very slow rate, however, and if the character is running at full speed toward the camera, he’ll quickly close the distance. When this happens, when the Mario avatar gets within a certain, short radius of the camera, the camera will freeze in place, tracking on the avatar from a stationary position. Because all character motion is camera-relative, however, once he gets beneath the camera, he runs in an odd looping pattern around the camera as though it were an invisible maypole."
+    },
+    {
+      "type": "image",
+      "src": "285.png",
+      "caption": "FIGURE 15.14 There are two camera zones in Mario 64, stationary and following."
+    },
+    {
+      "type": "image",
+      "src": "286.png",
+      "caption": "FIGURE 15.15 The camera’s small “pull back” zone."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the movement of the Mario avatar is purely side to side, neither running toward nor away from the camera but parallel to it, the motion of the camera is rotational only. Again like a security camera, it will rotate to look at the Mario avatar, but never change its position in space. This rotation starts by tracking on Mario’s exact position, but gradually interpolates into tracking a position ahead of him, shifting him to the right or left of the frame and showing more of what’s coming up in front of him as he runs."
+    },
+    {
+      "type": "paragraph",
+      "text": "These two effects, positional changes based on character-camera distance and rotational changes based on left-to-right movement, blend together. The result is that running at a diagonal will slowly turn the camera in the direction that Mario is running and it will do a reasonably good job of showing objects in that direction. In addition, if the player presses the left or right C-button, the camera will be pushed about 20 degrees in the direction indicated. It will slowly drift back to its original orientation, but it momentarily provides additional angles of view."
+    },
+    {
+      "type": "paragraph",
+      "text": "When Mario jumps, the camera attempts to stay still as long as possible. Mario 64 lead designer Yoshiaki Koizumi addressed this problem in his talk at the Montreal"
+    },
+    {
+      "type": "paragraph",
+      "text": "International Games Summit in 2008, as reported in Gamasutra: “In Mario games, players press a button to jump and camera follows. Koizumi noted that this camera pitch can make some people ill. There are various theories, he explained, about why this occurs—for example, a disconnect between the sense of motion and the lack of motion sensed by the inner ear. In the case of Mario, Koizumi continued, rapid and repeated screen scrolling was most likely to cause this discomfort, so he thought of ways to minimize this. Nintendo’s solution was to implement a ‘vertical shake cushion’—when Mario’s in the center of the screen, the camera won’t pan, but if he’s about to go off, it will.”²"
+    },
+    {
+      "type": "footnote",
+      "text": "²http://www.gamasutra.com/php-bin/news_index.php?story=16386"
+    },
+    {
+      "type": "paragraph",
+      "text": "When at rest, the camera, using the Mario avatar as its pivot point, slowly orients itself to face the direction the avatar is currently facing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Apart from the default behavior described above, the camera avatar has many special case solutions that change its motions. First, it collides with walls and other surfaces. When it does so, its motion in that direction stops, the same essential effect as when the character is moving only side to side under normal circumstances. In some areas, such as the main castle foyer, the camera switches to a fixed perspective from a specific, preset vantage point."
+    },
+    {
+      "type": "paragraph",
+      "text": "This blending of direct and indirect control over the camera is admittedly clumsy and would probably be labeled as irretrievably broken by modern standards. The problems with the system, though, are mostly mitigated by specific case hole-plugging (as with predefined security camera vantage points) and through judicious level design, which emphasized mostly large, open areas with towering central landmarks."
+    },
+    {
+      "type": "paragraph",
+      "text": "In general, the approach of camera motion in Super Mario 64 attempts to avoid superfluous motion and to show players what’s ahead in the direction they’re traveling as much as possible. Though quite sophisticated for the time, experienced today it can seem jarring, frenetic and inadequate."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Control Ambiguities"
+    },
+    {
+      "type": "paragraph",
+      "text": "Up to this point, the feel of Mario 64 has been characterized as unambiguously wonderful. But it is not all sunshine and mushrooms. Here’s the rub: there are some rather glaring control ambiguities in Mario 64’s setup that should have been resolved. As Mick West points out in his most excellent “Pushing Buttons” article,³ there is a troubling crossover between the Ground Pound, Back Somersault (here called backflip) and Long Jump moves in Super Mario 64:"
+    },
+    {
+      "type": "footnote",
+      "text": "³http://cowboyprogramming.com/2007/01/02/pushhing-buttons/"
+    },
+    {
+      "type": "paragraph",
+      "text": "In Nintendo’s Super Mario 64, when playing as Mario, pressing A to jump then R1 will trigger a ground pound. Pressing R1 then A will trigger a backflip. Pressing them both at the same time will cause one of: a ground pound, a backflip or a normal jump, seemingly at random. This is bad because the user has no control; they are doing the same thing over and over, yet getting different results."
+    },
+    {
+      "type": "paragraph",
+      "text": "This problem also shows up in Mario when you try to do a long jump, which is done by running, then jumping by pressing A R1. Sometimes while attempting this you will do a Ground Pound by accident. This is not the fault of the player. To the player it appeared they did everything right, but the results were not what they expected."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Context"
+    },
+    {
+      "type": "paragraph",
+      "text": "As has been alluded to, the spacing of the objects in the levels of Super Mario 64 has a hugely positive effect on the overall feel of the game. Relative to the avatar’s"
+    },
+    {
+      "type": "paragraph",
+      "text": "movement, levels were constructed with three specific spatial relationships in mind: vertical height, horizontal distance and the size of platforms."
+    },
+    {
+      "type": "paragraph",
+      "text": "It’s fine and well to say that the spatial context of Mario 64 matches perfectly with the tuning of its mechanic, but what does this actually mean? From the standpoint of the pragmatic level designer, what did this mean in terms of actually placing polygons? And how was the mechanic tuned, relative to the movement of the character? What was the mechanic designer’s role in this process? First, I believe that in the case of Mario 64, as in most high profile Nintendo games, these two were one and the same. At least, initially. Anecdotally, the prototype form of Mario 64 was a “gameplay garden,” a test level which included a near-final version of Mario, complete with animations and moves, and a wealth of different things for him to interact with. As the jump heights and trajectories were tuned, so were the distances between objects. The Wall Kick and walls spaced the right amount apart were created simultaneously. This meant that as the mechanics were evolving, so too were the general rules about how far apart objects should be spaced, how big or small they should be, and what kinds of environments would be built around them and out of them. Simply put, the size, nature and spacing of objects were part of the same system as the height of Mario’s jumps and the speed of his running and turning. These guidelines seem to consist of four primary spatial relationships: vertical height, horizontal distance, the X/Z dimensions of each walkable platform and the angle of incline of each piece of terrain."
+    },
+    {
+      "type": "paragraph",
+      "text": "By vertical height I mean the distance between a given current position of the character and some other, higher position. The vertical height of objects relative to one another comes in three distinct and premeditated flavors. First there are objects which can be scaled by a basic jump. Many blocks are spaced at just the right height for the basic jump. They’re lower than the apex of the jump to enable a wide range of jumps to land on them, as were the blocks in Super Mario Brothers. Other jumps are clearly just right for the Back Somersault, Side Somersault or Triple Jump. For example, at the beginning of Whomp’s Fortress, there’s a wall that is the perfect height for a Side Somersault. On the Shifting Sand Land level, there’s a platform with a Flying Cap block on top of it that is perfectly spaced for the Triple Jump. Throughout the levels in Mario 64, these relationships are maintained. As you play, you quickly become accustomed to not only the predictable height of the various jumps at your disposal, but the fact that the environment seems tailor-made for the heights of these jumps. It becomes easy to walk around a level to see which ledges are basic jump height, which are Triple Jump or Back Somersault height, and which are too high to reach by jumping. I also note that there are many unforced opportunities to use higher jumps. Especially in the earlier levels such as Whomp’s Fortress; Cool, Cool Mountain; and Bomb-Omb Battlefield, there always seems to be a way to circumvent the normal path—which emphasizes jumps at the basic height—by using a Side Somersault or Back Somersault to get higher earlier."
+    },
+    {
+      "type": "paragraph",
+      "text": "When I say horizontal distance, I mean the distance from one point to another along the same plane. Rather than trying to ascend to a higher platform, the horizontal distance of a jump dictates how wide a chasm Mario can cross. Can I make"
+    },
+    {
+      "type": "paragraph",
+      "text": "it across this gorge or patch of lava in one Long Jump or Triple Jump? Or do I need to use a basic jump and pull back slightly on the stick because I need to land on the small portion of a moving platform that isn’t currently covered with scalding lava? As with the relationships between vertical objects, there are various specific relationships between the position of horizontal objects in space that are maintained throughout the levels in Mario 64. Some platforms are clearly spaced to be just the right distance relative to the basic jump, where others can only be accomplished with the Long Jump. In each case, it becomes easier and easier for players to eyeball these relationships as they play through the game. If a jump looks to be just the right distance to clear with a Long Jump, it almost always is. And, as was the case with earlier Mario games, increasing challenge usually means longer, more precise horizontal jumps."
+    },
+    {
+      "type": "paragraph",
+      "text": "Of course, each jump represents a trajectory, including both horizontal and vertical movement. To land on a platform, whether it’s a tiny shelf of rock far above and behind the character or whether it’s a wide platform over a gorge directly ahead, requires movement in both the vertical and horizontal. What Mario 64 does wonderfully is to present the player with consistent vertical and horizontal relationships throughout the game, regardless of what else is going on in the level. As a result, the complex, imprecise motions of Mario through 3D space become manageable, predictable skills that can be learned and mastered. This feels great; the player almost always gets the result he or she was after. The onus, then, is on the player to plan and execute maneuvers more accurately and skillfully."
+    },
+    {
+      "type": "paragraph",
+      "text": "A platform’s dimension refers to how much landing or maneuvering space it provides."
+    },
+    {
+      "type": "paragraph",
+      "text": "Relative to the speed at which the character runs when on the ground, the levels are very open, without much obstruction. The running is a very precise, responsive motion with no floatiness or looseness, so there is little emphasis in the design of most levels on running very precise patterns. Releasing the thumbstick brings the character to a halt immediately, so there’s no real risk of unintentionally running into or falling off of something. The game says: wait until you’re ready. It’s supposed to feel easy and safe just to move around the world by running, and it does. The levels in which it is not so safe—Lethal Lava Land and the three Bowser stages—are genuinely unnerving by comparison, requiring an unaccustomed amount of focus on the character’s exact position on the ground. Keeping the player scrambling forward for extended periods of time and taking away the safety net makes the game feel very different. That both feels exist in the same game speaks to the fact that the designers had a deep understanding of what they were doing in constructing each type of level. More than that, the different sensations create an excellent and rich contrast which enhances each."
+    },
+    {
+      "type": "paragraph",
+      "text": "As we noted when talking about collision and response, Mario 64 models friction, especially with respect to the angle of incline of the terrain beneath him. The character has a certain coefficient of friction, which can be overcome and send him slipping and sliding. In this way, incline is used throughout the levels as soft boundary and soft punishment. If you’re not supposed to go somewhere, there will be a"
+    },
+    {
+      "type": "paragraph",
+      "text": "steep incline to turn you back. It’s a gentle, negative reinforcement with a clear, logical physical relationship. You can’t climb up and over the wall in Bomb-Omb Battlefield because you start to slip and slide back down if you try. It feels futile, quickly getting the message across without painfully overt constraints such as an invisible wall or other contrived boundary. In this way, what’s been accomplished is a victimless blame shift, a hallmark of good level design. Player don’t feel the direct intervention of the designer like some deus ex machina dipping in to wag a disapproving finger and tell them where they can and can’t go. The physical relationship between incline and slide is consistent throughout the game, so the limit feels like a logical consequence rather than an overt constraint."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, it’s worth noting the overall spatial layouts of most Mario 64 levels and the effect that has on the high-level spatial feel of traversing them. For the most part, the spatial layouts of Mario 64 levels are like zones of a theme park, with the important features poking prominently above the landscape, visible from any vantage point. The tower in Whomp’s Fortress, the central spire in Bomb-Omb Battlefield, and the giant snowman central to Snowman’s land are all designed to provide an instant point of reference and include many of the level’s important star-giving interactions. Two benefits of this landmark-focused approach are improved camera behavior and a delightful sense of vastness and exploration. The camera motion in Mario 64 was a sore point for many players and critics, but one of the instances in which it always works well is in following the Mario avatar around a spire or pillar. Once at the top of a huge structure, the camera is free to look around and down, surveying the ant-like surroundings far below. This feels great, like hiking Superstition Mountain, El Capitan in Yosemite or the Space Needle and peering down on all the places you’ve just been. This doesn’t affect the moment-to-moment feel of interaction, but it certainly lends a highly positive high-level sense of space to the proceedings."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Polish"
+    },
+    {
+      "type": "paragraph",
+      "text": "The primary area of emphasis for all polish effects in Mario 64 is the interaction between Mario’s body and the ground beneath him. Generally speaking, the pertinent polish effects are the animations, which are mostly in sync with the speed at which the avatar moves, jumps and otherwise interacts with the environment and which show the character leaning into turns, planting his feet and otherwise being a believable physical being. In harmony with these detailed and excellent animations, the sounds and visual effects adhere to a three-tiered structure, corresponding across senses. Impacts come in three varieties: light, medium and hard, and each type of interaction has a special animation, visual effect and sound effect. Combined with the ubiquitous footstep sounds and sliding noise, these effects serve to convince us of a Mario who exists in a believable, physical world of his own and who interacts with it in a logical, law-driven way."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because it made the most sense for this particular game, I have pointed out many of the important polish effects as they occurred, while discussing the simulation."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Animation"
+    },
+    {
+      "type": "paragraph",
+      "text": "To begin, uncheck the animated character in the Mario 64 example, and examine the change in feel. Without the animation, much of the sense of weight and presence is lost. The grey capsule doesn’t seem to arc, turn or carve when moving, nor does it feel as satisfying to launch it into the air. In addition, moves like the Ground Pound and foot plant seem downright odd without a character animation on top of them to give them meaning."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Visual Effects"
+    },
+    {
+      "type": "paragraph",
+      "text": "The primary visual effects are puffs of dust and sprays of yellow stars. The white dust particles happen when Mario slides or plants a foot to reverse direction, and in a concussive wave spreading out from the point of impact after a Ground Pound. In the case of the sliding over terrain, the dust kicking up sells the impression that friction has been overcome briefly and that the surface of Mario’s feet is sliding loosely across gravel or dirt, kicking up dust. After the Ground Pound move, the particles spread outward quickly, further emphasizing the power of the impact."
+    },
+    {
+      "type": "paragraph",
+      "text": "The yellow stars happen wherever Mario collides with a solid object at a high velocity. This is the highest tier of impact, and the stars spray out with corresponding force. The effect has very little basis in reality, but because the motion of the particles is so violent, the impression is sufficiently emphatic. Regardless what the things flying out are, they move quickly so the feel is of a powerful impact."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Sound Effects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try unchecking sound effects in the Super Mario 64 example, and observe how much of the impression of physicality is lost. I find it difficult, even with the sounds disabled, not to fill them in with my mind. The most important sound effects to the feel of Mario 64 are the three-tiered impact sounds, Mario’s footsteps and the satisfying whissssshing sound of sliding."
+    },
+    {
+      "type": "paragraph",
+      "text": "Like the visual effects, the sounds accompanying impacts come in three varieties: low, medium and hard. The low sound is high pitched and click-like, while the medium sound has much more bass, sounding almost like a drum. The hard impact is over the top, a cartoony, rubbery twang. The relationship between these sounds, though they are not especially realistic, is one of increasing power and emphasis. This correlates well to the corresponding animations and visual effects, selling an impression of subtlety and nuance in interaction. When he punches, you hear this sort of Doppler effect, the swinging of his fists going through the air. When he does the butt stomp, when he hits the ground, it has a sort of reverberating crash noise. So in general, the sound effects of Mario are huge and they’re trending a lot more realistic and this is probably a factor of the capacity of the hardware as much as it"
+    },
+    {
+      "type": "paragraph",
+      "text": "is the artistic intent. But the sound effects are really selling this as a physical world that you can really interact with."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mario’s footsteps happen in time with the playback of his animation, emphasizing his interaction with the ground at every step. The sounds change based on the material he’s currently standing on, offering additional clues as to what that material might be (it looks like metal and, thanks to clanking footsteps, sounds like it as well)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, Mario’s bizarre ululations, grunts and exclamations. Mario’s rising pitched yells correspond to his jumps the same way that the rising slide whistle-like tone accompanied the jumping in earlier Mario games. As the pitch rises, so does Mario. The feel is subconsciously satisfying, a further harmonizing between motion and sound."
+    },
+    {
+      "type": "paragraph",
+      "text": "So, in lieu of a lot of detailed visual polish effects which started to happen in the later three Mario games, especially Mario Galaxy, the sound effects, combining as they do with the animations, are what’s really selling the physical nature of interaction in this world."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Cinematic Effects"
+    },
+    {
+      "type": "paragraph",
+      "text": "The only noteworthy cinematic effect used is screen shake, which is applied extensively to many objects throughout the world. It’s a very gentle shake to avoid jarring the player overmuch, but it does a nice job of selling the weight of such objects as Bowser, large metal cannonballs and King Thwomp."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Metaphor"
+    },
+    {
+      "type": "paragraph",
+      "text": "The metaphorical representation is essentially the same as in previous Mario games. We’ve got a sort of tubby Italian plumber running around a cartoony, oddly surreal, but richly physical world. In the case of Mario 64, everything feels a lot more realistic than it did in the original Super Mario Brothers. There are walls; there are bricks that are definable as bricks. In some areas, there really appears to be marble floors or wooden doors. Everything has been rendered at a much higher level of fidelity and in that rendering has lost some of the surrealism it had in two dimensions."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of treatment, the transition to three dimensions has brought more realism. The pipes, hillsides, castles and other structures with real-world analogies are now much more representational than abstract. This is a necessary concession for moving into 3D, but it is interesting to note that in order to match this new treatment, the sounds really did need to be changed to sound more “realistic.” They couldn’t just be the bizarre, chirp-type noises of the original Super Mario Brothers. Mario’s physical interactions need to seem a little more sensible and logical. That said, the treatment is still very bright, very smooth and very clearly more iconic than realistic. Mario’s proportions are more iconic than ever, and most of the"
+    },
+    {
+      "type": "paragraph",
+      "text": "textures on most of the objects are highly iconic. Trees are trees and water is water, but only in the most generic, notional sense."
+    },
+    {
+      "type": "paragraph",
+      "text": "The metaphorical representation is not setting a huge number of expectations about behavior in the mind of the player because it’s obviously sort of absurdist and surreal. The juxtaposition of the plumber and all the bizarre creatures that really have no sense or meaning outside of the context of the game again works in Mario’s favor, enabling his rich, detailed physical interactions to seem all the more compelling because they exceed their treatment. But that treatment is turning a lot more realistic and therefore to match with that, the game needed to have a feel of control, a simulation and corresponding effects that were much more detailed than in any previous Mario game."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "The rules of Mario 64 are excellent and three stand out as affecting feel most profoundly: the relationship between coins and health; the relationship between coins, stars, star doors and boss levels; and the rule of threes as it is applied to boss damage."
+    },
+    {
+      "type": "paragraph",
+      "text": "Coins and slices of health correspond directly. Picking up one coin will restore one empty slice of health. This makes coins desirable as a way to prolong life and causes players to seek them out if their health is less than full. The danger of dying due to health loss is remote—coins are so ubiquitous that it’s difficult to actually end up with 0/8 health slices—but the affect on feel is to emphasize coin collection whenever health is low. This puts more importance on specific navigation while running and on precision jumping to claim coins floating in the air. In addition, the fact that various objects cause Mario to lose more or less health creates a scale of danger that feels quite physical. Lava, in addition to launching Mario screaming upward while holding his backside, takes off two healths. Being hit by a Goomba takes only one. Ipso facto, the lava is more dangerous, more physically damaging. It feels more harmful."
+    },
+    {
+      "type": "paragraph",
+      "text": "One hundred coins are worth one star. One star opens the first star door, granting access to a new level. Three stars open two more levels. Eight stars enable you to attack Bowser’s first stronghold and get access to an entirely new area of the castle, complete with additional star doors. This cascade effect hooks coins into the highest level of reward and achievement in the game, the unlocking of new areas of the castle. This, again, puts a premium on the low-level skills of precise steering and jumping that will enable the player to effectively sour the level, collecting every coin."
+    },
+    {
+      "type": "paragraph",
+      "text": "The system for enemy damage primarily sells the difference between bosses and basic enemies. Bosses take three powerful hits, whether it’s Big Bomb-Omb being tossed onto his big round butt, or Bowser being hurled into explosive landmines. Small, simple enemies are destroyed in one or two hits. For this reason, regular enemies such as Goombas feel fragile and insubstantial when compared to the massive boss creatures."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, the high-level rules of Mario 64. The big one is the lack of time limit. You’re free, essentially, to explore. Even the ordering of the goals and levels is loosely enforced. You can choose to max out each world as you go, or to pick and choose goals as you go. Even the linear progression of goals in the levels can be circumventing in many cases. The overall sense is that around every corner, another joyful discovery awaits, if only you’re skilled enough to get there."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "In Super Mario 64, if you examine these relationships individually from a design perspective, they seem to make no sense. Like squash and stretch in an animation, “realism” is ignored in favor of player perception. But Mario 64 nevertheless manages to feel powerfully tactile and cohesive. How? The secret is this: everything—the effects, the relationships, the control—is tuned based on its impact on the player’s perception. From tiny, subtle clues, the player infers broad generalizations about the physics of this world. When these conceptions are ultimately confirmed by additional interactions, the world begins to seem “real.” The polish is exactly what it needs to be, selling a robust, nuanced sense of physical interaction with the smallest possible clues. The size, spacing and nature of objects in Mario’s world are almost perfectly balanced against his motion. In fact, nearly everything about Super Mario 64 is in harmony with a single, cohesive vision of a unique physical reality. The world is fantastic, but it’s self-consistent, and stands up to scrutiny, even when perceived actively."
+    }
+  ]
+}

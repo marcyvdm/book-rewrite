@@ -1,0 +1,580 @@
+{
+  "chapter_title": "Polish Metrics",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Polish is any effect that creates artificial cues about the physical properties of objects through interaction. In this case, artificial means “not simulated.” When two objects collide and the code tells them that they’re each solid and so should rebound with a certain force in a certain direction, this is not polish. This is part of the simulation, part of the game’s response to input. Instead of “artificial,” the terms “nonessential” or “layered on” could also be used. The point is, if these effects were removed, the essential functionality of the game would be unaltered. What would be changed would be the player’s perception of the physical nature of the system. In this way, polish has a huge impact on game feel: it provides the visual, aural and tactile clues a player needs in order to create a detailed, expansive mental model of the physics of virtual objects. Polish “sells” interaction, to put it another way."
+    },
+    {
+      "type": "paragraph",
+      "text": "The tendency is to wave a dismissive hand at polish, saying, “Oh, well, it’s not actually a very good game, it’s just really polished.” This does a great disservice to the impact that polish can have on game feel and on the experience of playing a game generally. It is in the polish that much of the impression of a physical reality different from our own exists. With that comes the sense of possibility and wonder that attracts so many to games as a medium. In a few minutes spent feeling their way around, players can extrapolate a universe of possible interactions based on their observations and, in so doing, can experience a great joy of discovery and learning which is rarely possible in everyday life. Much of what makes something interesting and enjoyable to control is the perception that the thing is huge and weighty; lithe and nimble; or that it is grinding, scraping, carving, blasting, smashing, caressing or otherwise interacting with other things around it. The question is, how do we measure the effect of polish on a game’s feel and compare it to other games?"
+    },
+    {
+      "type": "paragraph",
+      "text": "First, we need to define exactly what we mean by an effect. For example, the squeal of car tires is separate from the smoke particles that shoot out when pedal hits metal. This is obvious enough—these are separate effects. One is a visual effect; one a sound effect. To create each requires entirely different skill sets. What’s interesting is that these two effects will be perceived as one by a player. As they are correlated in physical reality, so they are assembled into a single event in the mind of a player. By an individual effect, then, we mean either the smoke or the squeal. Both support the same perception of interaction—the friction of tires spinning against a"
+    },
+    {
+      "type": "paragraph",
+      "text": "road under various powerful forces—but each is distinct and is constructed differently. At the higher level, we’re interested in the interactions that are supported by these various effects. Many different effects, even across senses, can support and enhance the perception of the same interaction."
+    },
+    {
+      "type": "paragraph",
+      "text": "Next we want to identify individual effects and categorize them according to the impression of physical interaction they are designed to support. A neat ancillary benefit in doing this is that it provides a quick and dirty check of intent versus outcome. A certain effect may be intended to enhance the impression of weight or mass, but it may be clashing with other effects and conveying something different than intended. Returning to Chapter 8’s example of the impression of size and weight in Painkiller versus that in Shadow of the Colossus, the animated Colossus walking has a much greater sense of weight and presence than that of the gigantic bosses in Painkiller. In the case of Shadow of the Colossus, the sound effects featured deep, reverberating booms and the sound of detritus being strewn in time with the Colossus’ footfalls. The particles were correspondingly huge plumes of dust and sprays of gravel as the animated foot slammed into the ground. In addition, when the player was within a certain distance of the colossus, the screen would shake to further indicate a massive impact. In Painkiller, the animation and effects clashed. The sounds were similar to those in Shadow of the Colossus, but the animation lacked the slow-moving weight and follow-through necessary for the intended effect. Also, there were too few particles spewing up to enhance the apparent impact of a massive foot. Though the creatures themselves were technically massive, their motions and accompanying effects tended to convey an impression of something much smaller."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, before beginning our discussion of polish metrics, it’s important to note once again that in the realm of polish, as with metaphor and many other areas of game feel, we are dealing with soft metrics. This is because it’s very difficult to aggregate and quantify players’ individual perceptions of the exact feel created by a polish effect. Player perceptions are relative, not absolute, and arise almost entirely from world-view created by game, rather than real-world physics. As we will see, however, there are a number of soft metrics associated with polish that are extremely useful to game design."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let’s start by defining the kind of soft metrics we need to measure how polish affects interactions between objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Feel of Everyday Things"
+    },
+    {
+      "type": "paragraph",
+      "text": "As we start to examine the interactions between objects, the temptation is to identify each object simply, with respect to individual physical properties. But the properties of objects are not as simple as one might suppose. Under the heading “physical properties,” Wikipedia offers the following list: absorption, acceleration, angle, areas, capacitance, concentration, conductance, density, dielectric, displacement, distribution, efficacy, electric charge, electric current, electric field, electric potential, emission, energy, expansion, exposure, flow rate, fluidity, frequency, force, gravitation, impedance,"
+    },
+    {
+      "type": "paragraph",
+      "text": "inductance, intensity, irradiance, length, location, luminance, magnetic field, magnetic flux, mass, molality, moment, momentum, permeability, permittivity, power, pressure, radiance, solubility, shininess, resistance,spin, strength, temperature, tension, thermal transfer, time, velocity, viscosity, volume, scattering light."
+    },
+    {
+      "type": "paragraph",
+      "text": "Apart from being a rather exhaustive list, this isn’t quite what we want. Most of these properties are not easily perceived by visual, aural or tactile observation; they must instead be measured by sophisticated instruments. The problem, apart from our inability to measure things like this meaningfully across games, is that these properties are mostly irrelevant. As far as the player is concerned, the perception is the reality. The game can think an object weighs ten tons, but if it moves like a squirrel the player will perceive it as such. What we want are more things like Figure 9.1."
+    },
+    {
+      "type": "paragraph",
+      "text": "We need unscientific terms like “pointy” or “springy” because the feel arising from polish effects is based on the individual player’s perception, which is subjective,"
+    },
+    {
+      "type": "image",
+      "src": "172.png",
+      "caption": "FIGURE 9.1 The feel of some everyday things."
+    },
+    {
+      "type": "paragraph",
+      "text": "relative and general. This is in some ways the opposite of measuring something in the real world, which is typically thought of as objective, absolute and specific. We measure the weight of a brick by placing it on a scale. The scale (an objective, impartial instrument) gives us a measurement in pounds or kilograms (an absolute measurement—the same for all objects everywhere) of this (specific) brick. By contrast, the physical properties of a brick in a game are entirely based on a player’s subjective perception."
+    },
+    {
+      "type": "paragraph",
+      "text": "This means that the properties of objects in the player’s mind can only be measured in the way that the perception of color, loudness and temperature are measured, by the expected response of a group of observers when perceiving the specified physical event. For example, out of a group of 50 people who touch a glass of ice water and a mug of hot tea, everyone will be able to identify that the tea is the hotter of the two, but no one will be able to say with certainty what the temperature of either is. The hotness of the thing is only measured against the other thing (a relative measurement), and we cannot guess the specific temperature of either object by only measuring them relative to each other (the measurement is general, not specific). The same goes for polish effects. What we’re interested in tweaking, and tracking, is the general, relative, subjective sense that players have of the various objects they control and interact with in a game. With that, we can examine the corresponding physical properties that the players are inferring in their minds from the nebulous, general sensation and trace that down to the level of individual effects."
+    },
+    {
+      "type": "paragraph",
+      "text": "This means that what we’re actually interested in tracking are not the physical properties of objects in a game but the players’ perception and the clues that cause players to perceive the properties of objects in a certain way. The nature of things in a game cannot be decoupled from their observable properties, in other words. To be a bowling ball, something only has to look like a bowling ball, act like a bowling ball and sound like a bowling ball. There is no ultimate nature of matter to be measured by complex instruments. What the player perceives to be real is real."
+    },
+    {
+      "type": "paragraph",
+      "text": "From a player’s perspective, things can be light or heavy, rough or smooth. An action can be weak or powerful, an impact gentle or jarring. These are perceptions. They have a relationship to measurable quantities such as mass, velocity and weight, but are more about a gestalt, the general sense of physical nature that something conveys."
+    },
+    {
+      "type": "paragraph",
+      "text": "Take the property of mass, for example. When we describe objects in a game with respect to their mass, what we really mean is perceived mass, which is derived from a bunch of small clues, each of which must be designed, often as a polish effect. Every tiny change, every little spray of particles or sound effect, can make a huge difference. The mass of an object will seem completely different depending on when a spray of particles is triggered as it collides with another object, and if that spray of particles is gentle or violent. The simulation of the collision between the objects is unchanged but changes in polish have completely altered the perception of their masses."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the end, then, it’s useful as designers for us to examine polish effects from three different angles:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "As individual, free-standing effects whose motion, size, shape and nature can be measured separately from the simulated objects in the game",
+        "As groups of effects which convey nebulous, general perceptions to the player",
+        "As observable physical properties that are inferred from groups of perceptions (such as mass, material and texture)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Individual effects enhance and support specific perceptions. These perceptions—when taken as a whole—imply certain things about the physical objects in a game. These physical properties, things such as weight, material, friction and so on, are assembled by players into a cohesive concept of game world physics. As they interact with the game, this conception, this model, is updated constantly to incorporate any new interactions. If an interaction seems to contradict the player’s model, it will stand out and will be incorporated with the model as part of the backdrop against which future decisions are made (the perceptual field from Chapter 3). In this way, learning to navigate a game space is the same process as learning to cope with our everyday physical space, which is why polish is so crucial. Polish gives players the grounding they need to cope with the new, unfamiliar topologies of game spaces and the unfamiliar physics which govern them."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Types of Polish"
+    },
+    {
+      "type": "paragraph",
+      "text": "The end goal for a polish effect is the same in every case—to convey some sense of the physical properties of an object (weight or mass or whatever) by offering clues when objects interact and move. A car skidding across the road leaving skid marks, kicking up dust and smoke, and making a squealing noise are all clues inserted by the game designer to indicate that yes, in fact, this is rubber and this is a road, and the weight of the car is pushing the rubber tire into the road. All the subtleties of that interaction sell the perception that these objects are real."
+    },
+    {
+      "type": "paragraph",
+      "text": "Having identified the player’s perception as what we’re wanting to and are able to affect with different polish effects, let’s dive down to the most basic level of individual effects. That is, let’s look at the different ways in which it’s possible to alter a player’s perception of the physical reality of the game world without changing the simulation itself. These methods include animation, visual effects, sound effects, cinematic effects and tactile effects."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Animation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Animation is a well-established medium with a rich history spanning from early Disney masterpieces like “Snow White” to “Beauty and the Beast” and modern masterworks like “The Incredibles” and “Ratatouille.” Along the way, a detailed set of best practices has emerged for animation, in the form of the principles of"
+    },
+    {
+      "type": "paragraph",
+      "text": "animation.¹ Every new animator has to learn these principles. They comprise a universally applicable set of non-negotiable aesthetic guidelines. With respect to aesthetics, the conventional wisdom is that there’s no accounting for taste. Different people will interpret aesthetic choices differently, regardless of the intent of the artist and independent of any sort of external, objective standard. The principles of animation represent just such a standard. If your animation has squash and stretch, it will be a better animation than one that doesn’t. Remarkably, this appears to be true for all animations everywhere. This is why all new animators must learn and master the principles of animation. Another fascinating aspect of the principles of animation is that they apply to animation in a way that is analogous to the use of polish effects in a video game. That is to say, almost universally, the principles apply to selling the physical interaction between objects in an animation. This selling is directed squarely at the player’s perception. What they’ve essentially got is a set of standards which enable the animator to directly change the viewer’s perception of the physical nature of the objects in the animation. They’ve cracked the code of perception, essentially. They can modify perception directly by applying principles such as squash and stretch, overlapping action and so on, to the movement of objects in their animations."
+    },
+    {
+      "type": "footnote",
+      "text": "¹Frank Thomas and Ollie Johnston’s “Principles of Physical Animation” are online at http://www.frankandollie.com/PhysicalAnimation.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "Squash and stretch specifically illustrates something fascinating about animation, something which animators have known for many years. Emulating reality is not the most efficient path to manipulating someone’s perception such that a world you’re constructing seems believable and will engage the viewer. You can take shortcuts to perception, so to speak, ignoring the constraints of reality to create more convincing animation. Take the classic example of the bouncing ball animation (Figure 9.2), the first assignment given to every student of animation."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the bottom, when the ball is in contact with the ground, it squashes way down, deforming and flattening out. When it rebounds upward, it stretches along the momentum line of the animation. In motion, this ball will appear much more satisfyingly squishy and ball-like. If you animate a static sphere falling, touching the ground and rising up again, it looks stiff and unnatural, lacking the sense of weight, presence and personality. What this illustrates is that you can change a person’s perception of something without resorting to a direct emulation of the reality you’re trying to portray."
+    },
+    {
+      "type": "paragraph",
+      "text": "As animation is applied to objects in a video game, an animated object typically replaces the visualization of a simulated object. It sits on top of the simulated object and changes the player’s perception of its nature and character. It changes the player’s perception of what it appears to be—a car, a jet or a ninja, whatever—but also by animating differently. The principles of animation apply to the looping animation of the character running, which is played back in sync with the motions of the underlying simulated object, which is driving its motion in space. That animation"
+    },
+    {
+      "type": "image",
+      "src": "176.png",
+      "caption": "FIGURE 9.2 The changing shape of the ball as it bounces creates a realistic perception of a bouncing ball, even though the animation doesn’t directly emulate a bouncing ball."
+    },
+    {
+      "type": "paragraph",
+      "text": "itself, which starts life as a linear animation created by an animator, will have squash and stretch, overlapping action and all the things a good animation should have. Ipso facto, it is the animation itself, sitting on top of the simulated object, which conveys the sense of weight and presence, the physical properties of the object. The animated visualization becomes the object in the mind of the player, and so any physical properties it displays as it animates are perceived by the player as part of the motion of the object, even though they have nothing to do with the simulation. When animated effects become indistinguishable from programmed response, animation does just as good a job of creating the sense of weight, mass, presence and physicality."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, the run and jump animations of Jak from Jak and Daxter convey a sense of weight and presence that simply don’t exist at the level of simulation. As Jak runs, he squashes and stretches with each footfall, has awesome overlapping action, and generally looks to be a real, breathing physical being made of flesh and bone and who is running across varied terrain. If you were to replace all the objects in Jak and Daxter with grey capsules representing the way in which the simulation sees them, the sense of weight, presence and personality would be lost."
+    },
+    {
+      "type": "paragraph",
+      "text": "So the principles of animation apply almost directly to the motion of objects in a game. With the exception of principles like staging, which rely on a controlled frame of reference and predictable camera behavior, it’s safe to say that squash and stretch and all the other principles can be and are directly applied to characters in games like Guilty Gear, Viewtiful Joe and Ico, each of which features excellent linear animation layered atop simulated objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another interesting thing to look at is hybrid solutions, where simulated objects have an animated visualization layered on top of them but where some parameter"
+    },
+    {
+      "type": "paragraph",
+      "text": "of the simulation drives an aspect of the animation. For example, in the original Super Mario Brothers, when the simulated cube object that drives Mario’s motion in space speeds up, so too does the speed at which Mario’s run animation plays back increases. It’s a nice way to link animation into the simulation underlying it. Note, though, that this change in animation playback speed does not have any effect on the simulation. The animation plays back faster because the cube is moving faster, not vice versa. As we’ve said, it’s an artificial effect, not part of the simulation itself."
+    },
+    {
+      "type": "paragraph",
+      "text": "The line between animation and simulation gets a little blurry when procedural animation or active ragdoll solutions enter the equation. The keyframe animation dictates the perception of that object until such a time as the simulation takes over. For example, a football player running along and being tackled. The animation drives the impression of motion until such a time as the character is affected by another force, at which point the simulation takes over. The applicability to polish is essentially the same, however. In traditional animation, as in game feel, the goal is to convey the impression that something is physical and consistent and that it is interacting with other objects around it."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Visual Effects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Visual effects differ from animations in two fundamental ways."
+    },
+    {
+      "type": "paragraph",
+      "text": "One, visual effects typically wink in and out of existence to serve a short-term need for indication of interaction between two objects. A visual effect appears only momentarily at the intersection of two interacting objects: sparks shooting out when a car is scraping along a barrier, or a spray of splinters when a crate is destroyed, for example."
+    },
+    {
+      "type": "paragraph",
+      "text": "Two, visual effects appear to be caused by another object, but are not the object itself. With an animation, you have a visualization of character or an object and it plays back a linear series of frames. Through deft manipulation in the hands of an animator, that sequence of frames played back will cause the object to appear to have weight and presence and volume and all that good stuff. A visual effect appears to be caused by an object and emphasizes the interaction of that object with other objects. The effects in Soul Calibur are a great example of this. A sword swipe has a polygon trail following behind it, tracing its arc through the air. The trail effect is caused by the motion of the sword. When two swords clash, a jet of sparks flies off of them. The sparks themselves are not the object, nor is the trail, but each emphasizes the motion and physical nature of the object it supports."
+    },
+    {
+      "type": "paragraph",
+      "text": "Visual effects include particles, trails, sparks and other temporary indicators of interaction and movement. These effects are accomplished in a variety of ways, though most visual effects in modern games are made up of particles. A particle in a 3D game is a 2D plane which has a position in 3D space. It will “billboard” —always face the camera—and will typically not be affected by lighting or other forces in the simulation, though hooking a simulation into particles can be used to great effect, as it was in Kyle Gabler’s excellent gamelet The Swarm (in which the avatar is a swarm of hazy black particles which cluster and pull toward the cursor and are"
+    },
+    {
+      "type": "paragraph",
+      "text": "capable of picking up and throwing unsuspecting stick figures in the most charming manner imaginable). So a particle effect is a series of textured planes that always face the camera. The benefit of having a bunch of planes that always face the camera is that you can create an artificial sense of depth by painting it into a texture, which is then applied to each particle. Smoke particle system that has the appearance of a billowing 3D smoke is comprised of a bunch of planes, each showing a single painted image of smoke, which has the faked impression of depth painted into it. Because you never see the image from an angle, the impression is consistent and enables the series of planes to blend visually into a single plane, which reads as a cohesive pillar of billowing smoke."
+    },
+    {
+      "type": "paragraph",
+      "text": "One thing that’s interesting to note is that the texture—the image itself that is on the particle—is not nearly as important as the motion of that particle. In many games (Nintendo games especially), when things collide with one another, the resulting visual effect might be comprised of an explosion of spinning, multi-colored stars. Every single object in Super Mario Galaxy has little stars that shoot everywhere when Mario interacts with them. They make absolutely no sense when approached from a realistic, simulations point of view. But, like squash and stretch, they are a manipulation of the player’s perception of the object without being an emulation of reality. In the same way that a real object would never squash rudely and stretch back again when it hit the ground, smashing a brick would never yield a geyser of multicolored stars. But as long as the motion of those stars is to blast out in a satisfying way and then fade out, the impression of physicality is effective without the constraint of realism. As in animation, realism is not necessarily a worthwhile goal. You can show interactions between objects and emphasize their physical nature without having to resort to emulating reality. No one would say that the sparks in Soul Calibur look real. However, real is not the goal. The perception that the impact is powerful is what we’re after."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Sound Effects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Like animation, the discipline of creating sound effects is well understood. It is the same process as Foley for a film, with the caveat that sounds in a game must be repeatable. Often times, a whole range of sounds is created to represent a particular interaction, with one chosen at random at any given instance of the impact (or whatever event triggers the sound) in order to keep a sound effect from becoming stale. This prevents players from hearing the same sound over and over again, annoying or distracting them."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "A sound effect can completely change the perception of an object in a game. To experience this, check out example CH09-1. This a recreation of a Java applet originally linked to me by the inimitable Kyle Gabler, of indie studio 2dBoy."
+    },
+    {
+      "type": "paragraph",
+      "text": "The two red rubber balls come together. One starts at one side of the screen, the other at the opposite side. When the simulation starts, they fly toward each other and their paths cross at the center of the screen. Based on purely visual feedback, you’d assume that these objects were some kind of ghost ball. They appear to pass right through one another unimpeded and go on their merry way. Playing the simulation with sound yields a totally different perception. With sound, the two balls behave exactly the same way in terms of their appearance and motion, but when they cross at the center the ptoing! sound of a tennis ball is played. The effect is startling: instead of appearing to go through one another, the two balls seem to bounce off and rebound in opposite directions. What a difference a sound makes!"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is equally applicable to characters in a game. Derek Daniels, one of the designers of the feel of God of War, gave a great example of sound completely changing feel. For a particular attack of Kratos, an animator had created a detailed animation. Derek had implemented that animation and had tuned the move up, but the result somehow felt lacking. The animator was about to go back and redo the animation to improve the timing, but Derek said, no, hold on, let’s get a sound in there. Sure enough, the sound was the missing piece of the puzzle; it made the move feel weighty, satisfying and appropriately violent."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of sound effects, you can have impacts, grinds or loops. An impact happens when two objects run into one another at some speed that is, when a cannonball hits a stone wall, a racket hits a tennis ball or a giant hammer smashes the ground. At that moment, a sound effect will play to indicate the impact of one object and another. What’s interesting about impact-mapped sound effects is that they can affect not only the perception of the objects interacting, but the surrounding environment as well. If that massive hammer hits the ground and the sound echoes and reverberates, the sense conveyed to the player is that this impact happened inside a giant warehouse or other massive, empty, interior space. If the impact is muffled, it will sound more like striking the ground outside. If you hear no reverberation, you can assume that sound waves just kept traveling outward instead of bouncing off of something and coming back."
+    },
+    {
+      "type": "paragraph",
+      "text": "A grind implies a prolonged interaction between two surfaces. One of my favorite grinding noises, which actually accompanies a move called grinding, is in Tony Hawk’s Underground. In the game, it is possible to jump your skateboard up and grind it against a rail for a long period of time. It makes a very satisfying grinding, woody, metal noise. Essentially what you have is a short loop of sound that plays back over and over again but is modulated slightly so that it always sounds as though the objects are grinding together in slightly different ways as the weight on the board shifts around."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are also looped sounds, which are essentially just sounds that repeat regardless of the interactions between objects and which convey the ongoing sound of something like an engine or a turbine."
+    },
+    {
+      "type": "paragraph",
+      "text": "The final thing that’s interesting to note about sound effects is that they’re less bound than visual effects in some way."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sound effects, in the same manner as squash and stretch or a star-shaped particle effect, are not necessarily bound to realism. The record scratch for the King of All Cosmos speaks in Katamari Damacy or the orchestral hit when a special move is completed in Tony Hawk 3 prove that mapping an unexpected sound effect to a particular event can have delightful results. These have nothing to do with the reality of the things they are attempting to portray, but they feel satisfying. As in a cartoon, it’s not necessary to limit your thinking about how to apply a sound effect to the emulation of reality. You can convey an impression of physicality with a noise much different from the apparent reality of the object."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Cinematic Effects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cinematic effects are things like screen shake, changes in view angle, motion blur and Matrix-style slowdown. These are effects which are applied to the camera rather than an in-game object. As we’ve said, the camera in a game provides the players their eyes in the world, their organ of perception. It is the players’ point of view and has a finite position in the world, a position which can be moved or changed just as with any other avatar. This is a vocabulary we’ve been taught over the years by constant exposure to big-budget filmmaking. When a giant explosion goes off on the screen, there is a slight delay, after which the screen appears to shake, as though the camera were responding to the jarring force of a shockwave caused by the explosion. The end result is the perception that a hugely weighty impact has occurred."
+    },
+    {
+      "type": "paragraph",
+      "text": "The point here is that these effects are applied to the in-game camera rather than to particular objects, but in so doing, the effects can change the perception of the physical properties of objects in the game. In a fighting game, if one player punches another and the result is a jarring screen shake, the perception for the player is that an impact of almost ludicrous force has taken place. Another effect often used by fighting games is the slow down or frame pause. When one character hits another with a particularly devastating move, the game may pause momentarily—20 milliseconds, perhaps—to emphasize the impact. The same effect was used in Nintendo’s The Legend of Zelda: Twilight Princess and our own Off-Road Velociraptor Safari (Figure 9.3)."
+    },
+    {
+      "type": "paragraph",
+      "text": "It’s interesting to note that these kinds of effects have no analogy in everyday perception, but are nonetheless ingrained in our consciousness. As with comparing the temperature of the mug of tea and the glass of ice water, everyone will recognize screen shake as an indication of massive, concussive force. Likewise, a change in view angle gives the perception that an object is moving faster and faster. Motion blur has a similar effect on the perception of speed, blurring the movement of fast-moving objects as a camera would."
+    },
+    {
+      "type": "image",
+      "src": "181.png",
+      "caption": "FIGURE 9.3 Off-Road Velociraptor Safari: when you hit a raptor, the game zooms in and goes into slow motion."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Tactile Effects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, there are tactile effects. In the current generation of input devices, this is limited mostly to controller shake or rumble, which is caused by the actuation of weight-loaded motors inside the input device, such as in the Xbox 360, PS2 and Wii controllers. Controller shake can be a bit of a blunt instrument because the motion is always rotational, but it can be used to great effect in games where it is cleverly fit to the metaphor presented. A gun has recoil, for example, and that motion is something rumble motors can simulate well. Most modern console shooters use a constant rumble effect to enhance the sensation of firing of a machine gun. For a single shot weapon such as a sniper rifle, it will be a single rumble. When shooting is the only control that triggers the motors, the effect can be quite powerful. Employing a totally different metaphor, games like Tony Hawk’s Project 8 offer a constant low-level rumbling to simulate the grinding of a skateboard against various surfaces. In this case, too, the effect is quite powerful if used judiciously, allowing the feel of a particular interaction to be correlated across a third sense."
+    },
+    {
+      "type": "paragraph",
+      "text": "Other types of tactile effects include so-called “force feedback” devices. This is also known as haptic feedback. The notion is that the controller provides actual, physical resistance to displacement, forcing the user to work at pulling, pushing or rotating it. This is an active application of force administered in certain amounts and at certain times by the game’s code, above and in addition to that caused by the springs that keep it in neutral position. These kinds of devices have been around for years in the form of flight sticks and steering wheels, though they have never entirely caught on. This is perhaps because haptic feedback can serve to enhance the perception that the thing being controlled in the game has a real, physical character, but more often it serves to enhance the fatigue of players’ arms, wrists and hands."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Case Studies: Gears of War and Dawn of Sorrow"
+    },
+    {
+      "type": "paragraph",
+      "text": "As I dug into an examination of all the various polish effects featured in Gears of War and Dawn of Sorrow, I began immediately to regret the decision to investigate these particular games. The sheer number of polish effects in these two is frankly staggering to catalog, let alone to contemplate creating from scratch. This is the nature of the polish beast, I fear. It’s quite the rabbit hole in terms of development time. Polish has the reputation of being a dangerous phase to become stuck in or to enter in too early. Looking at games like these two, you can see why. There are just so many effects! You can always find some other polish effect to create, some better way to sell the interaction between objects. The trick, I think, is to focus on the overall perception you’re creating and enhancing. This is why Dawn of Sorrow and Gears of War make for an interesting comparison; with Gears of War the vision seems to have been very clear and the result almost entirely cohesive. With Dawn of Sorrow, there are some clashes. Here’s an in-depth examination of the polish of each going from individual effect, to general perception, to inferred physical properties."
+    },
+    {
+      "type": "paragraph",
+      "text": "Play the game and simply make a note of the effects that you observe as you play. I find it useful to frame this in terms of the four categories: animation, visual effects, sound effects and cinematic effects, working though each and listing out each individual effect."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Gears of War"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Animations",
+          "Visual Effects",
+          "Sound Effects",
+          "Cinematic Effects",
+          "Tactile Effects"
+        ],
+        "rows": [
+          {
+            "Animations": "Run cycle—big, looping, heavy, lots of overlapping action",
+            "Visual Effects": "",
+            "Sound Effects": "Foot steps—crunch and thud satisfyingly\nClattering of armor and gear—sounds suitably heavy and complex, like metal against thick armor plating and leather",
+            "Cinematic Effects": "Slight bobbing in time with the run cycle",
+            "Tactile Effects": ""
+          },
+          {
+            "Animations": "Dive roll—quick and nimble",
+            "Visual Effects": "Roll dust—happens (oddly) just as the roll starts. Character’s feet are suddenly obscured by a puff of dust as if by magic",
+            "Sound Effects": "Clattering of armor and gear—sounds a bit light for such a broad motion",
+            "Cinematic Effects": "Camera dips gently to follow rolling motion",
+            "Tactile Effects": ""
+          },
+          {
+            "Animations": "Roadie Run—a hunkered down, awkward, heavy-looking run. Saving Private Starcraft",
+            "Visual Effects": "Gentle puffs of dust at each footfall",
+            "Sound Effects": "Clattering of armor and gear—sounds suitably heavy and complex, like metal against thick armor plating and leather",
+            "Cinematic Effects": "Camera bobs and sways as though held by a running cameraman",
+            "Tactile Effects": ""
+          },
+          {
+            "Animations": "Door kick—heavy impact with nice anticipation and a great sense of power",
+            "Visual Effects": "Dust particles explode from the door",
+            "Sound Effects": "Satisfying metallic crack as the impact causes the door to shatter and give way",
+            "Cinematic Effects": "Camera rears back and tilts in anticipation and shakes forward quickly as the kick is delivered",
+            "Tactile Effects": ""
+          },
+          {
+            "Animations": "Enter cover—heavy impact, like a linebacker tackle",
+            "Visual Effects": "Dust particles shake loose from the wall and ceiling and fall gently",
+            "Sound Effects": "Crunch and thud—sounds like a huge, complex object smushing up against a textured, mottled wall",
+            "Cinematic Effects": "Camera changes focus depending on direction character is facing, placing the character in the left or right of frame",
+            "Tactile Effects": ""
+          },
+          {
+            "Animations": "Barrier hop—quick and nimble in the hop but with nice follow-through and overlapping action on landing",
+            "Visual Effects": "",
+            "Sound Effects": "Crunchy grinding noise as the character slides over the barrier, impact hit when he lands",
+            "Cinematic Effects": "Camera dips down to show character’s feet as he lands before returning to standard over the shoulder",
+            "Tactile Effects": ""
+          },
+          {
+            "Animations": "Fire “Lancer” machine gun—powerful sense of the recoil of the gun, character stands in a wide stance and braces against the forces",
+            "Visual Effects": "Muzzle flash particles at barrel of gun\nSmoke particles at barrel of gun\nChunky gravel particles when bullets hit a wall or other surface\nBullet holes created in walls, start glowing white then go to yellow, red",
+            "Sound Effects": "Deep, powerful machine gun sound\nPinging of bullets off surfaces\nSounds of shell casings hitting the ground",
+            "Cinematic Effects": "Screen shakes in time with bullets",
+            "Tactile Effects": "Constant rumble to indicate recoil from machine gun fire"
+          },
+          {
+            "Animations": "Swing grenade—grenade seems heavy and massive. Character rears back and looks at grenade initially",
+            "Visual Effects": "",
+            "Sound Effects": "Deep, satisfying swooping noise as grenade is swung, slight Doppler effect\nSound of chain clanking",
+            "Cinematic Effects": "Camera view angle changes slightly to frame swinging grenade and improve sense of speed",
+            "Tactile Effects": ""
+          },
+          {
+            "Animations": "Throw grenade—great follow-through, grenade seems like a massive, heavy object",
+            "Visual Effects": "",
+            "Sound Effects": "Chunky, metallic impact noise each time grenade hits the ground",
+            "Cinematic Effects": "",
+            "Tactile Effects": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": "I’ve omitted a few of the effects—there are dozen and dozens—but this is a reasonable cross section, representing effects from each of the five types."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Castlevania: Dawn of Sorrow"
+    },
+    {
+      "type": "paragraph",
+      "text": "The effects in Dawn of Sorrow are somewhat mind-boggling. For each creature (there are well more than 100), there are different sounds, visual effects and animations. Some, such as the bosses and larger enemies like the iron golem, even have their own specific cinematic effects. For every weapon the character wields, there are different animations and effects. What follows is a small subset of these effects, enough to draw conclusions and comparisons. Even without tactile effects (the Nintendo DS has no rumble motors) the amount of polish work on display here is truly staggering."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Animations", "Visual Effects", "Sound Effects", "Cinematic Effects"],
+        "rows": [
+          {
+            "Animations": "",
+            "Visual Effects": "A purple trail follows Soma’s every movement, enhancing the impression of speed and the feeling that he’s some kind of ethereal being",
+            "Sound Effects": "",
+            "Cinematic Effects": ""
+          },
+          {
+            "Animations": "Run cycle—Very stylized, but with a nice sense of weight at each footfall. It’s the transition animation going from one direction to another that really causes the impression of a floating, weightless character",
+            "Visual Effects": "",
+            "Sound Effects": "",
+            "Cinematic Effects": ""
+          },
+          {
+            "Animations": "Attack with Axe “Golden Axe”—Huge, fully body motion as the character seems to heft the axe in a ponderous arc",
+            "Visual Effects": "",
+            "Sound Effects": "Subtle swiping noise. Character grunts with effort",
+            "Cinematic Effects": ""
+          },
+          {
+            "Animations": "Attack with Spear “Gungner”—Great anticipation as the spear is held up and powerful follow-through with overlapping action as the spear is swung. Nice delay holding the spear out for emphasis of weight",
+            "Visual Effects": "",
+            "Sound Effects": "Air swipe Doppler noise",
+            "Cinematic Effects": ""
+          },
+          {
+            "Animations": "Attack with Sword “Muramasa”—quick, snappy motion with nice overlapping action of the hair and blurred arm motion",
+            "Visual Effects": "For some reason, swords appear to shoot out at various angles from the sheath as the sword is swung\nSword arc is traced in the air",
+            "Sound Effects": "Air swipe Doppler noise",
+            "Cinematic Effects": ""
+          },
+          {
+            "Animations": "Jump—weird hover/delay just before contacting the ground",
+            "Visual Effects": "",
+            "Sound Effects": "Light rising scrape as Soma leaves the ground\nLight, clicking thud as feet hit the ground",
+            "Cinematic Effects": ""
+          },
+          {
+            "Animations": "Double Jump—quick and nimble flipping motion, satisfying swishing of coat",
+            "Visual Effects": "",
+            "Sound Effects": "Same light scraping noise as first jump",
+            "Cinematic Effects": ""
+          },
+          {
+            "Animations": "Witch Soul shot—flings arm out satisfyingly",
+            "Visual Effects": "Ball of blue energy pulsating, flies quickly out\nTrail of smaller particles gives the blue ball an almost comet-like aspect",
+            "Sound Effects": "Abstract, reverberating magical noise",
+            "Cinematic Effects": ""
+          },
+          {
+            "Animations": "Hippogryph Jump—character stretches vertically and looks upward, flyings in that direction with great speed. On impact, flips upside down and compresses against the ceiling in a preternaturally nimble way, though there is nice recoil and overlapping action with the coat (as usual)",
+            "Visual Effects": "",
+            "Sound Effects": "Sound like rushing air as the character flies upward\nDry, plastic thud as the character impacts the ceiling",
+            "Cinematic Effects": "Screen shakes on ceiling impact"
+          },
+          {
+            "Animations": "Destroy skeleton—as the skeleton is hit, it falls to pieces",
+            "Visual Effects": "Puff of dust as the skeleton pieces hit the ground",
+            "Sound Effects": "Slapping noise as the skeleton is hit\nHollow woodblock sound as each piece hits the ground",
+            "Cinematic Effects": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": "If you think listing things out this way make it seem as though there are a hell of a lot of effects, you’re spot on. It boggles the mind that games like Guilty Gear and Soul Calibur manage to do such an amazing job of harmonizing animation, visuals, sounds and cinematic effects to clearly convey a unique feel for so many different characters. It’s no wonder there are so many people on those teams, or that many different people may work on the same character exclusively for the entirety of production."
+    },
+    {
+      "type": "paragraph",
+      "text": "Though it’s a little tedious with games as intricate as Dawn of Sorrow and Gears of War, it is useful to look at each animation as a separate effect. Sometimes one animation will support a particular perception while another one contradicts it. For example, the jumping, spinning and sliding animations in Dawn of War give the appearance that Soma is exceedingly quick, like some sort of preternatural gymnast. He’s more squirrel than man, it appears. When running on flat ground, though, he appears to chug along rather lackadaisically, his feet sliding across the ground. This is particularly true if you change directions over and over again; he slides back and forth as though swimming gently through water, which is about as far from the tight, whipping, circular motions of his flips as it is possible to get."
+    },
+    {
+      "type": "paragraph",
+      "text": "The dive roll animation in Gears of War is more neutral; in my perception it neither supports nor detracts from the impression that the character is a human-shaped wrecking ball. I notice, however, that much of the action takes place off screen. Without confirming this with a designer at Epic, I would guess that this is because it’s very difficult to create a rolling animation that is fast enough to feel responsive but which conveys the appropriate sense of weight."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that a single effect can support more than one perception, as when an animation shows both weight (Marcus Fenix is like an NFL linebacker, stretched horizontally and covered in a suit made of cinderblocks) and material (the overlapping action of the armor he wears makes it appear to be a heavy, composite metal of some kind)."
+    },
+    {
+      "type": "paragraph",
+      "text": "There seem to be two currents of feel at odds here. Except for the quick and nimble flipping of double jump animation and the “hippogryph jump,” Soma moves fluidly and lightly. He’s nearly weightless, as though he’d be right at home in “Crouching Tiger, Hidden Dragon.” His animation for switching directions and the constant purple trail of self copies that follow him around all support this perception, almost as though he’s moving through something other than water. At certain points, however, his actions seem to have great impact, as when he collides with the ceiling during a “hippogryph jump” and causes the screen shake effect. During his run cycle, there is one moment of overlapping action where his head snaps downward that really lends a sense of weight and presence to his step, but the effect is diffused somewhat by the fact that his movement speed doesn’t map perfectly to the movement of his feet. This is often referred to as “skating” by animators and is a common"
+    },
+    {
+      "type": "paragraph",
+      "text": "problem in games, where the speed of animation playback is often matched dynamically to the speed of the object underlying the motion."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hitting things with weapons also has a great sense of impact and weight, especially in the contrast between the heavy and light weapons and because of the spraying, exploding particles that most enemies spew when defeated. Again this mirrors the general perceptions of movement and interaction I get from Crouching Tiger. The characters move and float around like tissue paper on the wind until the moment their weapons clash, at which point there is a powerful sense of impact. None of the impacts in Dawn of Sorrow have the impression of weight, presence and impact of those in Gears of War, however."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gears of War is like controlling a human-shaped wrecking ball. From the thumping run cycle to the camera-jarring kicking down of doors, each animation and accompanying effect enhances the perception that the thing you’re controlling is huge and weighty. Every time the character interacts with the environment, such as when he presses against a wall to take cover, the effects combine to sell a sense that a large, meaty, complex object is mashing against a grimy, textured surface. Sprays of dust particles come off the walls and ceiling, and the sounds are deep and crunchy. The impression that the environment is malleable and reactive is further enhanced by the myriad effects that happen when bullets hit it. The interactions seem suitably sloppy, though, as bullet holes spray in a wide grouping and chunks of material come flying off each hole. Firing a gun seems like an appropriately jarring affair, emphasized by judicious use of controller shake and the deep, resonant gunshot sounds and accompanying impact effects. The fact that the characters react relatively little to both firing guns and being hit by them seems to further emphasize just how massive and burly these folks are."
+    },
+    {
+      "type": "paragraph",
+      "text": "Grouping the perceptions (such as mass, material and texture) into specific, observed physical properties and comparing them to one another we get:"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["", "Gears of War", "Dawn of Sorrow"],
+        "rows": [
+          {
+            "header": "Masses",
+            "cells": [
+              "Heavy and over-the-top massive",
+              "Light and ethereal but with surprising forces on impact"
+            ]
+          },
+          {
+            "header": "Velocity",
+            "cells": [
+              "Relatively slow moving; changes direction in an instant, however, and can make short, quick motions",
+              "Medium to fast. Changes direction in an instant, can attain great speeds with certain souls equipped"
+            ]
+          },
+          {
+            "header": "Momentum",
+            "cells": [
+              "No real momentum except in animations",
+              "No real momentum except in animations"
+            ]
+          },
+          {
+            "header": "Materials",
+            "cells": [
+              "Flesh, composites, metal",
+              "Some evidence of metals versus woods versus bone, but mostly in enemies. Character has a very slippery, lightweight character, almost like a bar of soap"
+            ]
+          },
+          {
+            "header": "Friction",
+            "cells": [
+              "Very high-friction, textured world",
+              "Sense of friction when character slides but otherwise everything seems to have enough friction to walk or else simply flies in an arbitrary manner"
+            ]
+          },
+          {
+            "header": "Gravity",
+            "cells": [
+              "Very high gravity; no vertical jumping",
+              "Very low gravity, some things (such as the character) seem to fly and float with little logic or prompting"
+            ]
+          },
+          {
+            "header": "Shape",
+            "cells": [
+              "Stout and thick, seems to be shaped like a human (pressing against things)",
+              "Shaped like a rectangle"
+            ]
+          },
+          {
+            "header": "Elasticity",
+            "cells": [
+              "None in evidence",
+              "None in evidence"
+            ]
+          },
+          {
+            "header": "Plasticity",
+            "cells": [
+              "None in evidence",
+              "None in evidence"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this chapter, we’ve examined the many different ways polish can be used to alter a player’s perception of the physical reality of the game world without changing the simulation itself. Specifically, we looked at polish effects from three different angles:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "As individual, free-standing effects whose motion, size, shape and nature can be measured separately from the simulated objects in the game",
+        "As groups of effects which convey nebulous, general perceptions to the player",
+        "As observable physical properties that are inferred from groups of perceptions (such as msass, material and texture)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "We also examined how animation, visual effects, sound effects, cinematic effects and tactile effects are used to affect player perception. Polish gives players the grounding they need to cope with the new, unfamiliar topologies of game spaces and the unfamiliar physics which govern them."
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "chapter_title": "Bionic Commando",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Bionic Commando was released in December 1988 for the Nintendo Entertainment System. At the time, the notion of the “platformer” game had been so well established by Super Mario Brothers, it was difficult to imagine a similar game that was not, at some level, a Mario clone."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many companies scrambled to capitalize on the apparent gold rush by differentiating without deviating; they created their own characters and worlds in an attempt to separate them from the hoards of similar product, but always emulated the feel and functionality of Mario. The recipe for a platformer, as set down by Mario, seemed clear and immutable and woe to those who tried to stray too far from it. The one staple, the one ingredient that seemed non-negotiable, was jumping."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then came Bionic Commando. Not only is it one of the best-feeling games ever created for the Nintendo Entertainment System, but it asks a fascinating “what if” question: What if we made a platformer where the avatar couldn’t jump? What would that be like?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bionic Commando answers this question with the eponymous bionic arm. Instead of jumping, the character can make a fulcrum of anything, connecting to and swinging from most objects in the game. The construction of the bionic grappling claw and exactly how it’s meant to integrate with Ladd, the commando in question, is unclear. But as a means of transportation it enables the character to swing around with a loping, easy grace. This is especially apparent when contrasted with the rigid movement of the character on the ground. On the ground, he feels like a lump, an unappealing blocky chunk of matter that ambles along without inertia or appeal. As soon as he starts swinging, he comes to life. In swinging, the control feels expressive, improvisational and liberating. It feels like a continuous process of cheating gravity, saving yourself from falling at the last possible moment over and over again. In that respect, it’s similar to juggling, unicycling or riding a bike."
+    },
+    {
+      "type": "paragraph",
+      "text": "It’s almost as though the character is a performer in Cirque de Soleil. While everything else in the world seems bound by the simple, boring rules of reality, Ladd is free to break through with unexpected skill, soaring around the world in a way that seems improbable but not impossible. That sense translates to the player’s impression of control. Personally, as I play the game, I feel as though I’m learning a"
+    },
+    {
+      "type": "paragraph",
+      "text": "complex skill, but one that is grounded in a mundane reality. The feeling is analogous to learning a new skill, like juggling, in the real world."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now let’s see how this effect was achieved, applying our taxonomy of game feel."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Input"
+    },
+    {
+      "type": "paragraph",
+      "text": "In Bionic Commando, the NES controller is used in a way very similar to that of Super Mario Brothers. There is a lot less chording of inputs and a lot more emphasis on states, but the usage is similar enough to gloss over. Just recall that the NES controller has the directional pad and two buttons, A and B, and is a simple input device (Figure 14.1). There are six buttons used for active gameplay, and each of those buttons is very low sensitivity. Taken as a whole, it’s a very low-sensitivity input device."
+    },
+    {
+      "type": "paragraph",
+      "text": "The shape feels good to hold, it has a satisfying weight, and the smooth texture is pleasing to the touch."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Response"
+    },
+    {
+      "type": "paragraph",
+      "text": "As with Mario, if you want to create a game that feels the same as Bionic Commando, you’re going to be dealing primarily with response. Unlike Mario, however, Bionic Commando relies on animation more than simulation for its expressive feel. This illustrates once again our principle that game feel exists in the player rather than in the computer. It’s all about how the player perceives the motion and control rather than the accuracy or robustness of the simulation. This is particularly evident in Bionic Commando, where there is almost no simulation of the sort found in Super Mario Brothers."
+    },
+    {
+      "type": "image",
+      "src": "249.png",
+      "caption": "FIGURE 14.1 Each input on the NES controller is a simple button with two states, “on” or “off.”"
+    },
+    {
+      "type": "image",
+      "src": "250.png",
+      "caption": "FIGURE 14.2 Ladd moves in two dimensions, X and Y."
+    },
+    {
+      "type": "paragraph",
+      "text": "As always, the first things to examine are the objects that move in response to a player’s input. What are the avatars and how do they move? Like Mario, Bionic Commando has two avatars: the main character, which is directly controlled, and the camera, which is indirectly controlled."
+    },
+    {
+      "type": "paragraph",
+      "text": "The character, Ladd, has freedom of movement in the same XY plane as Mario (Figure 14.2). He moves horizontally, left and right, and he’s able to swing up and drop down. The motion is relative to the view; pressing left on the directional pad moves the character to the left of the screen and vice versa, and there is no rotation."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Horizontal Movement"
+    },
+    {
+      "type": "paragraph",
+      "text": "With respect to horizontal X-axis movement, the game is only tracking the position of the avatar. Unlike the rudimentary simulation of Newtonian physics that Mario uses, there’s no acceleration or velocity. When you press left on the directional pad button, the character goes immediately from standstill to his maximum speed run, with zero acceleration. On or off, full speed or standstill, just like Donkey Kong. So there’s very little simulation here. The input passes directly into the motion of the character. Hold down the button, he’ll move at his maximum speed in one direction. Press the other direction, he doesn’t decelerate or accelerate, he just moves full speed in the other direction. That’s where the sort of stiff, robotic feel comes from. You release the button and he stops immediately with no semblance of an organic, fluid motion (Figure 14.3). Nothing in our world moves like this, so the impression can only seem robotic. There’s a certain tradeoff in the precise, per-pixel positioning of the character that’s possible, but there’s certainly no intrinsic appeal to this motion. By itself, this motion could not carry a game."
+    },
+    {
+      "type": "image",
+      "src": "251.png",
+      "caption": "FIGURE 14.3 There is almost no attack phase in the horizontal movement of Bionic Commando.\nFIGURE 14.4 The grappling claw can shoot out in three directions relative to Ladd."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of vertical movement, the character can move in Y direction by falling and by using the grappling claw. There is no jump. All vertical movement happens via the grapple, which shoots out in one of three possible directions relative to the character: vertically, horizontally or diagonally (Figure 14.4)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Vertically, the motion is fairly staid. If the claw latches onto something, you can pull yourself directly up. If the thing you’re latched onto is a particular type of tile, the character will pull through the platform and end up standing on top of it. It’s a predetermined, animated motion, with no player control other than initializing it at"
+    },
+    {
+      "type": "image",
+      "src": "252.png",
+      "caption": "FIGURE 14.5 The feel of swinging comes from the playback of animation rather than simulated parameters."
+    },
+    {
+      "type": "paragraph",
+      "text": "the start. Horizontally, you can attach the grapple to barrels and certain walls and pull yourself toward them. In the case of both of these grapple directions, when you hook onto something, the result is not very dynamic. There are interesting-feeling interactions between the claw and enemies, which we’ll get to when talking about polish and collision, but the default, connect-to-something interaction feels plain, rigid, dull. The real expressivity of Bionic Commando comes from the diagonal firing of the grappling hook."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the grappling hook is fired diagonally and connects to something, the character enters the swinging state. The swing state is what the feel of Bionic Commando is all about. Interestingly, the swing is not at all simulated. There are no parameters being tracked for acceleration or velocity. It’s just a predetermined set of frames, played back linearly, which show the Bionic Commando character swings back and forth like a pendulum."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the apex of the swing, the frames are closer together, indicating a change in speed as he reaches the end of the arc, reverses direction and swings the other way."
+    },
+    {
+      "type": "image",
+      "src": "253.png",
+      "caption": "FIGURE 14.6 The appearance of a ball bouncing as conveyed by frames of animation played back in sequence."
+    },
+    {
+      "type": "paragraph",
+      "text": "Likewise, he accelerates through the swipe of the arc. This is nothing particularly revolutionary; the same effect is used to convey the acceleration and slowdown of an animated ball bouncing (Figure 14.6)."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is how animation works. An animator makes things appear to speed up or slow down by grouping drawings closer together or pushing them further apart. If the drawings are grouped closer together, the impression is that the object is slowing down. As they separate, the object seems to speed up. This is a great-looking motion because it’s well animated. The perception is of a fluid, arcing motion. What differentiates the swinging in Bionic Commando is the fact that the predetermined frames contain information about position. As the swinging frames are shown, the game maintains information about the position of the character at each frame of the swing, which is used for things like damage and collision. The feel, though, is of a smooth, hypnotic pendulum."
+    },
+    {
+      "type": "paragraph",
+      "text": "The character will exit the swinging state if the corresponding directional pad button is held during the apex frame. That is, if you’re swinging from left to right and you hold down the right directional pad button, the character will release and fly off to the right. The horizontal velocity is not variable, mind you. You don’t get more or less velocity for swinging more or less, but you do get launched in the direction you were moving which, because the release always happens on the same frame of the swing animation, is a slightly upward horizontal trajectory. From the player’s perspective, you hold the button for the direction you want to release for some time before the actual release happens. The result of this pre-holding is a sense of pushing the character in the direction you want him to go, anticipating the release. This is very interesting, as holding the button has no ramification for the playback of the swinging state frames unless it happens on one of the two apex frames and is in"
+    },
+    {
+      "type": "paragraph",
+      "text": "the proper direction. But the sense is that you’re pushing the character the way you want to go, nudging the pendulum in the right direction. It’s sort of a placebo sensation, something akin to waving your hands at a bowling ball after you’ve thrown it down the lane. Again, it’s all about the player’s perception. It feels as though pushing on the directional pad affects the momentum of the character, so the reality—that the game could care less about input unless it’s at the apex frames—is irrelevant. It is at this point, at the moment the character releases from the swing, that gravity takes hold."
+    },
+    {
+      "type": "paragraph",
+      "text": "What’s interesting about the application of gravity in Bionic Commando is that it is the only truly simulated parameter in the entire game. Unlike when the character is running on the ground (having only his position set each frame or swinging back and forth with predetermined frames of animation), when the character is affected by gravity, he has velocity, downward acceleration and position. This is the only motion that uses any sort of simulated Newtonian physics. Even when he walks off a platform, the fall is slightly artificial. The character accelerates downward when he walks off the edge of a platform, eventually reaching the terminal velocity, but the game is setting that value artificially high as soon as you step off the platform. So when you step off the platform, immediately you are sort of flying at this artificially high speed. As soon as you step off the edge, it gets set higher than it normally would be. It doesn’t start at zero and ramp up slowly. And that feels pretty weird."
+    },
+    {
+      "type": "paragraph",
+      "text": "When you release from the grappling hook and you’re flying through the air, though, the gravity takes hold very gradually, very naturally, and feels organic. Eventually, as with Mario, the fall caps out at a terminal velocity to prevent weird, uneven-feeling falls from various heights. In a sort of inversion of the way gravity in Mario functions, you’re soaring through the air in a beautiful arc, flowing up and down with different wavelengths. And once you’ve released, you’re immediately free to attach to the next point. Any other valid object, any other pixel on the entire screen can be connected to as long as it’s flagged as such. So there’s this wonderful expressivity in swinging, releasing, swinging, releasing, as you fly around, and you can connect to almost anything. The sense is one of masterful improvisation, of freedom to use the environment as you see fit. If you were to play the first level 100 times and trace the paths of motion each time, the results would be different curves, different motions each time. As they would be with Super Mario Brothers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Again, this all comes from the simulation of vertical motion. The simulation of this one parameter—gravity—serves to create a graceful, flowing feeling. The speed of horizontal motion is hard coded, as it is in all other instances."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another thing that adds to this feeling of expressivity is that the swing, the arc of the pendulum, is based on the length of the chain. The grapple fires outward at a certain rate, and as soon as it contacts a surface, it either attaches or retracts. So as you are flying through the air or if you are sitting on the ground and you fire the grappling hook out, it can connect at a shorter or longer length, depending on how far away the object is that you’ve connected to. If it’s far away you get the full swing, and it will be a large sweeping arc. When it’s a shorter chain, you get"
+    },
+    {
+      "type": "paragraph",
+      "text": "a much smaller arc. It still plays back the exact same frames of animation but it reduces the horizontal distance between the frames proportional to the length of the cable. The result is that a short swing back and forth takes the same amount of time and it plays back the same frames as the maximum length swing. It simply travels less distance horizontally. You even get the same amount of vertical and horizontal movement upon release. The reason this is more expressive is because as you are swinging around, the arc that you are flowing through can be less or more, greater or smaller depending on the length of the grapple. You have a lot of choice about when you fire the grappling hook, and you can really use that ability to choose the length of the swing as you move from one connection to the next."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Collision"
+    },
+    {
+      "type": "paragraph",
+      "text": "The collision model in Bionic Commando is fundamentally the same as the collision model in Mario. The implementation is more or less identical, but the feel is totally different. While Mario feels like a block of ice gliding along smooth wood flooring, the character-to-ground interaction in Bionic Commando feels sticky and somewhat unnatural. The collision code still checks to see where the character is going to be in the next frame and places him on top of tiles he’s not supposed to be able to go through, but because the basic horizontal movement is not loose at all, the sensation is difficult to reconcile with an everyday experience. Instead of a block of ice sliding loosely across a smooth surface, it’s like trying to slide a box of Arm and Hammer across a patch of carpet. But even less physical-feeling than that: there’s no sense of friction, no matter how small. Nothing in our experience of everyday life behaves the way Ladd does when he runs horizontally across his environment."
+    },
+    {
+      "type": "paragraph",
+      "text": "The main difference between the collision of Mario and that of Bionic Commando is that there are tiles which Ladd can pass through under certain circumstances. This happens because there are two types of tiles that can be collided with: connectable and impassable. A tile can be “flagged” as one, the other or both simultaneously."
+    },
+    {
+      "type": "paragraph",
+      "text": "A connectible tile is one the grappling hook can attach to. You can’t walk through it—it’s considered solid when you’re running on the ground—but any pixel on a connectible tile is a valid connection point for the grapple claw. In this sense, all tiles are considered solid when you’re on the ground. In the air, on the other hand, all bets are off. If you are running around left and right on the ground and you bonk into a barrel or a wall, the collision code will stop you. If you connect to that same connectable-flagged tile, start swinging and then release such that your trajectory takes you up into the tile, you can swing partially through it. If the platform’s thick, you can swing, release to boost up into it, and then connect again to a higher point even as the character is overlapping it, inside it. Once you reach a certain height within the object, if you detach from your swing again, the collision will think your feet are colliding with the platform you’re currently in and you’ll snap to the nearest valid ground tile above it, landing on it as though you’d fallen from above. You can use this to climb through platforms."
+    },
+    {
+      "type": "paragraph",
+      "text": "Impassable tiles can’t be connected to or penetrated under any circumstances. Even the swinging trick will not allow Ladd to pass. This makes for cave and tunnel ceilings that feel extraordinarily thick and solid. Assuming that the tiles are flagged as both connectable and impassible, of course. If tiles are flagged just as impassable, the grappling hook will ricochet off of them without connecting. If you flag a tile as both connectible and impassable, the result will be that the character can connect to it, can swing off of it, but if he tries to swing up into it, his head will just bang against it and he’ll fall off."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another factor, which is an aspect of the collision system, is that because the collisions are turned off while you’re swinging, if you are swinging in a horizontal arc and your arc takes you to the point where you would be inside an impassably flagged tile, the character will bounce off and go into a special state where you cannot fire the grappling hook at all. You can’t control him again until he touches solid ground."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Camera"
+    },
+    {
+      "type": "paragraph",
+      "text": "In Bionic Commando, as in Mario, the camera is indirectly controlled. The camera follows the position of the character avatar, which is controlled by the player. The levels scroll much farther vertically and horizontally than in Mario, however, so there’s a high-level sense of freedom, of unbounded motion. This is crucial to the feel of Bionic Commando. Without this freedom, the swinging mechanic becomes cramped and claustrophobic; the context is wrong for the tuning of the avatar. This was a problem for the feel of the 2004 swinging/grappling game Wik and the Fable of Souls by Reflexive Entertainment. The treatment, metaphor, highly polished animations and visuals and mouse-driven control are all much more expressive and beautiful than those of Bionic Commando. But the screen in Wik and the Fable of Souls does not scroll, constraining all motion to a single unmoving frame."
+    },
+    {
+      "type": "paragraph",
+      "text": "A swinging mechanic of this type needs room to breathe, room to roam. This is a context concern, as it’s all about how the spatial layout affects the feel of the mechanic, but I mention it here because the camera in Bionic Commando moves freely most of the time so the contrast is difficult to imagine. The camera will pan happily up, down, left and right unless it reaches what is defined as a screen edge zone, at which point it will stop scrolling and the character can run all the way to the edge of the screen and push against it as though it were a solid bank of tiles, which it effectively is."
+    },
+    {
+      "type": "paragraph",
+      "text": "The only special behavior of the camera, apart from stopping at the various screen edges (vertical or horizontal), is a dead zone at the center of the screen. When Ladd is within this zone, the camera does not track his motion at all. As soon as he crosses the threshold and moves out of the zone, the camera begins tracking on his position again. In the running state, this dead zone of non-movement for the camera extends to take up about a third of the screen, centered horizontally (Figure 14.7)."
+    },
+    {
+      "type": "image",
+      "src": "257.png",
+      "caption": "FIGURE 14.7 There is a “dead zone” for camera movement in the center of the screen. When the avatar is inside it, the camera does not move."
+    },
+    {
+      "type": "image",
+      "src": "258.png",
+      "caption": "FIGURE 14.8 The dead zone for vertical movement is much narrower in the vertical (Y) dimension."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you stand in the dead center of the screen, you can run about one-sixth of the total screen distance to the left or right before the camera starts panning with Ladd and tracking on him. So from the center of the screen, there’s a rather large area where the camera simply won’t track on the character at all, but as soon as he crosses that threshold, the camera will track on him at exactly his movement speed, keeping him in exactly the same relative position on the screen."
+    },
+    {
+      "type": "paragraph",
+      "text": "This horizontal dead zone affects the horizontal motion of the camera only. There is a separate dead zone affecting the vertical motion of the camera. The vertical dead zone does not affect the horizontal-only motion of running left and right. Instead it comes into play when the character is falling or swinging (the only times when the character can move vertically, either up or down). When the character swings upward, he can fly upward a ways before the camera starts tracking on him, and the same when he falls. If you walk off a platform, or if you are dropping from a swinging state, it will take a little while for the camera to track on the character as he falls first through the dead zone, which doesn’t move the camera, and then when he hits the edge of the dead zone, at which point the camera will start tracking on him at the speed he’s moving. Compared to the horizontal dead zone, however, the vertical one is narrow (Figure 14.8)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The last small detail that affects camera behavior is the changing size of the dead zones. As soon as you connect the grappling hook to a point and start swinging, the horizontal dead zone gets a lot larger, so you can swing almost all the way out to the edge of the screen. It’s a much larger dead zone than simply the one-third of the screen. The resulting feel of these dead zones and their changes relative to states"
+    },
+    {
+      "type": "paragraph",
+      "text": "is twofold. First, because the dead zone when swinging is much larger, the camera often goes from moving to stopped at the moment the grapple attaches. This serves to improve the feeling that the grapple is anchoring the character to a particular spot. Second, the potential for nausea with such a lively character is surprisingly high. If the camera were to track on the character at all times—during the pendulum swinging motion, especially—the game would be nearly unplayable."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "To experience this, try changing the horizontal and vertical dead zones in example CH14-1 to zero."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Context"
+    },
+    {
+      "type": "paragraph",
+      "text": "The high-level layout of levels in Bionic Commando conveys a sense of openness and freedom. The camera is fixed from a side perspective, meaning the player can’t see what’s past the edge of the screen, but because the motion of the camera is free-scrolling, the feel is open, unbounded. The camera keeps scrolling and scrolling, up and down, left and right, as Ladd moves, giving the impression that the world goes on forever. Or for some distance, at least."
+    },
+    {
+      "type": "paragraph",
+      "text": "This gives a sense of exploration and discovery, of freedom. Knytt, a side-scrolling game by indie auteur Nifflas, takes this type of freedom to its beautiful"
+    },
+    {
+      "type": "paragraph",
+      "text": "extreme by creating a world that seems to go on forever, screen after screen, world after world. However, this is different from the sense conveyed by games such as Shadow of the Colossus or Oblivion, which enable you to stare at a point in the distance and then ride off to find that point. The view in Bionic Commando is narrow, focused. The impression of a large, sprawling area is there, but you must view it with blinders, one screen at a time."
+    },
+    {
+      "type": "paragraph",
+      "text": "As noted earlier, this sense is bounded by the edge of the screen, but only in certain places. Within the game itself, it’s possible to get a sense of how a constrained, claustrophobic arrangement of space affects the overall feel—in each Neutral Zone, there is a single-screen room. Try swinging freely around this room. It just isn’t happening. Even when you get connected to a surface, anywhere you swing will take you right into a wall. Now imagine if every level were constrained to one screen like this. Yowch. Thankfully, most of the levels are laid out in a long, stretched horizontal pattern without much to constrain the character’s motion or to limit his or her space. The overall feel is one of openness and freedom. The levels that embrace this type of layout, like the first level, are the best feeling levels. Those that stray, hemming the player in and taking away the freedom to improvise and swing around, take away much of what makes the game feel good."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the level of immediate object avoidance and path plotting, Bionic Commando generally feels more like a sparsely attended mall than a crowded sidewalk. There are the occasional things to be avoided, but there’s no real need for constant worry about what’s moving toward you and how to avoid it. Because the swinging mechanic in itself requires so much focus, adding other objects to avoid and deal with is not strictly necessary. Accordingly, though they often appear cluttered with obstacles, most of the levels are deceptively open due to the fact that, when swinging, the character can move through many vertical platforms. Unless something is flagged as impassable, it’s more of a resource to be utilized than an obstacle to be avoided. This means that the only things that really provide mid-level spatial context, changing the feel at the level of immediate spatial avoidance and path-plotting, are impassable tiles, enemies and enemy projectiles."
+    },
+    {
+      "type": "paragraph",
+      "text": "As the levels progress, the trend is toward providing fewer and fewer connect points and toward enemies that dominate larger and larger areas of space. For example, one later level features a purely upward climb, ascending a tall tower. The higher you get, the fewer places to connect are provided. Fewer connection points mean a greater chance that you’ll fall and have to start climbing all over again. At the same time, there are flying enemies whose attack is a lightning beam of sorts that swipes across the top of the screen, taking away most available possible connection points in the places the player most wants to go. This may be a bit of a mistake on the part of the designers; the best levels are those which provide a lot of texture, a lot of places to connect the grapple. On the earlier levels, especially the very first level, there are a huge number of possible connection points relative to where you’re trying to get. What this does is give you a huge amount of expressivity and improvisation. Functionally, if you have an entire area where all the platforms are flagged just as “connect” and not as “impassable,” you can go and swing anywhere and it feels"
+    },
+    {
+      "type": "paragraph",
+      "text": "great, it’s awesome. It’s by far the best-feeling part of the entire game when you can approach an enemy who’s shooting at you from behind a barrel in any number of different ways. You could do it 100 times and each time it would be something slightly different."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the later levels, you end up in situations where you have to do a whole series of swings connecting to nothing but loud speakers or lights or whatever those tall things are at the top of poles, meaning that your potential connection area is very small relative to the total area of the screen. These things detract from the pure, improvisational feel on display in the earlier levels. You have to think about what you’re doing so you time things correctly, but they dominate such a huge area of the screen that you lose that expressive feel. As soon as you start taking away connection points and screen space, you lose the ability to improvise and do all these other interesting, expressive things."
+    },
+    {
+      "type": "paragraph",
+      "text": "The impression of speed in the game comes from the motion of the static background objects, which have a great deal of texture and variety. Things in the environment move quickly, relative to the character, creating the illusion of motion. There’s not much to tell besides that, apart from the difference between the horizontal and vertical motions. When swinging, grapple after grapple, at the longest length of the grapple, the player moves much more quickly horizontally than vertically. You can pull quickly upward with a purely vertical grapple, but in general, the perception is that the horizontal speed of the character is much faster than the vertical. Except for falling, of course, which seems quicker than any motion in the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "We discussed the lowest level of context, the physical collisions and interactions between objects, earlier. Again, on the ground it’s like a box of Arm and Hammer on rough carpet or something. In the air, the character only collides with impassible tiles, so the impression is one of being above or apart from the world, soaring past it. When you do collide with an impassable tile in the air, it’s like having your wings torn off. I always feel a bit like Icarus as I come crashing down. Mythological, this is, not Kid."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Polish"
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of polish effects, the real selling point for the impression of physicality of Bionic Commando lies in the character’s animations and the sound effects triggered by the grapple claw. The animations of the character include subtle clues like standing on tiptoe and reacting in an appropriate and satisfying way when the grappling hook gets fired upward. These animations alone sell the sense that this character is solid and real, made of flesh and metal. You can really feel him shift his weight on his feet, even though all that’s happening visually is a three-pixel change. The subtle weight shift enables us to see the results of launching the grapple and it seems a hefty, solid, metal object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another great animation is in the firing of the grapple. As the grapple is launched, the character counterbalances by raising his back foot up as he fires."
+    },
+    {
+      "type": "paragraph",
+      "text": "As soon as the grappling hook gets attached to something, he immediately plants his foot down and seems to shift his weight back again. It’s a very subtle visual cue, but it’s masterfully executed and it conveys perfectly the sense of physicality of the character. (I had always assumed—based on the animations, really—that the reason Ladd couldn’t jump was because of the weight of his giant metal arm. Ten frames of animation, and I’m inferring that his body has so much metal in it that he can’t jump. Talk about bang for buck!)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another animation that goes a long way toward selling this world and the objects in it as real and physical is the pendulum animation. Ladd swings back and forth, easing out at each apex before doing a snappy about-face and swinging back the other direction. Tremendous. It’s just a series of positions defining space, but also the shape of the character as he moves through there really conveys the sense of swing and motion, and it’s all being done through this series of frames. Kudos go to the animator for getting the most out of very few pixels, conveying the sense that the character is swinging back and forth, slowing down at the apex of the arc, reversing direction, and swinging back."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another great animation effect is the satisfying bounce of the green and white collectibles that are spawned when you destroy certain enemies. They bounce satisfyingly with a parabolic arc that’s similar to the bouncing-ball animation that we looked at earlier. They slow at the top of the arc and gradually bounce to the floor as they lose momentum. The fact that you can grab these out of the air with the grappling hook feels wonderful even though it is essentially just a proximity check that snaps the object to the grappling hook. The impression that you get is this wonderfully tactile sense that you’ve reached out and grabbed this thing and you’re pulling it back to yourself, making the little grappling hook a surrogate for your own hand. It feels like reaching out to grab a bouncy ball you’ve dropped onto concrete."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sound effects also sell the physical nature of this world. There are no visual effects to speak of—most likely because of a processing power deficit—so it’s up to the animations and sounds to convey everything."
+    },
+    {
+      "type": "paragraph",
+      "text": "The most important sounds are those caused by the grapple itself. The sequence starts with the grapple extend sound which, like the jump noise in Mario, is a rising tone. It matches the animation of the grapple cable extending outward in the same way that the rising slide whistle tone in Super Mario Brothers matches his upward movement as he jumps. If the grapple does not connect to anything, there are no further sounds. If it does connect to something, the result is an extremely satisfying “ka-chink!” As simple as it is, it still manages to convey a sort of reverberation, a series of two quick sounds. Most players interpret it as an impact followed by the claw closing and digging into the surface. It’s awesomely effective for what it is. It makes the claw feel like metal and the surfaces feel like crumbly stone. Finally, if the grapple hits a surface it cannot connect to, the result is a dull, rubbery thud. These three sounds will be heard hundreds of times over the course of the game. Every time the character moves, the noises indicating that the grapple is extending and connecting or rebounding play. In the case of Bionic Commando, these sounds sell a heavy, metallic set of interactions very effectively. There isn’t a whole"
+    },
+    {
+      "type": "paragraph",
+      "text": "wonderful palate of sound effects to work with on the Nintendo soundboard, but they really nailed it with these three sounds."
+    },
+    {
+      "type": "paragraph",
+      "text": "Overall, the few polish elements in Bionic Commando convey what they have to: a sense that the character has some weight and heft, that he’s made of flesh and steel, and that his bionic claw interacts with the environment at a powerful tactile level. Things that seem to me conspicuously absent are a reasonable grunting noise for when the character is hit (he squeaks like a kitten), a noise for destroying large objects such as walls and cranes (there is no sound whatsoever) as well as footsteps for the character and enemies."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Metaphor"
+    },
+    {
+      "type": "paragraph",
+      "text": "Conceptually, the character in the game appears to be a little army man. He happens to have a metallic, bionic arm, though, so one assumes that the character is not intended to be realistic. Later in the game, this impression is reinforced by the fact that you encounter crane-riding midget soldiers, bizarre insects and animals, and flying jetpack soldiers with what appear to be Ghostbusters-style proton backpacks. Everything’s a bit absurd."
+    },
+    {
+      "type": "paragraph",
+      "text": "Harmonizing with what’s conveyed conceptually, the treatment matches this surreal-but-real metaphor with a colorful, blocky, iconic aesthetic. The characters and enemies are distorted icons of themselves with no particular attempt toward realism. Most things are identifiable—a moth monster, a soldier dressed in red, a soldier throwing grenades—but they’re far toward the “meaning” side of the scale. That said, the representation is less surreal than that of Mario, and so there are a few more expectations set up for the player about the way that they’re going to behave."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of expectations, one expects that a cartoony army guy will run around with some weight and presence, but that his physics may be commensurately cartooned. In other words, because the treatment is so colorful, there’s not much set up about expectations beyond the basics of moving and running around, and the effects of gravity and so on. It’s a little bit inexplicable that he wouldn’t be able to make a little tiny hop over a small barrel, but the way they’re selling it, it almost looks as though he’s huge and heavy and is not only imbued with a large, heavy grappling hook arm thing but also might have a body made of metal or some part of him is bionic and made out of metal. Perhaps he needs to use the grappling hook to move himself around because he’s so heavy and ponderous. The air seems to be his natural environment. This is the element of metaphor which makes Bionic Commando so satisfying—Ladd swings through the air like a monkey, Tarzan or Spiderman, tapping into a common childhood fantasy about cheating gravity."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bionic Commando, like Mario, features a hierarchy of power, based on the relative health of the various enemies. Like Goombas, the army guys that run left and right"
+    },
+    {
+      "type": "paragraph",
+      "text": "or parachute in are very weak. You blast through them in one shot of any weapon. The enemies who crouch behind barrels take three hits to kill with your most basic weapon, so they seem immediately more powerful through the low-level rule of having more health. And so it goes, up to the larger bosses who take many shots to kill with the most basic weapon. As you move through the game, you find that there are these different classes of guys. You’ve got your guys who take one hit to kill (the most basic and simple guys), and then you have stuff that takes a couple of hits to kill and it makes sort of a different noise when it gets hit before you are able to destroy it, so those guys seem a lot more powerful. Through the low-level rule of health, you have a lot of interesting indications about the sort of mass and solidity and physical nature of the objects that you’re shooting at and eventually destroying. Certain enemies appear throughout the game, and each enemy type will always take the same number of shots to destroy, so they provide a benchmark for how powerful your weapon is. If your weapon is more powerful, they take fewer hits to kill."
+    },
+    {
+      "type": "paragraph",
+      "text": "At this same low level of interaction, the player has health. This is an arbitrary rule that lends a sense of toughness—or fragility—to the player. It’s very interesting that at the start of the game, the character can be killed in one hit. He is “green” both literally and figuratively. As you destroy enemies, they drop small packets. Collecting enough of these will add a health box, a small green icon, at the top left. From the point at which you’re awarded your first health box, when you’re hit by an enemy or enemy bullet, you lose a health box rather than an all important continue (or life, if you like), which will be lost if damage is received and there are no remaining health boxes. You can have as many as 10 of these health boxes, so they can be a powerful bulwark against damage. Interestingly, the amount of damage an enemy inflicts on the character with a particular interaction gives a sense of the power of that interaction. Running into an enemy or being hit by an enemy bullet subtracts only one health box, where hitting spikes will cost you three. It’s odd, but bullets hurt as much as running into an enemy’s foot. Pits make you lose a lot of health. They are a lot more dangerous than being shot by or colliding with an enemy."
+    },
+    {
+      "type": "paragraph",
+      "text": "This health system extends upward to a higher-level rule about continues. If you run out of lives, it’s game over. This makes you think very carefully about your immediate environment when your health has dropped to zero, because lives are the rarest commodity in the game. You can find them, but they’re quite rare. They’re important because if you lose all of your lives, you lose and have to start over. There’s no such thing as a save game in Bionic Commando. To defeat the game, you must play through the whole thing, beginning to end, in one session. So when you start to get low on health, it really heightens your senses and makes you think a little more closely about what you’re doing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hooked into the health of enemies are the rules related to weapons and their relative strengths. Certain weapons of yours do more damage and so seem more powerful. For example, the rocket launcher destroys things that the normal rifle takes two or three hits to destroy. In the contrast between the two results, the rocket launcher is given a sense of being more powerful."
+    },
+    {
+      "type": "paragraph",
+      "text": "The final thing to look at with respect to rules is the feel of shooting. The B-button is mapped to a basic shooting mechanic, which creates a new object each time the button is pressed. The new object is a bullet, which launches in the direction the character is facing and fires off in the direction of that velocity at a constant, predetermined speed. The “rule” that changes the feel is the same one in Megaman: only an arbitrary, finite number of shots can be on the screen at a given time. For example, if you fire two shots and they have to travel the full width of the screen before disappearing, you’re not going to be able to fire another shot until the first of those shots has traveled off the screen, which can take a substantial amount of time. Whereas if you are standing one or two tiles away from the thing that you’re shooting at, both of those shots will be destroyed and cleared from the imposed constraint on the total number of shots very quickly, and you’ll be able to shoot again immediately. The practical upshot of this is that when you’re much closer to the object that you’re shooting at, you can fire much more rapidly. The interesting feel here is that the farther away your target is, the more precise you have to be with the shots, while when you get really close, you can just really mash on the shot button and get a quick reaction, about as quickly as you can press the button."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bionic Commando broke new ground and showed that a “platformer” game didn’t have to be a Mario clone to have great game feel. It achieved this with a character, Ladd, who couldn’t jump, and who seemed bulky and clumsy on the ground, but who could move effortlessly through the air by swinging on his bionic grappling claw. In swinging, Ladd comes to life. The control feels expressive, improvisational and liberating, a continuous process of cheating gravity, saving yourself from falling at the last possible moment over and over again. Like an albatross, on the ground he was clumsy and outside of his “natural” environment—but in the air, he was an absolute joy to experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "The designer of Bionic Commando, Tokuro Fujiwara, achieved an optimal mix of game feel elements. In particular, the expressive feel of Bionic Commando comes from the diagonal firing of the grappling hook and the vertical movement of the character. The perception of a fluid, arcing motion is very powerful. Fujiwara achieved a wonderful sense of freedom in swinging and releasing as you fly around. And the fact that you can connect to almost anything gives the game a sense of masterful improvisation, of being able to use the environment as you see fit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bionic Commando proved that it was possible to have flowing, organic sensations of control using the low-sensitive inputs of the NES controller and without directly cloning Mario. That the feel is so good is a remarkable testament to the fact that game feel ultimately lives in the mind of the player. The playback of a series of 10 animated frames combined with the ability to attach to any point on the screen gave the game its great feel."
+    }
+  ]
+}

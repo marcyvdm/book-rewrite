@@ -1,0 +1,632 @@
+{
+  "chapter_title": "The Future of Game Feel",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Today we have some great-feeling games. There are not as many as there might be, but as we’ve seen, the ones that manipulate human perception in a positive way, fooling the senses into registering a particular set of sensations, have excellent feel. By examining a few of these in depth, we have sought to generalize their effectiveness and reveal the ideas and practices that enable us to create similarly great-feeling games."
+    },
+    {
+      "type": "paragraph",
+      "text": "This final chapter examines some of the problems for game feel as a medium for expression and the ways in which these problems are being solved, or could be solved, in the future. It’s also interesting to ask whether we’re asking the right questions about game feel. Given that it exists primarily as an impression in the player’s mind and that all control over virtual objects must be mediated by an input device of some kind, what are the most fruitful avenues for improving game feel?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In keeping with the structure of the rest of the book, this chapter covers the six pieces of the game feel system in turn, starting with input and ending with rules."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Future of Input"
+    },
+    {
+      "type": "paragraph",
+      "text": "A crucial problem identified by the Human Computer Interaction community is bandwidth. The expressive potential of current input devices is vastly outstripped by the potential for corresponding response from the computer. As educator and researcher Robert J.K. Jacob put it, “Given the current state of the art, computer input and output are quite asymmetric. The amount of information or bandwidth that is communicated from computer to user is typically far greater than the bandwidth from user to computer. Graphics, animations, audio and other media can output large amounts of information rapidly, but we do not yet have means of inputting comparably large amounts of information from the user.”¹"
+    },
+    {
+      "type": "footnote",
+      "text": "¹http://www.cs.tufts.edu/~jacob/papers/sdcr.pdf"
+    },
+    {
+      "type": "paragraph",
+      "text": "The question seems to be, how can we make this input feel more natural? In this context, natural means more like interactions in real life. The ultimate goal is often stated as overcoming “The Gulf of Execution”—the gap between users’ intentions and the physical action of the input device that ultimately translates those intentions turns them into actions in the computer. With due respect to this as a fundamental goal of interaction designers, researchers and anyone else who seeks to reduce the pain and annoyance of working with computers, this is wrongheaded with respect to video games. There can be, and is, a great, beautiful pleasure in overcoming the so-called Gulf of Execution. In a video game, some obfuscation is necessary and desirable; if intent and action merge, there’s no challenge and no learning, and much of the fundamental pleasure of gameplay is lost. If we pave over the Gulf of Execution, we lose the opportunity to surf the rogue waves of learning, challenge and mastery."
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem lies in designing the right kind of obfuscation. This is one of the central problems that keeps game designers up late of nights: the difference between an exquisite gameplay challenge and an annoying usability issue. What is the “right” way to challenge and frustrate a player? We know that some frustration is good because there is no challenge without the potential for failure. But the right kind of challenge, the right kind of roadblock between intent and execution—that is the elusive quarry many game designers seek. So with respect to input devices, it’s cool to try to make things more natural and expressive, to increase the bandwidth; but the thing to keep in mind is that there are games that hit the sweet spot of challenge, games that feel great, using only three buttons. Spacewar! still feels good."
+    },
+    {
+      "type": "paragraph",
+      "text": "What all this has to do with input devices and their design is the difference between natural and realistic. For example, a mouse makes sense to most people because it is a direct positional transposition. Move the thing on the desk and it moves some corresponding amount on the screen, depending on the control-display ratio. A touch screen, however, always has control-display unity. You touch the screen at the point you want the interaction expressed. Where the mouse is indirect, requiring the logical leap from on-desk movement to on screen, the touch screen integrates both. The touch screen better bridges the Gulf of Execution."
+    },
+    {
+      "type": "paragraph",
+      "text": "But have you ever played a memorable game on a touch screen kiosk? If the input isn’t getting transposed into something interesting, if it isn’t a simple interface to a complex system, the playful enjoyment evaporates. With that in mind, what we should be looking at are the behaviors that feel most natural, the easy, instinctual relationships between input and resulting response. These are not the same as the interactions we have with real life. There is a separation—a crucial one—between reality and intuitive controls. We can’t simply stumble forward on this ceaseless quest to make the input devices “realistic.” This defeats one of the fundamental strengths, one of the great joys of controlling something in game, the amplification of input. Again, the phrase “a megaphone for your thumbs” comes to mind to describe the sensation of using a small piece of plastic to control a complex, digitally rendered, physically simulated car."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the apparent quest to make computer input mirror real-world interaction—to make it more “natural”—we may be ignoring the crucial fact that it feels good to control a complex system with simple inputs. This is what makes learning things in a game more fun than learning things in real life. Real life is complex, dirty and difficult to master. A game can be clean and simple to master. Through a simple input device with little bandwidth, we can truly interface with a highly complex system and experience the joy of manipulating it."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The Wiimote"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the same paper quoted above, Robert J.K. Jacob also says, “Future input mechanisms may continue … toward naturalness and expressivity by enabling users to perform ‘natural’ gestures or operations and transducing them for computer input.” This seems quite prescient given the success of Nintendo’s Wii console and the attempts by Sony and Microsoft to emulate that success. The Wiimote, however, is perhaps the best possible illustration of the clash between what seems more natural and expressive and what makes for good game feel. This is especially apparent playing The Legend of Zelda: Twilight Princess. For every sword swipe, you have to swipe the Wiimote. It doesn’t feel better; in fact, it feels like unnecessary obfuscation between intent and the in-game action. Why not just press a button, as in The Legend of Zelda: Wind Waker?"
+    },
+    {
+      "type": "paragraph",
+      "text": "One of the most enjoyable things about Wind Waker is the depth of the sword fighting and the emphasis on mastering it in the game. On the first island in the game, a master swordsman trains you. There are various thresholds of training, measured by how many times in a row you can hit the master in one-on-one sword combat without being hit yourself. As you defeat each level of challenge, you are rewarded with new sword techniques that can be used throughout the game. At the highest level, you have to hit the master something like 500 times in a row without being hit yourself. I actually managed to do this, and did it very early in the game. The commensurate reward was a much deeper level of satisfaction and enjoyment throughout the rest of the game because the skills that I as a player had spent time practicing prepared me for success and enabled me to feel powerful and in control for the rest of the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "This sensation is, by virtue of the Wiimote gesture-triggered controls, entirely missing from Twilight Princess. Since there’s just no precision in flailing the Wiimote around wildly, there’s nothing gained by it. It is obfuscation of player intent because it uses a highly sensitive input (high input sensitivity) to trigger a very small variety of actions, all of which are prerecorded animations (low reaction sensitivity). In this way, the designers have effectively removed the enjoyable feelings of mastery that were possible in the Wind Waker sword-fighting mechanics, when they would otherwise carry over to Twilight Princess. The sensation of deftly dodging and weaving around and looking for an opening to strike no longer exists. With the Wiimote, it feels like flailing imprecision."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now, it may be the fact that the Wiimote is a first-pass technology and as such lacks sophistication. It may also be that the Wiimote senses relative position rather than absolute and is hampered by this constraint. The Wiimote is a tantalizing beacon of possibility, though, because it indicates a device, perhaps two generations from now,² that might bring fully 3D absolute position sensing to a widely adopted home console. Basically, we want to be able to have an input device that understands movement and rotation in all three dimensions. We want a device with the positional sensitivity of a mouse that can be moved left and right, up and down and be rotated along all three axes. From there, we can always clamp back down to two dimensions (or even one dimension), and we have access to rotational and positional movement along all three axes."
+    },
+    {
+      "type": "footnote",
+      "text": "²At the time of this writing, Nintendo has just announced “Wii Motion Plus,” which may provide the full 3D spatial sensing originally promised by the Wiimote. That would be awesome."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is what everyone thought the Wii would be. The way it turned out, it’s more like a mouse cursor with annoying screen-edge boundaries plus rotational sensitivity in three dimensions of accelerometers. It doesn’t know up from down. It knows forward and backward because of the pointer end. What was truly desirable was a device that knew and understood fully 3D spatial positioning, so a player could control something by moving the object up, down, left and right, and the designer could map those movements directly to something in a game. Unfortunately, with the Wiimote, there turns out to be a lot of obfuscation between Wiimote flailing input and game response, as opposed to pressing a button to get a sword swing. And it’s the wrong kind of obfuscation."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Haptic Devices"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another direction of input device development that shows promise in terms of game feel is so-called haptic devices. Haptic devices were first implemented in commercial aircraft to combat the numbing effect of servo-driven controls. In a lightweight aircraft without servo controls, the pilot can feel directly through the controls if the plane is approaching a stall. The control stick begins to shake as the plane’s angle of attack approaches the dangerous stalling point, an important indicator to the pilot that it’s time to adjust course in order to avoid an open-bucket funeral. In a large jetliner, the sophistication of the controls leaves the pilot completely removed from a direct tactile sense of the aerodynamic forces acting on the plane, the result of which is a dangerous disconnect between the pilot and the “feel” of the plane. To combat this effect, the plane’s onboard systems measure the angle of attack and provide an artificial shaking force when the plane approaches the known angle of stalling, simulating the feel of earlier aircraft. This is known as haptic feedback, and it enables the pilot to better control the plane by improving the feel of control. It may trouble you to learn that your safe landing relies on the pilot’s Dual Shock"
+    },
+    {
+      "type": "image",
+      "src": "344.png",
+      "caption": "FIGURE 19.1 The circular motion of rumble motors in a Sony Dualshock controller."
+    },
+    {
+      "type": "paragraph",
+      "text": "functioning properly, but these have been in effective use for many years. Haptic feedback is serious business, and has true practical applications."
+    },
+    {
+      "type": "paragraph",
+      "text": "As applied to game feel, this kind of rumble has become a common feature of modern console controllers, such as the Xbox 360 and PS2 controllers (Figure 19.1). The potential for improvement in the future is in a more sophisticated kind of rumble. Currently, the controller shake effect is provided by a very simple set of rotating weights. The weights rotate and the controller vibrates in time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tactile rumble effects could be improved by incorporating three adjustable types of motion:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Rapidity of shake: This happens already in current generation controller rumble. A rumble motor can rotate once, or at any interval up to its maximum vibration (many times per second).",
+        "Linear and rotational motion: In addition to spinning, gyroscopic weights, devices would have weights that moved side to side, forward and back and up and down.",
+        "Softness of shake: Instead of black and white—either moving or not—devices would have shades of grey, ranging from very light vibrations to very powerful vibrations."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "No doubt this kind of technology has been and continues to be developed, but is still too expensive or flimsy for mass production. It could improve the feel of a game significantly, however, by providing a much wider expressive palette of tactile sensation. A whole range of combinatorial possibilities might open up: a light side-to-side motion happening twice a second or a violent up-and-down motion happening once. An impact force on the right side of the avatar could shake the controller hard to the left one time, whereas a gentle caressing of one object against another"
+    },
+    {
+      "type": "paragraph",
+      "text": "might give the slightest of high-speed vibrations. I can see a game where running a character’s hand across various objects and sensing their textures via multi-directional vibration would be a core mechanic. This is a relatively untapped frontier for enhancing game feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "A variation of haptic feedback is so-called “force feedback,” in which there are physical actuators that push back against the controls. These have been in common use for many years in specialty flight sticks and steering wheel controllers used by hardcore flight and driving simulation enthusiasts. In these cases, the game’s code will feed into the active motion of the steering wheel or flight stick, causing it to wrench or pull at certain moments, in response to certain events. The reason these haven’t caught on is that force feedback is almost always used as a blunt instrument, as a special effect. It’s almost never used to tell the player something subtle about the state of game objects. At least, not the way that something like an ongoing engine sound does. When playing a driving game that modulates engine pitch based on how fast the car is going, there is a constant stream of feedback to adjust to conditions in the game. Force feedback seems to come out of nowhere, giving the impression that the once inert steering wheel is suddenly and distractingly jumping to life. What’s lacking is subtlety, nuance and the bang-for-buck appeal of controlling a large response with little input. You don’t want to feel like you’re fighting the input device to get your intention realized. You just want the thing in the game to do what it’s supposed to do, what you think it should do. When it misbehaves, the gulf of execution is wider and frustration greater. This is perhaps why force feedback devices continue to be relegated to the niche of automobile and aircraft aficionados whose epicurean tactile tastes demand as authentic an experience as possible. For the general game playing public, however, building a life-size cockpit is unfeasible and having their controller fight them for dominance is more annoyance than enhancement where game feel is concerned."
+    },
+    {
+      "type": "paragraph",
+      "text": "That said, the potential is rather tantalizing. A hyper-sensitive haptic device that provides game feel at the level of true, graspable tactile physical experience? Sign me up. With the right tuning and the right subtlety, players could feel a virtual object the way they feel a ball, a cushion or a lump of clay. The Novint Falcon (Figure 19.2) is a low-cost commercial device that purports to provide this sensation precisely. As an input device, it also recognizes movement in all three dimensions. In principle, this sounds great: here we have an input device with a low-ish price point that enables input in three dimensions and provides a powerful resistance force in all three dimensions, which can be used to model tactile interactions. In fact, the Falcon ships with a software demo that features a virtual tactile sphere. You can change the type of surface from sandpaper to gravel, from hard to soft, from honey to water, and feel the difference by probing around with the input device. And there’s definitely potential there. If you put the device behind the screen on which the demo is running, a somewhat convincing illusion begins to coalesce, a sense that you’re actually touching something that isn’t quite there. The problem is, it must all be done through this thick, unwieldy knob. It’s like touching a ball with a disembodied door knob."
+    },
+    {
+      "type": "image",
+      "src": "346.png",
+      "caption": "FIGURE 19.2 The Novint Falcon."
+    },
+    {
+      "type": "paragraph",
+      "text": "The other difficulty with the device is fatigue. This is the true and nigh-insurmountable problem with actuated devices. Personally, when I played the demo games included with the device for about 10 minutes, I had to go ice my wrist. Granted, my wrists are like fragile, atrophied worms, but the resulting fatigue meant I could not—did not want to—play again. It burned with fiery pain! This seems to me another disconnect between the desire for increasingly natural, realistic inputs that afford greater bandwidth and the things that actually make the expedient of manipulating things in a digital world desirable. Playing the Katamari Damacy clone included with the Falcon left me feeling like I’d bowled 20 frames in 20 minutes. The amount of motion I got from the game for my struggle just didn’t seem worth the effort. The Novint Falcon ignores the fact that one of the great appeals of controlling something in a game is large response for small input."
+    },
+    {
+      "type": "paragraph",
+      "text": "We want a megaphone for our thumbs, not a controller that fights back. If the grasping nub of the device were less cumbersome and if it had a great deal more freedom like the more traditional (and expensive) pen-and-arm haptic devices, though, this might be a different story."
+    },
+    {
+      "type": "paragraph",
+      "text": "Plus, a haptic device always needs some kind of anchor. The ultimate haptic device would be holdable like a controller or Wiimote, and yet still give you the physical pushback. The technological challenges involved in doing this—creating force out of nothing—are far from trivial, to be sure. On the plus side, joystick/thumbstick springs provide almost this same kind of feedback—it’s just not modulated by code. So ultimately, without a very subtle, nuanced approach—the ability to feel the difference between carpet and counter or something—haptic devices are not likely to become a powerful tool for creating game feel. It’s likely that the porn industry will be at the forefront of using this technology if it does reach the requisite"
+    },
+    {
+      "type": "paragraph",
+      "text": "level of sophistication in widespread commercial application. Until that time, it will remain an interesting but ultimately fruitless branch of the input device family tree."
+    },
+    {
+      "type": "paragraph",
+      "text": "So as far as the future goes for input devices and their potential to affect game feel, the path seems set. We will see incremental refinements rather than evolutionary leaps, and the advances will primarily be technological. Better rumble motors, better positional sensing, and better-feeling physical construction of input devices will make the games that they control feel better. Just as the feel of Lost Planet for the Xbox 360 is better than Bionic Commando for the NES, so future generations of input devices will lend a better, if not revolutionary, feel to the virtual objects they control."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Future of Response"
+    },
+    {
+      "type": "paragraph",
+      "text": "What is the future of game feel with respect to response? Assuming that the input is going to come in as a series of signals, what are the different ways that the game will respond to those signals, and how is it possible for these to grow and change, evolving as they do, the possibilities and meaning, of game feel?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Think about the oldest car you’ve ever driven. What did it feel like? How responsive was it in terms of steering or braking? How were the shocks? For me, it was my friend’s 1970 SS Chevrolet Chevelle. On top of weighing three and a half tons, it had no power steering, a wide wheel base and only the most notional of shocks. The car was a burly beast and hard to handle. Trying to drive it was an exhausting exercise; it felt like trying to steer an aircraft carrier with a rocket engine attached. Now think of the newest car you’ve driven. How did it feel by comparison? In my case, this would be my dad’s new Toyota Camry Hybrid. This car is exceedingly smooth and quiet. It is truly effortless to drive. The contrast here is most instructive, as it mirrors the difference between the feel of early games and their modern counterparts."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The Evolution of Response in Mario"
+    },
+    {
+      "type": "paragraph",
+      "text": "The original Super Mario Brothers was, as we saw in Chapter 13, a simple implementation of Newtonian physics. It had velocity, acceleration and position, and it dealt with rudimentary forces such as gravity. That said, Mario’s approach to simulation should be categorized as top-down rather than bottom-up. It only simulates the parameters it needs, and it does so in the simplest way possible. This was as much a limitation of the hardware as it was a design decision, though the result was an excellent, if particular, feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "With respect to how the game interpreted and responded to input, Super Mario also featured time-sensitive response, different states and chording. Jump force was based on how long the button was held down; there were different states that assigned different meanings to the directional pad and A-button while Mario was in the air; and Mario made use of chorded inputs, modifying the response of the"
+    },
+    {
+      "type": "paragraph",
+      "text": "directional pad buttons when the B-button was held down. It was ahead of its time in many respects."
+    },
+    {
+      "type": "paragraph",
+      "text": "This formula would be iterated but not deviated from for the next several years. Super Mario 2, Super Mario 3 and Super Mario World all used essentially the same approach, adding more states and more time-sensitive mechanics. With Super Mario World, there were more buttons to chord with and more states, but the basic building blocks were the same. The response to input was evolutionary, not revolutionary."
+    },
+    {
+      "type": "paragraph",
+      "text": "Super Mario 64 took a fundamentally different approach. Instead of colliding with tiles, Mario was moving in three dimensions and so had to collide with individual polygons. Coins rolled down hills gently after spewing from enemies, and thrown blocks would fly, slide and collide satisfyingly with other objects. You could race massive penguins down slippery slopes."
+    },
+    {
+      "type": "paragraph",
+      "text": "More than anything else, though, the Mario avatar himself was simulated much more robustly, with a blend of pre-determined moves and thumbstick input, each of which added its own particular, predictable forces into the Mario physics system. He had his own mass and velocity and could collide with anything anywhere in the world, always giving a predictable, simulated response. Again, there were more inputs to deal with, more states and more chording. The addition of the thumbstick as a much more sensitive input device took some of the onus off the simulation in terms of providing the largest part of the expressivity and sensitivity, but there were still an increasing number of specific, time-sensitive jumps, and each direction of the thumbstick still chorded with various buttons to produce different results."
+    },
+    {
+      "type": "paragraph",
+      "text": "The fundamental difference with Super Mario 64’s simulation, though, was that it was more bottom-up than top-down. Instead of simulating only what was necessary, a more generic approach was followed, allowing for a much wider range of results. Much of the system was built to address generic cases of objects moving with certain forces, and this physics modeling could be applied to many different objects. As a result, there are many different physical exploits in Mario 64.³ From this basic system, the tuning emerged, albeit with many specific case tweaks overwriting the underlying simulation. The difference is starting bottom-up with the system rather than cherry-picking the needed parameters and coding them in top-down."
+    },
+    {
+      "type": "footnote",
+      "text": "³If you want your mind blown, go to Youtube and search for “How to Beat Super Mario 64.” At about 17:38, the mad, mad exploits begin. Using a series of physics system glitches, this gentleman completes the entire game using only 16 stars out of the “required” 70. This is one hallmark of bottom-up systems: unexpected or “emergent” behavior."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mario Sunshine iterated on Mario 64’s approach, adding an additional set of states incorporating the water-driven jetpack and a fairly robust water simulation that brought buoyancy into play."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, Super Mario Galaxy starts with the mostly bottom-up simulation of Mario 64 and adds in further layers of complexity by doing some very interesting"
+    },
+    {
+      "type": "paragraph",
+      "text": "things with malleable gravity, a third avatar (the cursor), and by recognizing very sophisticated gestural inputs."
+    },
+    {
+      "type": "paragraph",
+      "text": "This begs the question: what’s next? Mario is certainly not the end-all and be-all of games, of course, but it is interesting to examine the different ways in which Mario has responded to his ever-changing input devices. When there’s a new Mario game, it’s almost always been accompanied by a new input design. And each time, he seems to have a more sophisticated simulation driving his movement and is doing different and novel things in response to that input, interpreting and parsing it in increasingly sophisticated ways. In fact, through the years, Mario has touched on most of the issues relevant to the effect programmed response to input has on game feel. At first his simulation was top-down, built out to simulate only the barest parameters needed in the simplest way. Eventually his simulation became more bottom-up, more robust and generically applicable, with more sophistication and special rules about changing gravity and so on. Likewise, his response to input started simply but comprehensively, featuring sensitivity across time, space and states. These responses to input also grew in sophistication over time until he was using many different chorded inputs, had many different states, and had a plethora of moves that were sensitive across time. In his most recent outing, he adds gesture recognition to the list of ways he interprets input signals and responds to them."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Interpretation and Simulation"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two main ways in which game feel will be significantly influenced by response (as it defined in this book)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The first is input parsing and recognition. There are myriad ways for a game, having received input signals from an input device, to interpret, transpose or refactor them across time, space, states and so on. As we have more and more processing power to throw around, these various ways to process input signals may have a significant effect on what it means to control something in a game."
+    },
+    {
+      "type": "paragraph",
+      "text": "The second is simulation. The more processing power that is thrown at a physics simulation, the more robust, intricate and powerful the simulation can become. I hesitate to use the term “realistic,” though this is often how physics programmers have described their goal to me, as a quest for ever-increasing realism. I think a more laudable goal is an interesting, self-consistent, stable simulation, but I believe this is actually what they—and players—mean when they say realistic to begin with. Regardless, interpretation and simulation seem to be the two main ways game feel will change in the future with respect to a game’s response to input."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Interpretation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Interpretation has had its basic palette since the earliest days of video games. By virtue of the game’s code, input can be given different meaning across time, as in a combo, Jak’s jump or Guitar Hero. An input might have a different meaning when objects in the game are at different points in space, as in Strange Attractors, or the"
+    },
+    {
+      "type": "paragraph",
+      "text": "meaning of various inputs might change depending on the state of the avatar, as in Tony Hawk’s Underground. These are the basics, the tested and true. The question is, how might we expect these interpretation layers between input and response to evolve as games mature? What directions will this evolution take, and how will it affect game feel?"
+    },
+    {
+      "type": "paragraph",
+      "text": "An obvious example of complex input parsing is gesture recognition. It’s used extensively on the Wii, from the swing of a racket in Wii Sports: Tennis to the wag of hips in Wario Ware: Smooth Moves. In fact, there is an entire suite of tools for gesture creation, AiLive, provided by Nintendo to developers to ease the process of recognizing a series of inputs from the Wiimote as a specific gesture and facilitate its mapping to a response in the game. Before this, there came games such as Black and White, which attempted to do essentially the same thing using the mouse as an input device."
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem with all these systems is they turn complex input into a simple response. You flail around, making huge sweeping gestures, and the result ends up the same as a button press. In some cases, as with Wii Sports: Bowling, the player may perceive the game as having recognized the subtlety and nuance of the gesture, but usually not. Usually the large, sweeping inputs are mapped to what would normally be mapped to a single button press. The result feels profoundly unsatisfying, like lighting a massive firecracker and having it go off with a pathetic whimper. For this reason, the notion of mapping a hugely sensitive movement to a binary, yes-or-no response from the game via gesture may turn out to be a red herring. In the future, we can expect to see more Bowling and less Twilight Princess. Bowling looks not only for the gesture, but for the rotation of the Wiimote and the speed of the accelerometers at the time of release, and then it bases the curve and velocity of the ball on that. It layers gesture with a dash of subtlety and nuance in receiving the inputs, in other words. Imagining where that could go shows a more promising future for gesture recognition."
+    },
+    {
+      "type": "paragraph",
+      "text": "One thing that doesn’t seem to happen much is a complete exploration even of current input devices and how they can be utilized. Though they’re often perceived as silly gimmicks by players, things like swapping controller ports in the battle against Psycho Mantis in Metal Gear Solid, and having to close and open the DS to “stamp” the map in The Legend of Zelda: Phantom Hourglass, are gratifying and refreshing. Before these games, it was unlikely that players had considered closing and opening the DS or unplugging a controller as a meaningful input. But the system can detect these things; they’re part of the input space. What these interactions bring into relief is just how narrow our thinking is about particular input devices. Games like Okami and Mojib Ribbon take the thumbstick to interesting new places, using the inherent sensitivity to mediate accurate drawing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Why don’t we do more of this? Why isn’t there a game that uses the entire keyboard to control one or multiple objects? It’s a combination of technical constraints like keyboard matrix problems and established conventions about how inputs are used, for sure. But, jeez, why hasn’t anyone even tried these things? This is an important question, but one which will continue to go unanswered because of the inherent risk in addressing it."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Simulation"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the future, it’s likely that we’ll see much more detailed, robust and intricate simulations of physical reality. This may or may not be such a good thing. More intricate, detailed simulations will bring us an entirely new expressive palette. Most interesting is the potential to redefine what being an avatar means and what it means to control it. In the future, we might be able to control a curling column of smoke, a liquid or 10,000 tiny birds. Things like Loco Roco, Mercury, Gish and Winds of Athena indicate that this is at least an interesting area that should continue to be explored. But there is a danger present, looming in the background both of our construction of visuals and in the way in which we simulate objects in game. The danger is the flawed notion of realism. Again, reality isn’t much fun. To enhance the impression of physicality to unprecedented levels and forge ahead into bold new types of interaction with advanced simulation are exciting prospects, so long as we remember that our goal is to entertain and delight. Simulating reality tete-a-tete is a waste of time. If players want reality, they can step away from the computer."
+    },
+    {
+      "type": "paragraph",
+      "text": "To make a broad generalization, increasing sophistication in simulation means adopting an increasingly bottom-up approach. A physics engine seeks to create a general set of rules that will successfully and satisfactorily resolve any specific interaction of any objects anywhere in the game world. Or, at least get as close as possible to doing that. Let’s put technological issues aside for a moment, though, and go pie in the sky. Pretend we have a super-advanced physical simulation that will handle the interaction of any two objects with any properties in a smart, appealing way. What does that buy us? How does the feel of our game improve?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first and most obvious result is increasingly sophisticated results at the level of intimate physical interaction. So in this case, the goal of increasing realism in the simulation translates to simulating the physical interaction of objects in the world at a higher level of detail, which improves the inferred physical reality of the world. This is on its way regardless, as it will be pushed by football games and other sports games as a way for humanoid-looking things to collide and interact satisfyingly. Instead of using pre-created linear animation or animation only to drive the motion of characters, we’ll see hybrid models where ragdolls are driven by animation and vice versa. For example, two football players colliding perfectly, transitioning between their animations into active ragdolls that look proper."
+    },
+    {
+      "type": "paragraph",
+      "text": "My hope is that this technology will find other uses in the expression of more creative worlds with physical properties that deviate from pedantic imitation. Really, though, here the simulation is just being used as a polish effect; it has no effect on gameplay. Madden 2020 will probably play the same as Madden 2009 except for the active ragdoll simulation that makes the character’s hyper-complex tackling and dogpiling interactions more believable. With luck, the simulation will have caught up to the photorealism of the treatment by then and the two will harmonize into a satisfying, cohesive whole rather than the mismatch we see currently."
+    },
+    {
+      "type": "paragraph",
+      "text": "Crysis seems to go to a whole lot of trouble to simulate things in immaculate detail but does not do much with this simulation gameplay-wise. You can destroy"
+    },
+    {
+      "type": "paragraph",
+      "text": "trees at any point on their trunk, push your way through lush vegetation, or cause spectacular detonations, but the relevance of these interactions seems to be next to nil as far as the game is concerned. Compare this to a game like Half Life 2, where physical interaction is paramount, and the difference becomes clear."
+    },
+    {
+      "type": "paragraph",
+      "text": "The huge benefit here is more complex, believable interactions, especially at the low and mid-levels of context—you can really push through crowds and interact with people. I think this has myriad applications, and not just for sports and action. It will be effective for representing things like interpersonal relationships and intimacy, where touch and distance play a huge role."
+    },
+    {
+      "type": "paragraph",
+      "text": "The other interesting thing that an improbably robust simulation buys us is the potential for exquisite new types of physics-based gameplay. Matthew Wegner, CEO and technical wizard of our company, Flashbang Studios, defines physics games as “a game where the player primarily interacts with the mechanics of a complex physics system.” This is separate from something like Super Mario Brothers which, while it simulates physical, Newtonian forces—gravity, velocity and so on—takes a top-down approach rather than a bottom-up one. It’s simulating only what it has to, rather than starting with a robust but generic simulation and building game feel out of that. If you start with a physics simulation that’s meant to cover a wide variety of cases and includes built-in notions of force, velocity, shape, gravity, friction and drag for every object, the feel—and types of gameplay—will be different from a game like Mario, which only simulates the barest minimum of what it needs to achieve the desired feel. From more complex systems like this arise what are generally referred to as physics games. Examples of physics games include Armadillo Run, Truck Dismount, Ragdoll Kung Fu, Ragdoll Masters, Little Big Planet, NobiNobi Boy, Toribash, Flatout, Carmageddon, World of Goo and Cell Factor."
+    },
+    {
+      "type": "paragraph",
+      "text": "The idea is essentially to start, bottom up, with a robust full-featured physical simulation and then find and emphasize enjoyable interactions in the system itself. The system is created first and the gameplay grows out of it, relying on the robustness and flexibility of this system to find the enjoyable play. For example, Truck Dismount includes a physically simulated ragdoll, a truck and some other props. To score points, you must mangle the ragdoll—cause it to be hit by the highest possible forces—by creative use of the various forces and props. You can tip the truck over onto the avatar, place it on the front of the truck as the truck hits the wall or any number of other creative variants."
+    },
+    {
+      "type": "paragraph",
+      "text": "If jazz is music for musicians, Ski Stunt Simulator is a game for game designers. It’s brutally difficult to learn but vastly rewarding once mastered, which makes it a game that almost no one has played outside of the small and devoted community of masochists and enthusiasts who actually learned to play and master its ridiculously difficult controls. Ski Stunt Simulator—created by researcher Michel Van De Panne at the University of British Columbia—is perhaps the finest example of an academic project with real ramifications for contemporary video game design. It is, in itself, a beautiful little game, but what it really indicates is a new way to create game controls: by simulating muscles rather than arbitrary forces. The rig in Ski Stunt Simulator is a controlled, active ragdoll."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Physical Control over Complex Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "A great question for game design: what if the player played as _____? So in this case, instead of playing as some sort of god-perspective creature that adds arbitrary forces to an object, we’re putting the player in the role of muscles. The forces that enable the thing to move come, literally, from within it, in the form of springs that change size and so on."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a wholly different and altogether unexplored area of design, probably because it’s really hard to design for and to play. Some potential future directions for simulations are indicated in games like Chronic Logic’s Bridge Builder and 2dBoy’s World of Goo. In both of these games, the player constructs and controls massive, compound physical objects out of smaller component parts. Real-time control over objects like this indicates a fascinating possible direction for game feel. In fact, Chronic Logic’s Gish pushed in this direction, giving the player control over a complex blob of springs. It was a unique, awesome feel, far ahead of its time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another interesting possibility for real-time control would be fluid, fog or smoke simulations. What would it be like to exercise real-time control over a fluid? Archer Maclean’s Mercury for the Playstation Portable indicates that there’s potential there, but I’d like to experience the sensation of control that would come from steering a lot more fluid around. Ditto fog or smoke. What would that feel like? I hope to someday find out."
+    },
+    {
+      "type": "paragraph",
+      "text": "Similarly, having control over flocks of creatures that employ the simple Boids flocking algorithms could provide a very interesting feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "All in all, response is the game feel component ripest for future improvement. It is in response that the game designer primarily defines a game’s feel and so it is here that the largest potential for the advancement of feel exists. Some opportunities still exist for improving the feel of a game simply by simulating physical interactions in greater detail, but the rewards for this realism-minded approach are rapidly diminishing. The real goldmine lies in simulations of complex phenomena such as fluids, gasses or flocks of birds. Even using more traditional simulations of Newtonian physics, there are huge opportunities to control objects in novel ways or to build fascinating, complex objects out of simulated components such as springs and weights. Simulating muscles rather than simulating arbitrary forces is just one of the galaxy of possibilities that have yet to be explored in depth."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Future of Context"
+    },
+    {
+      "type": "paragraph",
+      "text": "Context, as we define it in this book, is the backdrop against which the motion of avatars and all other objects in a game is given meaning. It’s the other half of game tuning. As an example, you were asked, in Chapter 5, to imagine Mario 64 standing in a blank field of whiteness, like the place where they get the guns in the Matrix, and to consider the following question: does the motion of Mario have any meaning in this blank field of whiteness? And the answer, of course, was no. Without a wall,"
+    },
+    {
+      "type": "paragraph",
+      "text": "there can be no Wall Kick. This extends to all the mechanics of Mario and Mario 64, from the complicated ones like the Long Jump, the Triple Jump and the Wall Kick, that rely on direct physical interaction with environmental objects, all the way down to his most basic low-level movement, which is him running around relative to the player’s displacement of the thumb stick on the N64 controller. Even at the lowest level of motion the speed at which he runs around and how quickly he turns and so on have no meaning without the context of the Castle Courtyard or Bomb-Omb Battlefield."
+    },
+    {
+      "type": "paragraph",
+      "text": "At every level, context gives meaning to motion. In any game, this a key component of true game feel, which we have defined as an ongoing correction cycle in which you are controlling one or more objects, and where the spatial manipulation is important, where steering around a space and whether or not you run into things, and so on, is actually an important part of the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "In order to tune the motion of an avatar, you have to have a space to tune against, and it’s basically just that simple. A racing game needs a track, stuff on the side of the road and hills that extend in the distance. It needs track pieces that have different levels of curves. Without a track underneath it, the tuning of the car’s forward speed relative to how quickly you can turn the car left and right, whether or not it slides and the point at which the friction slips have no meaning. These are all little, but very important, details."
+    },
+    {
+      "type": "paragraph",
+      "text": "Matthew Wegner gave a great example of this when he was talking about physics tuning in Raptor Safari. He first tuned the Jeep to a very specific set of parameters, and he had created an environment in which to tune it. But he found that, because the environment didn’t have any hills that were past a certain level of sharpness, as soon as one of the artists started putting together a bunch of hilly terrain, every time the Jeep would run over a hill, it would bottom out and lose all of its momentum. That’s just one example of how a small detail of spatial layout can affect the feel of the game profoundly. And it is in this interplay between space and motion that most of game feel is created."
+    },
+    {
+      "type": "paragraph",
+      "text": "So space is crucially important; it’s the other half of tuning game feel. For this reason, games that have the best feel are often the ones in which the mechanic and the spatial context were created simultaneously. This is the notion of creating a gameplay garden in which you create the tuning of your mechanic. The idea is that you populate a particular space with a whole bunch of different objects, and you space them apart at different intervals, and you try a bunch of different shapes of objects and configurations, and then you tune your mechanic, trying it against all these different possibilities. The objective is to have as many different possibilities as you can so that you’re exploring the space as fully as possible while you’re creating it, and you can make informed decisions about how a change in a particular parameter or the speed of movement changes the interaction of the character and the space around it on many different levels."
+    },
+    {
+      "type": "paragraph",
+      "text": "Context also provides the point of reference against which the impression of speed is created, as described in Chapter 8. This is the same phenomenon that you see if you’re driving down the freeway and there’s nothing on either side of"
+    },
+    {
+      "type": "paragraph",
+      "text": "you—you lose the impression of speed and end up in a bizarre realm of highway hypnosis which may be detrimental to your health if followed to its ultimate conclusion."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another way context gives spatial meaning to the motion of avatars and affects game feel is at the highest level of spatial awareness. We discussed this in depth in Chapter 8. It’s the difference between the sprawling open world of World of Warcraft and the hemmed-in tight worlds of Tony Hawk. World of Warcraft conveys an overriding sense of massive openness and space, while in Tony Hawk, the relative speed of the character and the density of the objects make it feel as though the environment is very tightly packed and that things are flying at you constantly. In the earlier Tony Hawk games this was less evident, but in the later games the character’s movement speed has increased to such a degree that all the environments feel very tightly spaced, and as the games progress, the environments started to be spread farther and farther apart to try and counteract this impression."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, spatial context defines challenge by limiting space. If you have an object moving through space and there’s nothing around it, there is no challenge. There’s nothing to steer around and nothing against which to measure the building of skills. On the other hand, if you have a bunch of objects tightly packed, steering around them can be a real chore, and suddenly the speed of an object’s movement and its turning radius take on a great deal of meaning. This is the way that game designers create challenges over the course of a game, as we have said. In the early levels, objects will be spaced far apart, and any obstacles, enemies or moving objects that come at you are slow-moving, easier to deal with and easier to steer around. As the game progresses, things become increasingly closed-in, the margin of error shrinks: you have to jump to a tiny little platform, or you have to steer around increasingly difficult turns and so on. This is how difficulty is ranked across such games."
+    },
+    {
+      "type": "paragraph",
+      "text": "What we’ve identified here is four different ways that spatial context affects the game feel: as a foil for mechanic tuning, by creating the impression of speed, as a high-level spatial awareness and by limiting space."
+    },
+    {
+      "type": "paragraph",
+      "text": "The question is, how will these four different ways of spatial context affecting game feel project into the future? How will these things evolve and change, if at all, and how will they alter the way that games will feel 20, 30 or 50 years from now?"
+    },
+    {
+      "type": "paragraph",
+      "text": "First, regarding the impression of speed, that seems to have been very well worked out as a natural consequence of building today’s games. In games like Burn Out, the impression of speed is hugely effective: it’s got view angle changes and blurring, great sound effects, and objects appear to move by very, very quickly and believably. Even earlier games like Sonic had a fantastic impression of speed by effectively manipulating static objects relative to the speed of movement of the Sonic character."
+    },
+    {
+      "type": "paragraph",
+      "text": "And it’s not just about going fast. At the other end of the speed spectrum, we’ve had some great explorations of very intentionally plodding, slow-moving objects in gameplay, for example, the large, hulking colossi in Shadow of the Colossus. Or with Thief: The Dark Project, where the character is forced to move intentionally slowly, and the interesting gameplay ramifications of that are fully explored."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the future, the lessons we have learned regarding speed will serve us well, and are not likely to be modified extensively."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, at the lowest level of tactile and physical interaction, as we examined in the Future of Response section, there are likely to be a lot more interesting simulations. In terms of the way that this affects context, it’s likely that we’ll end up with much more reactive physical context for objects. A great example of this—a peek into the future, if you like—is the type of interaction in games like LocoRoco, which have an extremely expressive, squishy quality to them. Their whole environments have a feel, and the fact that the environment has that different squishy feel completely changes the way that you feel about the motion of the LocoRoco avatar."
+    },
+    {
+      "type": "paragraph",
+      "text": "To see an interesting counter-example, you can look at something like Gish, where virtually all the tiles that Gish interacts with are solid and are in direct contrast to Gish himself who is a big, squishy blob of springs."
+    },
+    {
+      "type": "paragraph",
+      "text": "We may also see additional sensitivity via environmental interaction. For example, in the Tony Hawk games, the feel of the game is very much a collaboration between the motion of the avatar and the objects in the environment. In Tony Hawk’s Underground, there were so many different objects that you could interact with, and so many different ways to interact with them, that what begins to emerge is a real sense of expressivity. If the player comes up to an R.V., for example, there are lots of choices to make: wall right up the side of it, jump and grind the top of it, manual across the top of it, or manual up to the side of it and then wall right up to a grind across the top of it. All these different choices exist because of the richness of potential interactions with any given object in the world. As a result, a hugely beautiful, expressive quality emerges, and actually begins to feel like freedom and personal expression. You can traverse the world in your own style."
+    },
+    {
+      "type": "paragraph",
+      "text": "Games like Assassin’s Creed and the newer Prince of Persia have picked up some of this torch and are carrying it off into an interesting future. However, much of the player’s sense of personal expression starts to disappear when the designers allow technology to begin wagging the dog. It’s important not to obsess on making the character’s every physical, tactile interaction with the environment so perfect that they forget to include a skill for the player to learn and master. (This is what happened in the earlier Tony Hawk games.) We need to continue to emphasize mechanics that play on the natural instinct of people to learn and become familiar with their immediate space."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the mid-level, we’re basically doing pretty well. The state-of-the-art in terms of immediate space manipulation and path plotting is getting more interesting. For example, in Hitman: Blood Money, the designers actually created the impression of a really thick crowd that you had to push through (in the Mardi Gras level) in order to get where you were going. Assassin’s Creed does this fairly effectively as well, and these kinds of interactions feel very interesting, but still don’t quite have the impetus behind them. They look cool but haven’t quite found their context."
+    },
+    {
+      "type": "paragraph",
+      "text": "The medium level of spatial interaction—at the level of having to steer around various objects and the creation of challenge by limiting space—is very well understood and unlikely to change much in the future. Games like Street Fighter are"
+    },
+    {
+      "type": "paragraph",
+      "text": "entirely about manipulating space in interesting and creative ways. We know how to create challenge in games by limiting space."
+    },
+    {
+      "type": "paragraph",
+      "text": "But one area which has not been explored, and which has a great potential for redefining what a game means and to really make a game feel different, is in the importance of spatial relationships other than simple object avoidance. So if you look at a game like Passage, by Jason Rohrer, or his later Gravitation, or a game like The Marriage, by Rod Humble, they’re expressing deep, meaningful themes through spatial interaction. They do a lot of work with rules, and Rod is convinced that rules can potentially be an expressive medium as effective as literature or art, film and so on. But many of the rules they have defined are about spatial relationships. For example, in Passage, you have a single character that walks along, and as a single character can fit through many different tight little spaces, but then the character meets a woman and they become life mates, one presumes, because a little heart comes up, and then they walk together, and together they can’t fit through as many spaces. And so in that changed spatial relationship, he’s saying something about the human condition and the nature of relationships. It’s a very fascinating direction that could potentially be extremely fruitful."
+    },
+    {
+      "type": "paragraph",
+      "text": "We need to rethink our understanding of the meaning of spatial relationships in video game context and to look for the expressive potential beyond simply building a challenge out of having to avoid stuff, and so on. There’s a huge potential for games about physical intimacy, which is very much about intimate spatial relationships, and about interpersonal spatial dynamics. For example, what’s the difference when someone’s facing one direction as opposed to another? What does it mean when someone’s standing directly in front of you staring at your face as opposed to sitting across the room? How might convincing eye contact between player and avatar be exploited? The possibilities for exploiting cultural conventions and non-verbal communication are endless."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the highest level of spatial interaction, we simply need to pay a little more attention to what we’re doing. There are games that create a really beautiful and effective high-level sense of spatial awareness, such as World of Warcraft. Many multiplayer online games fail where World of Warcraft succeeds in creating the sense of having huge, beautiful open vistas to traverse. Games like Tribes and Battlefield II start to get a similar feel, where there’s a huge sense of openness and possibility. In these games, you can really get that pleasurable sensation of traveling through an interesting and open space."
+    },
+    {
+      "type": "paragraph",
+      "text": "Too many games will make things really big but will lose the important spatial architectural details that convey the sense of a very large open space or construct a good-feeling smaller space. There’s a potential for a huge amount of expressivity and manipulation in the way that the player views the feel of the game through this high-level interpretation of space. We can make players feel small and insignificant by making things large and imposing the same way that centering (placing a character in a film frame) at the bottom, very small, makes them feel small and insignificant. We can get that same kind of feel, but in the first person, or we can get the"
+    },
+    {
+      "type": "paragraph",
+      "text": "opposite where the character’s very large and powerful relative to everything in the world, and we can express things through that."
+    },
+    {
+      "type": "paragraph",
+      "text": "As an interesting side note, that sense of traveling and traversal was one of the things that was lost in Mario Galaxy when they transitioned from having a cohesive, single-direction, gravity-bound world that had a large sense of space. Mario Galaxy can be disorienting, with a sense of nothingness all around, and the only thing to pay attention to is the particular small planetoid the character is on. It seems to me that Mario Galaxy lost a lot because players had no ability or chance to map their own a space and engage with it at a level of increasing familiarity. It’s comforting to develop that familiarity. That’s one of the fundamental pleasures of playing the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the future, then, it’s unlikely much will change overall in terms of context and the way that it affects game feel. But note that there are some great opportunities to create better-feeling worlds at the highest level of spatial awareness. With a judicious application of architectural knowledge and a deeper understanding of spatial activity, and flow and balance, there’s a lot to be gained. We’ll be able to really change the way the player feels about a particular space to our expressive benefit."
+    },
+    {
+      "type": "paragraph",
+      "text": "In general, though, the greatest benefit that we can experience is to simply be more aware of how important context is to feel and to be aware that context is the second half of tuning a game. It’s not just the motion of the avatar, but also the position and location, and nature and shape, of the objects that surround that avatar that give it its richness, its interactions, its meaning."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Future of Polish"
+    },
+    {
+      "type": "paragraph",
+      "text": "Polish is currently the massive, weighty bicep of the game industry. As our processing power has increased, and our ability to spend that processing power on increasingly detailed effects that sell the impression of physicality, we’ve gone to a very good place with regards to polish."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, try playing Lost Planet. It’s astounding how tactile and kinesthetic the interactions between the objects begin to feel with so many effects involved in each object, and how they harmonize perfectly. We’ve got artificial effects that sell the nature of the interactions between objects down pat."
+    },
+    {
+      "type": "paragraph",
+      "text": "Even so, graphics and sound have been “blind” a little bit more than necessary to what’s really going on in the player’s mind. As Chris Crawford says, we are spending all our time on speaking and we should be spending the time on having the computer better listen and think. As we move forward into the future of game feel, we may need to pull back a bit from the current level of polish that’s being added to games. For example, if you look at a casual game such as Chuzzle or Peggle, the game is almost entirely made up of “polish elements”: little sprays of particles, little animations of hairs drifting down, things exploding. Every single interaction has this artificial layer of gloss on top of it. And it’s beginning to become rather gaudy,"
+    },
+    {
+      "type": "paragraph",
+      "text": "like Mario Galaxy. It’s as though every single object in the world is just waiting to explode, like it had this stored-up potential energy, and the moment you touch it, it throws up a shower of particles and little star pieces, and all this stuff flies everywhere. But to very little purpose."
+    },
+    {
+      "type": "paragraph",
+      "text": "Too much polish is distracting because it makes it difficult to wrap your brain around the physical sensation being conveyed. Contrast this with things like the little puffs of smoke that come up as Mario slides his feet around. Those are great because they are easy to make sense of. But when every single object sprays stuff everywhere, how does that reconcile with the experience of physical reality?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In contrast, if you look at something like Shadow of the Colossus, it really harmonizes its use of polish effects with its mechanics and the id—the metaphorical idea that it’s trying to convey of these massive objects moving around. Every little effect is intended to support the single impression of physicality; in this case, it’s the massive, massive colossi walking around. So it’s important to think very carefully about what physical sense you’re trying to convey, and to consider whether or not that sense harmonizes with your metaphor and the simulation that you’re running."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the future, as more processing power is devoted to polish effects, they’ll support increasingly advanced simulations, with more potential for excellent game feel. And these polish effects may go overboard but, in general, they will serve to create a better impression of physicality and improve the feel of a game—as long as they are used judiciously."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Future of Metaphor"
+    },
+    {
+      "type": "paragraph",
+      "text": "When we defined metaphor with respect to game feel (in Chapter 10), we broke it down by representation and treatment. It’s what the thing appears to be: its metaphorical representation, and treatment, how the art is executed—and whether it’s very realistic, very iconic or very abstract."
+    },
+    {
+      "type": "paragraph",
+      "text": "We also examined the different ways in which combinations of representation and treatment can affect the expectations that we set up in the mind of the player about how things will behave. We explored how those expectations can be manipulated to our benefit. And we also looked at how the expectations we are setting up can be confounded when they don’t deliver in the mind of the player. In particular, we asserted that games which strive for real-world fidelity set themselves up to fail, because it is extremely difficult to meet expectations based on real-world experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "The example we used was a photorealistic car driving game. Players “step into the car” and immediately load up all their preconceptions about what a car is. They will view every interaction they have with this digital car through the perceptual field of a priori knowledge that they’ve built up about every car they’ve ever driven in, as well as the cars that they’ve seen in film and TV, and cars that they’ve read about, and the way that those objects interact and behave. This is a really significant issue in game design. It’s the uncanny valley of game feel, when the treatment and"
+    },
+    {
+      "type": "paragraph",
+      "text": "representation approach photorealism but the feel of the game, the interaction of the objects, the way that they behave are nowhere close to that level of representation. Obviously, this is a huge pitfall to be avoided."
+    },
+    {
+      "type": "paragraph",
+      "text": "For metaphor to evolve, we need to explore the areas that are in the realm of the iconic and the abstract. And we see this happening already, especially in the indie games movement with games like Everyday Shooter, Pixel Junk Eden and Flower. All of these games—like Katamari Damacy—favor surrealism and eschew the notion that something has to be representative of the real world to be meaningful, to have interesting interactions and to give rise to great game feel."
+    },
+    {
+      "type": "paragraph",
+      "text": "The idea is to think of iconic or abstract games in terms not only of changing representation, but in terms of metaphor. What do we play as? Why do we always have to play as a character? Or why do we always have to play as cars, or things that fly, or bikes, or objects that we pilot already in the real world?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Why can’t we pilot a giant cat bus with 20 legs that ferries bizarre rabbit-like creatures from place to place? Or why can’t we play as fear and investigate what would that mean? What if you made a game where you played as fear and then somehow had tactile interactions with characters and an environment, or something like that? What would a physical tactile interaction be for a conceptual idea like that be? Or what if you played as a disease or a germ, and your gameplay goal was to approach different vectors of infection? The future is wide open for an acceleration of the extremely positive trend of choosing bizarre metaphorical representation for what it is you control and exploring the physics of a surreal world, even at the level of tactile interactions. We might see a group of bizarre polygonal birds that fly around and attack giant, amorphous ships in a bizarre grey cloud environment or abstract vector objects that swoop and soar like biplanes. Or controlling just a fluid or a giant worm that crawls through the ground."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whatever it is, the clear direction is toward metaphorical representation with non-realistic constructs and mechanics. This is a hugely positive thing. One of the greatest possible tools for game design is role shifting, where even if you have a fairly mundane setup idea for a game, just simply switching what you play as can entirely change the notion of what the game is, and can unlock new and interesting areas of gameplay that we’ve never considered."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, when students enroll in my entry-level Game Playing Game Design Class at the Art Institute of Phoenix, one of their first assignments is to make a board game with three unique goals. And invariably, one of the first games that comes back is an orcs versus elves game with little characters that move across square tiles, have hit points and attack points and so on. And they capture castles, perhaps, and move across the field."
+    },
+    {
+      "type": "paragraph",
+      "text": "The immediate question for them is, “What if, instead of playing as the orcs and the elves, you played as the castle?” They have to consider how the castle would feel about all of this capturing, and what if the castle’s goal was just to be built up as large as possible and didn’t really care about which army was containing it? So it might breach its own wall to let an invading army in if it thought that army had more money to build its parapets higher. Pushing this notion a bit further, what if"
+    },
+    {
+      "type": "paragraph",
+      "text": "you played as a little gopher trying to build its home in the center of the field where all these fantasy creatures were battling? Or what if you played as the weather, and your objective was just to beat down all artificially constructed structures and to end the conflict by making everyone so miserable and wet and cold that they’d never want to fight again?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The idea is just to take a critical and creative eye to the notion of metaphor. Shift what the player plays as and, therefore, develop new areas of gameplay. With respect to game feel, we’re still going to be representing some sort of physical tactile interaction. But now we have this window on a world that is potentially unbounded by the natural physical laws as we understand them."
+    },
+    {
+      "type": "paragraph",
+      "text": "If we can distill to its essence the language of physical interaction that we as humans latch onto, and then re-contextualize it into something purely abstract and fascinating, then we’ll be going in the right direction."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Future of Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rules are perhaps the most explored area of game design, going back thousands of years across all of human culture. A board game constructed out of physical components is given meaning purely and only by the rules that govern the interactions of those components. That’s where the play comes from. For example, there’s Go, from ancient China; the Egyptian game Senate, which is 5,000 years old; Mancala, from Africa; chess, from India and Persia via Southern Europe; and countless others. All these different games rely purely on rules and their exploration."
+    },
+    {
+      "type": "paragraph",
+      "text": "We also have a relatively large body of literature, things like Johan Huinzinga’s Homo Ludens which does a fantastic job of exploring the nature of rules. There is even a book, Rules of Play by Eric Zimmerman and Katie Salen, which does a fantastic job of applying the lessons of the development of traditional game rules to digital video game design. What this book adds to the literature is the taxonomy of categorizing rules into three levels. To recap:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "High-level rules give a certain meaning to a specific object in a game and make it seem more desirable or less desirable.",
+        "Medium-level rules give immediate special meaning to a particular action, defining feel in the same way the spacing of objects in the environment changes it.",
+        "Low-level rules can define feel in terms of physical properties like mass and toughness through things like the number of hits it takes to destroy an enemy."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If we consider the interactions between these three levels, there are plenty of places that game developers today haven’t really explored."
+    },
+    {
+      "type": "paragraph",
+      "text": "This comes into really clear relief with a game like Castlevania: Dawn of Sorrow for the DS. By virtue of its immaculately constructed rules, Dawn of Sorrow transcends its genre and becomes something quite beautiful and original. It’s a"
+    },
+    {
+      "type": "paragraph",
+      "text": "really wonderful game. Every single enemy in the entire game represents a potential power-up, and an elaborate reward schedule ensures you have to kill every enemy a certain number of times in order to get the drop of their soul, which you can then equip, making it an ability. Every single creature in the game you fight, or that you interact with, has the potential to become a new ability. And it’s a great excitement when you encounter a new creature, because you realize that if you kill it 20 times in a row, maybe it’ll drop its soul and you can equip that like a weapon. Potentially this could be some great ability that you’ll use to improve your abilities throughout the rest of the game. The rules of the game enable your interactions to become more pleasurable throughout the rest of the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "When designing video games, we often get carried away by the beautiful expressiveness of the game itself. We get so excited by the fact that we can drive things around or steer them around and manipulate them, and that physical, tactile level (low-level rules), that we lose sight of one of our greatest potential assets, which is assigning meaning to things in a game (the medium- and high-level rules). It’s important not to overlook the careful construction of elaborate but arbitrary relationships between objects and the rules that harmonize and apply the game metaphor."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, in any of the Zelda games, whenever a player gets the Hookshot, it’s always very exciting. Winning certain items drives up the level of excitement because the items upgrade, change and improve the player’s abilities to interact with that world."
+    },
+    {
+      "type": "paragraph",
+      "text": "Going forward, we need to think more about the ways we can change the meaning of spatial relationships between objects by altering the abstract relationships between those objects at all levels."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, games like Gravitation and Passage by Jason Rohrer and The Marriage by Rod Humble indicate a fascinating possible direction. These games move away from challenge and trying to create emotions of triumph and enjoyment and collection, and so on. Instead, they use rules to develop very deep and meaningful statements and about the human condition. Rohrer and Humble are finding a level of expressivity that no one thought was possible in video games. And so I think that that’s a very beautiful and very fascinating direction that we can explore with respect to rules."
+    },
+    {
+      "type": "paragraph",
+      "text": "As an aside, it’s interesting to note that all three of these games incorporate spatial interaction as part of their rules. When one character interacts with another, there’s a huge amount of conceptual meaning assigned to that interaction. And it’s a very different type of conceptual meaning than “collecting a hundred coins gives me a star, which gives me access to new areas of the castle.” It’s a much deeper, more thoughtful, more nuanced and emotionally satisfying type of relationship."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the future, it’s going to become increasingly important to think about the ways in which we can manipulate the arbitrary relationships between abstract variables and expand the range of expression and connection possible in games."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "As an art form, video games have the potential to be the ultimate blending of creativity and technology to engage, entertain, stimulate, teach and touch our emotions in a uniquely participatory way. And without good game feel, the participatory nature of games is severely compromised. Fortunately, there are many fruitful avenues for improving game feel, such as:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Input devices with better rumble motors, better positional sensing and better-feeling physical construction. Future generations of input devices will lend a better, if not revolutionary, feel to the virtual objects they control.",
+        "Game responsiveness that simulates complex phenomena such as fluids, gasses or flocks of birds. Even using more traditional simulations of Newtonian physics, there are huge opportunities to control objects in novel ways or to build fascinating, complex objects out of simulated components such as springs and weights. Simulating muscles rather than simulating arbitrary forces is just one of the galaxy of possibilities that have yet to be explored in depth. Response is the area of greatest potential for improving game feel.",
+        "More attention to context, which has less potential for improving game feel, but nevertheless presents opportunities to create better-feeling worlds at the highest level of spatial awareness. With a judicious application of architectural knowledge and a deeper understanding of spatial activity, flow and balance, we’ll be able to really change the way the player feels about a particular space to our expressive benefit.",
+        "The judicious use of polish effects, which will support increasingly advanced simulations as the available processing power increases, with more potential for excellent game feel.",
+        "The controlling metaphors for games can be exploited in massively creative new ways to develop undreamt-of areas of gameplay. Games provide a window on a world that is potentially unbounded by the natural physical laws as we understand them. If we can distill to its essence the language of physical interaction that we as humans latch onto, and then re-contextualize it into something purely abstract and fascinating, then we’ll be going in the right direction.",
+        "More emphasis on how we use rules to manipulate the arbitrary relationships between abstract variables will expand the range of expression and connection possible in games."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The future of game feel is obviously a subset of the future of games. And the future is wide open and exciting. Not only is the technology continuing to evolve, but so are the creative disciplines that make good games possible. We are developing a body of re-usable knowledge about how different aspects of games work and how they can evolve. This book is a small attempt to add to that knowledge. The sooner we stop re-inventing wheels, the faster we move games to the next level."
+    }
+  ]
+}

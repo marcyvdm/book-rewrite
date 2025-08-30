@@ -4,12 +4,10 @@
 
 ```mermaid
 graph TD
-    A[Start: /process-book command] --> B[Parse Arguments & Validate PDF]
+    A[Start: /process-book command] --> B[Parse Arguments & Load JSON]
     B --> C[Initialize Output Directory]
-    C --> D[Extract PDF Content]
-    D --> E[Analyze Author Voice]
-    E --> F[Extract Chapters]
-    F --> G[Process Chapters in Parallel]
+    C --> E[Analyze Author Voice]
+    E --> G[Process Chapters in Parallel]
     G --> H[Enhance Paragraphs]
     H --> I[Create Mappings]
     I --> J[Validate Quality]
@@ -18,8 +16,7 @@ graph TD
     L --> M[End: ProcessedBook Complete]
     
     %% Error Handling
-    B --> N[Error: Invalid PDF/Args]
-    D --> O[Error: PDF Extraction Failed]
+    B --> N[Error: Invalid JSON/Args]
     E --> P[Error: Voice Analysis Failed]
     
     %% Parallel Processing
@@ -40,15 +37,13 @@ graph TD
 | Step | Agent | Input | Output | Time Est. |
 |------|-------|-------|--------|-----------|
 | Parse Arguments | Main | CLI args | Validated config | 1s |
-| Validate PDF | Main | PDF path | PDF metadata | 5s |
+| Load JSON | Main | JSON path | Chapter data | 2s |
 | Initialize Output | Main | Config | Directory structure | 2s |
 
-### Phase 2: Content Extraction
+### Phase 2: Voice Analysis
 | Step | Agent | Input | Output | Time Est. |
 |------|-------|-------|--------|-----------|
-| Extract PDF Content | pdf-extractor | PDF file | Raw text, images, structure | 30-120s |
-| Analyze Author Voice | voice-analyzer | Raw text sample | VoiceAnalysis object | 60-180s |
-| Extract Chapters | chapter-master | Raw text, TOC | Chapter boundaries | 15-45s |
+| Analyze Author Voice | voice-analyzer | Chapter text samples | VoiceAnalysis object | 60-180s |
 
 ### Phase 3: Parallel Processing
 | Step | Agent | Input | Output | Time Est. |
@@ -75,12 +70,10 @@ graph TD
 ### Command Arguments
 ```yaml
 required:
-  - pdf_path: string
+  - json_path: string
 
 optional:
-  - max_pages: number (default: all)
   - chapters: string (comma-separated, default: all)
-  - skip_images: boolean (default: false)
   - output_dir: string (default: ./processed-books)
   - parallel_chapters: number (default: 3)
   - voice_sample_size: number (default: 5000 words)
@@ -103,7 +96,7 @@ actions_on_failure:
 ### Agent Dependencies
 ```yaml
 sequential_phases:
-  - [pdf-extraction, voice-analysis, chapter-extraction]
+  - [json-loading, voice-analysis]
   - [chapter-processing-parallel]
   - [paragraph-enhancement]
   - [mapping-validation]
