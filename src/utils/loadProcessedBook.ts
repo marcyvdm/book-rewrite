@@ -69,10 +69,4 @@ function isValidProcessedBook(book: any): book is ProcessedBook {
   );
 }
 
-// Auto-load Game Feel book on import for development
-if (typeof window !== 'undefined') {
-  // Only run in browser environment
-  setTimeout(() => {
-    loadGameFeelBook().catch(console.error);
-  }, 1000);
-}
+// Auto-load functionality moved to enhancedChapterLoader.ts

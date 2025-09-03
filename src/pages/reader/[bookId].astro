@@ -1,16 +1,24 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import BookReader from '../../components/reader/BookReader';
+import EnhancedBookReader from '../../components/reader/EnhancedBookReader';
 
 export async function getStaticPaths() {
-  // This will be populated when we have actual books
-  // For now, return empty array for development
-  return [];
+  // Return paths for our enhanced chapters
+  return [
+    { params: { bookId: 'game-feel' } },
+    { params: { bookId: 'chapter-01' } },
+    { params: { bookId: 'chapter-04' } }
+  ];
 }
 
 const { bookId } = Astro.params;
+
+// Map bookId to chapter if it's a specific chapter
+const chapterId = bookId === 'chapter-01' ? 'chapter-01' : 
+                  bookId === 'chapter-04' ? 'chapter-04' : 
+                  undefined;
 ---
 
-<Layout title="Reading">
-  <BookReader bookId={bookId} client:load />
+<Layout title={`Reading ${bookId === 'game-feel' ? 'Game Feel' : `Chapter ${bookId.split('-')[1]}`}`}>
+  <EnhancedBookReader chapterId={chapterId} client:load />
 </Layout>

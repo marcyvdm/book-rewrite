@@ -19,7 +19,7 @@ export function ParagraphRenderer({
 }: ParagraphRendererProps) {
   const { toggleOriginal, preferences } = useBookStore();
   const [tapCount, setTapCount] = useState(0);
-  const tapTimeoutRef = useRef<NodeJS.Timeout>();
+  const tapTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleTap = (event: React.TouchEvent | React.MouseEvent) => {
     event.preventDefault();
