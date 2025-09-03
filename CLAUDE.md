@@ -1,124 +1,129 @@
 # Claude Code Instructions
 
-## Workflow Synchronization Protocol
+## Book Rewriting Project - Game Feel
 
-When the `process-book-workflow.md` is modified, follow these steps to keep all agents and commands in sync:
+This project focuses on enhancing and condensing "Game Feel: A Game Designer's Guide to Virtual Sensation" by Steve Swink while preserving the author's unique voice and pedagogical approach.
 
-### 1. Workflow Change Detection
-- **Always check** `process-book-workflow.md` before modifying any process-book related files
-- **Compare current implementation** with the workflow document to identify discrepancies
-- **Prioritize the workflow document** as the single source of truth
+## Project Structure
 
-### 2. Agent Update Procedure
-
-When workflow changes are detected, update agents in this order:
-
-#### Step 1: Update Main Command
-```bash
-# File: .claude/commands/process-book.md
-# Update based on: "Phase Definitions" and "Agent Dependencies" sections
-# Ensure agent launch sequence matches workflow dependencies
+### Data Files
+```
+game-feel/
+├── metadata.json          # Complete voice profile and preservation rules
+├── chapter_01.json        # Introduction chapter in structured format
+├── chapter_02.json        # Chapter 2 content (repeat for all chapters)
+└── images/               # All book images (16.png, 21.png, etc.)
 ```
 
-#### Step 2: Update Individual Agents
-For each agent mentioned in the workflow, check and update:
-
-```bash
-# Core Processing Agents:
-.claude/agents/voice-analyzer.md        # Phase 2: Voice Analysis
-.claude/agents/chapter-master.md        # Phase 2: Chapter Extraction  
-.claude/agents/chapter-processor.md     # Phase 3: Parallel Processing
-.claude/agents/paragraph-rewriter.md    # Phase 4: Enhancement
-.claude/agents/mapping-validator.md     # Phase 4: Quality Validation
-.claude/agents/refinement-analyzer.md   # Phase 5: Selective Refinement
+### Agent System
+```
+.claude/
+└── agents/
+    └── chapter-enhancer.md  # Single comprehensive agent for chapter processing
 ```
 
-#### Step 3: Verify Input/Output Contracts
-- Check that each agent's expected inputs match the workflow's "Input" column
-- Verify that each agent's outputs match the workflow's "Output" column
-- Update agent prompts if input/output specifications have changed
+## Chapter Enhancement Workflow
 
-#### Step 4: Update Time Estimates
-- Use workflow "Time Est." column to set realistic timeout expectations
-- Update any progress reporting to reflect new timing estimates
-- Adjust parallel processing limits based on updated estimates
+### 1. Input Requirements
+To process a chapter, the agent needs:
+- **metadata.json**: Voice profile, style guidelines, preservation rules
+- **chapter_XX.json**: Original chapter content with paragraphs, headings, images
+- **images/**: Referenced images for the chapter
 
-### 3. Configuration Sync
+### 2. Processing Goals
+- **30% length reduction** while preserving all core concepts
+- **Voice preservation**: Maintain Steve Swink's conversational yet professional tone
+- **Traceability**: Complete mapping between original and enhanced paragraphs
+- **Quality assurance**: Preserve all "never reduce" elements
 
-#### Command Arguments
-```bash
-# Sync CLI argument parsing with workflow "Configuration Options"
-# File: .claude/commands/process-book.md
-# Ensure all optional parameters from workflow are supported
+### 3. Key Preservation Rules
+
+#### MUST PRESERVE (Never Reduce):
+- The Three Building Blocks of Game Feel definition
+- The Six Metrics (Input, Response, Context, Polish, Metaphor, Rules)
+- Step-by-step deconstructions in case studies
+- The seven principles of game feel
+- Core metaphors (game feel as physical sensation, design as tuning)
+- Playable example references and instructions
+
+#### SAFE TO CONDENSE:
+- Extended historical context (keep relevance, reduce detail)
+- Multiple examples making the same point (keep best 1-2)
+- Biographical details not directly related to points
+- Repetitive explanations (consolidate pedagogically)
+
+## Voice Profile Summary
+
+### Steve Swink's Writing Style
+- **Signature phrases**: "What's interesting is that...", "The question is..."
+- **Tone shifts**: Academic for definitions, conversational for stories, instructional for examples
+- **Engagement**: Direct reader address with "you," "we," and "I"
+- **Structure**: Examples → theory (inductive reasoning)
+- **Conclusions**: Clear, punchy endings after complex explanations
+
+### Chapter-Specific Guidelines
+
+#### Introduction/Definition Chapters (1-5)
+- Preserve all foundational definitions
+- Maintain inductive flow (examples → theory)
+- Keep personal anecdotes for relatability
+
+#### Metrics Chapters (6-11)
+- Preserve all metric definitions
+- Keep at least one concrete example per metric
+- Consolidate similar examples
+
+#### Case Study Chapters (12-16)
+- Never reduce step-by-step analysis
+- Keep all parameter values and relationships
+- May condense historical context
+
+#### Principles Chapter (17)
+- Preserve all seven principles
+- Keep synthesis of earlier concepts
+- Ensure actionable takeaways
+
+## Output Format
+
+The enhanced chapter should include:
+```json
+{
+  "chapter_metadata": {
+    "chapter_number": 1,
+    "title": "Introduction",
+    "reduction_percentage": 30,
+    "preserved_elements": ["core_thesis", "three_building_blocks"],
+    "voice_consistency_score": 0.95
+  },
+  "enhanced_content": [...],
+  "mapping_summary": {...},
+  "quality_checks": {...}
+}
 ```
 
-#### Quality Gates
-```bash
-# Sync quality thresholds with workflow "Quality Gates" section
-# Files to update:
-# - .claude/agents/mapping-validator.md
-# - .claude/context/core/quality-standards.md
-```
+## Quality Validation Checklist
 
-#### Parallel Processing Rules
-```bash
-# Sync parallelization settings with workflow "Agent Dependencies"
-# Update task scheduling logic in main command
-```
+- [ ] Core thesis preserved and clear
+- [ ] All "never reduce" elements intact
+- [ ] 25-35% reduction achieved
+- [ ] Steve Swink's voice maintained
+- [ ] Paragraph mappings complete
+- [ ] Images properly referenced
+- [ ] Learning objectives achievable
+- [ ] Technical terms consistent
+- [ ] Logical flow maintained
 
-### 4. Testing Protocol
+## Usage Instructions
 
-After any workflow changes:
-
-1. **Dry Run Test**: Process a small test file (--max-pages 5)
-2. **Timing Validation**: Verify actual times are within workflow estimates
-3. **Quality Gate Test**: Ensure quality thresholds are properly enforced
-4. **Agent Communication Test**: Verify all input/output contracts work correctly
-
-### 5. Change Documentation
-
-When making workflow changes:
-
-1. **Update this file** if new synchronization steps are needed
-2. **Document the reason** for workflow changes in git commit messages
-3. **Test thoroughly** before committing changes
-4. **Update README.md** if user-facing behavior changes
-
-## Quick Sync Command
-
-Use this checklist when updating after workflow changes:
-
-```markdown
-- [ ] Read latest process-book-workflow.md
-- [ ] Update .claude/commands/process-book.md
-- [ ] Update all agent files listed in workflow
-- [ ] Verify input/output contracts match
-- [ ] Update time estimates and timeouts
-- [ ] Sync configuration options
-- [ ] Sync quality gates and thresholds
-- [ ] Test with small sample file
-- [ ] Update user documentation if needed
-```
-
-## Automated Sync Commands
-
-When possible, use these commands to maintain consistency:
-
-```bash
-# Validate workflow compliance
-/check-workflow-sync
-
-# Update all agents from workflow
-/sync-agents-to-workflow
-
-# Test workflow with sample file
-/test-workflow "sample.pdf" --max-pages 3
-```
+1. **Load the agent prompt**: Use `.claude/agents/chapter-enhancer.md`
+2. **Provide input files**: metadata.json, chapter_XX.json, and images
+3. **Run enhancement**: Agent will process and return enhanced chapter with mappings
+4. **Validate output**: Check quality metrics and preservation rules
+5. **Review mappings**: Ensure traceability between original and enhanced content
 
 ## Important Notes
 
-- **Never modify agents without checking the workflow first**
-- **Always update the workflow document before implementing changes**
-- **Keep timing estimates realistic based on actual performance**
-- **Quality gates are non-negotiable - maintain high standards**
-- **Document any deviations from the workflow with clear reasoning**
+- **Voice is paramount**: Every reduction must preserve Swink's distinctive style
+- **Pedagogy over brevity**: Never sacrifice learning effectiveness for length
+- **Clarity improvements**: Reductions should enhance, not compromise, understanding
+- **Respect expertise**: The author's technical accuracy must be maintained

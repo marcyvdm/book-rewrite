@@ -1,0 +1,238 @@
+{
+  "chapter_title": "Context Metrics",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Context is a catchall term for the effect of simulated space on game feel. Simulated space is comprised of collision code, which defines how objects interact physically, and level design, the physical layout of space. Together, they give meaning to real-time control, providing a physical space for the player to perceive actively via the avatar."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hard metrics are difficult to apply to the way that space redefines sensations of control because context is so bound up with the player’s subjective impressions, which are difficult to graph in any meaningful, consistent way. But we can still identify some useful soft metrics. Let’s start at the highest level of context: the impressions of space, speed, motion and size. Then we’ll touch on the feeling of immediate space and object avoidance, which we’ll categorize as medium-level context. Finally, we’ll look at how context affects game feel at the low level of intimate, personal space."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "High-Level Context: The Impression of Space"
+    },
+    {
+      "type": "paragraph",
+      "text": "At the highest level, exploring a game world with an avatar you control will always experience some sense of space. With the freedom to explore and move about as you see fit comes the ability to mentally map a virtual space the same way you map your own physical space. In your mind, fed by the ever-on firehose of perception and against the backdrop of the perceptual field, you’re constantly building and refining a concept of your surroundings. It’s not quite accurate, but not quite not, and it enables you first and foremost to function and cope with your immediate surroundings. If you’re like me, and like most people generally, you have a pretty accurate map of all the streets and points of interest within a mile or three of your home. Now think of a time when you took a trip, when your starting point was shifted to a hotel or a friend’s guest room, somewhere new and unfamiliar. As you start to explore and trace paths, you begin to populate your mental model with landmarks and specifics. Before that, however, there is a period where your whole idea of this new place, your whole mental model, is based on a generalization. A general, but inchoate, spatial awareness. A feel."
+    },
+    {
+      "type": "image",
+      "src": "159.png",
+      "caption": "FIGURE 8.1 Wide open space."
+    },
+    {
+      "type": "paragraph",
+      "text": "This process of spatial learning, from macro to micro, is analogous to what happens when a player begins exploring a game space with an avatar. This is the highest level at which context affects feel: the general sense of space. It’s not possible to measure this in a hard metric, finite numbers kind of way, but it’s certainly possible—and useful—to catalog the general feel conveyed by the overall structure of a space. To illustrate this, let me share a personal experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "Interested in the painterly textures and nursing a nostalgic fondness for Blizzard games, I fired up World of Warcraft. I had no intention of actually playing the game—an unfortunate, hygiene altering experience involving Ultima Online cured me of the MMO bug a long time ago—but I was interested in at least poking around and checking things out. What immediately struck me was the feeling of vast, sprawling openness. There was a sense that this was a world with some interesting and meaningful analogies to the world as I’ve experienced it. Specifically, trudging around felt a bit like hiking up to catch the glorious, breathtaking view from the top of the flatiron of Superstition Mountain, a grueling hike to the east of Phoenix, Arizona, which my friends and I do from time to time (Figure 8.1). From the top, there is no noise but there is plenty of wind. On a clear day you can see for hundreds of miles in every direction. The view is miraculous. Schlepping up to the top of the highest mountain I could find in World of Warcraft somehow felt similar. Here, in game form, was a little virtual taste of how it felt for me to stand at the top of a mountain and stare out."
+    },
+    {
+      "type": "paragraph",
+      "text": "Oblivion, like World of Warcraft, felt open and sprawling. Climbing to the top of something high, I could see for a great distance and, knowing that this was a contiguous world instead of the Potemkin villages you so often see in single player games, it felt like a realm of great possibility. If I saw something far away, I could travel there. Neat. By contrast, the worlds of Counterstrike seem always hemmed in, claustrophobic, and full of endlessly looping, twisting tunnels. Some levels"
+    },
+    {
+      "type": "paragraph",
+      "text": "have open areas, to be sure, but there’s never a sense that anything exists outside a Counterstrike level. As a player, you intuit within the first round of play that those far off buildings and skyboxes are just there for decoration."
+    },
+    {
+      "type": "paragraph",
+      "text": "To frame this concept another way, when the space is large and expansive, it warrants pondering and exploration, encouraging players to look outside the self and think about things like how small and insignificant they are. When it’s tight and constrained, it causes more introspection."
+    },
+    {
+      "type": "paragraph",
+      "text": "With respect to game feel, this can mean the difference between an intense focus on the immediate surroundings and on the sense of exploration and possibility lauded by so many fans of Oblivion. Counterstrike does a great job of harmonizing its tight, twisting environments with other rules and systems that further emphasize the need for intense, all-consuming focus on moving through the immediate, medium-range space efficiently and effectively. Because one shot can kill you and you know that five enemies could be waiting just around the corner, you’re careful, calculating and hyper-aware of every nook and cranny of the environment."
+    },
+    {
+      "type": "paragraph",
+      "text": "Without delving deeply into the notion of space as it is studied and employed by architects, we can at least appreciate the effect of high-level, large-scale construction of game worlds on game feel. Georgia Leigh McGregor, an astute student of the role of architectural concerns in video game design, observes the differences between the architecture of World of Warcraft and The Battle for Middle Earth II:"
+    },
+    {
+      "type": "paragraph",
+      "text": "An initial architectural reading of both video games reveals a dichotomy in the way they portray or produce architecture. … Word of Warcraft privileges architecture as a spatial experience. It is concerned with the ability to move through space, constructing architecture as a series of solids and voids. When we interact with the architecture we are alternately channeled and impeded. … This is a spatial architecture that mimics the ways in which we use architecture as containers for specific purposes in the real world. The architecture has what architects call program, so that Ironforge can be divided into circulation space and activity space. … Conversely BFME II is not concerned with architecture as space.¹"
+    },
+    {
+      "type": "footnote",
+      "text": "¹http://www.scribd.com/doc/268586/Architecture-Space-and-Gameplay"
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of measurement, we can say, as a soft metric, that a space feels mostly open, like a seashore or a large city, or closed and claustrophobic like a subway tunnel or a cave, and to roughly chart the effect of that overarching structure on the feel of a game."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Impressions of Speed and Motion"
+    },
+    {
+      "type": "paragraph",
+      "text": "The other high-level way a game’s feel is affected by context is in the impression of speed of moving objects. Speed in a video game is a purely notional concept. There is no standard unit of measure for the movement of objects in a game. There can’t be. Unlike our reality, where miles per hour means the same thing to a swallow in"
+    },
+    {
+      "type": "paragraph",
+      "text": "Saskatchewan, a bus in Burma or a Maserati in Munich, every game uses fundamentally different units to measure (and tune) the speed of objects. Even in games such as Project Gotham Racing and Gran Turismo, where speed is measured ostensibly in miles per hour, the metric does not correlate across games. The problem lies in relativity. Speed in a video game only has meaning relative to the number, placement and nature of the objects around it. Without at least one object to compare it to, the speed at which something moves in a game has no meaning."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "To illustrate just how powerful this effect is, I created an interactive test of a car, example CH08-1. According to the game, the car moves at 100 miles per hour. The game’s code says simply “when the space bar is pressed, speed = 100 mph.” As long as a camera follows that car at the same speed, the number 100 is meaningless. The speed at which the car moves according to the game’s code has no effect on the impression of speed for the player. However, add an asphalt road texture beneath the car, and the impression of speed springs to life. To experience this, press “2” on the keyboard. Simply put, without a frame of reference there can be no impression of speed. Add in trees and fences, cows and bridges, and the effect is enhanced. Have the field of view of the camera change as the car speeds up and the impression of speed is greater still."
+    },
+    {
+      "type": "paragraph",
+      "text": "So even if we could distill the speed of an object moving in a game to a measure of, say, distance across the screen per second and compare that to the speed of movement in other games, the problem remains that what we’re tracking is the game’s internal model of speed rather than the player’s. What we want to measure is the impression of speed as it exists in the mind of the player. So how do we do that? Again, this is a bit of a soft metric. We can never really know exactly how players perceive speed, only what they will tell us or what we experience ourselves. Thankfully, the impression of speed seems to have very little variability across different players, probably because we spend so much of our time interacting with a world where things move around quickly, and where it’s important that one be able to gauge the movement of those things accurately. Stepping off a curb three seconds earlier or later can mean the difference between a delicious muffin and grisly death, so people are pretty great at judging the speed of moving objects at various distances, especially with respect to their own visually verified point in space. That oncoming bus is getting larger at a certain rate and the sound of its engine is getting louder. The parked cars and lampposts it’s driving past help you verify its size, and the rate at which it’s advancing past them gives you still more data about how fast it’s coming. Other cars driving nearby also give me a frame of reference for speed; if the bus is passing cars left and right, it’s probably going quite fast. All in all, there are dozens of clues that enable me, in an instant, to judge, check and recheck my"
+    },
+    {
+      "type": "paragraph",
+      "text": "concept of the bus’ speed of approach. With that data I can decide whether a delicious muffin is worth the risk or whether it would be best to defer deliciousness for another few minutes."
+    },
+    {
+      "type": "paragraph",
+      "text": "The impression of speed conveyed by a video game offers these same kinds of clues (such as size of objects, their relative motion and changes in sound) to actively fool the audiovisual system into thinking motion is occurring. Depending on the apparent movement of objects across the screen, changes in perspective and field of view and effects such as Doppler shift and screen blurring, that motion will read as fast, slow or somewhere in between. For now, let’s focus on the apparent movement of objects on the screen and changes to perspective. Effects such as Doppler shift and screen blurring are best categorized as polish because they are layered on, and have no direct effect on the simulation."
+    },
+    {
+      "type": "paragraph",
+      "text": "The best way to come to terms with the speed of something in a game is in comparison, again, to real-world objects. Is the impression of speed in the game similar to riding your bike or is it closer to driving on the freeway with the top down? For me, the movement of Daxter in his PSP incarnation seems most like that of a squirrel. The motion is quick; rather than having a very high speed and taking a long time to reach that speed, it is showing quick changes in direction and a quick ramp up to maximum speed, as happens when something very small moves around a small space very rapidly. Loco Roco seems like playing with a bunch of fast-rolling water balloons. All of this comes back to the balance between the speed of movement of the avatar and the nature, size and spacing of the objects in the world that avatar traverses. In this way, context is a second set of knobs for tuning real-time control. Effectively tuning a game’s feel means tweaking a bunch of numbers which govern the resulting movement of the avatar, but it is the placement of the objects around, over and near which that motion that takes place that gives those numbers meaning. To tune, you must have some context to tune against."
+    },
+    {
+      "type": "paragraph",
+      "text": "The other thing that profoundly affects the impression of speed in a game is perspective. Returning to the example of watching a bus from a street corner, imagine instead being in one of the cars driving alongside the bus. How fast does the bus appear to be moving now? And what if you were instead in a news helicopter flying hundreds of feet above the bus? In that case, both the cars and the bus would appear to be positively plodding. Even if the helicopter was in a hover, the distance would make the traffic seem to crawl in the same way that a jet plane seems to amble across the sky when you’re standing on the ground. Perspective changes everything. In the case of a video game, though, there is no real meaning to absolute speed. It doesn’t really matter that the jet is actually moving at 600 miles per hour; there is only the player’s impression of speed. From the point of view of a game designer, this is great news. We can easily change the distance from which objects are viewed, the size of objects and the speeds at which they move relative to one another. In addition, we can change the angle view of the camera. Wikipedia defines angle of view (perspective) as “As an effect, some first person games, especially racing games, widen the angle of view beyond 90º to exaggerate the distance the player is travelling, thus exaggerating the player’s perceived speed. This effect"
+    },
+    {
+      "type": "paragraph",
+      "text": "can be done progressively or upon the activation of some sort of ‘turbo boost.’ An interesting visual effect in itself, it also provides a way for game developers to suggest speeds faster than the game engine or computer hardware is capable of displaying. Some examples include Burnout 3: Takedown and Grand Theft Auto: San Andreas.”"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Impression of Size"
+    },
+    {
+      "type": "paragraph",
+      "text": "An extension of the impression of speed is the impression of size conveyed by the impression of speed. In other words, the size of an object and its motion have a relationship which can be used reciprocally to create an impression of slow speed or of massive size. In the game Shadow of the Colossus, for example, the colossi appear to move very slowly. When you watch a commercial airliner amble its way across the sky, the same phenomenon is at work. It is in fact moving 600 miles per hour, but the distance from which you are seeing it reduces the impression of speed to a crawl. As the hero approaches the colossi, however, it becomes apparent that they’re not slow-moving; they’re simply huge. The impression is created not only by the added frame of reference of the character being suddenly near the colossus’ foot, but by the colossus’ hefty, plodding movement. The interesting part is that it’s the contrast between being very close to the colossus or very far away from it that conveys the impression of massive motion. The little avatar moves closer to the colossus over time, giving a fluid set of data points with which to form and inform a detailed concept of the mass and heft of the colossus based on its movement. The game also does some neat things with perspective, constantly looking along a vector from the character to the colossi, effectively guaranteeing that the colossi will always seem to be towering above you and bending the view angle nicely wide in order to exaggerate the impression of distance. The effect is such that the closer the player gets to a colossus, the larger it will seem and the greater the distance covered by its expansive motions. The sounds, particle effects, screen shake and other polish sell the notion of largeness, but it is the impression of speed which truly lends the colossi their impression of mass and size."
+    },
+    {
+      "type": "paragraph",
+      "text": "To see what happens when such an attempt at impression of size goes wrong, check out the bosses in the games Serious Sam and Painkiller. Both these bosses were similar in size to the colossi, if not larger, at least, judging by the relative speed of the avatar. Both of these games had the sounds, particle effects, screen shake and other polish necessary to sell the notion of largeness, but the impression of speed was lacking the requisite context to be effectively established. The motion was wrong. Even when you got close to them, the impression was not one of a massive, hulking beast. Rather, the impression was that a small creature had somehow been enlarged, but had retained all of its physical properties. That is, physics were the same for it at the size of a skyscraper as they were at the size of a dachshund. The speed of the animation playback was paramount. The colossi moved very slowly when you were far away from them but appeared to move appropriately quickly"
+    },
+    {
+      "type": "paragraph",
+      "text": "when your frame of reference was changed to a closer aspect. The bosses in Serious Sam and Painkiller appeared to move quite quickly, even from a distance, thus destroying the intended effect of the impression of size."
+    },
+    {
+      "type": "paragraph",
+      "text": "So that’s one great example of how the speed of movement of objects by providing context for one another can effectively sell the size, mass and weight of an object. The sounds and particles and screen shake also speak to those properties, but in this instance the sensation was really sold by the context of one moving object relative to another."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is the same essential principle that applies to the apparently slow motion of Zangief relative to Chun Li in Street Fighter II. Zangief’s motion seems ponderously slow relative to the motion of Chun Li. His movement would probably seem somewhat slow by itself, but with the added frame of reference of twitterbug Chun Li, the effect is enhanced considerably. To contrast that, imagine an alternate universe Street Fighter II where Zangief is the fastest character. Relative to those dullards, his motion would seem zippy fast."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Medium-Level Context"
+    },
+    {
+      "type": "paragraph",
+      "text": "The medium level of context refers to the feeling of immediate space and object avoidance. At this level, changes in context can mean the difference between sensations similar to pushing through a crowded party, wandering an empty street or a playing in a basketball game. It’s not space at the low level—intimate and interpersonal—and it’s not the sensation of openness you get from walking along a beach. It’s the layer where, with respect to game feel, context is the “second set of knobs” for game feel tuning. The first set of knobs is in the programmed response to input; you tune the speed of motion of the character in absolute terms relative to the game. For example, the character moves at 90 meters per second forward and can turn somewhere between 0.1 and 5 degrees per second. None of these numbers has any meaning, as we’ve said, unless they’re related to spatial context. In order for the forward speed of a car in a racing game to have meaning relative to how fast it can turn left and right, it must have a track. You have to have a track laid out that has curves of a certain sharpness and that includes objects and obstacles to avoid. It is at the intersection between the tuning of the individual response to input numbers and the spacing of the objects in the environment that the feel of a game gets primarily tuned."
+    },
+    {
+      "type": "paragraph",
+      "text": "So this mid-level of context is about steering and object avoidance, about navigating an interesting spatial topology with enjoyable precision and deftness. In order to compare the avoidance mid-level feel between games, what we need to examine is:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The number of objects",
+        "The size of the objects",
+        "The nature of the objects"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "165.png",
+      "caption": "FIGURE 8.2 Different configurations and types of space yield a different feel relative to the controlled movement of the avatar."
+    },
+    {
+      "type": "list",
+      "items": [
+        "The layout of objects",
+        "The distance between objects"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Across multiple games, we can compare how far apart objects are spaced relative to the speed and motion of the avatar and can examine how this changes game feel (Figure 8.2). A great example comes again from World of Warcraft. Moving through WoW, I began to experience highway hypnosis. Highway hypnosis happens when, while driving, you begin to zone out, and are to be lulled into a somnambulant state by the flowing uninterestingness of it all. You’re sort of flying across the land and your mind begins to expand in all directions, and you have this sort of powerful alpha brain wave truncation of time. Before you know it you’ve driven 200 miles and are suddenly nagged by the distinct feeling that yes, perhaps I should have been paying more attention those last three hours. My driving instructor in high school told us that 20-something percent of all accidents in some place during some time period were caused by this. For me, it tends to happen when I’m driving cross country. Traversing the landscape of WoW felt for all intents and purposes like driving the long stretch of straight, level freeway between Los Angeles and San Jose."
+    },
+    {
+      "type": "image",
+      "src": "166.png",
+      "caption": "FIGURE 8.3 WoW-highway-hypnosis."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because the objects in World of Warcraft are spaced so far apart relative to the speed of movement of the avatar, and because the movement of the avatar across that terrain often has no gameplay function, running across this environment started to lull me into the same zoned out state (Figure 8.3)."
+    },
+    {
+      "type": "paragraph",
+      "text": "In contrast, playing Vanishing Point is like another section of the route between San Jose and Los Angeles. After hours of mindless driving on Route 5, you arrive at Pacheco Pass. The contrast is striking. In Pacheco Pass, the wind blows right off the adjacent waters of Lexington Reservoir, buffeting your car and threatening to uncouple it from its reassuring grip on the road. The road twists at dismayingly car-commercial-like angles, and there’s invariably some idiot who seems determined to get his Jetta’s worth by driving the section at speeds he’s witnessed in such a commercial. Playing Vanishing Point is like being the idiot in the Jetta. It’s an insidiously difficult racing game from the Dreamcast era, with the most twitchy, difficult controls. The game tasked you with accomplishing the most horrendous and knuckle-whitening missions using those controls."
+    },
+    {
+      "type": "paragraph",
+      "text": "These two extremes, WoW and Vanishing Point, are two points on the scale of mid-level spacing. This is the primary dimension in which it’s possible to create challenge. Along the gamut from WoW to Vanishing Point, you can have objects spaced farther apart or closer together. In tweaking that relationship, you also increase the challenge of navigating that space. So the alteration of the spatial context in which an avatar moves is one of the primary vehicles with which it is possible to change challenge. Again, to measure at this level, we’re interested in the spacing of objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Low-Level Context"
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, context affects game feel at the low level of intimate, personal space, at the level of tactile interaction between objects. At this level, what we’re interested in examining is collision. Now, the maths involved in collision detection and response is a little bit scary. At least, it is me (being a lowly brain-dead"
+    },
+    {
+      "type": "paragraph",
+      "text": "game designer). Regardless, there are several excellent books and online resources dealing with different kinds of collision and how to implement them. For our purposes, we want to compare different ways it is possible to model collision and the resulting feel is to simply draw comparisons to the interactions of physical objects in our everyday lives. Again, this is something of a soft metric and requires some conceptual leaps in terms of metaphorical relationships between objects moving in a game and objects moving in the real world. But the analogies are usually sound, and this is a useful tool for categorization and comparison."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, most racing games subscribe to the “waterslide” method of collision and response. The reason is that it really sucks if you’re playing a driving game which requires a lot of precision and the car reacts like it’s coated in glue when it comes into contact with another object. Or, you know, do something akin to what it would do if you were to scrape a real car against a barrier at 200 miles per hour. Instead of this quagmire, most modern racing games use collision schemes which essentially feel like a waterslide. There’s almost no friction at all when the cars run into something. When you bang into a barrier, instead of crumpling or exploding, the car ricochets off and keeps on going. This is a very different feel from a collision system with a huge amount of friction, where if a car runs into a wall it might roll or get stuck or crumple sideways."
+    },
+    {
+      "type": "paragraph",
+      "text": "So essentially what we can do is look at the feel of collisions between objects in a game and compare them to the feel of everyday things and so to one another. For example, the collisions in Loco Roco feel like a big bowl of Jell-o or a bunch of water balloons banging into one another. It feels very soft, very jiggly, very spring-loaded. Very different from Gran Turismo, which has a very solid feeling to its collisions. It’s a rigid, unyielding solidity, and an interesting comparison can be drawn between the crisp smooth solidity of the collisions in Gran Turismo versus the dirty, broken, mushy collisions in Burnout Revenge. In Burnout, they still employ the waterslide model at some level, but they’re doing some rather sophisticated damage modeling. This causes the car to compress and mush up even if there’s nearly zero friction applied to the collision so the car can continue driving apace."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a final example, consider the low-level feel of World of Warcraft. While the high-level feel of WoW was open and boundless, it felt barren and empty. It was tactilely sterile. When I climb Superstition, I can reach down and feel the rocks beneath my hands. Indeed, doing so is mandatory—to make it to the top requires a short section of light rock climbing. In WoW, I never really interacted with anything. It felt very sterile. There was no reason to pay attention to what was nearby or whether I was running into a building, running through a desert or running off a cliff. The collisions felt smooth but dead in the sense that there was no energy coming back out of them. You can’t smack into something and rebound or indeed see any interesting interaction. It’s a bit like playing only with Nerf toys. Everything is soft and mushy and safe to play with indoors. You’re never going to put your eye out with them."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Context metrics can be categorized into three different levels:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "High-level context—The impression of space, speed and motion inherent in the overall conception of the game world",
+        "Medium-level context—The immediate space around a character and how the character interacts with objects moving through that space, for example, object avoidance",
+        "Low-level context—The intimate, tactile, personal interaction between objects"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "At each of these levels, we identified soft metrics that, while not strictly quantifiable because of the subjectivity impressions of each individual player that must be taken into account, are nevertheless useful in game design. At the high level, our metric is the general sense of space, speed and motion as it relates to the player and the effectiveness of the game world. At the medium level, our metric is the spacing of objects. And at the low-level, our metric is how objects collide, and how these collisions feel compared to everyday objects in the real world."
+    }
+  ]
+}

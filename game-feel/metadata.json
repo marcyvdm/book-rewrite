@@ -1,0 +1,715 @@
+{
+  "book_metadata": {
+    "title": "Game Feel: A Game Designer's Guide to Virtual Sensation",
+    "author": "Steve Swink",
+    "genre": "Technical (Game Design)",
+    "target_reduction": 30,
+    "metadata_version": "1.1",
+    "last_updated": "2023-10-27"
+  },
+  "voice_style": {
+    "linguistic_fingerprint": {
+      "signature_phrases": [
+        {
+          "phrase": "What's interesting is that...",
+          "frequency": "frequent",
+          "weight": 0.7,
+          "chapters_heavy_use": [
+            7,
+            12,
+            15,
+            17
+          ],
+          "chapters_light_use": [
+            1,
+            5,
+            10
+          ],
+          "hint": "Used to introduce a subtle or counterintuitive point after laying groundwork."
+        },
+        {
+          "phrase": "The question is...",
+          "frequency": "occasional",
+          "weight": 0.8,
+          "chapters_heavy_use": [
+            1,
+            4,
+            17
+          ],
+          "chapters_light_use": [
+            5,
+            10
+          ],
+          "hint": "Used as a major transition to frame the next section's core problem."
+        }
+      ],
+      "coined_terms": {
+        "Game Feel": {
+          "definition": "The tactile, kinesthetic sense of manipulating a virtual object; the sensation of control in a game, arising from real-time control, simulated space, and polish.",
+          "frequency": "frequent",
+          "introduction_chapter": 1,
+          "reinforcement_pattern": "Used consistently and as the central subject throughout the book."
+        },
+        "Virtual Proprioception": {
+          "definition": "An amplified impression of proprioception generated from visual, aural, and tactile feedback in a game, creating a sense of a virtual object's position, size, and weight.",
+          "frequency": "rare",
+          "introduction_chapter": 1,
+          "reinforcement_pattern": "Referred back to when discussing the player's sensory experience."
+        },
+        "Proxied Embodiment": {
+          "definition": "The extension of a player's identity into a game avatar, making it feel like part of one's own body.",
+          "frequency": "rare",
+          "introduction_chapter": 1,
+          "reinforcement_pattern": "Used when discussing player identity and sensory extension."
+        }
+      },
+      "sentence_patterns": {
+        "average_length": "varied",
+        "emphasis_technique": "italics",
+        "complex_sentence_ratio": 30,
+        "rhetorical_questions": {
+          "frequency": "frequently",
+          "purpose": "engagement/transition",
+          "chapter_variations": {
+            "1": "frequently for engagement and framing",
+            "5": "frequently to introduce metrics",
+            "12": "occasionally for analysis"
+          }
+        }
+      },
+      "formality_map": {
+        "default_level": "professional",
+        "context_shifts": [
+          {
+            "context": "definitions_and_models",
+            "formality_range": {
+              "minimum": "professional",
+              "maximum": "academic",
+              "typical": "academic"
+            },
+            "hint": "Chapters 1-3, and definition sections of Chapters 6-11."
+          },
+          {
+            "context": "personal_anecdotes_and_experiences",
+            "formality_range": {
+              "minimum": "casual",
+              "maximum": "conversational",
+              "typical": "conversational"
+            },
+            "hint": "Introduction, personal stories about playing games."
+          },
+          {
+            "context": "playable_examples_and_walkthroughs",
+            "formality_range": {
+              "minimum": "conversational",
+              "maximum": "professional",
+              "typical": "conversational"
+            },
+            "hint": "Direct instructions to the reader."
+          }
+        ]
+      },
+      "transitions": {
+        "characteristic_phrases": [
+          {
+            "phrase": "To sum up,",
+            "frequency_per_chapter": 1,
+            "typical_usage": "Concluding a section before moving to the next concept."
+          },
+          {
+            "phrase": "Now let's look at...",
+            "frequency_per_chapter": 2,
+            "typical_usage": "Transitioning from theory to a specific example or metric."
+          }
+        ],
+        "section_connectors": [
+          "Hierarchical structure: Defines a concept, breaks it into components, analyzes each component, then synthesizes with examples."
+        ]
+      },
+      "pronoun_usage": {
+        "first_person_singular": "frequent",
+        "first_person_plural": "frequent, used to create a shared journey of discovery with the reader ('we can see', 'let's explore').",
+        "second_person": "frequent, used to directly address the reader, especially in thought experiments and instructions for playable examples ('If you're like me', 'Try this').",
+        "perspective_shifts": "Shifts from 'I' (personal experience) to 'we' (shared analysis) to 'you' (direct instruction).",
+        "chapter_overrides": {
+          "12": "Heavy use of 'we' to deconstruct Asteroids together.",
+          "18": "Heavy use of 'I' for presenting personal game ideas."
+        }
+      }
+    },
+    "humor_profile": {
+      "style": "witty",
+      "frequency": "occasional",
+      "tone_indicators": {
+        "maintains_seriousness": true,
+        "humor_type": "playful",
+        "impact_on_message": "lightens"
+      },
+      "placement": [
+        {
+          "location": "asides_and_examples",
+          "frequency": "sometimes"
+        }
+      ],
+      "pedagogical_purpose": true,
+      "sacred_cows": [
+        "Core definitions of metrics",
+        "Discussions of human perception models"
+      ],
+      "exceptions": []
+    },
+    "rhetorical_patterns": {
+      "argumentation": {
+        "primary_style": "inductive",
+        "evidence_flow": "evidence_first",
+        "chapter_variations": {
+          "1": {
+            "style_override": "inductive",
+            "reason": "Building the definition of game feel from shared player experiences."
+          },
+          "17": {
+            "style_override": "deductive",
+            "reason": "Applying the principles established throughout the book."
+          }
+        },
+        "argument_markers": [
+          "What this means is...",
+          "The result is...",
+          "This is because..."
+        ]
+      },
+      "evidence_preferences": {
+        "default_weights": {
+          "academic_research": 20,
+          "case_studies": 50,
+          "personal_anecdotes": 30
+        },
+        "chapter_overrides": {
+          "2": {
+            "case_studies": 10,
+            "academic_research": 80,
+            "personal_anecdotes": 10,
+            "reason": "Focus on human perception and HCI models."
+          },
+          "12": {
+            "case_studies": 90,
+            "academic_research": 0,
+            "personal_anecdotes": 10,
+            "reason": "Deep-dive case study of a single game."
+          }
+        },
+        "citation_style": {
+          "default": "informal",
+          "section_overrides": {
+            "Chapter 2": "semi-formal",
+            "Case study chapters": "informal"
+          }
+        },
+        "data_presentation": "visualized"
+      },
+      "recurring_metaphors": [
+        {
+          "metaphor": "game feel as a physical sensation",
+          "explains": "The core concept of the book",
+          "evolution": {
+            "introduction": "Introduced with real-world analogies like driving (Ch 1)",
+            "development": "Broken down into sensory inputs and processing (Ch 2)",
+            "culmination": "Reconstructed through game-specific parameters (Ch 12-16)"
+          },
+          "chapters": [
+            1,
+            2,
+            5,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "must_preserve": true
+        },
+        {
+          "metaphor": "game design as tuning an instrument",
+          "explains": "The iterative process of adjusting parameters to achieve good feel.",
+          "evolution": {
+            "introduction": "Mentioned when discussing metrics (Ch 5)",
+            "development": "Implicit in all case studies (Ch 12-16)",
+            "culmination": "Becomes the explicit focus of a game idea (Ch 18, 'Tune')"
+          },
+          "chapters": [
+            5,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18
+          ],
+          "must_preserve": true
+        }
+      ]
+    }
+  },
+  "message_preservation": {
+    "core_thesis": {
+      "statement": "Game feel is the crucial, tactile sensation of control that makes games compelling; it is not magic, but a craftable result of the interplay between input, response, context, polish, metaphor, and rules, which can be understood, measured, and designed intentionally.",
+      "evolution": [
+        {
+          "chapter": 1,
+          "focus": "Defining the unknown",
+          "thesis_aspect": "Game feel is a real, definable thing composed of three building blocks."
+        },
+        {
+          "chapter": 5,
+          "focus": "Creating a framework",
+          "thesis_aspect": "Game feel can be measured with a vocabulary of six metrics."
+        },
+        {
+          "chapter": 17,
+          "focus": "Synthesizing principles",
+          "thesis_aspect": "Mastering these metrics leads to universal principles for creating good game feel."
+        }
+      ],
+      "supporting_pillars": [
+        {
+          "pillar": "Game feel is an aesthetic of interaction, distinct from other media.",
+          "importance_weight": 1
+        },
+        {
+          "pillar": "The player's perception, not objective reality, is the target for design.",
+          "importance_weight": 0.9
+        },
+        {
+          "pillar": "Good feel can be deconstructed and reverse-engineered through analysis.",
+          "importance_weight": 0.8
+        }
+      ]
+    },
+    "conceptual_hierarchy": {
+      "foundational": [
+        {
+          "concept": "Three Building Blocks of Game Feel",
+          "definition": "The core components that create the experience: Real-Time Control, Simulated Space, and Polish.",
+          "importance_weight": 1,
+          "introduced_chapter": 1,
+          "dependencies": [
+            "Game Feel Model of Interactivity",
+            "The Six Metrics"
+          ]
+        },
+        {
+          "concept": "Game Feel Model of Interactivity",
+          "definition": "A comprehensive diagram showing the feedback loop from player intent, through human processors, input devices, the computer, the game world, and back to the player's senses.",
+          "importance_weight": 1,
+          "introduced_chapter": 3,
+          "dependencies": []
+        }
+      ],
+      "primary": [
+        {
+          "concept": "The Six Metrics (Input, Response, Context, Polish, Metaphor, Rules)",
+          "weight": 0.9
+        },
+        {
+          "concept": "ADSR Envelope",
+          "weight": 0.8
+        }
+      ],
+      "secondary": [
+        {
+          "concept": "Model Human Processor",
+          "weight": 0.6,
+          "condensation_allowed": false
+        },
+        {
+          "concept": "Perceptual Field",
+          "weight": 0.5,
+          "condensation_allowed": true
+        }
+      ]
+    },
+    "pedagogical_design": {
+      "learning_objectives": {
+        "book_level": [
+          {
+            "objective": "To provide a vocabulary and framework for analyzing and creating game feel.",
+            "outcome_type": "synthesis",
+            "assessment": "Reader can deconstruct a game using the six metrics and propose design changes."
+          }
+        ],
+        "chapter_level": {
+          "1": {
+            "primary": {
+              "objective": "Understand the definition of Game Feel and its core components.",
+              "outcome_type": "comprehension",
+              "bloom_level": "understanding"
+            }
+          },
+          "12": {
+            "primary": {
+              "objective": "Apply the six metrics to deconstruct the feel of Asteroids.",
+              "outcome_type": "application",
+              "bloom_level": "applying"
+            }
+          }
+        }
+      },
+      "intentional_difficulty": [
+        {
+          "location": "Chapter 2, Model Human Processor",
+          "difficulty_level": "medium",
+          "reason": "Introduces more academic HCI concepts and timings (ms).",
+          "preserve": true,
+          "scaffolding_allowed": "Connects directly to player reaction time, a familiar concept.",
+          "reader_progression_adjustment": {
+            "if_struggling": "Reinforce with the 'Try It Yourself' reaction time test.",
+            "if_mastered": "Maintain difficulty."
+          }
+        }
+      ],
+      "redundancy_map": [
+        {
+          "concept": "The Six Metrics",
+          "locations": [
+            "Ch 5 (Introduced)",
+            "Ch 6-11 (Detailed)",
+            "Ch 12-16 (Applied)"
+          ],
+          "purpose": "reinforcement",
+          "evolution": "Introduced, then each is explored in its own chapter, then all are applied in case studies.",
+          "condensation_allowed": false
+        }
+      ]
+    },
+    "emotional_journey": {
+      "motivational_beats": [
+        {
+          "chapter": 1,
+          "type": "revelation",
+          "intensity": "high",
+          "preserve_priority": "critical"
+        },
+        {
+          "chapter": 12,
+          "type": "empowerment",
+          "intensity": "medium",
+          "preserve_priority": "high"
+        }
+      ],
+      "tension_arc": {
+        "buildup": "Chapters 1-5 build a complex theoretical model.",
+        "climax": "Chapters 12-16 apply the model to demystify classic games.",
+        "resolution": "Chapter 17 synthesizes this knowledge into actionable principles."
+      }
+    }
+  },
+  "clarity_improvements": {
+    "problematic_patterns": {
+      "verbose_constructions": [],
+      "jargon_handling": {
+        "always_define": [
+          {
+            "term": "ADSR Envelope",
+            "audience_dependent": false,
+            "technical_audience_exception": false
+          },
+          {
+            "term": "Proprioception",
+            "audience_dependent": false,
+            "technical_audience_exception": false
+          }
+        ],
+        "replace_with_simple": {},
+        "preserve_with_context": [
+          {
+            "term": "Rigidbody",
+            "expected_by": "game development audience",
+            "definition_needed": "first_use_only"
+          },
+          {
+            "term": "Raycast",
+            "expected_by": "game development audience",
+            "definition_needed": "first_use_only"
+          }
+        ]
+      },
+      "qualifier_overuse": [
+        {
+          "phrase": "sort of",
+          "relative_frequency": {
+            "theoretical_sections": "low",
+            "practical_sections": "medium"
+          },
+          "reduction_target": 0.4
+        }
+      ],
+      "cliche_replacements": {}
+    },
+    "tangent_management": {
+      "priority_system": [
+        {
+          "priority": 1,
+          "category": "must_keep",
+          "description": "Personal anecdotes that illustrate a core concept of 'feel'.",
+          "example": "Crashing his parents' Volvo in Ch 1."
+        },
+        {
+          "priority": 2,
+          "category": "convert_to_sidebar",
+          "description": "Deep dives into HCI concepts not strictly necessary for the main argument.",
+          "example": "Detailed explanation of Fitt's Law formula."
+        },
+        {
+          "priority": 3,
+          "category": "condense_heavily",
+          "description": "Lists of examples that make the same point."
+        },
+        {
+          "priority": 4,
+          "category": "safe_to_remove",
+          "description": "Extended asides on topics outside the core six metrics."
+        }
+      ]
+    },
+    "audience_calibration": {
+      "assumed_knowledge": {
+        "technical": "beginner-intermediate (in game design)",
+        "expectation_by_chapter": {
+          "1": "beginner",
+          "7": "intermediate",
+          "16": "intermediate"
+        },
+        "cultural_references": {
+          "assume_familiar": [
+            "Super Mario Bros.",
+            "Asteroids",
+            "Street Fighter II"
+          ],
+          "needs_context": [
+            "Spacewar!",
+            "Jurassic Park: Trespasser"
+          ],
+          "avoid_or_replace": []
+        }
+      }
+    }
+  },
+  "structural_guidelines": {
+    "length_targets": {
+      "chapter_words": {
+        "hard_minimum": 1500,
+        "soft_minimum": 2000,
+        "sweet_spot": 6000,
+        "soft_maximum": 10000,
+        "hard_maximum": 12000
+      },
+      "section_proportions": {
+        "introduction": {
+          "target": 0.1,
+          "flexibility": 0.05
+        },
+        "main_content": {
+          "target": 0.8,
+          "flexibility": 0.1
+        },
+        "summary": {
+          "target": 0.1,
+          "flexibility": 0.05
+        }
+      }
+    },
+    "pacing_patterns": {
+      "default_rhythm": [
+        "concept",
+        "definition",
+        "real-world_analogy",
+        "game_example",
+        "summary"
+      ],
+      "rhythm_variations": {
+        "linear_progression": {
+          "chapters": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "pattern": [
+            "define",
+            "explain_perception",
+            "build_model",
+            "classify",
+            "measure"
+          ]
+        },
+        "case_study_flow": {
+          "chapters": [
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "pattern": [
+            "context",
+            "input",
+            "response",
+            "context",
+            "polish",
+            "metaphor",
+            "rules",
+            "summary"
+          ]
+        }
+      },
+      "explanation_to_example_ratio": {
+        "default": 0.4,
+        "complex_topics": 0.2,
+        "by_chapter": {
+          "13": 0.1,
+          "hint": "The case study chapters are almost entirely example."
+        }
+      },
+      "breathing_spaces": {
+        "after_complex_sections": "Playable Example callout or short personal anecdote.",
+        "frequency": "Frequently, at least once per major concept."
+      }
+    },
+    "compression_rules": {
+      "safe_to_condense": {
+        "extended_examples": {
+          "max_reduction": 0.2,
+          "preserve": "The specific numerical values and parameter relationships.",
+          "specific_preservations": {
+            "biographical_details": "Keep personal anecdotes short and directly related to the point.",
+            "case_study_background": "Condense historical context but preserve what makes the game relevant."
+          }
+        }
+      },
+      "never_reduce": [
+        {
+          "type": "The Three Building Blocks of Game Feel definition",
+          "reason": "Foundational concept of the entire book."
+        },
+        {
+          "type": "The step-by-step deconstruction of mechanics in case studies",
+          "reason": "This is the core value proposition of the book."
+        },
+        {
+          "type": "The seven principles of game feel",
+          "reason": "The book's final conclusion and takeaway."
+        }
+      ],
+      "expansion_allowed": [
+        {
+          "type": "Undefined game design terms",
+          "max_expansion": "30 words per term"
+        }
+      ]
+    }
+  },
+  "quality_control": {
+    "author_quirks": {
+      "intentional_grammar_breaks": [],
+      "stylistic_signatures": [
+        {
+          "signature": "Use of hand-drawn, minimalist diagrams and charts.",
+          "frequency": "frequent",
+          "chapters_heavy_use": [
+            1,
+            2,
+            7,
+            13
+          ]
+        },
+        {
+          "signature": "Ending a complex explanation with a simple, punchy, often one-sentence paragraph.",
+          "frequency": "occasional",
+          "chapters_heavy_use": [
+            2,
+            17
+          ]
+        }
+      ]
+    },
+    "integrity_checks": {
+      "feedback_loops": {
+        "internal_consistency": {
+          "check_after": "first_pass",
+          "verify": "Ensure the application of metrics in Part 3 is consistent with their definitions in Part 2.",
+          "adjustment_allowed": "Minor only"
+        },
+        "reader_comprehension": {
+          "check_method": "Testing the 'Playable Examples'",
+          "target_range": "Readers should be able to manipulate the examples and perceive the described changes in feel."
+        }
+      },
+      "key_takeaways": {
+        "chapter_1": [
+          {
+            "takeaway": "Game feel is a real, definable thing, not just a vague quality.",
+            "verification_test": "Reader can articulate the three building blocks."
+          }
+        ],
+        "chapter_7": [
+          {
+            "takeaway": "The motion of a game character over time can be graphed and understood as an ADSR envelope.",
+            "verification_test": "Reader can explain the difference between a 'tight' and 'floaty' feel using ADSR terms."
+          }
+        ]
+      },
+      "common_conflicts": [
+        {
+          "conflict": "Condensing case studies vs. demonstrating the complexity of feel",
+          "resolution": "Prioritize preserving the relationships between parameters over describing every single effect."
+        },
+        {
+          "conflict": "Technical jargon vs. accessibility for non-programmers",
+          "resolution": "Use analogies and visual diagrams heavily; keep code-level discussion to a minimum."
+        }
+      ]
+    },
+    "conflict_resolution": {
+      "priority_hierarchy": [
+        "1. Preserve the core thesis and foundational definitions.",
+        "2. Maintain the integrity of the case study deconstructions.",
+        "3. Keep the author's conversational and educational voice.",
+        "4. Preserve the connection between text and 'Playable Examples'.",
+        "5. Achieve length reduction targets.",
+        "6. Improve clarity and flow"
+      ],
+      "when_in_doubt": "Err on the side of preserving detailed analysis over simplification."
+    }
+  },
+  "implementation_notes": {
+    "metadata_gathering_workflow": [
+      "1. First pass: Read for voice and style patterns.",
+      "2. Second pass: Map out the conceptual hierarchy and pedagogical structure.",
+      "3. Third pass: Analyze one full case study (e.g., Super Mario Bros) to test the metric framework.",
+      "4. Fourth pass: Fill out the JSON based on the complete reading.",
+      "5. Iterate: Refine based on any inconsistencies found."
+    ],
+    "validation_method": {
+      "ai_output_testing": "Generate a summary of Chapter 13 and compare its preserved details against the 'never_reduce' rules.",
+      "audience_testing": {
+        "method": "Beta readers (game design students)",
+        "sample_size": "5-10 readers from target audience",
+        "metrics": [
+          "Ability to apply the six metrics to a new game",
+          "Comprehension of the ADSR concept"
+        ]
+      }
+    },
+    "update_frequency": "After processing each major section (Definitions, Metrics, Examples, Principles).",
+    "minimum_viable_set": [
+      "core_thesis",
+      "conceptual_hierarchy",
+      "The Six Metrics",
+      "never_reduce",
+      "target_reduction",
+      "priority_hierarchy"
+    ]
+  }
+}

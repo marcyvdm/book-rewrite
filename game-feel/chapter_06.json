@@ -1,0 +1,484 @@
+{
+  "chapter_title": "Beyond Intuition: Metrics for Game Feel",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "In this chapter and the next six, we’ll explore the problem of measuring game feel. The goal is to compare the feel of one game to another meaningfully. This will give us a generic, working vocabulary for game feel and will offer insight into why some games feel good and others do not, even if the games appear similar on the surface. In Chapter 1, we defined the canvas of game feel and looked at some of the finished “paintings” of experience possible on that canvas. Now our goal is to identify the colors of paint."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Measure Game Feel?"
+    },
+    {
+      "type": "paragraph",
+      "text": "As with definition, there are no standard measures for game feel. We as players and designers do not attempt to measure game feel or to compare the feel of one game to another at a level deeper than is necessary for casual conversation and game production. From players, we have vague descriptions like floaty, loose, tight and responsive. Some enlightened game designers measure response lag and move timings, but to most game feel tuning is intuition. When a game designer sits down to create a mechanic from scratch, this is a problem. As God of War designer Derek Daniels says, “One of the worst things about making video games is that you have to re-invent the wheel with almost every new project you work on. So even though Mario jumps like a champ, when you go to make your game, it’s very hard to reverse engineer Mario’s jump and port it into your game.”¹"
+    },
+    {
+      "type": "footnote",
+      "text": "¹http://lowfierce.blogspot.com/2006/05/why-some-games-feel-better-than-others.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is frustrating because each new game we design feels just as complex as the last. If we don’t directly copy what we did before, we’re starting from scratch."
+    },
+    {
+      "type": "paragraph",
+      "text": "This leads to timid, incremental improvements over previous designs in an effort to keep things safe and comfy. We copy Mario’s mechanics, or Banjo Kazooie’s, or Grand Theft Auto’s, trying to recreate, in the context of our own systems, what was good in those. This is the easy way to design."
+    },
+    {
+      "type": "paragraph",
+      "text": "The more difficult way is to ask the following question: Where did the feel of Mario come from? Or Spacewar! for that matter? Those designers didn’t have something to clone from, so how did they arrive at good-feeling mechanics? We continue to use a handful of games as our exemplars of mechanic design and game feel. Yet we fail to identify what is special about these particular combinations of real-time control, simulated space and polish. We need to understand the unique relationships between the parts and how these relationships give rise to the experiences we cherish."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are common elements in the physical design of a controller, the relationship between physical and virtual movement, and the design of the virtual worlds we interact with through game feel. If we can identify and measure these pieces of game feel, we can avoid constant reinvention. This requires us to wrap our brains around the game feel system as a whole—including the player, the input device, the programmed reaction from the game system and all the pieces (i.e., the Game Feel Model of Interactivity described in Chapter 3)—and identify which elements enable us to make a meaningful comparison between the feel of two games. Not only the pieces, but the relationships between the pieces. If we can do that, we can understand how to construct similar systems by insight instead of emulation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Soft Metrics vs. Hard Metrics"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before diving down into specific elements from the Game Feel Model of Interactivity that we’re going to apply as metrics, a few words on measuring game experiences. As every designer knows, the only valid way to take the temperature of a design in progress is to watch players play it. There’s no way around it; the output of a game system is player experience. To master it, you’ve got to measure it. To measure it, you need live players."
+    },
+    {
+      "type": "paragraph",
+      "text": "Enter the dreaded play test. Nothing is more humbling. You have a vision in your head of the experience the player should have playing the game. Perhaps this vision lines up with the experience you as the game designer currently have when playing your game. Perhaps you feel exceptionally skillful and adept as you play and you think that playing your own game is pretty fun. Now put the game in front of some players and watch as your tower of hope gets hit by the oily wrecking ball of player reality. The players do unexpected things, are hung up on stupid little details or can’t figure out the controls. They whine, they grunt, they say “this is stupid!” and they walk away in disgust. They ignore all instructions, mash their way around, and display all the insight and cognitive capacity of an indignant end table. They always tell you, “Oh, it’s fun, but…” and list a litany of bizarre sounding changes they’d like to see. Brutal!"
+    },
+    {
+      "type": "paragraph",
+      "text": "And it gets worse: this is not the player’s natural environment. If you weren’t standing there, if you hadn’t invited or cajoled, or if the playtester weren’t your friend or sibling or spouse, would they still be playing the game? The answer is usually no. The closer you can get to seeing players in their natural environment, displaying their actual, natural behavior, the further from “done” your design will seem to be. But this is what you want. You want a realistic read on how players will play your game in the wild, even though the closer you get to it, the more brutal the feedback becomes. It’s horrid. Your game isn’t fun. Players hate it. Maybe you should scrap the whole thing and start over."
+    },
+    {
+      "type": "paragraph",
+      "text": "For many designers, the solution is simply to drink from the fire hose. Put your head up in the stream and just take the full blast of feedback in the face. Actually, this works reasonably well. Big, serious issues tend to be very obvious, and the designer can usually figure out how to modify the system to correct the problems. Rinse, repeat, iterate. The more times you can iterate on this cycle of playtesting and modification, the better you game will be. However, there are some things that can be done to make this cycle take less time and be more effective."
+    },
+    {
+      "type": "paragraph",
+      "text": "Figure 5.1 is an example presented by Mick West in his article “Pushing Buttons” for Game Developer. “All I did was add a simple ‘watcher’ class which would record the value of a variable (such as a button up/down state or a physics state or flag) every frame and then display this as a scrolling state graph across the top of the screen, with a separate line for each variable that was being watched. To this state graph I added an event recorder which recorded events (jump, land, fall, super jump, late jump and crouch) and displayed them on the graph as a vertical line,"
+    },
+    {
+      "type": "image",
+      "src": "102.png",
+      "caption": "FIGURE 5.1 Measuring inputs over time: an excellent “hard” metric."
+    },
+    {
+      "type": "paragraph",
+      "text": "labeled with the event. Finally I made the graph able to be scrolled and zoomed in and out by the joypad when the game is paused. So, whenever some control problem occurs, it’s very easy to pause the game and then scroll over and zoom into the area on the graph that caused the problems.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a sophisticated, data-driven measurement of player experience. West’s millisecond-precise graphing of player input and system output provides a clear, quantitative explanation for a soft, wishy-washy, subjective player experience. This is great stuff. It enabled him to tune his system more quickly and to provide a clear, unambiguous insight into a very nebulous problem of the controls not feeling right for the player."
+    },
+    {
+      "type": "paragraph",
+      "text": "West’s graphing is an example of a “hard metric.” Hard metrics are quantifiable, finite measurements. The player pressed the button 57ms after the computer thought they were off the cliff. The final score was blue team 10, red team 3. The player played the game for 27:03. Hard metrics provide specific, measurable data that can be compared across playtests. Assigning meaning to the data is part of the art of game design—should every game of Warcraft 3 take 20 minutes to complete? Or is it okay to have a game that last seven hours? Answering that question depends on the experience the designer intends to create."
+    },
+    {
+      "type": "paragraph",
+      "text": "Contrast hard metrics with “soft metrics”—things like fun, laughter and requests for more play. Are your players really having fun? What does fun mean in the context of your game? It could be deep strategic thought, with players sitting in silence, pondering the ramifications of their next move. Or it could be raucous laughter and intense interpersonal connections. Or it could just mean a feeling of relief and relaxation, a nice escape after a hard day at work. These things are not easy to measure. Though it is possible to quantify certain aspects of behaviors—such as Nicole Lazzaro’s excellent Four Fun Keys, which are based on videotaped recording of people’s faces and resulting emotional categorization—this is not the norm for game designers. Usually, soft metrics combine to form a sense, nebulous but always evolving, about what the experience of playing the game is for all players everywhere."
+    },
+    {
+      "type": "paragraph",
+      "text": "It’s important to note that soft metrics are just as useful to game design as hard metrics. People tend to assume that because hard metrics are fact-based, scientific and objective, they are somehow better. But it’s just as important to keep track of whether and how people are enjoying themselves while playing the game. Examining soft metrics is part of the game designer’s intuition, which gets honed as he or she completes more and more designs. To have an intuitive grasp of what system dynamics will create enjoyable, meaningful experience is to be keenly attuned to soft metrics. In our measurement of the game feel of various games, we will employ both soft and hard metrics."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What’s Important to Measure"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the Game Feel Model of Interactivity, it is the pieces on the computer’s side of the system that can be changed by the game designer. Out of these, certain aspects"
+    },
+    {
+      "type": "paragraph",
+      "text": "are obvious candidates for metrics. The six most useful aspects in this respect—the most important to measure, in terms of framing principles for designing game feel and for comparing games—are as follows."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Input—The physical construction of the device through which player intent is expressed to the system and how this changes game feel.",
+        "Response—How the system processes, modulates and responds to player input in real time.",
+        "Context—The effect of simulated space on game feel. How collision code and level design give meaning to real-time control.",
+        "Polish—Effects that artificially enhance impression of a unique physical reality in the game.",
+        "Metaphor—How the game’s representation and treatment change player expectations about the behavior, movement and interactions of game objects.",
+        "Rules—How arbitrary relationships between abstracted variables in the game change player perception of game objects, define challenges and modify sensations of control."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "These are summarized in Figure 5.2. Some enable data-driven “hard” metrics, such as input, and others are on the “softer” side, such as metaphor. The rest of this chapter introduces these six elements as metrics in a general way. Chapters 6 through 11 describe the metrics associated with each element in detail."
+    },
+    {
+      "type": "paragraph",
+      "text": "Armed with this information, we can quantify game feel in a way that lets us design game feel from first principles instead of from a priori knowledge (i.e., by emulation). We will also have a detailed set of criteria for comparing games."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Input"
+    },
+    {
+      "type": "paragraph",
+      "text": "The input device is the instrument of expression for the player into the game world. Therefore, the physical construction of the input device is important to the feel of control. The layout of inputs on the device, the tactile feel of the materials it’s made from, its weight, and the strength of springs in joysticks and other actuators—all of these things affect the way it feels to hold, touch and use the input device. This changes game feel. It’s like a musical instrument: while it’s possible to play Fur Elise on a Playskool piano, there’s a much greater potential inherent in a Steinway Grand Piano. When I create a prototype of a new control mechanic, it will almost always feel better to control using my wired Xbox 360 controller than using just buttons on the keyboard. At the highest level, this is because the Xbox controller is a well-designed consumer product made of sturdy materials and smooth, porous plastic."
+    },
+    {
+      "type": "image",
+      "src": "105.png",
+      "caption": "FIGURE 5.2 The six most important elements of game feel to measure are input, response, context, rules, polish and metaphor."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to experience the difference and happen to have an Xbox 360 controller hooked up to your PC, try playing example CH05-1. You can control the game with either the Xbox controller or the keyboard (WASD.) Controlling the object with an Xbox controller feels better, all other factors being equal."
+    },
+    {
+      "type": "paragraph",
+      "text": "From the designer’s side of things choices about which parts of the input device to use and how to use them affect the feel of control over virtual objects. The designer rarely gets to choose which input device the player will use—this is almost the same as making the choice about platform—but the designer can always choose which inputs on the device will be valid and useful for controlling things in their specific game. If the input device is a Playstation 3 controller, does the player use the thumbsticks, the buttons or both? These decisions define what sensations of control are possible in the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "By choosing which inputs will be used, the designer also makes a choice about the sensitivity of their input space. Input devices have an inherent sensitivity. The feel of using an NES controller to control something in a game is different from a typical computer mouse, for example. The NES controller has more total inputs than a mouse—eight separate buttons—but is less sensitive overall than a mouse. Of these eight buttons, six are commonly used for real-time control, and each of these buttons is a very simple two-state affair. It’s either on or off at any given time, nowhere in between."
+    },
+    {
+      "type": "paragraph",
+      "text": "The mouse has two standard buttons. But it also has a rolling ball or laser mechanism that recognizes movement in two directions. This two-axis movement is much more sensitive than a single button. The signals it sends to the computer are much more complex than the simple ON or OFF of a button."
+    },
+    {
+      "type": "paragraph",
+      "text": "From the designer’s perspective, an input device translates the complex goals and intentions of the player into a simple language a computer can understand and interpret. This language is a stream of values that change over time. The movement of a thumbstick to the left, for example, can be interpreted by the computer as a change in a single “float” value—a number between -1.00 and 1.00. As the player moves the thumbstick, the numbers change. A button is much simpler in terms of physical activation and in terms of the signals it sends. Having selected a specific input device, the game designer then chooses which inputs on the device will be used, and how they will be used. In other words, of the possible input space inherent in the physical construction of the input device itself, the designer decides which parts will be valid and applicable to control in his or her specific game."
+    },
+    {
+      "type": "paragraph",
+      "text": "To measure the effect these choices have on game feel in completed games, we want to look at the properties of each individual input and at the input space as a whole. As a whole, we want to know which inputs on an input device are used for control, and to keep track of any physical constraints and limitations of the input device. For example, on an NES controller most of the inputs can be combined with one another, except for opposing directions on the directional pad. It’s impossible to press both left and right on the directional pad at the same time. Ditto up and down. But it is possible to press the A-button and left at the same time. This means that a game controlled by a directional pad will feel very different than the same game controlled by four keyboard keys simply because the inputs combine in different ways (see Figure 5.3). On a keyboard, it is possible to press left and right at the same time."
+    },
+    {
+      "type": "paragraph",
+      "text": "For each individual input, it’s useful to examine how many possible states the input has, the degrees of freedom and types of movement it permits, and how, if at all, it’s bounded. For example, a simple button on my Xbox 360 controller has two states, on and off. It moves in one axis, up and down, and it is bounded in two places, at its maximum and minimum. A trigger button on the same controller still moves along only one axis but has hundreds of discrete states between its boundaries of fully released and fully pressed. The thumbsticks on the same controller have complete freedom of movement along two axes, X and Y, and are bounded by the circular plastic casing of the controller, giving them almost unlimited possible states."
+    },
+    {
+      "type": "image",
+      "src": "107a.png",
+      "caption": "FIGURE 5.3 On a keyboard, it is possible—and likely—for a player to press left and right at the same time."
+    },
+    {
+      "type": "image",
+      "src": "107b.png",
+      "caption": "FIGURE5.4 Differences in sensitivity between input devices."
+    },
+    {
+      "type": "paragraph",
+      "text": "We can say then that a thumbstick is overall a more sensitive and expressive input than a trigger button, which is in turn more sensitive than a standard button."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another metric, though a soft one, is how the input provides proprioceptive feedback (spring strength, layout of buttons relative to one another). Joysticks, thumbsticks, triggers and buttons can feel very different depending on the strength and quality of their spring mechanisms. This physical feel of interaction is very difficult to quantify, but has some effect on the feel of control over virtual objects."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Response"
+    },
+    {
+      "type": "paragraph",
+      "text": "Knowing all about the input device is half of real-time control. All inputs eventually become signals, which are mapped to the modulation of some parameter in the game. This modulation can be thought of as the game’s response to input."
+    },
+    {
+      "type": "paragraph",
+      "text": "The game receives signals from the input device. Signals modify some parameter in the game in some way, which is defined by the game designer. This is mapping: hooking specific input signals up to parameters in the game and defining how the parameters will be modulated over time. As Mick West says, “On the face of it, this appears a simple problem: you just map buttons to events, [but] getting player control to work is inevitably a fiddly and complex task.”² This is where most of the feel of control in a game is created."
+    },
+    {
+      "type": "footnote",
+      "text": "²http://cowboyprogramming.com/2007/01/02/pushhing-buttons/"
+    },
+    {
+      "type": "paragraph",
+      "text": "An input signal can modulate any parameter in a game and can do it over time in many different ways. A button press can move an object a distance in a direction. Press the button once and a cube moves five units to the right, for example. Or a game can continuously move that object a small amount each time the feedback loop is complete, as long as the button is held. Alternately, holding the button could add a force to a simulation, which indirectly causes the cube to speed up and start moving. All of these are different mappings of one button to the movement of one object, and with each, the feel is different. But a press of a single button can also be mapped to changes in global parameters. Pressing a button might reverse gravity or holding it might change the friction value for a car’s tires, enabling a different kind of control."
+    },
+    {
+      "type": "paragraph",
+      "text": "To measure the response of a particular game, we want to look at how each signal coming in from the input device is mapped to a change in the game. What parameter does it modulate, and how does it change that parameter over time? Or, more generally, what parameters are changed by what inputs, and what are the relationships between the parameters? For example, in Id Software’s Quake, rotation of the avatar in 3D space is very closely translated from the mouse on the desk surface. Changes in the two signals coming in—X and Y for the left/right and up/down movement of the mouse—rotate the avatar left, right, up and down (Figure 5.5). There is very little processing of input. The movement of the mouse adds a value to"
+    },
+    {
+      "type": "image",
+      "src": "109a.png",
+      "caption": "FIGURE 5.5 Moving the mouse in Quake rotates the avatar—input becomes response."
+    },
+    {
+      "type": "image",
+      "src": "109b.png",
+      "caption": "FIGURE5.6 In Arkanoid, rotating the input knob maps to the left-right movement of the spaceship."
+    },
+    {
+      "type": "paragraph",
+      "text": "the current rotation value of the avatar. Move the mouse an inch to the left and you turn 90 degrees to the left, a fixed steering ratio."
+    },
+    {
+      "type": "paragraph",
+      "text": "But in Quake, the steering ratio between horizontal mouse movement and horizontal in-game rotation is different from the one between vertical mouse movement and horizontal in-game rotation. For your up/down mouse movement, you get much less vertical rotation in the game. The relationship between these two values is just as important as the values themselves; in the context of Quake, the players will want to adjust their horizontal aim more quickly and over a greater distance than their vertical one."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now compare the mapping of Quake with the classic Arkanoid, which maps rotation of a knob to the left and right movement of the in-game “paddle” spaceship (Figure 5.6). This is again mapped directly, though instead of mapping a linear movement to a rotation as Quake does, Arkanoid does the opposite, mapping the"
+    },
+    {
+      "type": "image",
+      "src": "110.png",
+      "caption": "FIGURE 5.7 In Halo, the degree of change of the thumbstick moves the reticule at varying degrees of speed."
+    },
+    {
+      "type": "paragraph",
+      "text": "rotation of the knob to a linear movement of the ship. One degree of rotation of the wheel input is translated into a certain distance of movement for the Arkanoid paddle."
+    },
+    {
+      "type": "paragraph",
+      "text": "Contrast this with the “warthog” driving mechanic in Bungie’s Halo, a more indirect mapping of input to motion. Moving left on the thumbstick changes the position of the “reticule.” This maps thumbstick displacement to a rate of movement instead of to a change in position. Moving the thumbstick to the left a small amount will move the reticule to the left at a slow rate. Pulling the thumbstick as far to the left as it will go moves the reticule quickly, at a constant, maximum rate."
+    },
+    {
+      "type": "paragraph",
+      "text": "The reticule’s position represents a heading in the 3D game world, one which the warthog vehicle will then attempt to seek on—imperfectly. Depending on the distance between the reticule and the actual heading of the avatar, it will rotate more or less per frame to try to return to being in line with the reticule, but it may overshoot or undershoot. This obfuscation between intent and reaction is pleasurable rather than annoying because it defines both an interesting challenge and a pleasurable sensation of control."
+    },
+    {
+      "type": "paragraph",
+      "text": "An input signal can also be mapped to a modulation across time, such as the jumping mechanic in Super Mario Brothers. When jumping in Mario, holding down the button longer yields a higher jump. There is a maximum height and an expressive range in between. A tiny tap on the button is a tiny little jump. To get a full height jump, you must hold down the button longer."
+    },
+    {
+      "type": "paragraph",
+      "text": "After looking at what parameter each input modulates in the game and how it changes it over time, the final thing to examine is the relationships between the"
+    },
+    {
+      "type": "paragraph",
+      "text": "various parameters. No mechanic is an island. Just as important as how each individual mechanic is defined—how each specific input is mapped to a response—is the relationship between them. For example, the feel of Super Mario Brothers relies on the relationship between how fast Mario can move on the ground and how fast he can move in the air. In the air, he moves left and right, but more slowly than on the ground. You still have some control over Mario’s trajectory in the air, but the feel is one of precise adjustment, giving you a better shot at landing on that small platform. The same kinds of relationships between parameters define the feel of any system of real-time control, from the speed-to-turning-radius relationship in a driving game to the size/speed tradeoffs present in most fighting games. As much as the basic mapping values themselves, it is the relationships between parameters that makes a game feel the way it does."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Context"
+    },
+    {
+      "type": "paragraph",
+      "text": "Context includes simulated space and level design. Envision yourself playing Super Mario 64. Now imagine that instead of being in the middle of Bomb-Omb Battlefield, Mario is standing in a field of blank whiteness, with no objects around him. With nothing but a field of blankness, does it matter that Mario can do a long jump, a triple jump or wall kick?"
+    },
+    {
+      "type": "paragraph",
+      "text": "If Mario has nothing to interact with, his acrobatic abilities are meaningless. Without a wall, there can be no wall kick. In this way, the placement of objects in the world is just another set of variables against which to balance movement speed, jump height and all the other parameters that define motion. In game feel terms, constraints define sensation. If objects are packed in, spaced tightly relative to the avatar’s motion, the game will feel clumsy and oppressive, causing anxiety and"
+    },
+    {
+      "type": "image",
+      "src": "111.png",
+      "caption": "FIGURE 5.8 Mario is sad because he has no context for all his fancy moves."
+    },
+    {
+      "type": "image",
+      "src": "112.png",
+      "caption": "FIGURE 5.9 Normal versus Skinny Tetris: if the level design was different, it wouldn’t be the same game."
+    },
+    {
+      "type": "paragraph",
+      "text": "frustration. As objects get spaced further apart, the mapping of input to response becomes increasingly unimportant. It doesn’t matter how fast a car moves relative to its turning speed when it’s driving across a featureless landscape. Of course, the spacing of objects is irrelevant until two objects can interact. It could look as though you’re driving in a densely packed forest, but if the car goes through the trees, it makes no difference how many trees there are or how they’re laid out. In this sense, collision code is the other part of context."
+    },
+    {
+      "type": "paragraph",
+      "text": "Context, then, is the unique physical reality of the game world—the simulated space—including the way that objects interact and the layout of space. Like the abilities and actions of the avatar, it is designed. The game designer creates a game space that has its own unique physics, extents and constraints. The designer simultaneously creates the content that fills that world and defines its spatial relationships."
+    },
+    {
+      "type": "paragraph",
+      "text": "Almost every game has a contextual aspect of some kind, be it tracks in Gran Turismo or tracks in Guitar Hero. Tracks, puzzles, stages, levels, worlds: most games have some kind of designed context against the mechanics’ functions. In most cases, this is called level design. The objective is to find the most interesting pieces of the mechanic and emphasize them by trying to provide the most interesting interactions possible with the mechanics."
+    },
+    {
+      "type": "paragraph",
+      "text": "The importance of this context will vary depending on the type of game, but almost every game includes some kind of level design. My favorite example is the difference between Slim Tetris and regular Tetris, as shown in Figure 5.9. Level design isn’t as important in Tetris as it is in, say, a Tony Hawk game, but Alexei Pajitnov still"
+    },
+    {
+      "type": "paragraph",
+      "text": "had to decide that the Tetris field would be 10 blocks wide by 24 blocks tall. If it were three blocks wide, Tetris would be a very different game. Change the context, change the game."
+    },
+    {
+      "type": "paragraph",
+      "text": "The default playfield of Tetris provided the right balance between constraint and openness. It was an artistic choice and reinforces the important aspect of context: spatial constraints define challenge. The sharpness of turns and spacing of obstacles in Mario Kart DS defines the challenge of a particular course. The more difficult courses have sharper turns that happen more frequently and include more obstacles, jumps and other challenge-making context."
+    },
+    {
+      "type": "paragraph",
+      "text": "The effect of context on game feel can only be expressed as soft metrics. There is a change in the sensation of control when the overall landscape of the game world is huge and open versus when it’s constrained and claustrophobic, but the exact change is not quantifiable. It’s a general impression of space. The feel of control also changes when objects are spaced closer together or further apart, and when objects are sharp, round, organic or blocky. If you bump into things all the time, the game feels different. At the lowest level, collision code again redefines feel as it makes interactions feel a certain way. The interaction of objects can be smooth, as they slide off one another or feel tacky, if they stick when they come into contact. If an object explodes instantly when it runs into something, this again changes the feel of the game. Steering around objects becomes much more important, and the thing you’re controlling seems fragile."
+    },
+    {
+      "type": "paragraph",
+      "text": "The best way to measure these effects is to examine the feel of control in different contexts within the same game. In Asteroids, there are times when there are as few as one asteroid on the screen. When that happens, the feel of control is different from when the screen is covered in tiny, high-speed asteroid fragments. In these extremes, we see the way that the feel of Asteroids is changed when the playfield—the spatial topology—goes from empty to full."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Polish"
+    },
+    {
+      "type": "paragraph",
+      "text": "Polish is any effect that enhances the interactions between objects in the game world, giving clues about the physical properties of objects. If all polish effects were removed, the functionality of the game would be the same, but the player’s perception of the physical properties of the objects in the game would change. Perception is active, and polish effects further define the interactions that occur because of a game’s collision code."
+    },
+    {
+      "type": "paragraph",
+      "text": "Measuring polish is another soft metric. How does the feel of De Blob (the student game mentioned in Chapter 1) change when the squash-shader is applied? This is not quantifiable as a hard metric. What we can measure is the resulting impression of physicality. Specifically, what the polish effects seem to tell us about the properties of the objects we’re observing. The blob squashing and stretching is what makes it seem a blob. As Joost says, without the squash-shader, the game feels like playing with a ball made of stone."
+    },
+    {
+      "type": "paragraph",
+      "text": "This principle applies to all polish effects. All effects, even if they’re applied only with the nebulous goal of making interaction more appealing, send signals about the physical properties of the objects involved in the interaction. When it’s passive—when you see two objects in the distance collide—the impression is the same as in film or animation. When it’s active, the impression is much more powerful, like experiencing something with your own senses."
+    },
+    {
+      "type": "paragraph",
+      "text": "A violent spray of particles, the screen shaking or a loud noise lend the impression of weight, heft and solidness to objects. Any interaction that can happen in real life, that has happened in film, or that can be imagined can be conveyed through polish effects. The thing that’s interesting to measure is how the polish effects impact a player’s perception of the objects in the game world."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "See example CH05-2 for some different polish effects applied to the same system."
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider the game Burnout: Revenge, a game with an almost preposterous amount of polish. A car in Burnout is a solid object traveling at high speed. When it crashes, the force of the impact is palpable, and the results are catastrophic. The car is deformed in a hail of glass and sparks. Its mass and high velocity carry it high into the air, spinning and burning, eventually to crash back down with all the weight of its two-ton frame. The crunching, shattering and scraping noises are gut-wrenching. A car in Burnout is a solid object traveling at high speed which has now been completely obliterated (Figure 5.10)."
+    },
+    {
+      "type": "image",
+      "src": "114.png",
+      "caption": "FIGURE 5.10 The cars in Burnout can be damaged to an amazing degree. This is some serious polish."
+    },
+    {
+      "type": "paragraph",
+      "text": "But how do you know this? What tells your senses that this is the case? How can you know the physical nature of this digital object? What clues are you using to derive this understanding? Well, let’s break it down a bit. First, we have the visuals: glass is spraying from the windows, pieces of metal and car parts are flying off in every direction, and dust and smoke are spewing from the engine. These are probably simple particle effects—two-dimensional images displayed at a particular point in the 3D scene but which are programmed to always be facing toward the camera. Often, these are a series of frames which play back linearly with some randomization, causing little pieces of glass to spin and puffs of smoke to appear to billow and froth. The sparks flying from where the car is contacting other pieces of metal or scraping against the divider or pavement are probably generated the same way, transitioning in color from white to yellow to red over time as they spray out. The tires leaving skid marks on the pavement are probably alpha textures, being laid down with created-on-the-fly geometry that has an alpha-blended tire tread texture mapped to it. Maybe it has two or three different layers and randomizes the texture so it’s hard to see the textures repeat."
+    },
+    {
+      "type": "paragraph",
+      "text": "And what about the sounds, the screeching, the skidding and the shattering glass? The sounds of rending metal are all created, blended and triggered in real time. They even have locations in 3D space, using positional audio to further emphasize the link between sound and visuals. And then there’s the controller rumble, adding a little bit of tactile sensation to the mix. It may not be especially logical, but it helps the impact seem more, ah, impactful."
+    },
+    {
+      "type": "paragraph",
+      "text": "So where did all these clues come from? Did a game designer simply press a button that says “insert car” and knock off down to the pub for a pint or two? Sadly not. Each tiny piece of interaction, each particle effect and sound, each deformation and broken piece of car sent flying is a hand-crafted response meant to do one thing: convey the physical nature of this interaction to you, the player. It must be a combination of various sights and sounds, too, because perception is a multi-sensory phenomenon. When you perceive things, you see, hear, touch and feel all at once. Perceiving something involves your entire body, even when it’s an extension of your sense into a virtual body. More than that, your perception of something includes the meaning you assign to it based on past experiences, ideas, feelings and generalizations. If it looks like a car, you expect it to behave the way things that fit your idea of car would behave. This might be your experience of a real car crash, years of watching car crashes in movies, or both. The point is that the clues must be designed by a designer, created by an artist and programmed by a programmer. Often, all three will touch a complex effect. Often this is written off as “just polish” but as applied to game feel its impact in terms of conveying a convincing, self-consistent game world can’t be ignored. Polish is important."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Metaphor"
+    },
+    {
+      "type": "paragraph",
+      "text": "Metaphor is where a player’s past experiences, ideas, feelings and generalizations come into play. Not only from playing games, but from their total life experience."
+    },
+    {
+      "type": "image",
+      "src": "116.png",
+      "caption": "FIGURE 5.11 Run, Fatty, Ruuuuuuun! This avatar sets up different expectations than a car does, which changes the feel of the game even if the underlying functionality is identical."
+    },
+    {
+      "type": "paragraph",
+      "text": "What does the thing you’re controlling look like, and how do you expect it to behave based on your experience with similar things? If it looks like you’re controlling a real car, the expectation is that it will handle like a car, sound like a car and crash like a car. But the expectations come from the idea of what a car is, not from objective reality. Players bring with them all their life experience—riding in cars, driving cars and so on—but they also bring their experiences of cars from films and animations. Convincingly behaving like a car, then, might mean exploding after being shot with one bullet or it might mean squashing and stretching as in a cartoon, taking no visible damage. Oftentimes, people will play a game—horse-riding gameplay is my favorite example—and they’ll say, “This doesn’t feel like a horse.” And you’ll ask them, “Well, have you ever ridden a horse before?” And they’ll say, “No, but this doesn’t feel like a horse.” What this illustrates is that players carry with them preconceived notions about the way certain things move and, by extension, how it should feel to control them."
+    },
+    {
+      "type": "paragraph",
+      "text": "The expectations about how interactions should play out are also influenced by treatment—how the art is executed. A cartooned, iconic car has much more leeway when it comes to how it can behave and interact than a photorealistic one."
+    },
+    {
+      "type": "paragraph",
+      "text": "Try this as a thought experiment: instead of the car in Burnout, substitute a giant, balding fat guy running as fast as he possibly can, spraying sweat like a sprinkler in August. Without altering the structure of the game, the tuning of the game or the function of the game, the feel of the game has changed. All you’ve done is swap out a 3D model of a car for a 3D model of a giant fat guy running and you’ve got Run Fatty Run instead of Gran Turismo. This will change the feel of the game because you have preconceived notions about the way a car should handle."
+    },
+    {
+      "type": "paragraph",
+      "text": "You know how a car should feel and move and turn based on your experience driving a car and looking at cars. When thinking about a game feel system, it’s important to understand the palette of preconceptions you’re working with. The best designers use metaphor and treatment to set up expectations in the player that can then be exceeded by the game’s interactions."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "Returning to Super Mario 64, have you ever asked yourself “Why am I collecting these coins?” If it didn’t refill Mario’s health or if 100 coins didn’t get you a star, would you bother? Would it be worth it? For that matter, why is collecting a star important? What “value” do these things have? Outside the system of the game, none whatsoever. They are abstract variables whose arbitrary relationships give them value within the cohesive whole of the game system. In other words, the meaning of a coin, a star or any other such part of a game is given only by its relationship to other parts of the game. It’s manufactured from nothing. From thin air. Poof. It’s a system that gives itself meaning. Isn’t that weird? It works, though. You want those coins, and you want that star, and you’re willing to undergo a lot of frustration, tedium and learning to get them. The intrinsic pleasure of learning and doing may be the fundamental appeal, but it’s the carrot of the stars that gets you moving."
+    },
+    {
+      "type": "paragraph",
+      "text": "Traditionally, this is the role rules play in both game design and in game feel. They provide motivation and a structured way to learn, defining for the player the motions that are worth learning. Indeed, it is the seemingly arbitrary relationships between variables that give the motion meaning. A gradual ramp of increasingly difficult challenges matches the player’s growing skill, keeping them in the flow state (Figure 5.12), introduced in Chapter 1."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the context of game feel, rules as we’ve defined them provide motivation, challenge and meaning for motion. Context provides the immediate, spatial meaning while rules provide the long-term, sustainable meaning that games are built out of."
+    },
+    {
+      "type": "image",
+      "src": "117.png",
+      "caption": "FIGURE 5.12 Csikzentmihayli’s Flow."
+    },
+    {
+      "type": "image",
+      "src": "118.png",
+      "caption": "FIGURE 5.13 High-level goals trickle down."
+    },
+    {
+      "type": "paragraph",
+      "text": "As in our earlier example, rules provide some, if not all, of the intent in a game system, as shown in Figure 5.13."
+    },
+    {
+      "type": "paragraph",
+      "text": "Race from point A to point B, scale this tall mountain, rescue five wayward puppies, escape the compound. These kinds of higher-order goals define game feel at the level of sustainability. They operate at multiple levels, with multiple goals and types of goals active at any given time. This promotes a high level of engagement and gives the player many choices about which activity to pursue at a given time. The low-level sensation of control and physicality, which we’ve defined as game feel, is a great foundation for quality game experiences, but it’s the higher-order rules that provide the girders and scaffolding to build it out."
+    },
+    {
+      "type": "paragraph",
+      "text": "To measure the effect of rules have on game feel, we can look at rules in three different ways. Again, these are soft metrics, as they are not measuring specific quantities. What we’re interested in is how seemingly arbitrary relationships between variables can change the meaning players assign to objects in the game world, changing the feel of control and interaction as they perceive that world."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the highest level, goals focus the player on a particular subset of motions. These high-level goals provide a trickle down effect, giving objects meaning at various levels. High-level rules can also be things like health and damage systems, which again trickle down to give meaning to moment-to-moment interactions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Separate from but hooked into the high-level rules and goals, mid-level rules can give meaning to objects in the game world, changing the feel of moving through it."
+    },
+    {
+      "type": "paragraph",
+      "text": "The flag in a capture the flag multi-player game is one example; for the player currently holding the flag, the game feels different."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the lowest level, rules can further define the physical properties of objects. How much damage it takes an avatar to destroy an enemy changes the player’s perception of how “tough” that enemy is. An enemy that takes one hit to destroy will feel fragile, while a boss monster that takes 20 hits feels much more solid."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "The six pieces of the game feel system that are malleable for the game designer are:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Input—The physical construction of the device through which player intent is expressed to the system and how this changes game feel.",
+        "Response—How the system processes, modulates and responds to player input in real time.",
+        "Context—The effect of simulated space on game feel. How collision code and level design give meaning to real-time control.",
+        "Polish—Effects that artificially enhance impression of a unique physical reality in the game.",
+        "Metaphor—How the game’s representation and treatment change player expectations about the behavior, movement and interactions of game objects.",
+        "Rules—How arbitrary relationships between abstracted variables in the game change player perception of game objects, define challenges and modify sensations of control."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For each of the six pieces of the game feel system, I’ve pointed out a few different things that are instructive to measure when examining a particular mechanic or a particular game feel system."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each of these is discussed in more detail in Chapters 6 through 11. We’ll be looking at what can be measured and what’s useful to measure. We will be pursuing both soft and hard metrics. For each measurement, we’ll go through why this is useful to know about a particular game and how it helps us compare the feel of two games in a meaningful way."
+    },
+    {
+      "type": "paragraph",
+      "text": "The point of measurement is to derive general principles about game feel which can be applied to future designs and to let us meaningfully compare the feel of two games. Instead of taking shots in the dark, emulating existing mechanics or trying to shoehorn someone else’s tuning into your system, you want to be able to understand the tools at your disposal. If you want your game to feel like Sonic, Megaman or Burnout: Revenge, you’ll be able to do it with a deeper understanding. You might not have the exact recipe—it’s probably secret—but at least you won’t be staring at a finished cake wondering what kind of sugar was used."
+    }
+  ]
+}

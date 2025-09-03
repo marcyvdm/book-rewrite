@@ -1,0 +1,220 @@
+{
+  "chapter_title": "Super Mario Brothers",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Super Mario Brothers was a breakout hit for video games as a medium."
+    },
+    {
+      "type": "paragraph",
+      "text": "In 1983, things looked a littles bleak for the future of digital games. “Video game” was a dirty word to retailers, and arcades were shutting their doors with frightening speed. Atari had flooded the market with inferior product, culminating with the much-lampooned E.T. The Extra-Terrestrial cartridge. Consumers lost interest, retailers lost money and doomsayers decried the fiery end of the video game fad. Enter Nintendo and its “Entertainment System.” Improbably, a young industrial design graduate was about to change video games forever."
+    },
+    {
+      "type": "paragraph",
+      "text": "A quiet, unassuming man who is “very content” with his modest salary and seems genuinely bemused by his worldwide celebrity, Shigeru Miyamoto was an unlikely candidate for “world’s most acclaimed game designer.” As he flashes his trademark smile and casually explains his original sketches for Donkey Kong, you get the sense that he is as excited today about the idea as he was more than 20 years ago. Because there was simply no one else in the company available, Miyamoto was tapped by Nintendo president Hiroshi Yamauchi to create the game, Miyamoto’s first. In the most emphatic and real sense, the future of Nintendo hung on the unproven industrial design graduate and his “Stubborn Gorilla.” Against all odds, the game became a smash hit, in a stroke saving the ailing Nintendo and establishing Miyamoto’s reputation."
+    },
+    {
+      "type": "paragraph",
+      "text": "While it was the first major hit of the burgeoning “platformer” game type, Donkey Kong still felt very stiff. The character in Donkey Kong, Jumpman,¹ could run left and right, climb ladders, and, of course, jump. His jump followed a specific, predetermined arc and he only ran at one speed. On or off, full speed or complete standstill. There was no gradual acceleration or deceleration and no control over the jump once you were in the air. It was a step forward—a charming, playful game with appealing characters, bright colors and detailed animations—but it still felt very stiff. Miyamoto knew that his games could feel much better. After a successful Donkey Kong sequel, he turned his attention to refining the movements of his now-Italian, now-plumber character in Mario Brothers."
+    },
+    {
+      "type": "footnote",
+      "text": "¹The naming of Mario was, apparently, a conciliatory gesture to the irate landlord of Nintendo of America’s warehouse, Mario Segale."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mario Brothers was different. This time, Mario jumped much higher, though his trajectory was still unalterable once he’d left the ground. The first hint of the powerful feel that was to come was in Mario’s left and right movement. Instead of movement being binary-state (full speed or stopped), when the joystick was pressed, Mario now had three states: stopped, walking and running. As a result, he now sped up gradually, and the player could make quick tapping motions on the joystick to make small adjustments to his position. Likewise, once the joystick input stopped, there was a slight slide as Mario came to a halt. Mario now had inertia. This smooth feel was used in games like Asteroids and the venerable Spacewar! but had not yet found its way into a character-based game about jumping over obstacles and gaps. Mario Brothers was a modest hit, coming as it did at the end of the arcade era."
+    },
+    {
+      "type": "paragraph",
+      "text": "In 1986, all the elements came together. Super Mario Brothers combined a loose, fluid feel with a powerful character-driven metaphor and a charming, surreal treatment. Instead of one extra state inserted between standing and running, there were hundreds. Mario now accelerated gradually, without perceptible switches, up to his full speed. When the input stopped, he slid gradually to a halt. The game felt intuitive but deep: sloppier and more imprecise than Donkey Kong, but better for it. Somehow it felt more “real.” It took the world by storm. The first truly universal hit video game, Super Mario Brothers sold more than 25 million copies worldwide, far and away the greatest selling game of all time. In a 1987 survey, Mario was more recognizable to American children than Mickey Mouse."
+    },
+    {
+      "type": "paragraph",
+      "text": "Miyamoto understood game feel not in terms of simulation but of simplification. First, he regarded the feel of a game artistically, as a composite aesthetic experience. At a time when the field was dominated by engineers who, in the tradition of Steve Russell, drew on complex, literalistic metaphors like the gravitational pull of black holes or landing a spacecraft on the moon, Miyamoto brought a refreshing, naïve perspective. He simply wanted to make fun, colorful games about whimsical characters that felt good to play. Second, he designed games holistically, taking into consideration both software and input device. (To this day, Miyamoto designs controllers as well as games, a rarity among designers, especially now, with the death of the arcade.) Finally, Miyamoto understood the power of metaphor and how it affected players’ willingness to learn and master a complex system and their emotional attachment to it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Miyamoto had intuited just how powerful the tactile, aesthetic feel afforded by instantaneous reaction to user input could be. Super Mario Brothers felt great, a shining example of possibility for virtual sensation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now the big question: just how was this feel created? How does one build a game that feels exactly like Super Mario? Like many questions surrounding game feel, this is a surprisingly difficult question to answer. Just thumb through this chapter and you’ll see; even for a game as simple as Mario, there are a huge number of tiny but ultimately important decisions that must be accounted for. Individually,"
+    },
+    {
+      "type": "paragraph",
+      "text": "they often seem trifling and bizarre. Taken as a whole, they lead to the feel that sold more than 25 million copies."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Input"
+    },
+    {
+      "type": "paragraph",
+      "text": "As an input device, we have the NES controller. The signals it sends are very simple, as we have said, and overall it has very little sensitivity as an input device. It feels pretty good to hold and use and is composed of a series of standard two-state buttons. One of its great strengths is its simplicity. When you hold it, it’s almost impossible to press the wrong button since there are so few for each thumb to deal with (Figure 13.1)."
+    },
+    {
+      "type": "image",
+      "src": "222.png",
+      "caption": "FIGURE 13.1 The simple, but classic, NES controller."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": [
+          "Button",
+          "States",
+          "Signals",
+          "Combination"
+        ],
+        "rows": [
+          [
+            "A",
+            2,
+            "Boolean",
+            "B, any direction"
+          ],
+          [
+            "B",
+            2,
+            "Boolean",
+            "A, any direction"
+          ],
+          [
+            "Up",
+            2,
+            "Boolean",
+            "A, B\nOne other direction at a time, except down"
+          ],
+          [
+            "Down",
+            2,
+            "Boolean",
+            "A, B\nOne other direction at a time, except up"
+          ],
+          [
+            "Left",
+            2,
+            "Boolean",
+            "A, B\nOne other direction at a time, except right"
+          ],
+          [
+            "Right",
+            2,
+            "Boolean",
+            "A, B\nOne other direction at a time, except left"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": "Each button sends a binary signal. Taken alone, this input data can be interpreted as “up” or “down.” When measured over time, the signal can be interpreted as “up,” “pressed,” “down” or “released.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "That’s it. Not much more to say about the NES controller; as an input device it is among the simplest, most effective ever created. The plastic on the front is smooth and porous, the buttons springy and robust, and the overall package feels solid."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that we’re using the keyboard to control the examples presented here, which will change the feel of control by allowing left and right to be pressed simultaneously and because this input uses multiple fingers instead of a single thumb."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Response"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two avatars in Super Mario Brothers, Mario himself and the camera. Mario has freedom of movement along a 2D plane, X and Y, as shown in Figure 13.2."
+    },
+    {
+      "type": "paragraph",
+      "text": "Since the Mario avatar doesn’t rotate at all, there’s no distinction between local and global movement."
+    },
+    {
+      "type": "paragraph",
+      "text": "The camera (Figure 13.3) is indirectly controlled by the player via the position of the Mario avatar and moves in only one axis, X. Interestingly, it can never move to the left."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "A Recipe for Mario"
+    },
+    {
+      "type": "paragraph",
+      "text": "The feel of Super Mario Brothers lives primarily in the main Mario avatar."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to create a game that feels exactly like Super Mario Brothers, the first thing you need is a rectangle. This is how the game views the object that millions of"
+    },
+    {
+      "type": "image",
+      "src": "224a.png",
+      "caption": "FIGURE 13.2 Mario moves in two dimensions, X and Y."
+    },
+    {
+      "type": "image",
+      "src": "224b.png",
+      "caption": "FIGURE13.3 The camera in Super Mario Brothers moves in one dimension: the X-axis."
+    },
+    {
+      "type": "paragraph",
+      "text": "us know and love as Mario. He’s simply a rectangle. More specifically, he’s a series of points that form a rectangular shape, but for our purposes it’s reasonable to call him a rectangle. So let’s start with our rectangle, sitting motionless in the center of the screen (Figure 13.4)."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open example CH13-1 to follow along. To begin, there is no motion, all the parameters are set to zero and the avatar is a blank rectangle in the middle of the screen."
+    },
+    {
+      "type": "paragraph",
+      "text": "The next obvious step is to have the rectangle move. The way Mario’s simulation functions, there are two distinct subsystems at work, the horizontal (X-axis) movement and the more complex vertical (Y-axis) movement. To start, let’s focus on the"
+    },
+    {
+      "type": "image",
+      "src": "225.png",
+      "caption": "FIGURE 13.4 The shape of Mario: a series of points forming a rectangle."
+    },
+    {
+      "type": "paragraph",
+      "text": "horizontal movement. It’s the interplay of these two systems that gives rise to the expressive, fluid feel of Mario, but they are kept mostly separate as far as the simulation is concerned."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Horizontal Movement"
+    },
+    {
+      "type": "paragraph",
+      "text": "All horizontal movement in Mario is mapped to presses of the left or right directional pad buttons. The signals coming in are simple Booleans and they can’t be pressed simultaneously because of a physical constraint imposed by the input device itself. As a result, at any given time there will be only one relevant signal coming in from the input device: left or right. The simplest way to map this input to a response in the game would be to store only a position for the rectangle. When either the left or right signal was detected, the rectangle’s position would change by a certain amount in the corresponding direction. As long as the left button was held, the rectangle would move some distance per frame in the corresponding direction. This is the way that Donkey Kong works, changing position when the joystick is held in a direction. This is not, however, how the horizontal movement in Mario works. Figure 13.5 shows graphing of Mario’s movement over time versus Donkey Kong (from Chapter 7)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now, I like the feel of Donkey Kong. I think it’s rather charming. It’s hard to argue, however, that it’s more expressive than Mario. Mario feels fluid and responsive while Donkey Kong feels stiff and robotic. Look again at the movement of each over time; you can see just how many more places it’s possible for Mario be, how much more expressive potential there is for the player. The primary reason for this lies in the simulation. Super Mario Brothers has something resembling a"
+    },
+    {
+      "type": "image",
+      "src": "226.png",
+      "caption": "FIGURE 13.5 The movement of Donkey Kong and Mario."
+    },
+    {
+      "type": "paragraph",
+      "text": "simulation of physical forces. It’s a sort of first-year college physics level of simulation, but there are in fact stored values for acceleration, velocity and position. So while it’s simple by the standards of modern physics simulations, it is a model of Newtonian physics. It may not be very accurate—the programmers only had 8-bit numbers to work with—but it is modeling things in a certain sense. It’s not totally fake."
+    },
+    {
+      "type": "paragraph",
+      "text": "Donkey Kong has no such simulation. The character has a position and two states, and that’s it. When you press the right button, the code simply takes the current position and adds a value to it. This new position gets drawn to the screen and becomes the current position and so the motion continues. The player moves at a constant rate if the joystick is held in one direction or another. There is no period of acceleration between standing still and running full speed. Likewise, when the input stops, there is no deceleration. Put another way, Jumpman’s speed can only ever be equal to, say, five units per second or zero units per second. There is no in between. Donkey Kong takes the sensitive, expressive input of the joystick with all its states between center and fully expressed and clamps it down to a simple on or off response. Figure 13.6 shows the short attack phase of the movement in Donkey Kong. The movement starts the frame after the input is received, but there is a sensation of a slight attack because it takes some time to push the joystick from off to on."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mario’s horizontal movement incorporates separate values for acceleration, speed and position. When the signal for “left” is received, it applies an acceleration in each frame rather than feeding directly into position. For each frame when a directional button is held down, the acceleration value adds a certain amount to the velocity value. The velocity value in turn tells the rectangle how it should change its position. Instead of the boxy non-curve shown in Figure 13.6, the change in Mario’s position looks like Figure 13.7."
+    }
+  ]
+}

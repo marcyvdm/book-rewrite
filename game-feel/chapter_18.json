@@ -1,0 +1,355 @@
+{
+  "chapter_title": "Principles of Game Feel",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "After exploring what game feel is and how to measure it, and stepping through a number of examples using our taxonomy of game feel—input, response, context, polish, metaphor and rules—it’s time to set forth some general principles for creating games with good game feel. They are:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Predictable results—When players take action, they get the response they expect.",
+        "Instantaneous response—The player feels the response to their input is immediate.",
+        "Easy but deep—The game takes minutes to learn but a lifetime to master.",
+        "Novelty—Though the result of an input is predictable, there is enough subtlety and expressiveness to keep the controls feeling fresh and interesting through hours and hours of play.",
+        "Appealing response—The sensation of control is aesthetically appealing and compelling, separate from context.",
+        "Organic motion—Controlling the avatar creates appealing arcs of motion.",
+        "Harmony—Each element of a game’s feel supports a single, cohesive perception of a unique physical reality for the player."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In many ways, these principles are similar to the principles of animation, which are well known and well-proven.¹ The seven principles of game feel described here may not be complete, but they are a good starting point."
+    },
+    {
+      "type": "footnote",
+      "text": "¹Once again, refer to Frank and Ollie: http://www.frankandollie.com/PhysicalAnimation.html"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Predictable Results"
+    },
+    {
+      "type": "paragraph",
+      "text": "When players take action, they should get the response they expect. This doesn’t mean that the game is easy or that the controls must be simple. What it means is that there’s no interference between intent and outcome for the player. The result of pressing a button or moving a Wiimote might be complex and difficult to manage, but this is different from feeling that the game is giving a different result for the same input. When the result is predictable for the player, the controls can be learned and mastered. Even if it seems exceedingly difficult, the player can engage with the challenge of the game. When the controls seem random, continuing to play seems pointless. There’s no point in practicing if the game just gives a random result."
+    },
+    {
+      "type": "paragraph",
+      "text": "Creating predictable results seems like an easy task from a game designer’s point of view. But, as Mick West has said, “On the face of it, this appears a simple problem: you just map buttons to events. However, due to the non-precise way that different players press buttons and perceive events, problems of ambiguity arise, which lead to frustration and a feeling of unresponsiveness. The player thinks he has hit the correct button at the correct time, but, as he’s not a robot, the intent of his input is ambiguous and cannot be resolved satisfactorily with a simple mapping.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "To paraphrase Will Wright, designing a game is half computer programming and half people programming. Creating real-time controls that always give the player the result he or she expects is difficult because expectations live in the player’s mind."
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem is the difference between the hard precision of a computer and the soft nature of human perception. To a computer everything is precise. The A-button was pressed 14ms after the Z-button or the player pressed jump 9ms after the character walked off the cliff. The game can’t know what the player expects. So when creating a system of real-time control, we as game designers must attempt to mold player expectations indirectly through mapping, metaphorical representation and art treatment. The player’s perception of what happened trumps the computer’s. We have to program the player’s perception via the computer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Three pitfalls will cause players to feel that the results of their input are more random than predictable: control ambiguity, state overwhelm and staging."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Control Ambiguity"
+    },
+    {
+      "type": "paragraph",
+      "text": "When mapping input to response, game designers sometimes create unintentional control ambiguities. In Mario 64, pressing the A- and Z-buttons at the same time will give a random result, either a ground pound or a long jump. The game will see inputs in terms of milliseconds, knowing which one came first. To the player, however, the result seems inconsistent. Mick West explains, “In [Super Mario 64] pressing [the A-button] to jump then R1… triggers a ground pound. Pressing R1 before A triggers a backflip. Pressing them at the same time causes either a ground pound,"
+    },
+    {
+      "type": "paragraph",
+      "text": "a backflip or a normal jump, seemingly at random—the player has no control. The player can press these two buttons simultaneously over and over, and never figure out how to control each of these three actions properly.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a game to provide consistent, predictable results for input, these control ambiguities must be resolved. Mick has some great strategies for identifying and resolving these problems in his series of articles on responsiveness.²"
+    },
+    {
+      "type": "footnote",
+      "text": "²http://cowboyprogramming.com/2008/05/30/measuring-responsiveness-in-video-games/"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "State Overwhelm"
+    },
+    {
+      "type": "paragraph",
+      "text": "One way game designers make low-sensitivity inputs more expressive is by changing mappings depending on what’s happening in the game. For example, in Super Mario Brothers, when Mario jumps, it’s easy for the player to perceive that he’s in the air as opposed to the ground. Though the result of pressing left or right has changed—the response is much less—it does not seem surprising or jarring because Mario’s clearly in a different state. It doesn’t seem random."
+    },
+    {
+      "type": "paragraph",
+      "text": "If I hand my mom the Playstation 2 controller and turn her loose on Tony Hawk’s Underground, however, she’s totally overwhelmed. This is because in Tony Hawk there are many different states and it’s not clear to inexperienced players when the state switches happen. When the player does not perceive the state change, inputs begin to feel random. The skater in Tony Hawk’s Underground can be in the air state, the ground state, the manual state, the runout state, the grinding state or the lip trick state. In each of these states, each of the 12 buttons on the Playstation 2 controller does something different. On top of that, there are many “chorded” inputs; pressing two buttons at the same time gives a different result than each individually. Pressing left and the X-button at the same time is different from pressing left or X individually, for example. This means that there are literally dozens of moves mapped to each button. It’s easy to understand why my mom feels overwhelmed. There are so many results for input, her input might as well be random. If inputs seem to yield random results, the rational response is to mash buttons randomly. This is what many first-time players of fighting games do, pressing random buttons without a clear intent other than simply to do something. Eventually, patterns emerge and you learn what input gives what response. But when you first start playing, there are so many states, so many possible moves, that it might as well be a random result for input."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Staging"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the result of an input is difficult for the player to perceive, it becomes unpredictable and uncontrollable. When the player cannot process what the result of an input was—if it happens too fast or gets lost in other motions—the player will not"
+    },
+    {
+      "type": "paragraph",
+      "text": "have a clear sense of what the result was and it will seem random. This is related to the Staging principle of animation, explained by John Lasseter: “An action is staged so that it is understood. To stage an idea clearly, the audience’s eye must be led to exactly where it needs to be at the right moment. It is important that when staging an action, that only one idea be seen by the audience at a time.”³"
+    },
+    {
+      "type": "footnote",
+      "text": "³http://www.anticipation.info/texte/lasseter/principles2-4.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "In real-time control, this means providing clear, immediate feedback. This often means exaggerating the result of an input with particle effects. The goal is to make it clear to the player what the result of an input was so it can be reproduced at-will."
+    },
+    {
+      "type": "paragraph",
+      "text": "As game designers, we need to remember that we have very little time to hook the players. If they don’t feel successful and oriented within the first couple minutes, we’ve lost them. The lowest-order feedback loop, the first thing they’ll encounter, is game feel, the moment-to-moment control. If it doesn’t feel good at an intuitive level, giving them predictable results they can sink their teeth into, they’ll stop playing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Predictability also means inference. From the first few minutes of a game, the player can extrapolate a clear picture of the structure of the entire game. This is a good thing; it gives the player traction, mitigating the clumsy disorienting feeling of learning a new mechanic. In Super Mario Brothers, I know that if I fall into a hole, I will lose a life. It only takes one hole to figure that out; I’ll avoid holes for the rest of the game. But just because something is reproducible doesn’t mean it’s predictable. A predictable result should reveal as much about the possibilities you haven’t tried as about the ones you have."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Instantaneous Response"
+    },
+    {
+      "type": "paragraph",
+      "text": "Games that feel good respond immediately to input. This doesn’t necessarily mean a short attack phase. For example, the Warthog controls in Halo are loose and flowing, but still feel responsive. When the player moves the reticule, the Warthog immediately starts seeking on the new direction indicated (Figure 17.1)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The farther the new direction is from the current direction the Warthog is facing, the faster it will move to try to get there. As a result, the largest, most obvious response happens moments after the change in input. The response feels instantaneous, even if the release phase is long and drawn out (Figure 17.2)."
+    },
+    {
+      "type": "paragraph",
+      "text": "This closely relates to the Slow-In, Slow-Out principle of animation: “As action starts, we have more drawings near the starting pose, one or two in the middle, and more drawings near the next pose. Fewer drawings make the action faster and more drawings make the action slower. Slow-ins and slow-outs soften the action, making it more life-like. For a gag action, we may omit some slow-out or slow-ins for shock appeal or the surprise element. This will give more snap to the scene.”⁴"
+    },
+    {
+      "type": "footnote",
+      "text": "⁴http://www.frankandollie.com/PhysicalAnimation.html"
+    },
+    {
+      "type": "image",
+      "src": "320a.png",
+      "caption": "FIGURE 17.1 The loose but responsive feel of the Warthog in Halo."
+    },
+    {
+      "type": "image",
+      "src": "320b.png",
+      "caption": "FIGURE17.2 The ADSR envelope of Warthog turning in Halo."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference is that in a video game, response time is important. If easing in takes too long, the player will perceive the game as sluggish and unresponsive. What feels bad is when there is a delay longer than about 100ms between when the player tries to do something and when he or she perceives the result of that action. To maintain the impression of responsiveness, the result of input must be perceived by the player as immediate. The attack phase can take 10 seconds but will still feel responsive as long as there is some obvious result within 70 to 100ms of the input."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Easy but Deep"
+    },
+    {
+      "type": "paragraph",
+      "text": "There’s an old game design maxim: good games take minutes to learn but a lifetime to master. Another way to say this is “low skill floor, high skill ceiling.” The basic skills are easy to learn, but there are always new levels of mastery to aspire to. There’s always something new to learn. Good-feeling games often have this property."
+    },
+    {
+      "type": "paragraph",
+      "text": "The most elegant way to make a game easy to learn is to exploit natural mappings. For example, the motion of the ship in Geometry Wars closely matches the physical movement of the thumbstick input that drives it (Figure 17.3)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The relationship between the input and the thing being controlled in the game is obvious and intuitive. Similarly, exploiting standard mappings of input to response leverages assumable common knowledge to avoid making the player learn something new. A steering wheel turning a car; a mouse moving a cursor;"
+    },
+    {
+      "type": "image",
+      "src": "321.png",
+      "caption": "FIGURE 17.3 The movement of the avatar in Geometry Wars: Retro Evolved is a natural mapping."
+    },
+    {
+      "type": "paragraph",
+      "text": "and the W, A, S, D keys moving an avatar are examples of established cultural standards for control."
+    },
+    {
+      "type": "paragraph",
+      "text": "Other ways to make a game easy to learn are tutorials and “helpers”—auto aim, dynamic difficulty adjustment, so-called “rubber banding” rules (like the blue shell in Mario Kart) and so on. Making a game easier to learn is a straightforward process of iteration. The really difficult problem is how to make a game deep."
+    },
+    {
+      "type": "paragraph",
+      "text": "Creating a game with depth is a difficult, unpredictable process. This is why games that have this property are so valued; a game designer cannot predict which combination of elements will give rise to a system that people spend endless hours obsessively practicing. Fortunately, video game designers have control over not only mapping of input to response, but challenges as well. We get to design the challenges that define the skills as well as the basic movements themselves."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the game seems to lack depth, it’s possible to change the relationship between input and response sensitivity. Adding additional sensitivity to the controls enables more subtlety and nuance to the interactions. Supporting these new, more expressive interactions with rules (goals and challenges) and context (spatial layout) enables the designer to craft the feel of the game at various levels, making it deeper. For example, tracking how long it takes to complete a specific action—racing from point A to point B, for example—is one way to add depth. Even with a simple set of controls, getting a better time is almost always possible. The first time the player completes the race sets the benchmark. The next time he or she plays the race, the knowledge gained from the first play through will probably make it easier to get a better time. Each play through, though, it will become harder and harder to improve. Eventually, the player will have to start changing and experimenting with different strategies in order to improve his or her time. Figuring out new ways to optimize his or her time, the player is reaching new levels of skill and unlocking new sensations of control. In a deep game, this process can go on much longer than in a shallow one. This simple rule—recording the time it took to complete an action and showing the result to the player—unlocks whole layers of skill learning and optimization the player would never have experienced otherwise."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another strategy is to enable multiple players to compete, directly or indirectly. Examples of direct competition are games like Quake and Street Fighter II, where players directly attack one another. Indirect competition happens when a game has a leader board. Players are alone while playing the game but their scores get recorded and posted for comparison."
+    },
+    {
+      "type": "paragraph",
+      "text": "Enabling competition between players effectively makes the skill ceiling infinite. You can never be complete—as when you get 120 stars in Mario 64—you can only be better than someone else."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Novelty"
+    },
+    {
+      "type": "paragraph",
+      "text": "Though the result of an input is predictable, there should be enough small, subtle differences in response to keep controls feeling fresh and interesting."
+    },
+    {
+      "type": "paragraph",
+      "text": "One enemy of novelty is linear animation. Even in a game like Jak and Daxter, where the linear animation is of uncommonly high quality, it’s very easy to tell that Jak is doing the same punch every time. The problem is that, once exhausted, even quality content gets boring. Watching Jak punch for the ten thousandth time is significantly less compelling than it was the first time. For a sensation of control to hold the player’s interest, it needs to feel novel and interesting even after hours of play. Even repetitive actions should feel fresh each time you trigger them."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many games attempt to solve this problem with mountains of additional content, running the player through a series of increasingly challenging and varied levels that give new and interesting context to the virtual sensation to keep it from feeling stale. Another approach is to introduce more mechanics—additions and modifications to virtual sensation—over the course of the game. For example, Castlevania: Dawn of Sorrow does a great job of constantly adding new virtual sensations through different “souls” and weapons, each of which adds a different feel to the underlying movement or augments it with new states (such as the ability to jump twice without landing)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another approach is to increase the sophistication of the global physics simulation. Physics games make control feel novel because the player will never be able to offer the same input twice. While the player may be able to consistently achieve the same result in Ski Stunt Simulator—jumping a ravine then doing a backflip over a wooden hut, for example—no two runs will ever be the same. The parameters that govern the simulation will react identically each time, players can’t perceive the subtle differences in their own input. The system is more sensitive than the player’s perception, much like the real world. Because our perception is keenly tuned to physical reality, we subconsciously expect certain things to happen when objects interact and move. One thing we expect is that no motion will ever be exactly the same twice. This is the nature of reality: messy and imprecise. No one person can punch exactly the same way twice or throw a discus or javelin the same way twice. If we see the same action happening in the same way over and over again without subtle variation, it starts to look wrong."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Appealing Response"
+    },
+    {
+      "type": "paragraph",
+      "text": "When completely removed from its context, real-time control should still be engaging and aesthetically appealing. What’s important here is to separate meaning from appeal. Context is very important to create meaning in a virtual sensation, as well as to provide a point of reference for scale, speed and weight, but is separate from naked appeal. A virtual sensation has appeal when it’s fun to play and tinker with in a completely empty space."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Playable Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try each of the sensations of control in example CH17-2 to experience how appealing they are without the benefit of spatial context. The “High Input, High Reaction” test has much more appeal because its motion is more complicated, fluid and organic-looking than the other three. Indie game designer Kyle Gabler does a fantastic job of making games with this kind of basic appeal; Attack of the Killer Swarm and Gravity Head in particular are super appealing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Additional effects and baked-on animation can also add to appeal. The animations in Jak and Daxter add a lot of appeal to an otherwise bland sensation of control. Most of the techniques used to animate Jak come from traditional animation—squash and stretch and so on. But Jak’s movement, which is simple when separated from the layer of animation on top of it, seems organic, complex and appealing. In New Super Mario Brothers there is a similar effect: if Mario were just a cube, the virtual sensation would not be as appealing. As it is, Mario’s run cycle speeds up gradually and slows down again as he starts and stops, throwing up dust particles both as he runs and if he quickly changes directions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The other part of appeal is making sure that no matter what input the player gives the system, the result is compelling. This is especially important for things like crashes and failure states. An enlightened approach is to spend more time on the failure states, making them varied and interesting, since this is where the player will spend most of the time. For example, in the game Ski Stunt Simulator, it’s fun to crash and mangle the skier. Because the skier is a “ragdoll” physics rig, complete with constraints to simulate joints and different, individual masses for each limb, crashing him produces a satisfying, organic-looking result. It’s not just one canned animation playing back every time. He’ll smack his head, tumble down a ravine or impale himself on a cliff side. In a sort of extreme sports mishap kind of way, it’s very appealing to watch him crash and go limp as his body contorts and tumbles. There’s a very visceral “oooh daaaamn!” kind of reaction, one that has a hugely positive effect both on learning and capture. Because the failure state is so much fun, learning is much easier and frustration mitigated. If you try a run numerous times and still aren’t successful, you can always crash the skier intentionally a few times to put a smile on your face. Likewise, observers will often be “captured” by Ski Stunt Simulator’s organic look, especially when the skier crashes, enticing them to play."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Organic Motion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Good-feeling games produce flowing, organic motion (see Figure 17.4). This is true of Asteroids, Super Mario Brothers, Half Life and Gran Turismo."
+    },
+    {
+      "type": "image",
+      "src": "325.png",
+      "caption": "FIGURE 17.4 Flowing curves of motion in Asteroids and Super Mario Brothers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whether it’s the motion of the avatar itself, animation that’s layered on top of it or both, curved, arcing motions are more appealing. In fact, this is one of the principles of animation, i.e., arcs. “All actions, with few exceptions (such as the animation of a mechanical device), follow an arc or slightly circular path. This is especially true of the human figure and the action of animals. Arcs give animation a more natural action and better flow. Think of natural movements in the terms of a pendulum swinging. All arm movement, head turns and even eye movements are executed on an arc.”⁵"
+    },
+    {
+      "type": "footnote",
+      "text": "⁵http://www.frankandollie.com/PhysicalAnimation.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "In animation, this means arranging frames along a curved path. In a video game it comes down to mapping and simulation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Setting the position of an avatar every frame, as with the horizontal movement in Donkey Kong, Contra, and Ghosts and Goblins, produces a linear motion, which will feel rigid and stilted. Changing an internally simulated velocity with forces, such as using the thruster in Asteroids, creates a more flowing, organic motion."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Harmony"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each element of a game’s feel should support a single, cohesive perception of a unique physical reality."
+    },
+    {
+      "type": "paragraph",
+      "text": "Video game worlds are perceived actively, as we have said. Unfortunately for game designers, active perception is more acute than passive. People are extremely sensitive to perception at the level of everyday physical interactions. If something’s even slightly off—a ball doesn’t bounce right, a book doesn’t tip over correctly, a car doesn’t steer as expected—people will notice. We can’t help it. We spend all day every day honing the skills of perception so that we can successfully navigate and cope with the world around us. This makes designing game worlds very difficult because any tiny inconsistency becomes glaringly obvious."
+    },
+    {
+      "type": "image",
+      "src": "326.png",
+      "caption": "FIGURE 17.5 Treatment changes expectations about sound, motion and behavior."
+    },
+    {
+      "type": "paragraph",
+      "text": "The best-feeling games maintain harmony across the six elements of game feel. If an object in the game looks like a car, controlling it has to feel like steering a car. It should grip the road properly, carving and tilting and bouncing over bumps. It also has to sound like a car, from the revving of the engine to the crumbling noise of tires on dirt to the screech of rubber against road. If the car runs into something, that interaction most also be perfect. If it hits a building, it should crumble and break, and the car should be twisted and mangled."
+    },
+    {
+      "type": "paragraph",
+      "text": "If we attempt to make a game world appear photorealistic, we’re setting ourselves up for failure. To be in harmony, the visuals must all behave just the way they do in real life, and stand up to the deep, multi-sensory scrutiny of active perception. Sounds must correspond to visuals that correspond to motion. And not just passively perceived animated motion, as in a Pixar film. The object has to look, sound, feel and move properly even as the player noodles it around and manipulates it in unpredictable ways."
+    },
+    {
+      "type": "paragraph",
+      "text": "Expectations about how things behave, however, are malleable. Even if we have a very common object like a car, the expectations about how it will behave can be toned down by the treatment. If it’s a cartoony, iconic car, the player will not expect it to behave realistically. A good way to think of this is consistency of abstraction. If the level of abstraction is the same across visuals; sounds; and motion, simulation and rules, the game is in harmony. Making a game more iconic than realistic makes it much easier to meet or exceed player expectations for harmony across all the elements of a game."
+    },
+    {
+      "type": "paragraph",
+      "text": "The most difficult piece of harmony is motion. It’s very difficult for player-controlled simulated motions to always produce perfectly cohesive motion. For example, in most games that feature a running character, it’s possible to run the character into a wall. Not only is it not hurt by this, but it continues to run while pressed up against the wall in a silly way. The impression that it’s a badass space marine or whatever is lost. The game Gears of War surmounts this problem by turning"
+    },
+    {
+      "type": "paragraph",
+      "text": "pressing against surfaces into a mechanic, in a single stroke creating an interesting game dynamic and an uncommonly cohesive physical reality. The sounds and particles and animations all work together with the programmed rules about taking cover and pressing against objects. Because of this, Gears of War’s unique physical reality stands up well under the scrutiny of active perception."
+    },
+    {
+      "type": "paragraph",
+      "text": "The pragmatic reality of game production means that some small inconsistencies will creep into every game. Being aware of each element of the game’s feel and the way it will change the player’s perception of the game’s unique physical reality can help to avoid and mitigate these little annoyances. This is more important than most game designers realize. Every time a character’s arm clips through a building or a plank of wood goes sailing off into the distance at the slightest touch, the players’ impression of the game world as cohesive is further eroded. If this happens too often, they may stop playing entirely."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ownership"
+    },
+    {
+      "type": "paragraph",
+      "text": "The best virtual sensations contribute significantly to the feeling of ownership. This happens after the player has fully learned the mechanic and mastered most of the challenges presented by the game, at the point most games get put down. In the game industry, this is often termed “replayability” and is spoken of in hushed tones because of the obvious correlation between games that have this quality and games that do very well financially. Really, this phenomenon is all about ownership: if players feels a personal investment in a game, they’ll keep playing it. If they keep playing it, they will start to evangelize it. Once mastered, a virtual sensation that has enough sensitivity enables improvisation, which often gives rise to unique forms of self-expression."
+    },
+    {
+      "type": "paragraph",
+      "text": "Improvisation in a game is the ability to create new and interesting combinations of motion in real time, adapting and reacting to the game’s environment in a fluid, organic way, without forethought. This is an intensely pleasurable experience, a flow experience. When your skill is matching up well to the challenge you’ve undertaken, you get into the flow state, which is universally described as being a wonderful, life-enriching experience. To enable such improvisation, a mechanic needs to have not only a lot of sensitivity (between its input and reaction) but to be very flexible in how it interacts with objects in its environment."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some games, like Tony Hawk’s Underground, achieve a sense of ownership through a huge number of states and a context that’s well spaced with a lot of utility in a ton of different instances. The player can use any number of states to traverse the environment, using each object in many different ways. All the objects are well spaced relative to one another, which again fosters improvisation by making it easy to transfer successfully between any two objects from any direction of approach. Invariably, no two combinations will be the same because you’ll use different objects in different ways, and choose different paths to take depending on the situation. You improvise, making snap judgments about which objects to traverse."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the highest level of play, this becomes even more expressive, with players finding and practicing long “lines” of chained moves used on certain objects. They seek out aesthetically appealing states rather than high-scoring ones, recording videos of their most appealing lines and uploading them to the Web to share. To these players, Tony Hawk is a form of interpretive dance, enabled by the fact that all the objects have a very high degree of utility from just about any state or relative position."
+    },
+    {
+      "type": "paragraph",
+      "text": "Other games, like Ski Stunt Simulator, are more fluid and achieve ownership through extremely high input sensitivity and subtlety. Minute differences in the angle of skis to ground, for example, produce a totally different kind of landing. Because there are global rules about object interaction in Ski Stunt—a crash occurs if the skis hit at a certain angle or when the skier’s head hits the ground—there’s a lot of space for interesting improvisation and expression. For example, when the skier is extended, standing his full height, he raises his arms in the air. If you’re in the air, about to hit your head and trigger a crash state, you can extend the skier’s arms to prevent his head from hitting. This ability isn’t explicitly defined but, instead, is a product of the recombination of a few simple rules (e.g., you can move the skier’s arms up, crash is only triggered when his head hits)."
+    },
+    {
+      "type": "paragraph",
+      "text": "When multiple players are involved, expression becomes communication, which opens a whole new realm of powerful social experiences. In Battlefield 2, for example¸ if you sneak up on someone and stab him with a knife, his state goes from alive to dead. In that context, knifing an enemy player is just playing the game, and slightly embarrassing the enemy player who allowed himself to be snuck up on. If once the player is dead, however, you continue to knife the corpse, this action has a totally different meaning. It’s directly insulting and belittling to the player, who has to watch from his corpse’s perspective as he’s stabbed over and over again until respawn."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "The underlying goal of all the principles discussed in this chapter—predictable results, instantaneous response, easy but deep, novelty, appealing response, organic motion and harmony—is to create a feeling of control and mastery so strong that it becomes a tool for self-expression. This feeling creates a strong sense of ownership, which is what happens when players can express themselves in a meaningful way through a game. Any artifacts the game creates based on their inputs (replays and so forth) become an important commodity, and players begin to identify with the game and their achievements in it in a very powerful, transparent way. Players start to feel pride in their accomplishments, and develop a desire to share them with others."
+    }
+  ]
+}

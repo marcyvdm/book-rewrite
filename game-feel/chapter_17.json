@@ -1,0 +1,535 @@
+{
+  "chapter_title": "Raptor Safari",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "More than any other type of game, players go pants-on-head crazy over the feel of driving games. This is, perhaps, unsurprising. People love cars, drive cars all day and in some cases, fetishize them in rather dubious ways. Everyone in our society has a huge amount of experiential background against which they compare the feel of driving a virtual car against. People, in short, have a lot of perceptual data about the feel of driving and riding in cars, and this heavily influences their perception of driving mechanics in games. More than any other type of game, people are critical of and sensitive to the feel of controlling something that looks like a car. For this reason, there has been a huge amount of energy spent perfecting various flavors of driving mechanics over the years. To the layperson, games like Gran Turismo, Project Gotham and Ridge Racer may not seem appreciably different. But to the enthusiast, there are subtle differences in flavor, texture and feel that make all the difference in the world. There are indeed people in this world who treat driving simulations like fine wine."
+    },
+    {
+      "type": "paragraph",
+      "text": "Raptor Safari, a game by Flashbang Studios (Figure 16.1), provides a window into just how difficult, intricate and time-consuming it can be to create and to give a leg up toward creating your own good-feeling driving mechanic. But it should be noted that of the popular retail games that feature a driving mechanic, Raptor Safari probably has the most in common with the tuning of cars in Grand Theft Auto 3. Many of the ideas and structures, if not the specific implementations, can be generalized and applied to all driving mechanics. Just bear in mind how deep the rabbit hole goes in terms of the feel of driving games and players’ sensitivity to subtle changes in it. Whether the treatment is photorealistic or iconic, if you’re going to create a game where the avatar is represented as a car, be prepared for an obscene amount of tweaking and tuning to get it to a place where it feels right to players."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Game Overview"
+    },
+    {
+      "type": "paragraph",
+      "text": "Off-Road Velociraptor Safari is a 3D browser-based game, created in about two months by a team of six people. At the time this was written, three and a half million raptors have been slaughtered by 90,000 users who’ve played the game 550,000 times. Many players commented on the especially enjoyable feel of the game and"
+    },
+    {
+      "type": "image",
+      "src": "297.png",
+      "caption": "FIGURE 16.1 Off-Road Velociraptor Safari by Flashbang Studios."
+    },
+    {
+      "type": "paragraph",
+      "text": "cited it as a reason for the game’s addictive quality. It uses a very simple interface of six keyboard keys to control an advanced physical simulation including, among other things, separate values for shock compression, per-tire forward and side friction, motor speed, velocity, mass, drag and angular dampening. Compare this to the simplicity of simulation in a Bionic Commando or an Asteroids and you see how quickly complexity can increase with just a few additional variables. You can quickly find yourself in the realm of Excel spreadsheets, needing some visualization to track all the relationships and interdependencies."
+    },
+    {
+      "type": "paragraph",
+      "text": "Luckily, the design document for Raptor Safari was not complex and provided a consistent vision to guide us through development. It consisted of the following, scrawled on a whiteboard:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Physics-based Jeep + ragdoll raptors = awesome"
+    },
+    {
+      "type": "paragraph",
+      "text": "The final game matched the design document almost exactly. Driving the Jeep around feels great; there’s a powerful sense of weight and mass as the large blocky body of the Jeep compresses the shocks of each individual tire and as they squish and push back. The Jeep does not flip over too easily, but it’s clear that rolling and crashing the Jeep is not only possible but encouraged via the damage and stunt systems. It has a sense of weight and presence and feels to players as though it is a large and heavy vehicle with responsive steering with which they can navigate the environment easily. Crunching tire sounds, engine revving and crashing noises of various kinds further lend credibility to the impression of physicality, especially supporting the sense of friction with pitch-modulated sounds of tires digging into dirt. Slow-motion camerawork at moments of impact or during long jumps further emphasizes the physical nature of the interactions. Crashing into trees and rocks creates loud, metallic crunching noises and can cause pieces of the jeep to smash"
+    },
+    {
+      "type": "image",
+      "src": "298.png",
+      "caption": "FIGURE 16.2 The online popularity of Raptor Safari—the inimitable Derek Yu models an oh-so-sexy Raptor Safari shirt."
+    },
+    {
+      "type": "paragraph",
+      "text": "and break off or be dislodged and left hanging. Hitting something at higher velocities causes louder sounds with more crashing and breaking of glass."
+    },
+    {
+      "type": "paragraph",
+      "text": "At some point, the player will hit a raptor. The silly puff of feathers, the squealing noise, the satisfying thud and the fact the raptor then goes into “ragdoll” mode all give the player positive feedback. The interaction has a sort of extreme sports bloopers appeal, but with virtual ragdoll raptors instead of some poor motorcyclist flying over hay bales, or a cowboy being gored by a bull. It’s a victimless pleasure. The experience of hitting a raptor feels gratifying, interesting and worthwhile in and of itself. The ragdoll raptors have “over the shoulder” appeal. People walking by someone playing the game often stop and want to know more about this irreverent game in which you run over feathery ragdoll raptors that look like parrots in an off-road Jeep. These interactions—flipping the jeep, destroying it, hitting raptors, capturing them with tow cables—are all supported by the system’s rules. Our goal was to have the game recognize, and reward, every possible permutation of interaction the player could have with the world. A sampling of some of the special interactions that the system recognizes:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Raptor on raptor: hitting one raptor with another",
+        "Live specimen: chasing a raptor into a capture point without knocking it out",
+        "Clothesline: hitting a raptor with the chain only"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pickup: snagging an unconscious raptor with the tow cable",
+        "Barrel roll: flip the Jeep along its forward-facing axis"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition, there are high-level goals driven by an Xbox-Live-like achievement system that gives the players specific goals to chase to encourage subsequent playthroughs. For example, there are achievements for destroying the Jeep entirely, for balancing on two wheels for 10 seconds and for throwing a raptor more than 50 meters into a capture point. Between this good-feeling, low-level interaction, the joy of pummeling ragdoll raptors, and the varied and interesting high-level rules, we built something that a lot of people enjoyed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let’s take a look under the hood—if you’ll pardon the phrase—and see how the feel of Raptor Safari was created."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Input"
+    },
+    {
+      "type": "paragraph",
+      "text": "As a casual, downloadable game, we chose to use the standard computer keyboard. Specifically, the W, A, S, D, B and space keys."
+    },
+    {
+      "type": "paragraph",
+      "text": "The game uses only discrete inputs; there is no mouse or thumbstick providing a continuous stream of input. Again, each of the six buttons sends a binary signal. Taken alone, this input data can be interpreted as “up” or “down.” When measured over time, the signal can be interpreted as “up,” “pressed,” “down” and “released.”"
+    },
+    {
+      "type": "image",
+      "src": "299.png",
+      "caption": "FIGURE 16.3 The input space for Raptor Safari."
+    },
+    {
+      "type": "image",
+      "src": "300a.png",
+      "caption": "FIGURE 16.4 Left/Right Turning (Gravity = 3, Dead = 0.001, Sensitivity = 2)."
+    },
+    {
+      "type": "image",
+      "src": "300b.png",
+      "caption": "FIGURE16.5 Forward (Gravity = 3, Dead = 0.001, Sensitivity = 3)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Response"
+    },
+    {
+      "type": "paragraph",
+      "text": "The simple binary signals for each button are fed into Unity’s input manager, where they are parsed and processed before being mapped to specific parameters in the game. The input manager interprets everything as an axis, even keyboard presses. In so doing, it assigns the following properties:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Gravity: Speed in units per second; the axis falls toward neutral when no buttons are pressed.",
+        "Sensitivity: Speed in units per second that the axis will move toward the target value.",
+        "Snap: If enabled, the axis value will reset to zero when pressing a button of the opposite direction."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "What this means is that there’s already a softness applied to each input, filtering it before it is fed into the simulation. The result of this filtering is envelopes for each button that look like Figures 16.4 through 16.7."
+    },
+    {
+      "type": "paragraph",
+      "text": "Applying our taxonomy for response, we can see that the jeep moves linearly in the Z-direction, while rotating around the Y-axis to turn left and right. It has freedom of movement and rotation in all three axes, though, and can tumble, roll or fly in any direction, X, Y or Z (Figure 16.8)."
+    },
+    {
+      "type": "image",
+      "src": "301a.png",
+      "caption": "FIGURE 16.6 Backward (Gravity = 3, Dead = 0.001, Sensitivity = 3)."
+    },
+    {
+      "type": "image",
+      "src": "301b.png",
+      "caption": "FIGURE16.7 Backward (Gravity = 3, Dead = 0.001, Sensitivity = 3)."
+    },
+    {
+      "type": "image",
+      "src": "301c.png",
+      "caption": "FIGURE16.8 Dimensions of movement in Raptor Safari."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Jeep’s motion is relative to itself; forces get applied in the direction it’s facing and using its own coordinate space as a reference. In addition, the rotational and linear movements are controlled by separate buttons rather than one integrated control for each."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Simulation"
+    },
+    {
+      "type": "paragraph",
+      "text": "The body of the Jeep is a large box which has been defined as a “rigidbody,” meaning that it has been registered as a physical object by the built-in Ageia PhysX™ physics engine. What this means is that its motions and interactions are already being simulated in a very detailed, robust way. For example, the engine already keeps track of the following parameters:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mass",
+        "Drag",
+        "Velocity",
+        "Angular velocity",
+        "Position",
+        "Rotation"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "So far, so simple. The system is still comprehensible and can be kept in one’s mind with relative ease. If you’ll recall the simulation that drove Mario’s movement, however, we’ve already eclipsed it in terms of the number of different things that are being tracked."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each tire is tracked individually. Interestingly, there is no physical simulation of the tires. At least, they’re not physically simulated objects the way that the body of the Jeep is. They don’t have mass, nor do they collide with other objects in the world. Instead, the position of the tires and their functionality are determined by four raycasts, which start at each of the four wheel wells of the Jeep and extend downward. A raycast is basically an arrow, starting at a certain point and going for a certain distance in a particular direction. Visualize it like Figure 16.9."
+    },
+    {
+      "type": "paragraph",
+      "text": "The visualization of the tires (the 3D model representing each of them) has its position set at the point where the raycast intersects the ground below it. That is, the raycast will shoot down a certain amount from its starting point up in the wheel well. If the raycast doesn’t hit anything, it doesn’t do anything and the wheel gets set to the maximum distance beneath the Jeep, which is a predefined number. In this case, it’s enough effect to make the Jeep look normal, with its tires situated properly in the wheel wells. If the raycast does hit something before reaching its defined maximum distance—the ground, say—it has a programmed response. Depending on how close the place that was hit is to the starting point of the ray up in the wheel well, a force gets applied to the body of the Jeep, pushing it. The further “compressed” the suspension is, the larger the force."
+    },
+    {
+      "type": "image",
+      "src": "303.png",
+      "caption": "FIGURE 16.9 The four raycasts going downward out of the Jeep’s wheel wells."
+    },
+    {
+      "type": "image",
+      "src": "304a.png",
+      "caption": "FIGURE 16.10 Without dampening, the forces quickly send the Jeep spinning into oblivion."
+    },
+    {
+      "type": "image",
+      "src": "304b.png",
+      "caption": "FIGURE16.11 The force is reduced as the raycast returns to its normal length."
+    },
+    {
+      "type": "paragraph",
+      "text": "The result is that forces are constantly acting on each of the four corners of the Jeep, under the wheel wells, where the tires would be, pushing upward like a set of shocks attached to tires. The only weirdness that’s caused by this is the fact that when the Jeep passes over a rapid shift in terrain height, like a curb, you can actually see the tires snap up or down. If you watch closely, you can see this happen even in Grand Theft Auto 4. To combat this small but potentially annoying movement, Raptor Safari always interpolates between the current position of the tire and its next desired position, guaranteeing that the motion will be relatively smooth. There are still some cases where the tires seem to behave a bit weirdly, but overall the effect is solid."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now, if you set up a system like this and just drop the Jeep onto some terrain, it would start rocking back and forth with increasing force, eventually with such force that it might get launched up into the air (Figure 16.10)."
+    },
+    {
+      "type": "paragraph",
+      "text": "To combat this effect, a dampening value must be applied to each upward suspension force such that as it pushes upward from fully compressed, it quickly decreases in force. As it approaches equilibrium, in other words, it applies less and less force, like Figure 16.11."
+    },
+    {
+      "type": "paragraph",
+      "text": "So up to this point we have a big block representing a Jeep that, if dropped on to some terrain, will float above it because of the counteracting forces of four tires simulated by short raycasts. In terms of tweakable parameters we have:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Global",
+        "Gravity",
+        "Jeep",
+        "Mass",
+        "Special Jeep gravity (some extra gravity applied only to the Jeep to make it seem less like a hovercraft)"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Tire",
+        "Raycast max distance",
+        "Raycast min distance",
+        "Suspension force",
+        "Suspension dampening."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Yipe! Well, you can see how these things start to get mind-bendingly complex in a big hurry. We don’t even have the Jeep moving yet and we’ve already got a much more complicated simulation than anything we’ve talked about up to this point."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now, the movement of the Jeep. The Jeep actually tracks two values for its velocity: the actual current velocity of the physics object according to the physics engine and a separate “desired” value, which could be thought of as motor speed. For example, say the Jeep goes off a jump and gets launched into the air. Say its actual horizontal velocity according to the physics engine in the air is 30 km/hr. Since it’s flying through the air, it will have this same horizontal velocity until acted upon by some other force. It’s still possible to hit the gas while in the air like this. The tires will spin quickly and the engine will rev. The desired speed, the motor speed, of the Jeep goes up to some amount above the actual horizontal speed. Let’s say it goes as high as 50 km/hr. The Jeep is still flying through the air so the actual horizontal speed remains the same, but the desired speed is now much higher. What happens when the Jeep lands back on the ground?"
+    },
+    {
+      "type": "paragraph",
+      "text": "When the Jeep hits the ground, you don’t want to immediately set its velocity to 50. That would feel weird and artificial. You want it to have some kind of friction simulation that causes it to “catch” as it comes back in to contact with the ground. But if the engine’s been revved up too much and the tires are spinning much more quickly than the actual speed of the car, the tires “slip” if they’re above a certain threshold, the way that real car tires on a real road will slip and peel out if they’re accelerated too quickly. So this separation between actual and desired velocity gets us two things. First, our Jeep can have a different desired heading and desired speed when it’s in the air. You can go soaring through the air, gas it and turn, and have those changes manifested as soon as the Jeep comes back into contact with the ground. This is in line with players’ expectations. If it doesn’t happen this way, it seems weird and artificial. Second, we can simulate the type of slipping that happens when friction is overcome by a tire that’s broken free."
+    },
+    {
+      "type": "paragraph",
+      "text": "The way this is implemented in Raptor Safari is shown in Figure 16.12. As you can see, there are indeed two separate parameters for actual velocity and desired velocity. Interestingly, the actual velocity is never reached, because of the friction forces applied to each tire in both the front and side directions. In fact, all motion of the Jeep is driven by the tires. Each tire maintains its own individual velocity and two friction values that counteract it: side friction and forward friction."
+    },
+    {
+      "type": "paragraph",
+      "text": "As the tires turn, the direction of their velocity may change. The friction forces apply in amounts commensurate to the direction of each tire’s velocity, though always more to the side than to the front. This is what creates the carving effect"
+    },
+    {
+      "type": "image",
+      "src": "306a.png",
+      "caption": "FIGURE 16.12 The force is reduced as the raycast returns to its normal length."
+    },
+    {
+      "type": "image",
+      "src": "306b.png",
+      "caption": "FIGURE16.13 The feel of a car “carving” as it turns comes from a special, high friction value applied sideways on the tires."
+    },
+    {
+      "type": "paragraph",
+      "text": "when the Jeep begins to turn. Because the forward friction is much less than the side friction, instead of spinning on its axis even as it turns like the ship in Asteroids, the jeep seems to dig into the ground, creating an arcing, curving motion rather than a floaty, sliding turn (Figure 16.13)."
+    },
+    {
+      "type": "image",
+      "src": "307.png",
+      "caption": "FIGURE 16.14 The slip threshold—past a certain speed, the tires will break loose."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, each friction value for each tire has a particular slip threshold. This simulates the effect we mentioned earlier, where the tires will get spinning so quickly that they will break loose and slip, overcoming the friction that holds them to the ground. Figure 16.14 shows the way it works."
+    },
+    {
+      "type": "paragraph",
+      "text": "As with the Jeep body proper, each tire has both an actual and desired velocity. In each frame, the game examines the difference between the desired velocity and the actual velocity. If this number, the difference between motor speed and actual speed, is above a certain threshold, the friction values, both side and front, are adjusted according to the graph in Figure 16.14. It’s a gradual application but it produces the intended effect. If the motor speed is much, much higher than the actual speed, the tires break loose and slide. Note that this effect also works if the car is sliding sideways with great force, as when the jeep gets launched and spun simultaneously, landing at an awkward angle. The overall effect is a sensation of friction approximating what a player expects from a real car."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "The Tow Chain"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deploying the chain is actually a physical process. It probably doesn’t have to be, but it worked out so well that we stuck with it. The chain goes from being non-simulated to being simulated, unfurling as the back door (also physically simulated) pops out backward. The result is a sort of jiggling in of the whole jeep rig in response to this change in mass and balance, one that looks appropriate and satisfying."
+    },
+    {
+      "type": "paragraph",
+      "text": "The center of gravity of the Jeep changes depending on whether the chain’s out and depending on whether there’s a raptor attached to it. If you think the Jeep is squirrely and difficult to control with a raptor attached now, you should see it when the center of gravity isn’t shifted backward and down. Through this artificial center of gravity shift, though, we were able to get the Jeep to a reasonably controllable state with chain in or out and with or without raptors attached. The result is reasonably unwieldy without being overly so and promotes the development of high-level skills involving prediction and intuition. You can, through lots of play, get a feel for"
+    },
+    {
+      "type": "image",
+      "src": "308.png",
+      "caption": "FIGURE 16.15 The wide open space of Raptor Safari."
+    },
+    {
+      "type": "paragraph",
+      "text": "how to effectively swing raptors around and get them and the Jeep to do what you want. There was one consequence, though: sometimes when the Jeep is flying and spinning through the air, its behavior is a bit odd-looking. It’s clear that the center of gravity is outside the Jeep. We decided that it was worth it to have stable driving."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, the chain will break under a large amount of stress. There’s a fine balance between having it break too easily and not easily enough. The tests we used were accelerating from a standstill with a raptor attached and wrapping the chain around a tree. The player had to be able to accelerate from a stop with the tow cable unfurled and a heavy raptor attached without breaking the chain, but the chain should almost always break if you swing it and wrap it around a tree."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Context"
+    },
+    {
+      "type": "paragraph",
+      "text": "At the highest level of spatial context, we created a world that was very open. There are lots of places to go, higher levels and lower levels, but in general, there’s a sense that you’re in a vast, open area with lots of tall mountains surrounding it, but there’s also an ocean and it sort of goes on forever. And the free-roaming, exploring nature of the game with very little constraint further emphasizes this sensation."
+    },
+    {
+      "type": "paragraph",
+      "text": "So in general, it feels much more like a large, open valley than any sort of cloistered-in city (Figure 16.15). And there are a couple places where that impression is sort of part of the contrast, by having closed-in canyons or areas that are under outcroppings of rocks or have lots and lots of trees in them. But in general, the impression of space at the highest level is very open and wide."
+    },
+    {
+      "type": "paragraph",
+      "text": "And if you see a place on the map, odds are you can find a way to travel there. So it has that sort of high-level, exploratory appeal, like World of Warcraft or"
+    },
+    {
+      "type": "image",
+      "src": "309.png",
+      "caption": "FIGURE 16.16 Objects and textures in Raptor Safari create the impression of speed and provide mid-level context."
+    },
+    {
+      "type": "paragraph",
+      "text": "Oblivion, in microcosm. The entire gameplay field is about two kilometers square in the measurement we use in the game itself for speed."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the medium level, we have a really nice impression of speed going on because of all the textures on the ground and because of all the small plants and trees and environmental object as the Jeep travels around. There’s a nice impression that it’s moving fairly quickly as it’s rolling around the level and zipping between objects (Figure 16.16)."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of the number of objects, nature of the objects and the spacing of objects, we’ve provided what I feel is a nice contrast between big, wide-open areas and penned in, small areas, where you have to do a lot of obstacle avoidance."
+    },
+    {
+      "type": "paragraph",
+      "text": "But again, since we’re not punishing players for running into stuff—in fact, we’re rewarding them with points for damaging the Jeep. The sensation is positive, regardless of whether you’re running into something or not. And of course, we created the raptors as a reward for crashing into things. So you chase them down and run into them."
+    },
+    {
+      "type": "paragraph",
+      "text": "We’re giving a lot of meaning to the amount of turn that the car has relative to its forward velocity because you have to chase down with a fairly high degree of accuracy a moving target and the raptor who will always be fleeing away from you, albeit at a slower speed than you."
+    },
+    {
+      "type": "paragraph",
+      "text": "The game provides a variety of goals and well-spaced environment objects that emphasize precise movement andluming. In addition, the goals provide incentive to attempt huge jumps and to seek out areas that accommodate such launches. So in that sense, it’s much more like an open street with sort of some very specific goals in it that we’ve provided in terms of running into the raptor and steering around things."
+    },
+    {
+      "type": "paragraph",
+      "text": "So in general, this affects the field by tuning your sensitivity to the medium level of interaction primarily. You’re steering around things and you’re steering toward raptors. And at the most basic level, this is primarily what we’re doing—object avoidance or trying to accurately track down moving objects. So in that sense, the focus of the mechanic through the context is put on the spacing of objects and how to steer in and around the trees."
+    },
+    {
+      "type": "paragraph",
+      "text": "We hit a fairly good balance here. Maybe we could have removed a couple of trees to make it a bit easier just to drive across the environment, but the speed of the forward motion of the Jeep and the amount that it turns are balanced relative to the spacing of objects, which is fairly wide in general."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the lowest level of tactile interaction, the game does not do the typical waterslide collision methodology of most racing games. Because we have a wide open world that flows and you can drive to any area, we didn’t feel it was necessary to put so much emphasis on slip sliding away from objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "In fact, because you want to ram into raptors, we made the collisions a little bit stickier than you typically find in a racing game, meaning that when you’ve collided with a raptor, it really feels as though it’s interacting with the hood of the car and sort of flying sideways and getting crunched around and mashed up against things."
+    },
+    {
+      "type": "paragraph",
+      "text": "And this extends, perhaps, a little bit negatively to your interactions with trees and other objects in the environment. It is possible to be going at the maximum speed with a boost, crash into a tree and completely lose all momentum. We tried to mitigate this with polish effects such as loud crashing sounds that get more emphatic and sound more destructive depending on the velocity of the collision. But there’s only so much you can do without actually simulating deformation of the car or doing some more advanced particle effects than we did."
+    },
+    {
+      "type": "paragraph",
+      "text": "So in general, the simulation, the tactile level of collision—the tactile context—feels much like a real car with the caveat that it doesn’t get deformed or destroyed past the superficial destruction of the doors and hood."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Polish"
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of polish effects, most of the interactions are conveyed by the simulation itself, so there’s not a huge amount being done. The primary work affecting the feel of the game is in the sound effects, where a lot of attention was paid to what the sound effects were conveying about the physical interactions of the car with its environment, especially the tires with the ground."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two layers of sound effects, the engine-revving noise and the crusty, dirt-crumbling noise, and their pitch is modulated based on the angle of the car turning, the amount of force that’s being applied, friction-wise, to the car’s tires. Further, based on the overall speed of the car, the engine noise is modulated as well."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a result, you really get a sense that the car is speeding up and revving up, and this further enhances the impression of speed, but with respect to the pitch"
+    },
+    {
+      "type": "paragraph",
+      "text": "modulation of the turning, it really gives the sense that you’re carving into the dirt. The pitch goes up and you can almost hear the tires spinning and squealing as they crunch through the gravel dirt on the ground."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of collision, we did three levels of different sounds, and we’re pulling randomly from a list of different sounds in order to avoid hearing the same sound over and over again and fatiguing the player’s ear. But there are three levels of sounds."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the lowest level of collision, there’s a threshold, and at the lowest level of collision threshold, it’s a very low-velocity collision. It’s just sort of a plastic-sounding thud, like if you bump your friend’s car in bumper-to-bumper while you’re waiting at a light. If you give the car a love tap, that’s the kind of sound we got there."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the medium level, there’s a satisfying crash or crumpling sound with some metal and maybe a little bit of glass breaking. It’s obviously a much more powerful collision than the love tap, but it’s not over the top. And then we reserve for the most destructive collisions—the highest velocity of collisions—a class of sounds that includes metal rending and have a long after-effect sound of crunching glass and breaking and smashing that goes on for quite some time."
+    },
+    {
+      "type": "paragraph",
+      "text": "And even higher than that, we have a separate class of sounds that we trigger when only a piece of the Jeep gets broken off, and that’s the most destructive and violent-sounding noise. In addition, when the Jeep hits a raptor, we’re making a special organic thudding noise. It sounds a little like hitting a side of beef with a baseball bat; and that, as well, comes in different levels."
+    },
+    {
+      "type": "paragraph",
+      "text": "It will be louder and more emphatic if the speed of the collision is much higher. So in that respect, we’re giving additional sensitivity and conveying another power sense of physicality through modulating the sound depending on the strength of collision."
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of visual effects, there are very few. And as the Jeep is driving around, dust particles get kicked up under the tires. If the Jeep is carving with a certain amount of force—if the amount of friction being applied to the wheels is above a certain amount, then a tire mark graphic will be placed on the environment where the tire was touching."
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition to these effects, we are also doing some cinematic trickery. Whenever there’s a stunt—that is, whenever the Jeep flies a certain height above the environment—a slow-motion cam occurs to emphasize that stunt, and the same thing happens if you run into a raptor. The game goes into slow motion and the camera zooms in on the point of interaction to further emphasize the weight and impact of the collision."
+    },
+    {
+      "type": "paragraph",
+      "text": "And that’s pretty much it. We’re doing some parametric animation stuff with a main character in terms of animation effects, such as the visualization of the tire spin according to the code, which technically could be considered an animated or polish effect. And when the Jeep turns left or right, the monocled, pith-helmeted raptor driver turns his head to the left and right, which is an animated effect driven by a parameter, but not directly affecting it. And then when you start backing up, he sort of puts one arm back and looks over his shoulder the way a normal driver would."
+    },
+    {
+      "type": "image",
+      "src": "312.png",
+      "caption": "FIGURE 16.17 The Jeep in Raptor Safari is close to photorealistic."
+    },
+    {
+      "type": "paragraph",
+      "text": "And really, that’s all the polish effects there are in Raptor Safari. It’s fairly barren in terms of extraneous polish effects applied to improve the impression of physicality and the interaction between objects. Pretty much everything is done in simulation."
+    },
+    {
+      "type": "paragraph",
+      "text": "So overall, the effects, or the limited number of effects—especially the sound effects—serve just to improve the impression that this is a real car. In fact, the sound effects were taken from actual car collisions. And that the raptors are big, mushy pieces of flesh made out of meat, bone and feathers, and when they come into contact with the much weightier, more massive car, they get owned, basically."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Metaphor"
+    },
+    {
+      "type": "paragraph",
+      "text": "In terms of metaphorical representation, the metaphor is a nearly photorealistic Jeep, or at least a Jeep that is properly proportioned and is clearly attempting to be a somewhat realistic representation of a Jeep. It is not a cartooned Jeep and the treatment is not intended to be iconic, particularly (Figure 16.17)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The environment is much lower resolution and looks less like an attempt to be realistic. There’s a bit of a disconnect between the Jeep and the environment, as well as a slight disconnect between the Jeep and the raptors. The raptors look very painterly and colorful, whereas the Jeep looks like it’s turning a little bit toward realism, and the environment seems to be more fantastical."
+    },
+    {
+      "type": "paragraph",
+      "text": "But overall, the expectation is that this car will behave like a real car. We’re mitigating this expectation in some degree by the silliness of what’s going on and the absurdness of a monocled, pith-helmeted raptor driving a Jeep around and running over other raptors, and especially by the silly sound effects and the puffs of feathers and things that fly up."
+    },
+    {
+      "type": "image",
+      "src": "313.png",
+      "caption": "FIGURE 16.18 The protagonist of Raptor Safari: a raptor with a monocle and pith helmet."
+    },
+    {
+      "type": "paragraph",
+      "text": "We’re setting up the expectation that, though it kind of looks like a real Jeep, don’t expect it to handle the same way with the same degree of accuracy as a Gran Turismo. Don’t apply the highest level of simulation standard."
+    },
+    {
+      "type": "paragraph",
+      "text": "So again, in terms of representation, we’ve got a Jeep driving around a somewhat fantastical world with some surreal elements in terms of big, feathery, parrot-looking raptors being run over by another raptor in the Jeep (Figure 16.18). The treatment on the Jeep is realistic, the treatment on the environment is more fantastical and the treatment on the raptors is more painterly and iconic. So there’s a little bit of a disconnect there, but it holds water reasonably well. This silliness also makes the whole thing feel more abstract and surreal."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "The high-level rules we created have a huge effect on the feel of Raptor Safari. You can do no wrong. You get points for everything. Humorously, it is literally impossible to score zero points. If you end a five minute round with zero points, you earn an “A for Effort” bonus, which gives you 50 points. That was our philosophy; to recognize and reward every possible action. As a result, every possible action feels rewarding to some degree."
+    },
+    {
+      "type": "paragraph",
+      "text": "So hitting a raptor, you get a bonus; trashing the Jeep—destroying part of the Jeep—you get bonus points for that. Doing stunts—launching yourself off of high objects and doing flips and barrel rolls—you get rewarded for that."
+    },
+    {
+      "type": "paragraph",
+      "text": "Every single possible combination of interaction, such as grabbing one raptor with the tow cable and hitting another raptor with that, we emphasized with a special bonus. And the reason we did this was to make the entire experience feels"
+    },
+    {
+      "type": "paragraph",
+      "text": "always positively rewarding. The challenge is the timer. You have to score as many points as possible within the allotted time, and the allotted time is very low—five minutes."
+    },
+    {
+      "type": "paragraph",
+      "text": "So you can never fail at Raptor Safari. The lowest possible score is 50 points (the “A for Effort” bonus). But we wanted to enable players to always compare their score with their previous score and with everyone else’s score in the world through the achievement system and high-score list."
+    },
+    {
+      "type": "paragraph",
+      "text": "Every individual action feels rewarding to some degree, but the actions that you take start to feel more and less rewarding. So for example, if you spend an entire round focusing on running over raptors and your score is 200,000, that will feel like a reasonable score because you’ve run over a lot of raptors and perhaps thrown them into the raptor catchers and gotten points for it, and there’s a satisfaction there."
+    },
+    {
+      "type": "paragraph",
+      "text": "But if you do another play through the game of another five-minute round, and you do a bunch of stunts and get these crazy high-flying jumps and spins (that gives you a much higher score) then doing stunts is going to feel more rewarding than capturing raptors. So it’s all about developing a scale of relative reward for the player to model internally and experiment with."
+    },
+    {
+      "type": "paragraph",
+      "text": "With the medium-level rules affecting feel, we’re steering the player toward raptors and orbs and jumps that cause the Jeep to go flying huge distances and do spins and so on. That’s essentially the behavior that we’re encouraging, and because of that, the feel changes slightly."
+    },
+    {
+      "type": "paragraph",
+      "text": "You always steer toward raptors and, because of the way the combo system is structured, you always want to steer toward the next thing, whatever it is, as quickly as possible to keep your current combo going because getting an orb continues your raptor-hit combo, which would continue your stunt combo. All the different combo systems are linked into one."
+    },
+    {
+      "type": "paragraph",
+      "text": "The net result is that you feel that you’re trying to chain together these different combo elements as you move throughout the level, and you’re always looking for the next thing to hit and gravitating toward it, which makes you feel as though you always want the Jeep to go faster and you don’t really care too much about running into things. You’re always just focused on what the next thing is that you’re going to try and steer toward and how you’re going to get there."
+    },
+    {
+      "type": "paragraph",
+      "text": "And finally, at the lowest level, there isn’t really a concept of health of objects in Raptor Safari past the fact that hitting the raptor once with your massive Jeep or with the tow cable will stun it or kill it, depending on your perspective, and knock it out. So the impression that’s conveyed there is that the Jeep is much more massive than the raptors."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most of the feel of Raptor Safari resides in the complex physical simulation. The high-level rules reward every behavior and guide the player toward ever higher"
+    },
+    {
+      "type": "paragraph",
+      "text": "levels of skill in a variety of different areas. We built the game very much with a bottom-up mindset; first was the simulation of the Jeep and the ragdoll raptors. That was tuned fastidiously. Then we built out a larger world, and populated it with lots of ramps and raptors. When we were comfortable that the feel of just driving around and smacking raptors felt satisfying, we emphasized every possible physical interaction with bonuses and scoring events, including a damage system, a stunt-reward system, a raptor reward system, and rewards for collecting the random orbs scattered throughout the environment. On top of this, we layered a combo system that provided rewards not only for doing many of the same types of events in a row but rewarded across systems, giving extra bonus time to all open combs whenever a new event was completed, regardless of its type. The five-minute round timer combined with the all-skills-rewarded approach plus the high-level achievement goals created a game that feels good and keeps players coming back."
+    }
+  ]
+}
